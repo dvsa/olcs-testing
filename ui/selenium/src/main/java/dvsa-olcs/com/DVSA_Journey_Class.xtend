@@ -14,7 +14,8 @@ public val journeyObjects = new FileReader('src/test/resources/journey.model').r
       fields.next,
       fields.next,
       fields.next,
-      Integer.parseInt(fields.next)
+      Integer.parseInt(fields.next),
+      fields.next
     )
 ]
 
@@ -28,4 +29,5 @@ public val journeyObjects = new FileReader('src/test/resources/journey.model').r
   String jtcInputCheck
   String jtcTitle
   int jtcPause
+  String jtcComments
 }
