@@ -10,9 +10,7 @@ val simpleDateFormat = new SimpleDateFormat("dd_M_yyyy_hh_mm_ss")
 val timeStamp = simpleDateFormat.format(new Date)
 
 fact
-"As a quality assurance lead
-I want to be able to audit that the current software build meets Functional (BDD), Accessibility, and Security requirements by grouping test cases together
-So that I can ensure that there is a working baseline on any specific build using any combination of browsers and test cases" 
+"Selenium Test Suite" 
 {
 
 suiteObjects.forEach [
