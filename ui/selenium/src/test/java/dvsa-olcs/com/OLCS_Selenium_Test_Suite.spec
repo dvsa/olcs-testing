@@ -10,7 +10,7 @@ val simpleDateFormat = new SimpleDateFormat("dd_M_yyyy_hh_mm_ss")
 val timeStamp = simpleDateFormat.format(new Date)
 
 fact
-"Selenium Test Suite" 
+"Scriptless Selenium Test Suite" 
 {
 
 suiteObjects.forEach [
