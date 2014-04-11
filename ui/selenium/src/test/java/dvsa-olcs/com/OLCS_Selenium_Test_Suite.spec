@@ -3,7 +3,7 @@ package olcs
 import java.util.Date
 import java.text.SimpleDateFormat
 
-describe "OLCS_Selenium_Test_Suite"
+describe "OLCS_Selenium_Test_Framework"
 {
 
 val simpleDateFormat = new SimpleDateFormat("dd_M_yyyy_hh_mm_ss")
