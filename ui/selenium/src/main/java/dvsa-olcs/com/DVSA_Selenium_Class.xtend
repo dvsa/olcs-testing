@@ -21,7 +21,6 @@ def startDriver(int hubIndex, int capabilitiesIndex) {
   )
   val hubMap = newHashMap (
     1 -> "http://192.168.2.95:4444/wd/hub",  // Functional
-  //  1 -> "http://127.0.0.1:4444/wd/hub",  // Functional
     2 -> "http://127.0.0.1:4445/wd/hub",  // Accessibility
     3 -> "http://127.0.0.1:4446/wd/hub",  // Security
     4 -> "http://127.0.0.1:4447/wd/hub",  // Operational
@@ -204,4 +203,3 @@ extension journeyObject = new journeyObject
 extension caseObject = new caseObject
 
 }
-
