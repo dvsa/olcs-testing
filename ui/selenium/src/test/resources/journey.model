@@ -1,3 +1,3 @@
-start_internal  start  Search  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  10000  internal application start
-click_Search  click  Search  linkText  NA  OLCS  0  NA
-checkContent_Search  checkContent  body  tagName  Search  OLCS  0  NA
+startInternal  start  Search  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  internal application start
+clickSearch  click  Search  linkText  NA  OLCS  0  NA
+checkContentSearch  checkContent  body  tagName  Search  OLCS  0  NA
