@@ -2,5 +2,5 @@ startInternal  start  Search  linkText  http://dvsa-internal.olcsdv-ap01.olcs.np
 clickSearch  click  Search  linkText  NA  OLCS  0  NA
 checkContentSearch  checkContent  body  tagName  Search  OLCS  0  NA
 startInternalCases  start  body  tagName  Case list  OLCS  0  NA
-waitAdd  wait  add  id  NA  OLCS  0  NA
-clickAdd  click  add  id  NA  OLCS  0  NA
+waitAdd  wait  action--primary  className  NA  OLCS  0  NA
+clickAdd  click  action--primary  className  NA  OLCS  0  NA
