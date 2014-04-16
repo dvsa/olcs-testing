@@ -4,7 +4,7 @@ checkContentSearch  checkContent  body  tagName  Search  OLCS  0  NA
 startInternalCases  start  add  id  http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/cases  OLCS  0  NA
 clickAdd  click  add  id  NA  OLCS  0  NA
 waitCompliance  wait  compliance  id  NA  OLCS  0  NA
-clickCompliance  compliance  id  NA  OLCS  0  NA
+clickCompliance  click  compliance  id  NA  OLCS  0  NA
 waitTm  wait  tm  id  NA  OLCS  0  NA
 clickTm  click  tm  id  NA  OLCS  0  NA
 waitApp  wait  app  id  NA  OLCS  0  NA
