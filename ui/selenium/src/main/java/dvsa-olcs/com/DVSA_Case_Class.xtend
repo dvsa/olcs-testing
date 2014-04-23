@@ -10,6 +10,7 @@ public val caseObjects = new FileReader("src/test/resources/test.cases").readLin
       return new cases (
   	  fields.next,
   	  fields.next,
+  	  fields.next,
       fields.next,
       fields.next,
       fields.next,
@@ -22,6 +23,7 @@ public val caseObjects = new FileReader("src/test/resources/test.cases").readLin
 @Data class cases {
   String bddIdentifier
   String bddType
+  String bddSprint
   String bddTitle
   String bddStory
   String startPoint
