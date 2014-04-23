@@ -144,7 +144,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       	         val journeyCaseStartUrl = driver.getCurrentUrl
                  val journeyDocumentReadyState = getDocumentReadyState(driver)
                  if (journeyDocumentReadyState == "complete") {
-                   if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
+                   //if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
                    print(jtcBddIdentifier)
                    switch jtcAction {
                      case (jtcAction == "wait") : waitForElement(jtcByElement, jtcNameElement, driver)
