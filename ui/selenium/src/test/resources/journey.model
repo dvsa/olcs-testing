@@ -17,3 +17,4 @@ waitEcms  wait  ecms  id  NA  OLCS  0  NA
 sendEcms  standardKeys  ecms  id  01234567  OLCS  0  NA
 waitSubmit  wait  submit  id  NA  OLCS  0  NA
 clickSubmit  click  submit  id  NA  OLCS  0  NA
+startSelfserve  start  Apply for a new licence  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/selfserve/dashboard  OLCS  0  selfserve application start
