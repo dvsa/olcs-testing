@@ -22,8 +22,8 @@ public val caseObjects = new FileReader("src/test/resources/test.cases").readLin
 
 @Data class cases {
   String bddIdentifier
-  String bddType
   String bddSprint
+  String bddType
   String bddTitle
   String bddStory
   String startPoint
