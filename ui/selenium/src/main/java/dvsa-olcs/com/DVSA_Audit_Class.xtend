@@ -43,7 +43,7 @@ def accessibilityAuditFile(String pluginIdentifier, String testCaseUrl, String t
   if (!file.exists) Files.write(testCaseUrl+" | "+alertError+" | "+testRunIdentifier+"_"+timeStamp+"_"+pluginIdentifier+".png\n", new File(reportDirectory+testRunIdentifier+"//"+testRunIdentifierTimestamp+"_"+pluginIdentifier+".txt"), Charsets.UTF_8)
 }
 
-def surfaceAuditBaseline(String testCaseUrl, String testCaseIdentifier, String currentInput, String testIdentifier) {
+def surfaceAuditBaseline(String testCaseUrl, String testCaseIdentifier, String currentInput, String testIdentifier, String reportDirectory) {
   val directory = new File(reportDirectory+"/surface/"+testIdentifier)
   if (!directory.exists) directory.mkdirs
   val file = new File(directory+"//"+testCaseIdentifier+".txt")
