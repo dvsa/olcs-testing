@@ -179,12 +179,12 @@ def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) 
   hoverAction.moveToElement(hover).build.perform
 }
 
-def getSurface(RemoteWebDriver driver, String testCaseUrl, String testCaseIdentifier, String testRunIdentifier, String reportDirectory) {
+def getSurface(RemoteWebDriver driver, String testCaseUrl, String testCaseIdentifier, String testRunIdentifier) {
   val String[] sections = testRunIdentifier.split("-")
   val testIdentifier = sections.get(0)
   val currentInputs = driver.findElements(By.tagName("input"))
   currentInputs.forEach [ currentInput |
-  	surfaceAuditBaseline(testCaseUrl, testCaseIdentifier, currentInput.getAttribute("id"), testIdentifier, reportDirectory)
+  	surfaceAuditBaseline(testCaseUrl, testCaseIdentifier, currentInput.getAttribute("id"), testIdentifier)
   ] 
 }
 
