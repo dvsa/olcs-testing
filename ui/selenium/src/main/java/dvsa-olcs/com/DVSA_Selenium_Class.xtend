@@ -21,10 +21,10 @@ def startDriver(int hubIndex, int capabilitiesIndex) {
   )
   val hubMap = newHashMap (
     1 -> "http://192.168.2.95:4444/wd/hub",  // Functional
-    2 -> "http://127.0.0.1:4445/wd/hub",  // Accessibility
-    3 -> "http://127.0.0.1:4446/wd/hub",  // Security
-    4 -> "http://127.0.0.1:4447/wd/hub",  // Operational
-    5 -> "http://127.0.0.1:4448/wd/hub"   // Performance
+    2 -> "http://192.168.2.95:4445/wd/hub",  // Accessibility
+    3 -> "http://192.168.2.95:4446/wd/hub",  // Security
+    4 -> "http://192.168.2.95:4447/wd/hub",  // Operational
+    5 -> "http://192.168.2.95:4448/wd/hub"   // Performance
   )
   val driverResult = new RemoteWebDriver(new URL(hubMap.get(hubIndex)), capabilitiesMap.get(capabilitiesIndex))
   return driverResult
@@ -144,7 +144,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       	         val journeyCaseStartUrl = driver.getCurrentUrl
                  val journeyDocumentReadyState = getDocumentReadyState(driver)
                  if (journeyDocumentReadyState == "complete") {
-                   //if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
+                   if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
                    print(jtcBddIdentifier)
                    switch jtcAction {
                      case (jtcAction == "wait") : waitForElement(jtcByElement, jtcNameElement, driver)
@@ -179,7 +179,7 @@ def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) 
   hoverAction.moveToElement(hover).build.perform
 }
 
-def getSurface(RemoteWebDriver driver, String testCaseUrl, String testCaseIdentifier, String testRunIdentifier) {
+def getSurface(RemoteWebDriver driver, String testCaseUrl, String testCaseIdentifier, String reportDirectory, String testRunIdentifier) {
   val String[] sections = testRunIdentifier.split("-")
   val testIdentifier = sections.get(0)
   val currentInputs = driver.findElements(By.tagName("input"))
