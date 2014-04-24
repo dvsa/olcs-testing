@@ -184,7 +184,7 @@ def getSurface(RemoteWebDriver driver, String testCaseUrl, String testCaseIdenti
   val testIdentifier = sections.get(0)
   val currentInputs = driver.findElements(By.tagName("input"))
   currentInputs.forEach [ currentInput |
-  	surfaceAuditBaseline(testCaseUrl, testCaseIdentifier, currentInput.getAttribute("id"), testIdentifier)
+  	surfaceAuditBaseline(testCaseUrl, testCaseIdentifier, currentInput.getAttribute("id"), testIdentifier, reportDirectory)
   ] 
 }
 
