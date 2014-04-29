@@ -7,7 +7,7 @@ class suiteObject {
   public val suiteObjects = new FileReader("src/test/resources/test.suites").readLines.map [ line |
     val fields = line.split('  ').iterator
       return new suites (
-  	    fields.next,
+        fields.next,
         fields.next, 
         fields.next,
         fields.next,
