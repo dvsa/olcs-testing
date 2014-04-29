@@ -130,6 +130,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       splitCases.forEach [ testCase |
       	caseObjects.forEach [
       	  if (testCase.equals(bddIdentifier)) {
+      	  print(testCase)
             val splitSequence = bddSequence.split(",")
             val startUrl = startPoint
             splitSequence.forEach [ sequenceIdentifier |
