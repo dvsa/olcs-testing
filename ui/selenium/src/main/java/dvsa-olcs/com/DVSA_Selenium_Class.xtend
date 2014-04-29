@@ -130,13 +130,13 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       splitCases.forEach [ testCase |
       	caseObjects.forEach [
       	  if (testCase.equals(bddIdentifier)) {
-      	  	val splitSequence = bddSequence.split(",")
-      	  	val startUrl = startPoint
-      	  	splitSequence.forEach [ sequenceIdentifier |
-      	      journeyObjects.forEach [
-      	      	val uniqueRunIdentifier = groupRunIdentifier+"_"+testCase
+            val splitSequence = bddSequence.split(",")
+            val startUrl = startPoint
+            splitSequence.forEach [ sequenceIdentifier |
+              journeyObjects.forEach [
+                val uniqueRunIdentifier = groupRunIdentifier+"_"+testCase
       		    if (sequenceIdentifier.equals(jtcBddIdentifier)) {
-      		  	  if (jtcAction == "start" && jtcBddIdentifier == startUrl) {
+                  if (jtcAction == "start" && jtcBddIdentifier == startUrl) {
       		  	    driver.get(jtcInputCheck)
       	            if (recordVideo == "Y") startVideo(reportDirectory, uniqueRunIdentifier, videoPause)
       	            waitForElement(jtcByElement, jtcNameElement, driver)
