@@ -9,7 +9,7 @@ class caseObject {
       return new cases (
         fields.next,
         fields.next,
-  	    fields.next,
+        fields.next,
         fields.next,
         fields.next,
         fields.next,
