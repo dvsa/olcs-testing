@@ -19,4 +19,3 @@ waitSubmit  wait  submit  id  NA  OLCS  N,NA  0  NA
 clickSubmit  click  submit  id  NA  OLCS  N,NA  0  NA
 startSelfserve  start  Apply for a new licence  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/selfserve/dashboard  OLCS  N,NA  0  selfserve application start
 navigateToAddStatement  url  NA  NA  http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/case/24/statements/add  OLCS  N,NA  0  Add Statement
-mandatoryInput  validate  NA  NA  NA  NA  NA  0  NA
