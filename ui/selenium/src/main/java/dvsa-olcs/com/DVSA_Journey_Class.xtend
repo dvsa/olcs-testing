@@ -13,7 +13,6 @@ class journeyObject {
         fields.next,
         fields.next,
         fields.next,
-        fields.next,
         Integer.parseInt(fields.next),
         fields.next
       )
@@ -26,7 +25,6 @@ class journeyObject {
   String jtcNameElement
   String jtcByElement
   String jtcInputCheck
-  String jtcValidation
   String jtcTitle
   int jtcPause
   String jtcComments
