@@ -1,6 +1,6 @@
 startInternal  start  Search  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  Y,0,100,Alpha,N,NA,Error  OLCS  0  internal application start
 clickSearch  click  Search  linkText  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
-checkContentSearch  checkContent  body  tagName  Search  Y,0,100,Alpha,N,NA,Error OLCS  0  NA
+checkContentSearch  checkContent  body  tagName  Search  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
 startInternalCases  start  add  id  http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/cases  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
 clickAdd  click  add  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
 waitCompliance  wait  compliance  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
