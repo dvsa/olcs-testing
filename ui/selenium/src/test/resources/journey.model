@@ -1,21 +1,21 @@
-startInternal  start  Search  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  internal application start
-clickSearch  click  Search  linkText  NA  OLCS  0  NA
-checkContentSearch  checkContent  body  tagName  Search  OLCS  0  NA
-startInternalCases  start  add  id  http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/cases  OLCS  0  NA
-clickAdd  click  add  id  NA  OLCS  0  NA
-waitCompliance  wait  compliance  id  NA  OLCS  0  NA
-clickCompliance  click  compliance  id  NA  OLCS  0  NA
-waitTm  wait  tm  id  NA  OLCS  0  NA
-clickTm  click  tm  id  NA  OLCS  0  NA
-waitApp  wait  app  id  NA  OLCS  0  NA
-clickApp  click  app  id  NA  OLCS  0  NA
-waitReferral  wait  referral  id  NA  OLCS  0  NA
-clickReferral  click  referral  id  NA  OLCS  0  NA
-waitDescription  wait  description  id  NA  OLCS  0  NA
-sendDescription  standardKeys  description  id  QA testing inputs  OLCS  0  NA
-waitEcms  wait  ecms  id  NA  OLCS  0  NA
-sendEcms  standardKeys  ecms  id  01234567  OLCS  0  NA
-waitSubmit  wait  submit  id  NA  OLCS  0  NA
-clickSubmit  click  submit  id  NA  OLCS  0  NA
-startSelfserve  start  Apply for a new licence  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/selfserve/dashboard  OLCS  0  selfserve application start
-navigateToAddStatement  url  NA  NA  http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/case/24/statements/add  OLCS  0  Add Statement
+startInternal  start  Search  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  Y,0,100,Alpha,N,NA,Error  OLCS  0  internal application start
+clickSearch  click  Search  linkText  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+checkContentSearch  checkContent  body  tagName  Search  Y,0,100,Alpha,N,NA,Error OLCS  0  NA
+startInternalCases  start  add  id  http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/cases  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+clickAdd  click  add  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+waitCompliance  wait  compliance  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+clickCompliance  click  compliance  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+waitTm  wait  tm  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+clickTm  click  tm  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+waitApp  wait  app  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+clickApp  click  app  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+waitReferral  wait  referral  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+clickReferral  click  referral  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+waitDescription  wait  description  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+sendDescription  standardKeys  description  id  QA testing inputs  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+waitEcms  wait  ecms  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+sendEcms  standardKeys  ecms  id  01234567  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+waitSubmit  wait  submit  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+clickSubmit  click  submit  id  NA  Y,0,100,Alpha,N,NA,Error  OLCS  0  NA
+startSelfserve  start  Apply for a new licence  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/selfserve/dashboard  Y,0,100,Alpha,N,NA,Error  OLCS  0  selfserve application start
+navigateToAddStatement  url  NA  NA  http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/case/24/statements/add  Y,0,100,Alpha,N,NA,Error  OLCS  0  Add Statement
