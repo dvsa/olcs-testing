@@ -13,7 +13,6 @@ class caseObject {
         fields.next,
         fields.next,
         fields.next,
-        fields.next,
         fields.next
       )
   ]
@@ -21,8 +20,7 @@ class caseObject {
 
 @Data class cases {
   String bddIdentifier
-  String bddScenario
-  String bddSprint
+  String bddAuthor
   String bddType
   String bddTitle
   String bddStory
