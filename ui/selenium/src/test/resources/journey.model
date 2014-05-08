@@ -4,3 +4,5 @@ waitGreatBritain  wait  Great Britain  xpathLabelContains  NA  OLCS  0  Wait for
 clickGreatBritain  click  Great Britain  xpathLabelContains  NA  OLCS  0  Click 'Great Britain' label
 waitNextButton  wait  submit  id  NA  OLCS  0  Wait for 'Next' button (using id: submit)
 clickNextButton  click  submit  id  NA  OLCS  0  Click 'Next' button (using id: submit)
+waitGoods  wait  Goods  xpathLabelContains  NA  OLCS  0  Wait for 'Goods' label
+clickGoods  click  Goods  xpathLabelContains  NA  OLCS  0  Click 'Goods' label
