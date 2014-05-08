@@ -2,3 +2,5 @@ startSelfserve  start  Apply for a new licence  linkText  http://dvsa-selfserve.
 clickApplyForNewLicence  click  Apply for a new licence  linkText  NA  OLCS  0  Click 'Apply for a new licence' link
 waitGreatBritain  wait  Great Britain  xpathLabelContains  NA  OLCS  0  Wait for 'Great Britain' label
 clickGreatBritain  click  Great Britain  xpathLabelContains  NA  OLCS  0  Click 'Great Britain' label
+waitNextButton  wait  submit  id  NA  OLCS  0  Wait for 'Next' button (using id: submit)
+clickNextButton  click  submit  id  NA  OLCS  0  Click 'Next' button (using id: submit)
