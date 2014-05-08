@@ -8,5 +8,5 @@ waitGoods  wait  Goods  xpathLabelContains  NA  OLCS  0  Wait for 'Goods' label
 clickGoods  click  Goods  xpathLabelContains  NA  OLCS  0  Click 'Goods' label
 waitRestricted  wait  Restricted  xpathLabelContains  NA  OLCS  0  Wait for 'Restricted' label
 clickRestricted  click  Restricted  xpathLabelContains  NA  OLCS  0  Click 'Restricted' label
-waitPleaseSelect  wait  Please select  xpathLinkContains  NA  OLCS  0  Wait for 'Please select' link
-clickPleaseSelect  click  Please select  xpathLinkContains  NA  OLCS  0  Click 'Please select' link
+waitPleaseSelect  wait  Please Select  xpathLinkContains  NA  OLCS  0  Wait for 'Please select' link
+clickPleaseSelect  click  Please Select  xpathLinkContains  NA  OLCS  0  Click 'Please select' link
