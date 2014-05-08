@@ -1,1 +1,2 @@
-startSelfserve  start  Apply for a new licence  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/selfserve/dashboard  OLCS  0  selfserve application start
+startSelfserve  start  Apply for a new licence  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/selfserve/dashboard  OLCS  0  Start Selfserve Application
+clickApplyForNewLicence  click  Apply for a new licence  linkText  NA  OLCS  0  Click 'Apply for a new licence' link
