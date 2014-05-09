@@ -177,9 +177,9 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
 
 def doSelect(String jtcByElement, String jtcNameElement, String jtcInputCheck, RemoteWebDriver driver) {
   val String[] sections = jtcInputCheck.split(",")
-  val bySelect = sections.get(0)
-  val dropDown = new Select(driver.findElement(By::id(jtcNameElement)))
-  dropDown.selectByValue(bySelect)
+  //val bySelect = sections.get(0)
+  //val dropDown = new Select(driver.findElement(By::id(jtcNameElement)))
+  //dropDown.selectByValue(bySelect)
 }
 
 def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
