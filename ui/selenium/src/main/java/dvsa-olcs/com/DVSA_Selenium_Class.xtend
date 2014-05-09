@@ -156,7 +156,9 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
                      case (jtcAction == "checkUrl") : driver.getCurrentUrl.contains(jtcInputCheck)
                      case (jtcAction == "switch") : if (jtcNameElement != "defaultContent") driver.switchTo.frame(jtcNameElement) else driver.switchTo.defaultContent
                      case (jtcAction == "url") : doUrlNavigation(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcAction, jtcInputCheck)
-                     case (jtcAction == "hover") : doHover(jtcByElement, jtcNameElement, driver)                   }
+                     case (jtcAction == "hover") : doHover(jtcByElement, jtcNameElement, driver)
+                     case (jtcAction == "select") : doSelect(jtcByElement, jtcNameElement, driver)
+                   }
                    Thread.sleep(jtcPause) 
                  } 
                 }
@@ -170,6 +172,9 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
     ]
   ]
   
+}
+
+def doSelect(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
 }
 
 def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
