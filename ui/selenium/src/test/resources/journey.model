@@ -9,5 +9,4 @@ clickGoods  click  Goods  xpathLabelContains  NA  OLCS  0  Click 'Goods' label
 waitRestricted  wait  Restricted  xpathLabelContains  NA  OLCS  0  Wait for 'Restricted' label
 clickRestricted  click  Restricted  xpathLabelContains  NA  OLCS  0  Click 'Restricted' label
 waitPleaseSelect  wait  business-type  id  NA  OLCS  0  Wait for 'Please Select' (using id: business-type)
-clickPleaseSelect  click  business-type  id  NA  NA  0  Click 'Please Select' (using id: business-type)
-selectRegisteredCompany  select  org_type.rc  NA  NA  NA  0  Select 'Registered Company' (using value: org_type.rc)
+selectRegisteredCompany  select  business-type  id  org_type.rc,value  NA  0  Select 'Please Select' -> 'Registered Company' (using id: business-type, using value: org_type.rc)
