@@ -21,7 +21,7 @@ def startDriver(int hubIndex, int capabilitiesIndex) {
     4 -> DesiredCapabilities.chrome
   )
   val hubMap = newHashMap (
-    1 -> "http://192.168.2.95:4444/wd/hub",  // Functional
+    1 -> "http://selenium.olcs.npm:4444/wd/hub",  // Functional
     2 -> "http://192.168.2.95:4445/wd/hub",  // Accessibility
     3 -> "http://192.168.2.95:4446/wd/hub",  // Security
     4 -> "http://192.168.2.95:4447/wd/hub",  // Operational
