@@ -11,3 +11,4 @@ clickRestricted  click  Restricted  xpathLabelContains  NA  OLCS  0  Click 'Rest
 waitPleaseSelect  wait  business-type  id  NA  OLCS  0  Wait for 'Please Select' (using id: business-type)
 selectRegisteredCompany  select  business-type  id  org_type.rc,value  NA  0  Select 'Please Select' -> 'Registered Company' (using id: business-type, using value: org_type.rc)
 startMOT  start  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm/login  OLCS  0  Start MOT Application
+MOTloginUser  specialKeys  username  inputName  tester1  OLCS  2000  login using tester1
