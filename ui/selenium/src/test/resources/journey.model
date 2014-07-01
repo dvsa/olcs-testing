@@ -16,3 +16,5 @@ MOTloginPassword  standardKeys  password  inputName  t  MOT  0  login using pass
 MOTloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
 MOTgoToMOTtesting  click  motTestingLink  id  NA  MOT  0  Click Go to MOT Testing link
 MOTstartMOTtest  click  start_mot_test_btn  id  NA  MOT  0  Click Start MOT Test
+MOTenterReg  standardKeys  reg-input  id  SML007  MOT  0  Enter Reg number
+MOTselectNoVin  select  vin-type-select  id  noVin  MOT  3000  Enter Reg number
