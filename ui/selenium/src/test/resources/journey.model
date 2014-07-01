@@ -18,4 +18,24 @@ MOTgoToMOTtesting  click  motTestingLink  id  NA  MOT  0  Click Go to MOT Testin
 MOTstartMOTtest  click  start_mot_test_btn  id  NA  MOT  0  Click Start MOT Test
 MOTenterReg  standardKeys  reg-input  id  GGG455  MOT  0  Enter Reg number
 MOTenterVin  standardKeys  vin-input  id  1M6GDM9AXKP042766  MOT  0  Enter vin number
-MOTVehicleSearch  click  vehicle-search  id  NA  MOT  3000  Click Search
+MOTVehicleSearch  click  vehicle-search  id  NA  MOT  0  Click Search
+MOTVehicleConfirm  click  confirm_vehicle_confirmation  id  NA  MOT  0  Click Confirm Vehicle
+MOTaddOdometer click  addOdometer  id  NA  MOT  0  Click Add for Odometer reading
+MOTenterMiles  standardKeys  odometer  id  100000  MOT  0  Enter miles
+MOTsubmitMileage click  odometer_submit  id  NA  MOT  0  Click Submit button
+MOTaddBrakeTest click  addBrakeTestResults  id  NA  MOT  0  Click Add for Brake Test
+MOTclickVSI click  weightType-vsi  id  NA  MOT  0  Click VSI
+MOTenterVehicleWeight  standardKeys  vehicleWeight  id  1000  MOT  0  Enter Vechicle Weight
+MOTbrakeConfigTestNext click  brake_test_results_submit  id  NA  MOT  0  Click Next
+MOTenterBrakeAxleNS1  standardKeys  serviceBrakeEffortNearsideAxle1  id  440  MOT  0  Enter service brake effort NS axle 1
+MOTenterBrakeAxleOS1  standardKeys  serviceBrakeEffortOffsideAxle1  id  440  MOT  0  Enter service brake effort OS axle 1
+MOTenterBrakeAxleNS2  standardKeys  serviceBrakeEffortNearsideAxle2  id  200  MOT  0  Enter service brake effort NS axle 2
+MOTenterBrakeAxleOS2  standardKeys  serviceBrakeEffortOffsideAxle2  id  200  MOT  0  Enter service brake effort OS axle 2
+MOTenterParkingBrakeNS  standardKeys  parkingBrakeEffortNearside  id  100  MOT  0  Enter parking brake effort NS
+MOTenterParkingBrakeOS  standardKeys  parkingBrakeEffortOffside  id  100  MOT  0  Enter parking brake effort OS
+MOTsubmitBrakeTest  click  brake_test_results_submit  id  NA  MOT  0  Click submit
+MOTclickSummaryDone  click  brake_test_summary_done  id  NA  MOT  0  Click Done
+MOTclickCreateCert  click  createCertificate  id  NA  MOT  0  Click Review
+MOTenterOneTimePass  standardKeys  oneTimePassword  id  1234567890  MOT  0  Enter pass code
+MOTclickFinTest  click  confirm_test_result  id  NA  MOT  0  Click Finish Test and Complete
+MOTclickBackToUserHome  click  quit  id  NA  MOT  3000  Click Back to User Home
