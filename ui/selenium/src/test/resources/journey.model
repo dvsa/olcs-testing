@@ -18,4 +18,4 @@ MOTgoToMOTtesting  click  motTestingLink  id  NA  MOT  0  Click Go to MOT Testin
 MOTstartMOTtest  click  start_mot_test_btn  id  NA  MOT  0  Click Start MOT Test
 MOTenterReg  standardKeys  reg-input  id  SML007  MOT  0  Enter Reg number
 MOTselectNoVin  select  vin-type-select  id  noVin  MOT  0  Enter Reg number
-MOTVehicleSearch  click  vechicle-search  id  NA  MOT  3000  Click Search
+MOTVehicleSearch  click  vehicle-search  id  NA  MOT  3000  Click Search
