@@ -17,7 +17,9 @@ MOTloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
 MOTgoToMOTtesting  click  motTestingLink  id  NA  MOT  0  Click Go to MOT Testing link
 MOTstartMOTtest  click  start_mot_test_btn  id  NA  MOT  0  Click Start MOT Test
 MOTenterReg  standardKeys  reg-input  id  GGG455  MOT  0  Enter Reg number
+MOTenterReg2  standardKeys  reg-input  id  UK045  MOT  0  Enter Reg number
 MOTenterVin  standardKeys  vin-input  id  1M6GDM9AXKP042766  MOT  0  Enter vin number
+MOTenterVin2  standardKeys  vin-input  id  1M8GDM9AXKP042712  MOT  0  Enter vin number
 MOTVehicleSearch  click  vehicle-search  id  NA  MOT  0  Click Search
 MOTVehicleConfirm  click  confirm_vehicle_confirmation  id  NA  MOT  0  Click Confirm Vehicle
 MOTaddOdometer  click  addOdometer  id  NA  MOT  0  Click Add for Odometer reading
