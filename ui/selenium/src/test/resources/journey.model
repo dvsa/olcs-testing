@@ -49,5 +49,5 @@ MOTclickRejectVehiclesAfter1933  click  Vehicles first used after 2 January 1933
 MOTclickRejectVehiclesAfter1933FailTreadDepth  click  fail-rfr-8394  id  NA  MOT  0  Click Fail button in Reject Vehicles after 1933 - fail tread depth below 1.6mm
 MOTclickRejectVehiclesAfter1933FailTreadDepthDesc  standardKeys  description-8394  id  Near side tyre below 1.6mm tread  MOT  0  Enter description for reason of fail
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAdd  click  rfr-submit-8394  id  NA  MOT  0  Click Add button to submit fail description
-MOTclickRejectVehiclesAfter1933FailTreadDepthDescAddListed  click  h3 fail  className  NA  MOT  3000  Click Listed failures Style to see information that was just keyed in about the reason for fail
+MOTclickRejectVehiclesAfter1933FailTreadDepthDescAddListed  click  Listed  xpathLabelContains  NA  MOT  3000  Click Listed failures Style to see information that was just keyed in about the reason for fail
 MOTclickRejectVehiclesAfter1933FailTreadDepthDone  click  reason-for-rejection-done  id  NA  MOT  0  Click Done button on reason for rejection on tyre depth of 1.6mm
