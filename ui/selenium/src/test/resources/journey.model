@@ -42,9 +42,9 @@ MOTenterOneTimePass  standardKeys  oneTimePassword  id  1234567890  MOT  0  Ente
 MOTclickFinTest  click  confirm_test_result  id  NA  MOT  0  Click Finish Test and Complete
 MOTclickBackToUserHome  click  quit  id  NA  MOT  3000  Click Back to User Home
 MOTclickFailPRS  click  add_rfr_button  id  NA  MOT  0  Click Failures, PRS and advisories button
-MOTclickRejectTyresWAIT  wait  Tyres  xpathLabelContains  NA  OLCS  0  Wait for Tyres button in the Reasons for rejection
-MOTclickRejectTyres  click  Tyres  xpathLabelContains  NA  MOT  0  Click Tyres button in the Reasons for rejection
-MOTclickRejectTreadDepth  click  Tread depth  xpathLabelContains  NA  MOT  0  Click Tread depth button in the Reasons for rejection
+MOTclickRejectTyresWAIT  wait  Tyres  xpathLinkContains  NA  OLCS  0  Wait for Tyres button in the Reasons for rejection
+MOTclickRejectTyres  click  Tyres  xpathLinkContains  NA  MOT  0  Click Tyres button in the Reasons for rejection
+MOTclickRejectTreadDepth  click  Tread depth  xpathLinkContains  NA  MOT  0  Click Tread depth button in the Reasons for rejection
 MOTclickRejectVehiclesAfter1933  click  Vehicles first used after 2 January 1933 upto 9 seats including driver  xpathLabelContains  NA  MOT  0  Click Vehicles first used after 2 January 1933 upto 9 seats including driver in the Reasons for rejection
 MOTclickRejectVehiclesAfter1933FailTreadDepth  click  fail-rfr-8394  id  NA  MOT  0  Click Fail button in Reject Vehicles after 1933 - fail tread depth below 1.6mm
 MOTclickRejectVehiclesAfter1933FailTreadDepthDesc  standardKeys  description-8394  id  Near side tyre below 1.6mm tread  MOT  0  Enter description for reason of fail
