@@ -50,5 +50,3 @@ MOTclickRejectVehiclesAfter1933FailTreadDepthDesc  standardKeys  description-839
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAdd  click  rfr-submit-8394  id  NA  MOT  0  Click Add button to submit fail description
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAddListed  click  rfrCount  id  NA  MOT  3000  Click Listed failures Style to see information that was just keyed in about the reason for fail
 MOTclickRejectVehiclesAfter1933FailTreadDepthDone  click  reason-for-rejection-done  id  NA  MOT  0  Click Done button on reason for rejection on tyre depth of 1.6mm
-
-
