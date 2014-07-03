@@ -51,9 +51,13 @@ MOTclickRejectVehiclesAfter1933FailTreadDepthDesc  standardKeys  description-839
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAdd  click  rfr-submit-8394  id  NA  MOT  0  Click Add button to submit fail description
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAddListed  click  rfrCount  id  NA  MOT  3000  Click Listed failures Style to see information that was just keyed in about the reason for fail
 MOTclickReasonForRejectionDoneWAIT  wait  reason-for-rejection-done  id  NA  MOT  0  Wait for button on reason for rejection
-MOTclickReasonForRejectionDone  click  mot-header-details-rfr-done  id  NA  MOT  0  Click Done button on reason for rejection
+MOTclickReasonForRejectionDone  click  reason-for-rejection-done  id  NA  MOT  0  Click Done button on reason for rejection
 MOTclickRejectLampsReflectors  click  Lamps, Reflectors and Electrical Equipment  xpathLinkContains  NA  MOT  0  Click Lamps, Reflectors and Electrical Equipment in the Reasons for rejection
+MOTclickRejectLampsReflectorsHeadlampAimWAIT  wait  Headlamp aim  xpathLinkContains  NA  MOT  0  Wait for Headlamp aim in the Reasons for rejection
 MOTclickRejectLampsReflectorsHeadlampAim  click  Headlamp aim  xpathLinkContains  NA  MOT  0  Click Headlamp aim in the Reasons for rejection
+MOTclickRejectLampsReflectorsHeadlampAimLeftWAIT  wait  fail-rfr-8901  id  NA  MOT  0  Wait for too high and too far to the left button
 MOTclickRejectLampsReflectorsHeadlampAimLeft  click  fail-rfr-8901  id  NA  MOT  0  Click too high and too far to the left
+MOTclickRejectLampsReflectorsHeadlampAimLeftDescWAIT  wait  description-8901  id  NA  MOT  0  Wait for Enter description for reason of fail
 MOTclickRejectLampsReflectorsHeadlampAimLeftDesc  standardKeys  description-8901  id  The headlight aim is too far to the left  MOT  0  Enter description for reason of fail
+MOTclickRejectLampsReflectorsHeadlampAimLeftDescAddWAIT  wait  rfr-submit-8901  id  NA  MOT  0  Wait for Add button to submit fail description
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAdd  click  rfr-submit-8901  id  NA  MOT  0  Click Add button to submit fail description
