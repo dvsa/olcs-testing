@@ -72,4 +72,4 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAIL  click  fail-rfr
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescWAIT  wait  description-8459  id  NA  MOT  0  Wait for Description
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDesc  standardKeys  description-8459  id  chassis has an unsatisfactory modification  MOT  0  Enter Description
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAddWAIT  wait  rfr-submit-8459  id  NA  MOT  0  Wait for Add button
-MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  clcik  rfr-submit-8459  id  NA  MOT  0  click on Add button
+MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  rfr-submit-8459  id  NA  MOT  0  click on Add button
