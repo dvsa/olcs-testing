@@ -63,3 +63,13 @@ MOTclickRejectLampsReflectorsHeadlampAimLeftDescAddWAIT  wait  rfr-submit-8901  
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAdd  click  rfr-submit-8901  id  NA  MOT  0  Click Add button to submit fail description
 MOTclickReasonForRejectionDoneWAIT2  wait  reason-for-rejection-done  id  NA  MOT  5000  Wait for button on reason for rejection
 MOTclickReasonForRejectionDone2  click  reason-for-rejection-done  id  NA  MOT  5000  Click Done button on reason for rejection
+MOTclickReasonForRejectionBodyWAIT  wait  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Wait for Body, Structure and General Items in the Reasons for rejection
+MOTclickReasonForRejectionBody  click  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Click Body, Structure and General Items in the Reasons for rejection
+MOTclickReasonForRejectionBody-BodyConditionWAIT  wait  Body condition  xpathLinkContains  NA  MOT  0  Wait for Body condition in the Reasons for rejection
+MOTclickReasonForRejectionBody-BodyCondition  click  Body condition  xpathLinkContains  NA  MOT  0  Click Body condition in the Reasons for rejection
+MOTclickReasonForRejectionBody-BodyCondition-Modification-8459-FAIL-WAIT  wait  fail-rfr-8459 id  NA  MOT  0  Wait for or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTclickReasonForRejectionBody-BodyCondition-Modification-8459-FAIL  click  fail-rfr-8459 id  NA  MOT  0  click on or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTclickReasonForRejectionBody-BodyCondition-Modification-8459-FAIL-Desc-WAIT  wait  description-8459 id  NA  MOT  0  Wait for Description
+MOTclickReasonForRejectionBody-BodyCondition-Modification-8459-FAIL-Desc  standardKeys  description-8459 id  chassis has an unsatisfactory modification  MOT  0  Enter Description
+MOTclickReasonForRejectionBody-BodyCondition-Modification-8459-FAIL-Desc-Add-WAIT  wait  rfr-submit-8459 id  NA  MOT  0  Wait for Add button
+MOTclickReasonForRejectionBody-BodyCondition-Modification-8459-FAIL-Desc-Add  clcik  rfr-submit-8459 id  NA  MOT  0  click on Add button
