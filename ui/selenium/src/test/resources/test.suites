@@ -3,4 +3,5 @@ OLCS-ST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-roo
 OLCS-001old  1,2,4  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-ST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-FAIL-TYRE  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-MOT-FAIL-HEADLIGHT-AIM  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
+MOT-FAIL-HEADLIGHT-AIM  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+MOT-FAIL-BODY  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
