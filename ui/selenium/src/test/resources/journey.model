@@ -67,9 +67,9 @@ MOTclickReasonForRejectionBodyWAIT  wait  Body, Structure and General Items  xpa
 MOTclickReasonForRejectionBody  click  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Click Body, Structure and General Items in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyConditionWAIT  wait  Body condition  xpathLinkContains  NA  MOT  0  Wait for Body condition in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyCondition  click  Body condition  xpathLinkContains  NA  MOT  0  Click Body condition in the Reasons for rejection
-MOTclickReasonForRejectionBodyBodyConditionModification8459FAILWAIT  wait  fail-rfr-8459 id  NA  MOT  0  Wait for or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
-MOTclickReasonForRejectionBodyBodyConditionModification8459FAIL  click  fail-rfr-8459 id  NA  MOT  0  click on or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
-MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescWAIT  wait  description-8459 id  NA  MOT  0  Wait for Description
-MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDesc  standardKeys  description-8459 id  chassis has an unsatisfactory modification  MOT  0  Enter Description
-MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAddWAIT  wait  rfr-submit-8459 id  NA  MOT  0  Wait for Add button
-MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  clcik  rfr-submit-8459 id  NA  MOT  0  click on Add button
+MOTclickReasonForRejectionBodyBodyConditionModification8459FAILWAIT  wait  fail-rfr-8459  id  NA  MOT  0  Wait for or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTclickReasonForRejectionBodyBodyConditionModification8459FAIL  click  fail-rfr-8459  id  NA  MOT  0  click on or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescWAIT  wait  description-8459  id  NA  MOT  0  Wait for Description
+MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDesc  standardKeys  description-8459  id  chassis has an unsatisfactory modification  MOT  0  Enter Description
+MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAddWAIT  wait  rfr-submit-8459  id  NA  MOT  0  Wait for Add button
+MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  clcik  rfr-submit-8459  id  NA  MOT  0  click on Add button
