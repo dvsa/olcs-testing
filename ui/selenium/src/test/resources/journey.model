@@ -68,8 +68,8 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescWAIT  wait  d
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDesc  standardKeys  description-8459  id  chassis has an unsatisfactory modification  MOT  0  Enter Description
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAddWAIT  wait  rfr-submit-8459  id  NA  MOT  0  Wait for Add button
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  rfr-submit-8459  id  NA  MOT  0  click on Add button
-MOT1  click  MOT  id  MOT  MOT 0 MOT
-MOT2  click  MOT  id  MOT  MOT 0 Reasons for rejection screen
+MOT1  click  MOT  id  MOT  MOT  0  MOT
+MOT2  click  MOT  id  MOT  MOT  0  Reasons for rejection screen
 MOTReasonForRejectionBodyStructureGeneralItemsWAIT  wait  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Wait for Body, Structure and General Items button
 MOTReasonForRejectionBodyStructureGeneralItemsCLICK  click  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Click Body, Structure and General Items button
 MOTReasonForRejectionBrakesWAIT  wait  Brakes  xpathLinkContains  NA  MOT  0  Wait for Brakes button
