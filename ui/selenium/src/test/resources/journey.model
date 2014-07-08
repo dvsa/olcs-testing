@@ -73,6 +73,22 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  r
 .  .  .  .  .  .  0  .
 MOTReasonForRejectionHeaderDoneButtonWAIT  wait  mot-header-details-rfr-done  id  NA  MOT  0  Wait for top right hand DONE button
 MOTReasonForRejectionHeaderDoneButtonCLICK  click  mot-header-details-rfr-done  id  NA  MOT  0  Click top right hand DONE button
+MOTReasonForRejectionHeaderDoneButtonWAIT  wait  Vehicle  xpathLinkContains  NA  MOT  0  Wait for Vechicle breadcrumbs link found thoughout the reason for rejection screens
+MOTReasonForRejectionHeaderDoneButtonCLICK  click  Vehicle  xpathLinkContains  NA  MOT  0  Click Vechicle breadcrumbs link found thoughout the reason for rejection screens
+MOTCanelTestButtonWAIT  wait  cancelMotTest  id  NA  MOT  0  Wait for cancel Test button, this cancels the MOT test
+MOTCanelTestButtonCLICK  click  cancelMotTest  id  NA  MOT  0  Click cancel Test button, this cancels the MOT test
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Reasons to cancel test screen
+.  .  .  .  .  .  0  .
+MOTReasonsToCancelTestAbortedByVEWAIT  wait  reasonForCancel2  id  NA  MOT  0  Wait for Aborted By VE checkbox
+MOTReasonsToCancelTestAbortedByVECLICK  click  reasonForCancel2  id  NA  MOT  0  Click Aborted By VE checkbox
+MOTReasonsToCancelTestAbortedByVEWAIT  wait  mot_test_cancel_confirm  id  NA  MOT  0  Wait for Confirm button
+MOTReasonsToCancelTestAbortedByVECLICK  click  mot_test_cancel_confirm  id  NA  MOT  0  Click Confirm button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  MOT test aborted screen
+.  .  .  .  .  .  0  .
+MOTReasonsToCancelTestAbortedByVEWAIT  wait  cancel_test_result  id  NA  MOT  0  Wait for Finish button
+MOTReasonsToCancelTestAbortedByVECLICK  click  cancel_test_result  id  NA  MOT  0  Click Finish button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Reasons for rejection screen
 .  .  .  .  .  .  0  .
