@@ -73,8 +73,8 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  r
 .  .  .  .  .  .  0  .
 MOTReasonForRejectionHeaderDoneButtonWAIT  wait  mot-header-details-rfr-done  id  NA  MOT  0  Wait for top right hand DONE button
 MOTReasonForRejectionHeaderDoneButtonCLICK  click  mot-header-details-rfr-done  id  NA  MOT  0  Click top right hand DONE button
-MOTReasonForRejectionHeaderDoneButtonWAIT  wait  Vehicle  xpathLinkContains  NA  MOT  0  Wait for Vechicle breadcrumbs link found thoughout the reason for rejection screens
-MOTReasonForRejectionHeaderDoneButtonCLICK  click  Vehicle  xpathLinkContains  NA  MOT  0  Click Vechicle breadcrumbs link found thoughout the reason for rejection screens
+MOTReasonForRejectionVechicleBreadcrumbWAIT  wait  Vehicle  xpathLinkContains  NA  MOT  0  Wait for Vechicle breadcrumbs link found thoughout the reason for rejection screens
+MOTReasonForRejectionVechicleBreadcrumbCLICK  click  Vehicle  xpathLinkContains  NA  MOT  0  Click Vechicle breadcrumbs link found thoughout the reason for rejection screens
 MOTCanelTestButtonWAIT  wait  cancelMotTest  id  NA  MOT  0  Wait for cancel Test button, this cancels the MOT test
 MOTCanelTestButtonCLICK  click  cancelMotTest  id  NA  MOT  0  Click cancel Test button, this cancels the MOT test
 .  .  .  .  .  .  0  .
