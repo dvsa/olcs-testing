@@ -70,7 +70,7 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAddWAIT  wait
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  rfr-submit-8459  id  NA  MOT  0  click on Add button
 MOT  click  MOT  id  MOT  MOT  0  MOT
 MOT  click  MOT  id  MOT  MOT  0  Framework buttons and links
-.  .  .  .  .  .  .  .
+.  .  .  .  .  .  0  .
 MOTReasonForRejectionHeaderDoneButtonWAIT  wait  mot-header-details-rfr-done  id  NA  MOT  0  Wait for top right hand DONE button
 MOTReasonForRejectionHeaderDoneButtonCLICK  click  mot-header-details-rfr-done  id  NA  MOT  0  Click top right hand DONE button
 MOT  click  MOT  id  MOT  MOT  0  MOT
