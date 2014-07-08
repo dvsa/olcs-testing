@@ -52,7 +52,6 @@ MOTclickRejectVehiclesAfter1933FailTreadDepthDescAdd  click  rfr-submit-8394  id
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAddListed  click  rfrCount  id  NA  MOT  3000  Click Listed failures Style to see information that was just keyed in about the reason for fail
 MOTclickReasonForRejectionDoneWAIT  wait  reason-for-rejection-done  id  NA  MOT  2000  Wait for button on reason for rejection
 MOTclickReasonForRejectionDone  click  reason-for-rejection-done  id  NA  MOT  2000  Click Done button on reason for rejection
-MOTclickRejectLampsReflectors  click  Lamps, Reflectors and Electrical Equipment  xpathLinkContains  NA  MOT  0  Click Lamps, Reflectors and Electrical Equipment in the Reasons for rejection
 MOTclickRejectLampsReflectorsHeadlampAimWAIT  wait  Headlamp aim  xpathLinkContains  NA  MOT  0  Wait for Headlamp aim in the Reasons for rejection
 MOTclickRejectLampsReflectorsHeadlampAim  click  Headlamp aim  xpathLinkContains  NA  MOT  0  Click Headlamp aim in the Reasons for rejection
 MOTclickRejectLampsReflectorsHeadlampAimLeftWAIT  wait  fail-rfr-8901  id  NA  MOT  0  Wait for too high and too far to the left button
@@ -61,8 +60,6 @@ MOTclickRejectLampsReflectorsHeadlampAimLeftDescWAIT  wait  description-8901  id
 MOTclickRejectLampsReflectorsHeadlampAimLeftDesc  standardKeys  description-8901  id  The headlight aim is too far to the left  MOT  0  Enter description for reason of fail
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAddWAIT  wait  rfr-submit-8901  id  NA  MOT  0  Wait for Add button to submit fail description
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAdd  click  rfr-submit-8901  id  NA  MOT  0  Click Add button to submit fail description
-MOTclickReasonForRejectionBodyWAIT  wait  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Wait for Body, Structure and General Items in the Reasons for rejection
-MOTclickReasonForRejectionBody  click  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Click Body, Structure and General Items in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyConditionWAIT  wait  Body condition  xpathLinkContains  NA  MOT  0  Wait for Body condition in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyCondition  click  Body condition  xpathLinkContains  NA  MOT  0  Click Body condition in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILWAIT  wait  fail-rfr-8459  id  NA  MOT  0  Wait for or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
@@ -71,3 +68,35 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescWAIT  wait  d
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDesc  standardKeys  description-8459  id  chassis has an unsatisfactory modification  MOT  0  Enter Description
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAddWAIT  wait  rfr-submit-8459  id  NA  MOT  0  Wait for Add button
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  rfr-submit-8459  id  NA  MOT  0  click on Add button
+MOT  MOT  MOT  MOT  MOT  MOT MOT MOT
+MOT  MOT  MOT  MOT  MOT  MOT MOT Reasons for rejection screen
+MOTReasonForRejectionBodyStructureGeneralItemsWAIT  wait  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Wait for Body, Structure and General Items button
+MOTReasonForRejectionBodyStructureGeneralItemsCLICK  click  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Click Body, Structure and General Items button
+MOTReasonForRejectionBrakesWAIT  wait  Brakes  xpathLinkContains  NA  MOT  0  Wait for Brakes button
+MOTReasonForRejectionBrakesCLICK  click  Brakes  xpathLinkContains  NA  MOT  0  Click Brakes button
+MOTReasonForRejectionDriversViewRoadWAIT  wait  Drivers View of the Road  xpathLinkContains  NA  MOT  0  Wait for Drivers View of the Road button
+MOTReasonForRejectionDriversViewRoadCLICK  click  Drivers View of the Road  xpathLinkContains  NA  MOT  0  Click Drivers View of the Road button
+MOTReasonForRejectionDrivingControlsSpeedLimitersWAIT  wait  Driving Controls and Speed Limiters  xpathLinkContains  NA  MOT  0  Wait for Driving Controls and Speed Limiters button
+MOTReasonForRejectionDrivingControlsSpeedLimitersCLICK  click  Driving Controls and Speed Limiters  xpathLinkContains  NA  MOT  0  Click Driving Controls and Speed Limiters button
+MOTReasonForRejectionExhaustFuelEmissionsWAIT  wait  Exhaust, Fuel and Emissions  xpathLinkContains  NA  MOT  0  Wait for Exhaust, Fuel and Emissions button
+MOTReasonForRejectionExhaustFuelEmissionsCLICK  click  Exhaust, Fuel and Emissions  xpathLinkContains  NA  MOT  0  Click Exhaust, Fuel and Emissions button
+MOTReasonForRejectionLampsReflectorsElectricalEquipmentWAIT  wait  Lamps, Reflectors and Electrical Equipment  xpathLinkContains  NA  MOT  0  Wait for Lamps, Reflectors and Electrical Equipment button
+MOTReasonForRejectionLampsReflectorsElectricalEquipmentCLICK  click  Lamps, Reflectors and Electrical Equipment  xpathLinkContains  NA  MOT  0  Click Lamps, Reflectors and Electrical Equipment button
+MOTReasonForRejectionMotorTricyclesQuadricyclesWAIT  wait  Motor tricycles and quadricycles  xpathLinkContains  NA  MOT  0  Wait for Motor tricycles and quadricycles button
+MOTReasonForRejectionMotorTricyclesQuadricyclesCLICK  click  Motor tricycles and quadricycles  xpathLinkContains  NA  MOT  0  CLick Motor tricycles and quadricycles button
+MOTReasonForRejectionNonComponentAdvisoriesWAIT  wait  Non-component advisories  xpathLinkContains  NA  MOT  0  Wait for Non component advisories button
+MOTReasonForRejectionNonComponentAdvisoriesCLICK  click  Non-component advisories  xpathLinkContains  NA  MOT  0  Click Non component advisories  button
+MOTReasonForRejectionRegistrationPlatesVinWAIT  wait  Registration Plates and VIN  xpathLinkContains  NA  MOT  0  Wait for Registration Plates and VIN button
+MOTReasonForRejectionRegistrationPlatesVinCLICK  click  Registration Plates and VIN  xpathLinkContains  NA  MOT  0  Click Registration Plates and VIN button
+MOTReasonForRejectionRoadWheelsWAIT  wait  Road Wheels  xpathLinkContains  NA  MOT  0  Wait for Road Wheels button
+MOTReasonForRejectionRoadWheelsCLICK  click  Road Wheels  xpathLinkContains  NA  MOT  0  Click Road Wheels button
+MOTReasonForRejectionSeatBeltsSupplementaryRestraintSystemsWAIT  wait  Seat Belts and Supplementary Restraint Systems  xpathLinkContains  NA  MOT  0  Wait for Seat Belts and Supplementary Restraint Systems button
+MOTReasonForRejectionSeatBeltsSupplementaryRestraintSystemsCLICK  click  Seat Belts and Supplementary Restraint Systems  xpathLinkContains  NA  MOT  0  Click Seat Belts and Supplementary Restraint Systems button
+MOTReasonForRejectionSteeringWAIT  wait  Steering  xpathLinkContains  NA  MOT  0  Wait for Steering button
+MOTReasonForRejectionSteeringCLICK  click  Steering  xpathLinkContains  NA  MOT  0  Click Steering button
+MOTReasonForRejectionSuspensionWAIT  wait  Suspension  xpathLinkContains  NA  MOT  0  Wait for Suspension button
+MOTReasonForRejectionSuspensionCLICK  click  Suspension  xpathLinkContains  NA  MOT  0  Click Suspension button
+MOTReasonForRejectionTowbarsWAIT  wait  Towbars  xpathLinkContains  NA  MOT  0  Wait for Towbars button
+MOTReasonForRejectionTowbarsCLICK  click  Towbars  xpathLinkContains  NA  MOT  0  Click Towbars button
+MOTReasonForRejectionTyresWAIT  wait  Tyres  xpathLinkContains  NA  MOT  0  Wait for Tyres button
+MOTReasonForRejectionTyresCLICK  click  Tyres  xpathLinkContains  NA  MOT  0  Click Tyres button
