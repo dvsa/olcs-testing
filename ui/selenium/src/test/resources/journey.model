@@ -50,8 +50,8 @@ MOTclickRejectVehiclesAfter1933FailTreadDepth  click  fail-rfr-8394  id  NA  MOT
 MOTclickRejectVehiclesAfter1933FailTreadDepthDesc  standardKeys  description-8394  id  Near side tyre below 1.6mm tread  MOT  0  Enter description for reason of fail
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAdd  click  rfr-submit-8394  id  NA  MOT  0  Click Add button to submit fail description
 MOTclickRejectVehiclesAfter1933FailTreadDepthDescAddListed  click  rfrCount  id  NA  MOT  3000  Click Listed failures Style to see information that was just keyed in about the reason for fail
-MOTclickReasonForRejectionDoneWAIT  wait  reason-for-rejection-done  id  NA  MOT  0  Wait for button on reason for rejection
-MOTclickReasonForRejectionDone  click  reason-for-rejection-done  id  NA  MOT  0  Click Done button on reason for rejection
+MOTclickReasonForRejectionDoneWAIT  wait  reason-for-rejection-done  id  NA  MOT  2000  Wait for button on reason for rejection
+MOTclickReasonForRejectionDone  click  reason-for-rejection-done  id  NA  MOT  2000  Click Done button on reason for rejection
 MOTclickRejectLampsReflectors  click  Lamps, Reflectors and Electrical Equipment  xpathLinkContains  NA  MOT  0  Click Lamps, Reflectors and Electrical Equipment in the Reasons for rejection
 MOTclickRejectLampsReflectorsHeadlampAimWAIT  wait  Headlamp aim  xpathLinkContains  NA  MOT  0  Wait for Headlamp aim in the Reasons for rejection
 MOTclickRejectLampsReflectorsHeadlampAim  click  Headlamp aim  xpathLinkContains  NA  MOT  0  Click Headlamp aim in the Reasons for rejection
