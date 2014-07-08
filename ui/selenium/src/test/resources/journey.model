@@ -100,3 +100,5 @@ MOTReasonForRejectionTowbarsWAIT  wait  Towbars  xpathLinkContains  NA  MOT  0  
 MOTReasonForRejectionTowbarsCLICK  click  Towbars  xpathLinkContains  NA  MOT  0  Click Towbars button
 MOTReasonForRejectionTyresWAIT  wait  Tyres  xpathLinkContains  NA  MOT  0  Wait for Tyres button
 MOTReasonForRejectionTyresCLICK  click  Tyres  xpathLinkContains  NA  MOT  0  Click Tyres button
+MOTReasonForRejectionHeaderDoneButtonWAIT  wait  mot-header-details-rfr-done  id  NA  MOT  0  Wait for top right hand DONE button
+MOTReasonForRejectionHeaderDoneButtonCLICK  click  mot-header-details-rfr-done  id  NA  MOT  0  Click top right hand DONE button
