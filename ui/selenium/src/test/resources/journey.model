@@ -122,3 +122,12 @@ MOTReasonForRejectionTowbarsWAIT  wait  Towbars  xpathLinkContains  NA  MOT  0  
 MOTReasonForRejectionTowbarsCLICK  click  Towbars  xpathLinkContains  NA  MOT  0  Click Towbars button
 MOTReasonForRejectionTyresWAIT  wait  Tyres  xpathLinkContains  NA  MOT  0  Wait for Tyres button
 MOTReasonForRejectionTyresCLICK  click  Tyres  xpathLinkContains  NA  MOT  0  Click Tyres button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Reasons for rejection screen -> Body, Structure and General Items
+.  .  .  .  .  .  0  .
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionWAIT  wait  Body condition  xpathLinkContains  NA  MOT  0  Wait for Body condition button
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCLICK  click  Body condition  xpathLinkContains  NA  MOT  0  Click Body condition button
+MOTReasonForRejectionBodyStructureGeneralItemsBodySecurityyConditionWAIT  wait  Body security  xpathLinkContains  NA  MOT  0  Wait for Body security button
+MOTReasonForRejectionBodyStructureGeneralItemsBodySecurityyConditionCLICK  click  Body security  xpathLinkContains  NA  MOT  0  Click Body security button
+MOTReasonForRejectionBodyStructureGeneralItemsDoorsWAIT  wait  Doors  xpathLinkContains  NA  MOT  0  Wait for Doors button
+MOTReasonForRejectionBodyStructureGeneralItemsDoorsCLICK  click  Doors  xpathLinkContains  NA  MOT  0  Click Doors button
