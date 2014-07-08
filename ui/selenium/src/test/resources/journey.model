@@ -61,8 +61,6 @@ MOTclickRejectLampsReflectorsHeadlampAimLeftDescWAIT  wait  description-8901  id
 MOTclickRejectLampsReflectorsHeadlampAimLeftDesc  standardKeys  description-8901  id  The headlight aim is too far to the left  MOT  0  Enter description for reason of fail
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAddWAIT  wait  rfr-submit-8901  id  NA  MOT  0  Wait for Add button to submit fail description
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAdd  click  rfr-submit-8901  id  NA  MOT  0  Click Add button to submit fail description
-MOTclickReasonForRejectionDoneWAIT2  wait  reason-for-rejection-done  id  NA  MOT  5000  Wait for button on reason for rejection
-MOTclickReasonForRejectionDone2  click  reason-for-rejection-done  id  NA  MOT  5000  Click Done button on reason for rejection
 MOTclickReasonForRejectionBodyWAIT  wait  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Wait for Body, Structure and General Items in the Reasons for rejection
 MOTclickReasonForRejectionBody  click  Body, Structure and General Items  xpathLinkContains  NA  MOT  0  Click Body, Structure and General Items in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyConditionWAIT  wait  Body condition  xpathLinkContains  NA  MOT  0  Wait for Body condition in the Reasons for rejection
