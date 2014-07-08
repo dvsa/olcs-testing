@@ -82,13 +82,13 @@ MOTCanelTestButtonCLICK  click  cancelMotTest  id  NA  MOT  0  Click cancel Test
 .  .  .  .  .  .  0  .
 MOTReasonsToCancelTestAbortedByVEWAIT  wait  reasonForCancel2  id  NA  MOT  0  Wait for Aborted By VE checkbox
 MOTReasonsToCancelTestAbortedByVECLICK  click  reasonForCancel2  id  NA  MOT  0  Click Aborted By VE checkbox
-MOTReasonsToCancelTestAbortedByVEWAIT  wait  mot_test_cancel_confirm  id  NA  MOT  0  Wait for Confirm button
-MOTReasonsToCancelTestAbortedByVECLICK  click  mot_test_cancel_confirm  id  NA  MOT  0  Click Confirm button
+MOTReasonsToCancelTestConfirmWAIT  wait  mot_test_cancel_confirm  id  NA  MOT  0  Wait for Confirm button
+MOTReasonsToCancelTestConfirmCLICK  click  mot_test_cancel_confirm  id  NA  MOT  0  Click Confirm button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  MOT test aborted screen
 .  .  .  .  .  .  0  .
-MOTReasonsToCancelTestAbortedByVEWAIT  wait  cancel_test_result  id  NA  MOT  0  Wait for Finish button
-MOTReasonsToCancelTestAbortedByVECLICK  click  cancel_test_result  id  NA  MOT  0  Click Finish button
+MOTMotTestAbortedFinishWAIT  wait  cancel_test_result  id  NA  MOT  0  Wait for Finish button
+MOTMotTestAbortedFinishCLICK  click  cancel_test_result  id  NA  MOT  3000  Click Finish button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Reasons for rejection screen
 .  .  .  .  .  .  0  .
