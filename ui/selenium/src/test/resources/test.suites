@@ -5,4 +5,5 @@ MOT-ST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root
 MOT-FAIL-TYRE  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-FAIL-HEADLIGHT-AIM  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-FAIL-BODY  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-MOT-REASONS-FOR-REJECTION-TOUCH-ALL  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
+MOT-REASONS-FOR-REJECTION-TOUCH-ALL  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+MOT-PURCHASE-SLOT  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
