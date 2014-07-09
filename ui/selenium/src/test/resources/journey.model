@@ -208,7 +208,8 @@ MOTpurchaseSlotEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Ent
 MOTpurchaseSlotSelectPaymentMethodCLICK  click  select-payment-method  id  NA  MOT  0  Click on Select payment method
 MOTpurchaseSlotBuySlotsCLICK  click  buy-slots  id  NA  MOT  0  Click on Buy slots
 MOTpurchaseSlotEnterCardholderName  standardKeys  cardholderName  id  Joe Bloggs  MOT  0  Enter the card holders name
-MOTpurchaseSlotEnterCardNumber  standardKeys  cardNumber  id  1111222233334444  MOT  0  Enter the card number
+MOTpurchaseSlotEnterCardNumberPASS  standardKeys  cardNumber  id  1111222233334444  MOT  0  Enter the card number that will pass the test
+MOTpurchaseSlotEnterCardNumberFAIL  standardKeys  cardNumber  id  4012888888881881  MOT  0  Enter the card number that will fail the test
 MOTpurchaseSlotEnterCardNumberExpMonth  standardKeys  expireyMonth  id  10  MOT  0  Enter the card expiry month
 MOTpurchaseSlotEnterCardNumberExpYear  standardKeys  expireyYear  id  2015  MOT  0  Enter the card expiry year
 MOTpurchaseSlotEnterCardNumberStartMonth  standardKeys  startMonth  id  10  MOT  0  Enter the card start month
