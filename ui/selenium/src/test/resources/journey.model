@@ -215,5 +215,5 @@ MOTpurchaseSlotEnterCardNumberStartMonth  standardKeys  startMonth  id  10  MOT 
 MOTpurchaseSlotEnterCardNumberStartYear  standardKeys  startYear  id  2011  MOT  0  Enter the card start year
 MOTpurchaseSlotEnterCardSecuirtyCode  standardKeys  securityCode  id  123  MOT  0  Enter the card secuirty code
 MOTpurchaseSlotPayNowCLICK  click  submitbutton  id  NA  MOT  0  Click Pay Now
-MOTpurchaseSlotBackToHomeCLICK  click  Back to home  xpathLinkContains  NA  MOT  2000  Click Back to home
+MOTpurchaseSlotBackToDashboardCLICK  click  back-to-dashboard  id  NA  MOT  2000  Click Back to dashboard
 MOTpurchaseSlotLogoutCLICK  click  logout  id  NA  MOT  3000  Click logout
