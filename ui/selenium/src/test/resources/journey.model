@@ -150,34 +150,46 @@ MOTReasonForRejectionBodyStructureGeneralItemsVehicleStructureCLICK  click  Vehi
 .  .  .  .  .  .  0  .
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationPrsWAIT  wait  prs-rfr-8459  id  NA  MOT  0  Wait for PRS button, or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationPrsCLICK  click  prs-rfr-8459  id  NA  MOT  0  Click PRS button, or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationPrsDescription  standardKeys  description-8459  id  Unsatisfactory modification (Description 8459)  MOT  0  Enter PRS description for chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationPrsDescriptionDangerous  click  dangerous  id  NA  MOT  0  Checkbox failure is dangerous for chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationPrsDescriptionAdd  click  rfr-submit-8459  id  NA  MOT  0  Add PRS for chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationPrsDescriptionClose  click  rfr-cancel-8459  id  NA  MOT  0  Close PRS for chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationFailWAIT  wait  fail-rfr-8459  id  NA  MOT  0  Wait for FAIL button, or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationFailCLICK  click  fail-rfr-8459  id  NA  MOT  0  Click FAIL button, or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionAdvisoryWAIT  wait  advisory-rfr-8460  id  NA  MOT  0  Wait for Advisory button, or chassis has excessive corrosion, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionAdvisoryCLICK  click  advisory-rfr-8460  id  NA  MOT  0  Click Advisory button, or chassis has excessive corrosion, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionPrsWAIT  wait  prs-rfr-8460  id  NA  MOT  0  Wait for PRS button, or chassis has excessive corrosion, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionPrsCLICK  click  prs-rfr-8460  id  NA  MOT  0  Click PRS button, or chassis has excessive corrosion, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionFailWAIT  wait  fail-rfr-8460  id  NA  MOT  0  Wait for FAIL button, or chassis has excessive corrosion, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionFailCLICK  click  fail-rfr-8460  id  NA  MOT  0  Click FAIL button, or chassis has excessive corrosion, seriously affecting its strength within 30cm of the body mountings
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionDamagedPrsWAIT  wait  prs-rfr-8461  id  NA  MOT  0  Wait for PRS button, or chassis is damaged, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionDamagedPrsCLICK  click  prs-rfr-8461  id  NA  MOT  0  Click PRS button, or chassis is damaged, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionDamagedFailWAIT  wait  fail-rfr-8461  id  NA  MOT  0  Wait for FAIL button, or chassis is damaged, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionDamagedFailCLICK  click  fail-rfr-8461  id  NA  MOT  0  Click FAIL button, or chassis is damaged, seriously affecting its strength within 30cm of the body mountings
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCrackedPrsWAIT  wait  prs-rfr-8462  id  NA  MOT  0  Wait for PRS button, or chassis is cracked, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCrackedPrsCLICK  click  prs-rfr-8462  id  NA  MOT  0  Click PRS button, or chassis is cracked, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCrackedFailWAIT  wait  fail-rfr-8462  id  NA  MOT  0  Wait for FAIL button, or chassis is cracked, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCrackedFailCLICK  click  fail-rfr-8462  id  NA  MOT  0  Click FAIL button, or chassis is cracked, seriously affecting its strength within 30cm of the body mountings
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionRepairPrsWAIT  wait  prs-rfr-8463  id  NA  MOT  0  Wait for PRS button, or chassis has an inadequate repair, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionRepairPrsCLICK  click  prs-rfr-8463  id  NA  MOT  0  Click PRS button, or chassis has an inadequate repair, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionRepairFailWAIT  wait  fail-rfr-8463  id  NA  MOT  0  Wait for FAIL button, or chassis has an inadequate repair, seriously affecting its strength within 30cm of the body mountings
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionRepairFailCLICK  click  fail-rfr-8463  id  NA  MOT  0  Click FAIL button, or chassis has an inadequate repair, seriously affecting its strength within 30cm of the body mountings
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpCorrosionPrsWAIT  wait  prs-rfr-8455  id  NA  MOT  0  Wait for Prs button, or has a sharp edge caused by corrosion
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpCorrosionPrsCLICK  click  prs-rfr-8455  id  NA  MOT  0  Click Prs button, or has a sharp edge caused by corrosion
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpCorrosionFailWAIT  wait  fail-rfr-8455  id  NA  MOT  0  Wait for FAIL button, or has a sharp edge caused by corrosion
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpCorrosionFailCLICK  click  fail-rfr-8455  id  NA  MOT  0  Click FAIL button, or has a sharp edge caused by corrosion
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpDamagePrsWAIT  wait  prs-rfr-8456  id  NA  MOT  0  Wait for PRS button, has a sharp edge caused by damage
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpDamagePrsCLICK  click  prs-rfr-8456  id  NA  MOT  0  Click PRS button, has a sharp edge caused by damage
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpDamageFailWAIT  wait  fail-rfr-8456  id  NA  MOT  0  Wait for FAIL button, has a sharp edge caused by damage
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionSharpDamageFailCLICK  click  fail-rfr-8456  id  NA  MOT  0  Click FAIL button, has a sharp edge caused by damage
+
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionCorrosionPrsWAIT  wait  prs-rfr-8457  id  NA  MOT  0  Wait for PRS button, has a projection caused by corrosion
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionCorrosionPrsCLICK  click  prs-rfr-8457  id  NA  MOT  0  CLick PRS button, has a projection caused by corrosion
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageFailWAIT  wait  fail-rfr-8458  id  NA  MOT  0  Wait for FAIL button, has a projection caused by corrosion
