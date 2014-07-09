@@ -3,7 +3,7 @@
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Start Selfserve Application
 OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click Continue button
-OLCSSelfserveBackButtonCLICK  click  back id  NA  OLCS  0  Click 'Back' button
+OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click 'Back' button
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
