@@ -136,7 +136,7 @@ MOTReasonForRejectionBodyStructureGeneralItemsDoorsCLICK  click  Doors  xpathLin
 MOTReasonForRejectionBodyStructureGeneralItemsEngineMountingsWAIT  wait  Engine mountings  xpathLinkContains  NA  MOT  0  Wait for Engine mountings button
 MOTReasonForRejectionBodyStructureGeneralItemsEngineMountingsCLICK  click  Engine mountings  xpathLinkContains  NA  MOT  0  Click Engine mountings button
 MOTReasonForRejectionBodyStructureGeneralItemsLoadSecurityWAIT  wait  Load security  xpathLinkContains  NA  MOT  0  Wait for Load security button
-MOTReasonForRejectionBodyStructureGeneralItemsLoadSecurityCLICK  wait  Load security  xpathLinkContains  NA  MOT  0  Click Load security button
+MOTReasonForRejectionBodyStructureGeneralItemsLoadSecurityCLICK  click  Load security  xpathLinkContains  NA  MOT  0  Click Load security button
 MOTReasonForRejectionBodyStructureGeneralItemsSeatsWAIT  wait  Seats  xpathLinkContains  NA  MOT  0  Wait for Seats button
 MOTReasonForRejectionBodyStructureGeneralItemsSeatsCLICK  click  Seats  xpathLinkContains  NA  MOT  0  Click Seats button
 MOTReasonForRejectionBodyStructureGeneralItemsSpareWheelWAIT  wait  Spare wheel  xpathLinkContains  NA  MOT  0  Wait for Spare wheel button
@@ -194,3 +194,25 @@ MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionCorrosionPr
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionCorrosionPrsCLICK  click  prs-rfr-8457  id  NA  MOT  0  CLick PRS button, has a projection caused by corrosion
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageFailWAIT  wait  fail-rfr-8458  id  NA  MOT  0  Wait for FAIL button, has a projection caused by corrosion
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageFailCLICK  click  fail-rfr-8458  id  NA  MOT  0  Click FAIL button, has a projection caused by damage
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Purchase MOT Slots, includes login information and jump to URL as no link is supplied in the menu system
+.  .  .  .  .  .  0  .
+MOTpurchaseSlotStart  start  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm/login  MOT  10000  Start MOT Application to purchase slots
+MOTpurchaseSlotloginUser  standardKeys  username  inputName  aedm  MOT  0  login using tester1
+MOTpurchaseSlotloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
+MOTpurchaseSlotloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
+MOTpurchaseSlotExaminerStart  start  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm/authorised-examiner  MOT  0  Jump to authorised examiner menu as no link currently exists on the login menu
+MOTpurchaseSlot10CLICK  click  10  xpathLinkContains  NA  MOT  0  Click Ref 10 from the table currently shows as Crazy Wheel Inc
+MOTpurchaseSlotAddSlotsCLICK  click  Add slots  xpathLinkContains  NA  MOT  0  Click on Add slots
+MOTpurchaseSlotEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
+MOTpurchaseSlotSelectPaymentMethodCLICK  click  select-payment-method  id  NA  MOT  0  Click on Select payment method
+MOTpurchaseSlotBuySlotsCLICK  click  buy-slots  id  NA  MOT  0  Click on Buy slots
+MOTpurchaseSlotEnterCardholderName  standardKeys  cardholderName  id  Joe Bloggs  MOT  0  Enter the card holders name
+MOTpurchaseSlotEnterCardNumber  standardKeys  cardNumber  id  4012888888881881  MOT  0  Enter the card number
+MOTpurchaseSlotEnterCardNumberExpMonth  standardKeys  expireyMonth  id  10  MOT  0  Enter the card expiry month
+MOTpurchaseSlotEnterCardNumberExpYear  standardKeys  expireyYear  id  2015  MOT  0  Enter the card expiry year
+MOTpurchaseSlotEnterCardNumberStartMonth  standardKeys  startMonth  id  10  MOT  0  Enter the card start month
+MOTpurchaseSlotEnterCardNumberStartYear  standardKeys  startYear  id  2011  MOT  0  Enter the card start year
+MOTpurchaseSlotEnterCardSecuirtyCode  standardKeys  securityCode  id  123  MOT  0  Enter the card secuirty code
+MOTpurchaseSlotPayNowCLICK  click  submitbutton  id  NA  MOT  0  Click Pay Now
+MOTpurchaseSlotBackToHomeCLICK  click  Back to home  xpathLinkContains  NA  MOT  3000  Click Back to home
