@@ -17,12 +17,12 @@ OLCSSelfserveOperatorLocationNorthernIrelandCLICK  click  data[niFlag]  inputNam
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Operator Type
 .  .  .  .  .  .  0  .
-OLCSSelfserveOperatorTypeGoodsCLICK  click  goodsOrPsv id  NA  OLCS  0  Click 'Goods' radio button
+OLCSSelfserveOperatorTypeGoodsCLICK  click  goodsOrPsv  id  NA  OLCS  0  Click 'Goods' radio button
 OLCSSelfserveOperatorTypePsvCLICK  click  data[goodsOrPsv]  inputName  NA  OLCS  0  Click 'PSV' radio button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Licence Type
 .  .  .  .  .  .  0  .
-OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType id  NA  OLCS  0  Click 'Restricted' radio button
+OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType  id  NA  OLCS  0  Click 'Restricted' radio button
 OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard National' radio button
 OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard International' radio button
 .  .  .  .  .  .  0  .
