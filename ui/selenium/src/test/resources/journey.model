@@ -1,7 +1,48 @@
-startSelfserve  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Start Selfserve Application
-clickApplyForNewLicence  click  Start new application  linkText  NA  OLCS  0  Click 'Start new application' link
-waitGreatBritain  wait  Great Britain  xpathLabelContains  NA  OLCS  0  Wait for 'Great Britain' label
-clickGreatBritain  click  Great Britain  xpathLabelContains  NA  OLCS  0  Click 'Great Britain' label
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
+.  .  .  .  .  .  0  .
+OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Start Selfserve Application
+OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click Continue button
+OLCSSelfserveBackButtonCLICK  click  back id  NA  OLCS  0  Click 'Back' button
+OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Dashboard
+.  .  .  .  .  .  0  .
+OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Click 'Start new application' button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Operator Location
+.  .  .  .  .  .  0  .
+OLCSSelfserveOperatorLocationGreatBritainCLICK  click  niFlag  id  NA  OLCS  0  Click 'Great Britain' radio button
+OLCSSelfserveOperatorLocationNorthernIrelandCLICK  click  data[niFlag]  inputName  NA  OLCS  0  Click 'Northern Ireland' radio button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Operator Type
+.  .  .  .  .  .  0  .
+OLCSSelfserveOperatorTypeGoodsCLICK  click  goodsOrPsv id  NA  OLCS  0  Click 'Goods' radio button
+OLCSSelfserveOperatorTypePsvCLICK  click  data[goodsOrPsv]  inputName  NA  OLCS  0  Click 'PSV' radio button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Licence Type
+.  .  .  .  .  .  0  .
+OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType id  NA  OLCS  0  Click 'Restricted' radio button
+OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard National' radio button
+OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard International' radio button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Your Business
+.  .  .  .  .  .  0  .
+OLCSSelfserveYourBusinessBusinessTypeWhatType  click  organisationType  id  NA  OLCS  0  Drop down 'What business are you?'
+OLCSSelfserveYourBusinessBusinessBusinessDetails  standardKeys  data[companyNumber][company_number]  inputName  12345678  OLCS  0  Registered Compnay number field
+OLCSSelfserveYourBusinessBusinessTypeFindCompanyCLICK  click  data[companyNumber][submit_lookup_company]  inputName  NA  OLCS  0  Find Company button
+OLCSSelfserveYourBusinessBusinessDetailsCompanyName  standardKeys  name  id  John Smith Haulage Ltd  OLCS  0  Company name text field
+OLCSSelfserveYourBusinessBusinessDetailsTradingNames0  standardKeys  data[tradingNames][trading_name][0][text]  inputName  John Jones Haulage  OLCS  0  Trading names (optional) text field
+OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCLICK  click  data[tradingNames][submit_add_trading_name]  inputName  NA  OLCS  0  Add Another button
+OLCSSelfserveYourBusinessAddressesPostCode  standardKeys  correspondence_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
+OLCSSelfserveYourBusinessAddressesFindAddressCLICK  click  correspondence_address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
+OLCSSelfserveYourBusinessAddressesAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
+OLCSSelfserveYourBusinessAddressesAddressDropDownSelectButtonCLICK  click  correspondence_address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  .
 waitNextButton  wait  submit  id  NA  OLCS  0  Wait for 'Next' button (using id: submit)
 clickNextButton  click  submit  id  NA  OLCS  0  Click 'Next' button (using id: submit)
 waitGoods  wait  Goods  xpathLabelContains  NA  OLCS  0  Wait for 'Goods' label
