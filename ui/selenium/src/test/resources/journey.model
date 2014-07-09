@@ -201,7 +201,7 @@ MOTpurchaseSlotStart  start  username  inputName  http://mot-web-frontend.motqa-
 MOTpurchaseSlotloginUser  standardKeys  username  inputName  aedm  MOT  0  login using tester1
 MOTpurchaseSlotloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
 MOTpurchaseSlotloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
-MOTpurchaseSlotExaminerStart  url  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm/authorised-examiner  MOT  1000  Jump to authorised examiner menu as no link currently exists on the login menu
+MOTpurchaseSlotExaminerStart  url  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm/authorised-examiner  MOT  2000  Jump to authorised examiner menu as no link currently exists on the login menu
 MOTpurchaseSlot10CLICK  click  10  xpathLinkContains  NA  MOT  0  Click Ref 10 from the table currently shows as Crazy Wheel Inc
 MOTpurchaseSlotAddSlotsCLICK  click  Add slots  xpathLinkContains  NA  MOT  0  Click on Add slots
 MOTpurchaseSlotEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
@@ -217,4 +217,5 @@ MOTpurchaseSlotEnterCardNumberStartYear  standardKeys  startYear  id  2011  MOT 
 MOTpurchaseSlotEnterCardSecuirtyCode  standardKeys  securityCode  id  123  MOT  0  Enter the card secuirty code
 MOTpurchaseSlotPayNowCLICK  click  submitbutton  id  NA  MOT  2000  Click Pay Now
 MOTpurchaseSlotBackToDashboardCLICK  click  back-to-dashboard  id  NA  MOT  2000  Click Back to dashboard
+MOTpurchaseSlotBackToHomeCLICK  click  Back to home  xpathLinkContains  NA  MOT  2000  Click Back to dashboard
 MOTpurchaseSlotLogoutCLICK  click  logout  id  NA  MOT  3000  Click logout
