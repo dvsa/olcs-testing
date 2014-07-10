@@ -46,7 +46,7 @@ OLCSSelfserveYourBusinessAddressesFaxPhoneNumber  standardKeys  phone_fax  id  3
 OLCSSelfserveYourBusinessAddressesEmailAddress  standardKeys  email  id  user@email.com  OLCS  0  Enter email address
 OLCSSelfserveYourBusinessAddressesRegisteredOfficePostCode  standardKeys  registered_office_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Registered office Post Code Search text field
 OLCSSelfserveYourBusinessAddressesRegisteredOfficeFindAddressCLICK  click  registered_office_address[searchPostcode][search]  inputName  NA  OLCS  0  Registered office find Address button
-OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the Registered office drop down address picker
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDown  standardKeys  registered_office_address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the Registered office drop down address picker
 OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLICK  click  registered_office_address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select Registered office address in the drop down
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Operating Centres
