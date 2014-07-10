@@ -81,8 +81,6 @@ OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderPostCode  standardKeys  a
 OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
 OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
 OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
-
-
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
