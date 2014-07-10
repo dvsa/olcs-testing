@@ -2,9 +2,10 @@
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Start Selfserve Application
-OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click Continue button
+OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continue' button / can also be the 'Save' button
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click 'Back' button
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
+OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operating centre
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
@@ -38,7 +39,50 @@ OLCSSelfserveYourBusinessAddressesPostCode  standardKeys  correspondence_address
 OLCSSelfserveYourBusinessAddressesFindAddressCLICK  click  correspondence_address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
 OLCSSelfserveYourBusinessAddressesAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
 OLCSSelfserveYourBusinessAddressesAddressDropDownSelectButtonCLICK  click  correspondence_address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
+OLCSSelfserveYourBusinessAddressesBusinessPhoneNumber  standardKeys  phone_business  id  0123456789  OLCS  0  Enter Business telphone number
+OLCSSelfserveYourBusinessAddressesHomePhoneNumber  standardKeys  phone_home  id  1234567890  OLCS  0  Enter Home telephone number
+OLCSSelfserveYourBusinessAddressesMobilePhoneNumber  standardKeys  phone_mobile  id  2345678901  OLCS  0  Enter Mobile telephone number
+OLCSSelfserveYourBusinessAddressesFaxPhoneNumber  standardKeys  phone_fax  id  3456789012  OLCS  0  Enter Fax telephone number
+OLCSSelfserveYourBusinessAddressesEmailAddress  standardKeys  email  id  user@email.com  OLCS  0  Enter email address
+OLCSSelfserveYourBusinessAddressesRegisteredOfficePostCode  standardKeys  registered_office_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Registered office Post Code Search text field
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeFindAddressCLICK  click  registered_office_address[searchPostcode][search]  inputName  NA  OLCS  0  Registered office find Address button
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the Registered office drop down address picker
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLICK  click  registered_office_address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select Registered office address in the drop down
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Operating Centres
+.  .  .  .  .  .  0  .
+OLCSSelfserveOperatingCentresTotalVehicles  standardKeys  totAuthVehicles  id  5  OLCS  0  Enter the total amount of vehicles
+OLCSSelfserveOperatingCentresTotalTrailers  standardKeys  totAuthTrailers  id  5  OLCS  0  Enter the total amount of trailers
+.  .  .  .  .  .  0  Operating Centres -> Add Operating Centre
+OLCSSelfserveOperatingCentresAddOperatingCentrePostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
+OLCSSelfserveOperatingCentresAddOperatingCentreFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
+OLCSSelfserveOperatingCentresAddOperatingCentreAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
+OLCSSelfserveOperatingCentresAddOperatingCentreAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
+OLCSSelfserveOperatingCentresAddOperatingCentreTotalVehicles  standardKeys  numberOfVehicles  id  5  OLCS  0  Enter the total amount of vehicles
+OLCSSelfserveOperatingCentresAddOperatingCentreTotalTrailers  standardKeys  numberOfTrailers  id  5  OLCS  0  Enter the total amount of trailers
+OLCSSelfserveOperatingCentresAddOperatingCentreParkingCLICK  click  sufficientParking  id  NA  OLCS  0  Checkbox, I have enough parking spaces available...
+OLCSSelfserveOperatingCentresAddOperatingCentrePermissionCLICK  click  permission  id  NA  OLCS  0  Checkbox, I am either the site owner or have permission...
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Vechicle & Safety
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Vechicle & Safety -> Add vehicle
+OLCSSelfserveVechicleSafetyAddVehicleVRM  standardKeys  vrm  id  VRM1  OLCS  0  Enter a vehicle registration mark
+OLCSSelfserveVechicleSafetyAddVehiclePlatedWeight  standardKeys  platedWeight  id  750  OLCS  0  Enter a vehicle gross plated weight in KG
+.  .  .  .  .  .  0  Vechicle & Safety -> Safety inspections
+OLCSSelfserveVechicleSafetySafetyInspectionsMaxTimeVehicleDropDown  standardKeys  safetyInsVehicles  id  1  OLCS  0  Maximum time between vechile safety inspections drop down
+OLCSSelfserveVechicleSafetySafetyInspectionsMaxTimeTrailerDropDown  standardKeys  safetyInsTrailers  id  1  OLCS  0  Maximum time between trailer safety inspections drop down
+OLCSSelfserveVechicleSafetySafetyInspectionsFreqYES  click  safetyInsVaries  id  NA  OLCS  0  Are some of your vehicles or trailers inspected more frequently than the interval stated above?
+OLCSSelfserveVechicleSafetySafetyInspectionsTachYourself  click  tachographIns  id  NA  OLCS  0  Who analyses your tachograph records? Yourself or another employee of the business holding the operator's licence
+OLCSSelfserveVechicleSafetySafetyInspectionsConfirm  click  safetyConfirmation  id  NA  OLCS  0  Please confirm that you have suitable arrangements in place to keep the vehicles you wish to use in a fit and serviceable condition at all times
+.  .  .  .  .  .  0  Vechicle & Safety -> Safety inspections -> Add safety inspection provider
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderYour  click  isExternal  id  NA  OLCS  0  Who will carry out the safety inspections? Yourself or another employee of the business holding the operator's licence
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderContractorsName  standardKeys  fao  id  Joe Bloggs  OLCS  0  Contractor's name or person's full name if performed internally
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderPostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
+
+
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
