@@ -38,7 +38,7 @@ OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCLICK  click  data[tradingName
 OLCSSelfserveYourBusinessAddressesPostCode  standardKeys  correspondence_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
 OLCSSelfserveYourBusinessAddressesFindAddressCLICK  click  correspondence_address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
 OLCSSelfserveYourBusinessAddressesAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
-OLCSSelfserveYourBusinessAddressesAddressDropDownSelectButtonCLICK  click  correspondence_address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
+OLCSSelfserveYourBusinessAddressesAddressDropDownSelectButtonCLICK  click  correspondence_address[searchPostcode][select]  inputName  NA  OLCS  0  Select button to select address in the drop down
 OLCSSelfserveYourBusinessAddressesBusinessPhoneNumber  standardKeys  phone_business  id  0123456789  OLCS  0  Enter Business telphone number
 OLCSSelfserveYourBusinessAddressesHomePhoneNumber  standardKeys  phone_home  id  1234567890  OLCS  0  Enter Home telephone number
 OLCSSelfserveYourBusinessAddressesMobilePhoneNumber  standardKeys  phone_mobile  id  2345678901  OLCS  0  Enter Mobile telephone number
