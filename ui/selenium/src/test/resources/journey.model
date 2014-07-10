@@ -6,7 +6,7 @@ OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continu
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click 'Back' button
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operating centre
-OLCSSelfserveRightArrow  specialKeys  NA  NA  &rarr;  OLCS  10000  Right arrow presses
+OLCSSelfserveRightArrow  specialKeys  NA  id  &rarr;  OLCS  10000  Right arrow presses
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
