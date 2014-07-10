@@ -6,6 +6,7 @@ OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continu
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click 'Back' button
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operating centre
+OLCSSelfserveRightArrow  specialKeys  NA  NA  &rarr;  OLCS  10000  Right arrow presses
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
@@ -47,7 +48,7 @@ OLCSSelfserveYourBusinessAddressesEmailAddress  standardKeys  email  id  user@em
 OLCSSelfserveYourBusinessAddressesRegisteredOfficePostCode  standardKeys  registered_office_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Registered office Post Code Search text field
 OLCSSelfserveYourBusinessAddressesRegisteredOfficeFindAddressCLICK  click  registered_office_address[searchPostcode][search]  inputName  NA  OLCS  0  Registered office find Address button
 OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDown  standardKeys  registered_office_address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the Registered office drop down address picker
-OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLICK  click  registered_office_address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select Registered office address in the drop down
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLICK  click  registered_office_address[searchPostcode][select]  inputName  NA  OLCS  0  Select button to select Registered office address in the drop down
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Operating Centres
 .  .  .  .  .  .  0  .
@@ -57,7 +58,7 @@ OLCSSelfserveOperatingCentresTotalTrailers  standardKeys  totAuthTrailers  id  5
 OLCSSelfserveOperatingCentresAddOperatingCentrePostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
 OLCSSelfserveOperatingCentresAddOperatingCentreFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
 OLCSSelfserveOperatingCentresAddOperatingCentreAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
-OLCSSelfserveOperatingCentresAddOperatingCentreAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
+OLCSSelfserveOperatingCentresAddOperatingCentreAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  0  Select button to select address in the drop down
 OLCSSelfserveOperatingCentresAddOperatingCentreTotalVehicles  standardKeys  numberOfVehicles  id  5  OLCS  0  Enter the total amount of vehicles
 OLCSSelfserveOperatingCentresAddOperatingCentreTotalTrailers  standardKeys  numberOfTrailers  id  5  OLCS  0  Enter the total amount of trailers
 OLCSSelfserveOperatingCentresAddOperatingCentreParkingCLICK  click  sufficientParking  id  NA  OLCS  0  Checkbox, I have enough parking spaces available...
@@ -80,7 +81,12 @@ OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderContractorsName  standard
 OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderPostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
 OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
 OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
-OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  10000  Select button to select address in the drop down
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  0  Select button to select address in the drop down
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Previous history -> Financial history
+.  .  .  .  .  .  0  .
+OLCSSelfservePreviousHistoryFinancialHistoryYES  click  bankrupt  id  NA  OLCS  0  Declared bankrupt or had their estate seized or confiscated?
+
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
