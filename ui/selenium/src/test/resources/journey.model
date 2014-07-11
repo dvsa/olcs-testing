@@ -126,8 +126,7 @@ startMOT  start  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm
 MOTloginUser  standardKeys  username  inputName  tester1  MOT  0  login using tester1
 MOTloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
 MOTloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
-MOTgoToMOTtesting  click  motTestingLink  id  NA  MOT  0  Click Go to MOT Testing link
-MOTstartMOTtest  click  start_mot_test_btn  id  NA  MOT  0  Click Start MOT Test
+MOTstartMOTtest  click  action-start_mot_test_btn  id  NA  MOT  0  Click Start MOT Test
 MOTenterReg  standardKeys  reg-input  id  GGG455  MOT  0  Enter Reg number
 MOTenterReg2  standardKeys  reg-input  id  UK045  MOT  0  Enter Reg number
 MOTenterVin  standardKeys  vin-input  id  1M6GDM9AXKP042766  MOT  0  Enter vin number
