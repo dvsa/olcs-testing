@@ -422,7 +422,7 @@ MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageDescr
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageFailureDangerous  click  dangerous  id  NA  MOT  0  Checkbox failure is dangerous
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageAdd  click  rfr-submit-8458  id  NA  MOT  0  Add Button
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageClose  click  rfr-cancel-8458  id  NA  MOT  0  Close Link
-.  .  .  .  .  .  0  Reasons for rejection screen -> Body, Structure and General Items -> #####
+.  .  .  .  .  .  0  Reasons for rejection screen -> Body, Structure and General Items -> next
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Purchase MOT Slots, includes login information and jump to URL as no link is supplied in the menu system
