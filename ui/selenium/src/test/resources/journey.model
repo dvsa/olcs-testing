@@ -292,8 +292,8 @@ MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionVerticalUppe
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionVerticalLower  standardKeys  vertical-dd-8460  id  l  MOT  0  Drop down Vertical -> Lower
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionVerticalInner  standardKeys  vertical-dd-8460  id  i  MOT  0  Drop down Vertical -> Inner
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionVerticalOuter  standardKeys  vertical-dd-8460  id  o  MOT  0  Drop down Vertical -> Outer
-MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionDescription  standardKeys  description-8460  id  Description 8460  MOT  0  Description Box
-MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionFailureDangerous  click  dangerous  id  NA  MOT  0  Checkbox failure is dangerous
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionDescription  standardKeys  description-8460  id  Description 8460  MOT  3000  Description Box
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionFailureDangerous  click  dangerous  id  NA  MOT  3000  Checkbox failure is dangerous
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionAdd  click  rfr-submit-8460  id  NA  MOT  0  Add Button
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionCorrosionClose  click  rfr-cancel-8460  id  NA  MOT  0  Close Link
 .  .  .  .  .  .  0  .
