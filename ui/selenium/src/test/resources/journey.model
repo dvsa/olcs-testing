@@ -6,7 +6,6 @@ OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continu
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click 'Back' button
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operating centre
-OLCSSelfserveRightArrow  specialKeys  add  id  Keys.ARROW_RIGHT  OLCS  0  Send right arrow key event
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
@@ -86,6 +85,7 @@ OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDownSelectButt
 .  .  .  .  .  .  0  Previous history -> Financial history
 .  .  .  .  .  .  0  .
 OLCSSelfservePreviousHistoryFinancialHistoryBankruptYES  click  bankrupt  id  NA  OLCS  0  Declared bankrupt or had their estate seized or confiscated?
+OLCSSelfserveRightArrow  specialKeys  bankrupt  id  Keys.ARROW_RIGHT  OLCS  0  Send right arrow key event
 OLCSSelfservePreviousHistoryFinancialHistoryLiquidationYES  click  liquidation  id  NA  OLCS  0  Involved with a company, or business, that has gone into (or is going into) liquidation, owing money?
 OLCSSelfservePreviousHistoryFinancialHistoryReceivershipYES  click  receivership  id  NA  OLCS  0  Involved with a company, or business, that has gone into (or is going into) receivership?
 OLCSSelfservePreviousHistoryFinancialHistoryAdministrationYES  click  administration  id  NA  OLCS  0  Involved with a company, or business, that has gone into (or is going into) administration?
