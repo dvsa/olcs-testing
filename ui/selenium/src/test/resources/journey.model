@@ -272,7 +272,7 @@ MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationVerticalU
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationVerticalLower  standardKeys  vertical-dd-8459  id  l  MOT  0  Drop down Vertical -> Lower
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationVerticalInner  standardKeys  vertical-dd-8459  id  i  MOT  0  Drop down Vertical -> Inner
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationVerticalOuter  standardKeys  vertical-dd-8459  id  o  MOT  0  Drop down Vertical -> Outer
-MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationDescription  standardKeys  description-8459  id  Description 8459
+MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationDescription  standardKeys  description-8459  id  Description 8459  MOT  0  Description Box
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationFailureDangerous  click  dangerous  id  NA  MOT  0  Checkbox failure is dangerous
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationAdd  click  rfr-submit-8459  id  NA  MOT  0  Add Button
 MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionModificationClose  click  rfr-cancel-8459  id  NA  MOT  0  Close Link
