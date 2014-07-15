@@ -154,7 +154,7 @@ MOTenterParkingBrakeOS  standardKeys  parkingBrakeEffortOffside  id  100  MOT  0
 MOTsubmitBrakeTest  click  brake_test_results_submit  id  NA  MOT  0  Click submit
 MOTclickSummaryDone  click  brake_test_summary_done  id  NA  MOT  0  Click Done
 MOTclickCreateCert  click  createCertificate  id  NA  MOT  0  Click Review
-MOTenterOneTimePass  standardKeys  oneTimePassword  id  1234567890  MOT  0  Enter pass code
+MOTenterOneTimePass  standardKeys  oneTimePassword  id  123456  MOT  0  Enter pass code
 MOTclickFinTest  click  confirm_test_result  id  NA  MOT  0  Click Finish Test and Complete
 MOTclickBackToUserHome  click  quit  id  NA  MOT  3000  Click Back to User Home
 MOTclickFailPRS  click  add_rfr_button  id  NA  MOT  0  Click Failures, PRS and advisories button
