@@ -197,6 +197,43 @@ MOTCanelTestButtonWAIT  wait  cancelMotTest  id  NA  MOT  0  Wait for cancel Tes
 MOTCanelTestButtonCLICK  click  cancelMotTest  id  NA  MOT  0  Click cancel Test button, this cancels the MOT test
 MOTPrintDocumentsCLICK  click  reprint-certificate  id  NA  MOT  15000  Print documents button at the end of an MOT test
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Home / Menu screen
+.  .  .  .  .  .  0  .
+MOTHomeRetestLink  click  action-start-mot-retest  id  NA  MOT  0  Click on re-test a previous vehicle link
+MOTHomeReplacementCertificateLink  click  action-start-mot-retest  id  NA  MOT  0  Click on replacement/duplicate certificate link
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Vehicle Search - retest screen
+.  .  .  .  .  .  0  .
+MOTvehicleSearchRetestRegistrationNumber  standardKeys  reg-input  id  GGG455  MOT  0  Enter registration number
+MOTvehicleSearchRetestVinSelect  standardKeys  vin-type-select  id  N  MOT  0  Select Vin / No Vin
+MOTvehicleSearchRetestSearchButton  click  vehicle-search  id  N  MOT  0  Search for vehicle button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Vehicle Confirmation - screen
+.  .  .  .  .  .  0  .
+MOTvehicleConfirmationConfirmButton  click  vehicle-search  id  N  MOT  0  Confirm Vehicle button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Duplicate or replacement certificate - screen
+.  .  .  .  .  .  0  .
+MOTduplicateCertificateEditButton  click  Edit xpathLinkContains  NA  MOT  0  Click Edit button using xpath as ID may change
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Replacement certificate update - screen
+.  .  .  .  .  .  0  .
+MOTreplacementCertificateUpdateButton  click  updateCertificate  id  NA  MOT  0  Click Review changes button
+MOTreplacementCertificateEditOdometerButton  click  dashboard-section-toggler-odometer  id  NA  MOT  0  Click Edit button to add in mileage
+MOTreplacementCertificateEnterMilesBS  standardKeys  odometer  id  \b  MOT  0  Add an extra 1 to the mileage
+MOTreplacementCertificateEnterMiles  standardKeys  odometer  id  1  MOT  0  Add an extra 1 to the mileage
+MOTreplacementCertificateSubmitMileagebutton  click  section-odometer-submit  id  NA  MOT  0  Click Submit button to save mileage
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Replacement certificate review - screen
+.  .  .  .  .  .  0  .
+MOTReplacementCertificateReviewenterOneTimePass  standardKeys  oneTimePassword  id  123456  MOT  0  Enter pass code
+MOTReplacementCertificateReviewFinishPrint click  confirm_and_print  id  NA  MOT  0  Click Finish changes and print certificate
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Test results updated - screen
+.  .  .  .  .  .  0  .
+MOTReplacementCertificateTestResultsUpdatedPrint click  print  id  NA  MOT  5000  Click Print button on the Test Results Updated Successfully screen
+MOTReplacementCertificateTestResultsUpdatedDone click  print  id  NA  MOT  5000  Click Done button on the Test Results Updated Successfully screen
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Reasons to cancel test screen
 .  .  .  .  .  .  0  .
 MOTReasonsToCancelTestAbortedByVEWAIT  wait  reasonForCancel2  id  NA  MOT  0  Wait for Aborted By VE checkbox
