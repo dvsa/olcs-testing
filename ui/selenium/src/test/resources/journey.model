@@ -214,7 +214,7 @@ MOTvehicleConfirmationConfirmButton  click  vehicle-search  id  N  MOT  0  Confi
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Duplicate or replacement certificate - screen
 .  .  .  .  .  .  0  .
-MOTduplicateCertificateEditButton  click  Edit  xpathLinkContains  NA  MOT  0  Click Edit button using xpath as ID may change
+MOTduplicateCertificateEditButton  click  Edit  xpathLabelContains  NA  MOT  0  Click Edit button using xpath as ID may change
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Replacement certificate update - screen
 .  .  .  .  .  .  0  .
