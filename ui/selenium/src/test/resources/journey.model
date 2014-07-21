@@ -200,7 +200,7 @@ MOTPrintDocumentsCLICK  click  reprint-certificate  id  NA  MOT  15000  Print do
 .  .  .  .  .  .  0  Home / Menu screen
 .  .  .  .  .  .  0  .
 MOTHomeRetestLink  click  action-start-mot-retest  id  NA  MOT  0  Click on re-test a previous vehicle link
-MOTHomeReplacementCertificateLink  click  action-start-mot-retest  id  NA  MOT  0  Click on replacement/duplicate certificate link
+MOTHomeReplacementCertificateLink  click  action-start-certificate-reissue  id  NA  MOT  0  Click on replacement/duplicate certificate link
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Vehicle Search - retest screen
 .  .  .  .  .  .  0  .
