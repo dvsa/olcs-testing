@@ -227,7 +227,7 @@ MOTreplacementCertificateSubmitMileagebutton  click  section-odometer-submit  id
 .  .  .  .  .  .  0  Replacement certificate review - screen
 .  .  .  .  .  .  0  .
 MOTReplacementCertificateReviewenterOneTimePass  standardKeys  oneTimePassword  id  123456  MOT  0  Enter pass code
-MOTReplacementCertificateReviewFinishPrint click  confirm_and_print  id  NA  MOT  0  Click Finish changes and print certificate
+MOTReplacementCertificateReviewFinishPrint  click  confirm_and_print  id  NA  MOT  0  Click Finish changes and print certificate
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Test results updated - screen
 .  .  .  .  .  .  0  .
