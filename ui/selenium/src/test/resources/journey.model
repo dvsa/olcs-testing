@@ -175,7 +175,7 @@ MOTclickRejectLampsReflectorsHeadlampAimLeft  click  fail-rfr-8901  id  NA  MOT 
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescWAIT  wait  description-8901  id  NA  MOT  0  Wait for Enter description for reason of fail
 MOTclickRejectLampsReflectorsHeadlampAimLeftDesc  standardKeys  description-8901  id  The headlight aim is too far to the left  MOT  0  Enter description for reason of fail
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAddWAIT  wait  rfr-submit-8901  id  NA  MOT  0  Wait for Add button to submit fail description
-MOTclickRejectLampsReflectorsHeadlampAimLeftDescAdd  click  rfr-submit-8901  id  NA  MOT  0  Click Add button to submit fail description
+MOTclickRejectLampsReflectorsHeadlampAimLeftDescAdd  click  rfr-submit-8901  id  NA  MOT  3000  Click Add button to submit fail description
 MOTclickReasonForRejectionBodyBodyConditionWAIT  wait  Body condition  xpathLinkContains  NA  MOT  0  Wait for Body condition in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyCondition  click  Body condition  xpathLinkContains  NA  MOT  0  Click Body condition in the Reasons for rejection
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILWAIT  wait  fail-rfr-8459  id  NA  MOT  0  Wait for or chassis has an unsatisfactory modification, seriously affecting its strength within 30cm of the body mountings
