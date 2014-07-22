@@ -13,6 +13,6 @@ MOT-2627-NoVehicleWeight  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-r
 MOT-2627  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-2821  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-2628  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-MOT-2629-1  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+MOT-2629-1  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
 MOT-2629-2  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-MOT-2629-3  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
+MOT-2629-3  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
