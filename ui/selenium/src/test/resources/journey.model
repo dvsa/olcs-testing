@@ -221,6 +221,7 @@ MOTduplicateCertificateEditButton  click  edit-2220  id  NA  MOT  0  TEMP FIX Cl
 .  .  .  .  .  .  0  .
 MOTreplacementCertificateUpdateButton  click  updateCertificate  id  NA  MOT  0  Click Review changes button
 MOTreplacementCertificateEditOdometerButton  click  dashboard-section-toggler-odometer  id  NA  MOT  0  Click Edit button to add in mileage
+MOTreplacementCertificateEnterMilesClick  click  odometer  id  NA  MOT  0  Click odometer
 MOTreplacementCertificateEnterMilesBS  specialKeys  odometer  id  BACK_SPACE  MOT  0  Add an extra 1 to the mileage
 MOTreplacementCertificateEnterMiles  standardKeys  odometer  id  1  MOT  0  Add an extra 1 to the mileage
 MOTreplacementCertificateSubmitMileagebutton  click  section-odometer-submit  id  NA  MOT  0  Click Submit button to save mileage
