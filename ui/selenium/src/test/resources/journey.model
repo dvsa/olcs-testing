@@ -227,7 +227,7 @@ MOTreplacementCertificateUpdateButton  click  updateCertificate  id  NA  MOT  0 
 MOTreplacementCertificateEditOdometerButton  click  dashboard-section-toggler-odometer  id  NA  MOT  0  Click Edit button to add in mileage
 MOTreplacementCertificateEnterMilesClick  click  odometer  id  NA  MOT  0  Click odometer
 MOTreplacementCertificateEnterMilesDelKey  specialKeys  odometer  id  DELETE  MOT  0  Add an extra 1 to the mileage
-MOTreplacementCertificateEnterMiles  standardKeys  odometer  id  2  MOT  0  Add an extra 1 to the mileage
+MOTreplacementCertificateEnterMiles  standardKeys  odometer  id  3  MOT  0  Add an extra 1 to the mileage
 MOTreplacementCertificateSubmitMileagebutton  click  section-odometer-submit  id  NA  MOT  0  Click Submit button to save mileage
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Replacement certificate review - screen
