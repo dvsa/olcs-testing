@@ -176,6 +176,7 @@ MOTclickRejectLampsReflectorsHeadlampAimLeftWAIT  wait  fail-rfr-8901  id  NA  M
 MOTclickRejectLampsReflectorsHeadlampAimLeft  click  fail-rfr-8901  id  NA  MOT  0  Click too high and too far to the left
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescWAIT  wait  description-8901  id  NA  MOT  0  Wait for Enter description for reason of fail
 MOTclickRejectLampsReflectorsHeadlampAimLeftDesc  standardKeys  description-8901  id  The headlight aim is too far to the left  MOT  0  Enter description for reason of fail
+MOTclickRejectLampsReflectorsHeadlampAimLeftDangerous  click  dangerous  id  NA  MOT  0  Click failure is dangerous
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAddWAIT  wait  rfr-submit-8901  id  NA  MOT  0  Wait for Add button to submit fail description
 MOTclickRejectLampsReflectorsHeadlampAimLeftDescAdd  click  rfr-submit-8901  id  NA  MOT  3000  Click Add button to submit fail description
 MOTclickReasonForRejectionBodyBodyConditionWAIT  wait  Body condition  xpathLinkContains  NA  MOT  0  Wait for Body condition in the Reasons for rejection
