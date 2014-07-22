@@ -238,7 +238,7 @@ MOTReplacementCertificateReviewFinishPrint  click  confirm_and_print  id  NA  MO
 .  .  .  .  .  .  0  Test results updated - screen
 .  .  .  .  .  .  0  .
 MOTReplacementCertificateTestResultsUpdatedPrint  click  print  id  NA  MOT  10000  Click Print button on the Test Results Updated Successfully screen
-MOTReplacementCertificateTestResultsUpdatedDone  click  print  id  NA  MOT  10000  Click Done button on the Test Results Updated Successfully screen
+MOTReplacementCertificateTestResultsUpdatedDone  click  quit  id  NA  MOT  10000  Click Done button on the Test Results Updated Successfully screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Reasons to cancel test screen
 .  .  .  .  .  .  0  .
