@@ -144,7 +144,7 @@ MOTsubmitMileage  click  odometer_submit  id  NA  MOT  0  Click Submit button
 MOTaddBrakeTest  click  addBrakeTestResults  id  NA  MOT  0  Click Add for Brake Test
 MOTclickVSI  click  weightType-vsi  id  NA  MOT  0  Click VSI
 MOTenterVehicleWeightDelClick  click  vehicleWeight  id  NA  MOT  0  Click Vechicle Weight
-MOTenterVehicleWeightDelKey  specialKeys  vehicleWeight  id  DELETE MOT 0 presses delete key
+MOTenterVehicleWeightDelKey  specialKeys  vehicleWeight  id  DELETE  MOT 0 presses delete key
 MOTenterVehicleWeight  standardKeys  vehicleWeight  id  0  MOT  0  Enter Vechicle Weight
 MOTbrakeConfigTestNext  click  brake_test_results_submit  id  NA  MOT  0  Click Next
 MOTenterBrakeAxleNS1  standardKeys  serviceBrakeEffortNearsideAxle1  id  440  MOT  0  Enter service brake effort NS axle 1
