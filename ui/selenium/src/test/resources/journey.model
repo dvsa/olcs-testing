@@ -128,7 +128,7 @@ clickRestricted  click  Restricted  xpathLabelContains  NA  OLCS  0  Click 'Rest
 waitPleaseSelect  wait  business-type  id  NA  OLCS  0  Wait for 'Please Select' (using id: business-type)
 selectRegisteredCompany  select  business-type  id  org_type.rc,value  NA  0  Select 'Please Select' -> 'Registered Company' (using id: business-type, using value: org_type.rc)
 startMOT  start  username  inputName  http://mot-web-frontend.motdv-ap01.mot.npm/login  MOT  10000  Start MOT Application
-MOTloginUser  standardKeys  username  inputName  tester5  MOT  0  login using tester1
+MOTloginUser  standardKeys  username  inputName  tester2  MOT  0  login using tester1
 MOTloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
 MOTloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
 MOTstartMOTtest  click  action-start-mot-test  id  NA  MOT  0  Click Start MOT Test
