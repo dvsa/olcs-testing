@@ -9,6 +9,6 @@ MOT-FAIL-BODY  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenki
 MOT-REASONS-FOR-REJECTION-TOUCH-ALL  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-PURCHASE-SLOT-PASS  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-PURCHASE-SLOT-FAIL  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-MOT-2627  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-2627-NoVehicleWeight  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+MOT-2627  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-2821  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
