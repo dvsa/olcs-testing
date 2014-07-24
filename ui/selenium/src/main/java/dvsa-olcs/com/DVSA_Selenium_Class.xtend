@@ -43,6 +43,7 @@ def fetchElement(String tcByElement, String tcNameElement, RemoteWebDriver drive
     case (tcByElement == "cssSelector") : driver.findElement(By::cssSelector(tcNameElement +" > ul.multiselect > li > div > a"))
     case (tcByElement == "xpathLabelContains") : driver.findElement(By::xpath("//label[contains(.,'"+ tcNameElement +"')]/input"))
     case (tcByElement == "inputName") : driver.findElement(By::name(tcNameElement))
+    case (tcByElement == "xpath") : driver.findElement(By::xpath(tcNameElement))
     default : null
   }
   return resultElement
