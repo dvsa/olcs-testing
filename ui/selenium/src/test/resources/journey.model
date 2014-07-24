@@ -219,6 +219,7 @@ MOTvehicleConfirmationConfirmButton  click  vehicle-search  id  N  MOT  0  Confi
 .  .  .  .  .  .  0  .
 MOTduplicateCertificateEditButtonOLD  click  Edit  xpathLabelContains  NA  MOT  0  Click Edit button using xpath as ID may change
 MOTduplicateCertificateEditButton  click  edit-2230  id  NA  MOT  0  TEMP FIX Click Edit button using xpath as ID may change
+MOTduplicateCertificateEditButtonCS  click  btn btn-danger  className  NA  MOT  0  Click Edit button using className as ID may change
 MOTduplicateCertificateViewButton  click  View  xpathLinkContains  NA  MOT  0  Click View button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Replacement certificate update - screen
