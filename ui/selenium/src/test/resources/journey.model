@@ -477,7 +477,7 @@ MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageClose
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Purchase MOT Slots, includes login information and jump to URL as no link is supplied in the menu system
 .  .  .  .  .  .  0  .
-MOTpurchaseSlotStart  start  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm/login  MOT  10000  Start MOT Application to purchase slots
+MOTpurchaseSlotStart  start  username  inputName  http://mot-web-frontend.motpv-ap01.mot.npm/login  MOT  10000  Start MOT Application to purchase slots
 MOTpurchaseSlotloginUser  standardKeys  username  inputName  aedm  MOT  0  login using tester1
 MOTpurchaseSlotloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
 MOTpurchaseSlotloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
