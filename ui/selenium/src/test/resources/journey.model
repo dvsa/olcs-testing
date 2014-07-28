@@ -486,6 +486,7 @@ MOTpurchaseSlot10CLICK  click  10  xpathLinkContains  NA  MOT  0  Click Ref 10 f
 MOTpurchaseSlotBuySlotsCLICK  click  add-slots  id  NA  MOT  0  Click on Buy slots
 MOTpurchaseSlotEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
 MOTpurchaseSlotSelectPaymentMethodCLICK  click  select-payment-method  id  NA  MOT  0  Click on Select payment method
+MOTpurchaseSlotBuySlotsCLICK  click  buy-slots  id  NA  MOT  0  Click on Buy slots
 MOTpurchaseSlotEnterCardholderName  standardKeys  cardholderName  id  Joe Bloggs  MOT  0  Enter the card holders name
 MOTpurchaseSlotEnterCardNumberPASS  standardKeys  cardNumber  id  1111222233334444  MOT  0  Enter the card number that will pass the test
 MOTpurchaseSlotEnterCardNumberFAIL  standardKeys  cardNumber  id  4012888888881881  MOT  0  Enter the card number that will fail the test
