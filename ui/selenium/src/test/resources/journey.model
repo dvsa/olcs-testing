@@ -484,6 +484,7 @@ MOTpurchaseSlotloginSubmit  click  submit  inputName  NA  MOT  0  Click login bu
 MOTpurchaseSlotManageAE  click  Manage AE  xpathLinkContains  NA  MOT  0  Click Manage AE Link
 MOTpurchaseSlot10CLICK  click  10  xpathLinkContains  NA  MOT  0  Click Ref 10 from the table currently shows as Crazy Wheel Inc
 MOTpurchaseSlotBuySlotsCLICK  click  add-slots  id  NA  MOT  0  Click on Buy slots
+MOTpurchaseSlotBuySlotsCLICK  click  add-slots  id  NA  MOT  0  Click on Buy slots
 MOTpurchaseSlotEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
 MOTpurchaseSlotSelectPaymentMethodCLICK  click  select-payment-method  id  NA  MOT  0  Click on Select payment method
 MOTpurchaseSlotEnterCardholderName  standardKeys  cardholderName  id  Joe Bloggs  MOT  0  Enter the card holders name
