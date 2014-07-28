@@ -483,7 +483,7 @@ MOTpurchaseSlotloginPassword  standardKeys  password  inputName  t  MOT  0  logi
 MOTpurchaseSlotloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
 MOTpurchaseSlotExaminerStart  url  username  inputName  http://mot-web-frontend.motqa-ap01.mot.npm/authorised-examiner  MOT  2000  Jump to authorised examiner menu as no link currently exists on the login menu
 MOTpurchaseSlot10CLICK  click  10  xpathLinkContains  NA  MOT  0  Click Ref 10 from the table currently shows as Crazy Wheel Inc
-MOTpurchaseSlotAddSlotsCLICK  click  Add slots  xpathLinkContains  NA  MOT  0  Click on Add slots
+MOTpurchaseSlotBuySlotsCLICK  click  add-slots  id  NA  MOT  0  Click on Buy slots
 MOTpurchaseSlotEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
 MOTpurchaseSlotSelectPaymentMethodCLICK  click  select-payment-method  id  NA  MOT  0  Click on Select payment method
 MOTpurchaseSlotBuySlotsCLICK  click  buy-slots  id  NA  MOT  0  Click on Buy slots
