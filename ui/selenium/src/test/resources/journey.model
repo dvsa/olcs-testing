@@ -128,8 +128,6 @@ clickRestricted  click  Restricted  xpathLabelContains  NA  OLCS  0  Click 'Rest
 waitPleaseSelect  wait  business-type  id  NA  OLCS  0  Wait for 'Please Select' (using id: business-type)
 selectRegisteredCompany  select  business-type  id  org_type.rc,value  NA  0  Select 'Please Select' -> 'Registered Company' (using id: business-type, using value: org_type.rc)
 startMOT  start  username  inputName  http://mot-web-frontend.motpv-ap01.mot.npm/login  MOT  10000  Start MOT Application
-MOTloginUser  standardKeys  username  inputName  tester3  MOT  0  login using tester1
-MOTloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
 MOTloginSubmit  click  submit  inputName  NA  MOT  0  Click login button
 MOTstartMOTtest  click  action-start-mot-test  id  NA  MOT  0  Click Start MOT Test
 MOTenterReg  standardKeys  reg-input  id  GGG455  MOT  0  Enter Reg number
@@ -187,6 +185,13 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescWAIT  wait  d
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDesc  standardKeys  description-8459  id  chassis has an unsatisfactory modification  MOT  0  Enter Description
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAddWAIT  wait  rfr-submit-8459  id  NA  MOT  0  Wait for Add button
 MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  rfr-submit-8459  id  NA  MOT  0  click on Add button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Logins for MOT
+.  .  .  .  .  .  0  .
+MOTloginUser  standardKeys  username  inputName  tester3  MOT  0  login using tester1
+MOTloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
+MOTloginUserFT  standardKeys  username  inputName  ft-enf-tester  MOT  0  login using ft-enf-tester
+MOTloginPasswordFT  standardKeys  password  inputName  t  MOT  0  login using password t
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Framework buttons and links
 .  .  .  .  .  .  0  .
@@ -499,3 +504,26 @@ MOTpurchaseSlotPayNowCLICK  click  submitbutton  id  NA  MOT  2000  Click Pay No
 MOTpurchaseSlotBackToDashboardCLICK  click  back-to-dashboard  id  NA  MOT  2000  Click Back to dashboard
 MOTpurchaseSlotBackToHomeCLICK  click  Back to home  xpathLinkContains  NA  MOT  2000  Click Back to dashboard
 MOTpurchaseSlotLogoutCLICK  click  logout  id  NA  MOT  3000  Click logout
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Enforcement Homepage
+.  .  .  .  .  .  0  .
+MOTEnforcementHomepageRecordNonMotInspectionCLICK  click  Record Non-MOT Inspection  xpathLinkContains  NA  MOT  0  Click Record Non-MOT Inspection Link
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Enforcement Inspection Location Confirmation
+.  .  .  .  .  .  0  .
+MOTEnforcementInspectionLocationConfirmationSiteID  standardKeys  siteidentry  id  V1234  MOT  0  Enter V1234 into the site ID text field
+MOTEnforcementInspectionLocationConfirmationConfirmButton  click  confirm_selection_confirmation  id  NA  MOT  0  Click Confirm Location Button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Enforcement Vehicle Search - Non MOT Test
+.  .  .  .  .  .  0  .
+MOTEnforcementNonMotTestRegistrationNumber  standardKeys  reg-input  id  GGG455  MOT  0  Enter reg number into registration text field
+MOTEnforcementNonMotTestVinDropDown  standardKeys  vin-type-select  id  N  MOT  0  Select No Vin in the Vin drop down field
+MOTEnforcementNonMotTestSearchButton  click  vehicle-search  id  N  MOT  0  Click Search Button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Enforcement Vehicle Confirmation - Non MOT test
+.  .  .  .  .  .  0  .
+MOTEnforcementVehicleConfirmationConfirmButton  click  confirm_vehicle_confirmation  id  N  MOT  0  Click Confirm Vehicle button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Enforcement Non MOT test results entry
+.  .  .  .  .  .  0  .
+MOTEnforcementNonMotTestResultsEntryOdometerEdit  click  addOdometer  id  N  MOT  0  Click Edit button to enter in odometer reading
