@@ -8,7 +8,7 @@ OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  O
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operating centre
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
-.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  ..
 OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Click 'Start new application' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Operator Location
