@@ -480,7 +480,7 @@ MOTReasonForRejectionBodyStructureGeneralItemsBodyConditionProjectionDamageClose
 .  .  .  .  .  .  0  Reasons for rejection screen -> Body, Structure and General Items -> next
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Purchase MOT Slots, includes login information and jump to URL as no link is supplied in the menu system
+.  .  .  .  .  .  0  Purchase MOT Slots, includes login information
 .  .  .  .  .  .  0  .
 MOTpurchaseSlotStart  start  username  inputName  http://mot-web-frontend.motpv-ap01.mot.npm/login  MOT  10000  Start MOT Application to purchase slots
 MOTpurchaseSlotloginUser  standardKeys  username  inputName  aedm  MOT  0  login using tester1
@@ -490,8 +490,20 @@ MOTpurchaseSlotManageAE  click  Manage AE  xpathLinkContains  NA  MOT  0  Click 
 MOTpurchaseSlot10CLICK  click  10  xpathLinkContains  NA  MOT  0  Click Ref 10 from the table currently shows as Crazy Wheel Inc
 MOTpurchaseSlotBuySlotsCLICK  click  add-slots  id  NA  MOT  0  Click on Buy slots
 MOTpurchaseSlotBuySlotsBUTTON  click  buy-slots  id  NA  MOT  0  Click on Buy slots
-MOTpurchaseSlotEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
-MOTpurchaseSlotSelectPaymentMethodCLICK  click  select-payment-method  id  NA  MOT  0  Click on Select payment method
+MOTpurchaseSlotBackToDashboardCLICK  click  back-to-dashboard  id  NA  MOT  2000  Click Back to dashboard
+MOTpurchaseSlotBackToHomeCLICK  click  Back to home  xpathLinkContains  NA  MOT  2000  Click Back to dashboard
+MOTpurchaseSlotLogoutCLICK  click  logout  id  NA  MOT  3000  Click logout
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Purchase MOT Slots, Buy test slots screen
+.  .  .  .  .  .  0  .
+MOTpurchaseSlotBuyTestSlotsCard  click  card  id  NA  MOT  0  Click Card radio button on Buy Test Slots screen
+MOTpurchaseSlotBuyTestSlotsDirectDebit  click  Direct Debit  id  NA  MOT  0  Click Direct Debit radio button on Buy Test Slots screen
+MOTpurchaseSlotBuyTestSlotsSelectPaymentType  click  buy-slots  id  NA  MOT  0  Click sELECT pAYMENT tYPE bUTTON
+MOTpurchaseSlotBuyTestSlotsEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
+MOTpurchaseSlotBuyTestSlotsCompletePayment  click  select-payment-method  id  NA  MOT  0  Click on Complete payment button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Purchase MOT Slots, Card Payment Stub
+.  .  .  .  .  .  0  .
 MOTpurchaseSlotEnterCardholderName  standardKeys  cardholderName  id  Joe Bloggs  MOT  0  Enter the card holders name
 MOTpurchaseSlotEnterCardNumberPASS  standardKeys  cardNumber  id  4006000000000600  MOT  0  Enter the card number that will pass the test
 MOTpurchaseSlotEnterCardNumberFAIL  standardKeys  cardNumber  id  4012888888881881  MOT  0  Enter the card number that will fail the test
@@ -501,9 +513,6 @@ MOTpurchaseSlotEnterCardNumberStartMonth  standardKeys  startMonth  id  10  MOT 
 MOTpurchaseSlotEnterCardNumberStartYear  standardKeys  startYear  id  2011  MOT  0  Enter the card start year
 MOTpurchaseSlotEnterCardSecuirtyCode  standardKeys  securityCode  id  123  MOT  0  Enter the card secuirty code
 MOTpurchaseSlotPayNowCLICK  click  submitbutton  id  NA  MOT  2000  Click Pay Now
-MOTpurchaseSlotBackToDashboardCLICK  click  back-to-dashboard  id  NA  MOT  2000  Click Back to dashboard
-MOTpurchaseSlotBackToHomeCLICK  click  Back to home  xpathLinkContains  NA  MOT  2000  Click Back to dashboard
-MOTpurchaseSlotLogoutCLICK  click  logout  id  NA  MOT  3000  Click logout
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Enforcement Homepage
 .  .  .  .  .  .  0  .
