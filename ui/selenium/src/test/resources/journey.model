@@ -496,7 +496,7 @@ MOTpurchaseSlotLogoutCLICK  click  logout  id  NA  MOT  3000  Click logout
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Purchase MOT Slots, Buy test slots screen
 .  .  .  .  .  .  0  .
-MOTpurchaseSlotBuyTestSlotsCard  click  card  id  NA  MOT  0  Click Card radio button on Buy Test Slots screen
+MOTpurchaseSlotBuyTestSlotsCard  click  Card  id  NA  MOT  0  Click Card radio button on Buy Test Slots screen
 MOTpurchaseSlotBuyTestSlotsDirectDebit  click  Direct Debit  id  NA  MOT  0  Click Direct Debit radio button on Buy Test Slots screen
 MOTpurchaseSlotBuyTestSlotsSelectPaymentType  click  buy-slots  id  NA  MOT  0  Click sELECT pAYMENT tYPE bUTTON
 MOTpurchaseSlotBuyTestSlotsEnterAmountOfSlots  standardKeys  slotAmount  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
