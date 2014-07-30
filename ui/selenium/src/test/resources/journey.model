@@ -528,12 +528,12 @@ MOTEnforcementInspectionLocationConfirmationConfirmButton  click  confirm_select
 .  .  .  .  .  .  0  .
 MOTEnforcementNonMotTestRegistrationNumber  standardKeys  reg-input  id  GGG455  MOT  0  Enter reg number into registration text field
 MOTEnforcementNonMotTestVinDropDown  standardKeys  vin-type-select  id  N  MOT  0  Select No Vin in the Vin drop down field
-MOTEnforcementNonMotTestSearchButton  click  vehicle-search  id  N  MOT  0  Click Search Button
+MOTEnforcementNonMotTestSearchButton  click  vehicle-search  id  NA  MOT  0  Click Search Button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Enforcement Vehicle Confirmation - Non MOT test
 .  .  .  .  .  .  0  .
-MOTEnforcementVehicleConfirmationConfirmButton  click  confirm_vehicle_confirmation  id  N  MOT  0  Click Confirm Vehicle button
+MOTEnforcementVehicleConfirmationConfirmButton  click  confirm_vehicle_confirmation  id  NA  MOT  0  Click Confirm Vehicle button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Enforcement Non MOT test results entry
 .  .  .  .  .  .  0  .
-MOTEnforcementNonMotTestResultsEntryOdometerEdit  click  addOdometer  id  N  MOT  0  Click Edit button to enter in odometer reading
+MOTEnforcementNonMotTestResultsEntryOdometerEdit  click  addOdometer  id  NA  MOT  0  Click Edit button to enter in odometer reading
