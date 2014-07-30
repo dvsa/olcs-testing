@@ -501,6 +501,7 @@ MOTpurchaseSlotBuyTestSlotsDirectDebit  click  Direct Debit  id  NA  MOT  0  Cli
 MOTpurchaseSlotBuyTestSlotsSelectPaymentType  click  buy-slots  id  NA  MOT  0  Click sELECT pAYMENT tYPE bUTTON
 MOTpurchaseSlotBuyTestSlotsEnterAmountOfSlots  standardKeys  slots  id  25  MOT  0  Enter the amount of slot required, 25 slots entered into this field
 MOTpurchaseSlotBuyTestSlotsCompletePayment  click  select-payment-method  id  NA  MOT  0  Click on Complete payment button
+MOTpurchaseSlotBuyTestSlotsSelectDirectDebitStartDate  standardKeys  directDebitDate  inputName  2  MOT  0  Select Direct debit start date drop down
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Purchase MOT Slots, Card Payment Stub
 .  .  .  .  .  .  0  .
@@ -512,7 +513,7 @@ MOTpurchaseSlotEnterCardNumberExpYear  standardKeys  expiryYear  id  2015  MOT  
 MOTpurchaseSlotEnterCardNumberStartMonth  standardKeys  startMonth  id  10  MOT  0  Enter the card start month
 MOTpurchaseSlotEnterCardNumberStartYear  standardKeys  startYear  id  2011  MOT  0  Enter the card start year
 MOTpurchaseSlotEnterCardSecuirtyCode  standardKeys  securityCode  id  123  MOT  0  Enter the card secuirty code
-MOTpurchaseSlotPayNowCLICK  click  submitbutton  id  NA  MOT  2000  Click Pay Now
+MOTpurchaseSlotPayNowCLICK  click  submitButton  id  NA  MOT  2000  Click Pay Now
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Enforcement Homepage
 .  .  .  .  .  .  0  .
