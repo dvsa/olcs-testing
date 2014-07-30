@@ -514,26 +514,3 @@ MOTpurchaseSlotEnterCardNumberStartMonth  standardKeys  startMonth  id  10  MOT 
 MOTpurchaseSlotEnterCardNumberStartYear  standardKeys  startYear  id  2011  MOT  0  Enter the card start year
 MOTpurchaseSlotEnterCardSecuirtyCode  standardKeys  securityCode  id  123  MOT  0  Enter the card secuirty code
 MOTpurchaseSlotPayNowCLICK  click  submitButton  id  NA  MOT  2000  Click Pay Now
-.  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Enforcement Homepage
-.  .  .  .  .  .  0  .
-MOTEnforcementHomepageRecordNonMotInspectionCLICK  click  Record Non-MOT Inspection  xpathLinkContains  NA  MOT  0  Click Record Non-MOT Inspection Link
-.  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Enforcement Inspection Location Confirmation
-.  .  .  .  .  .  0  .
-MOTEnforcementInspectionLocationConfirmationSiteID  standardKeys  siteidentry  id  V1234  MOT  0  Enter V1234 into the site ID text field
-MOTEnforcementInspectionLocationConfirmationConfirmButton  click  confirm_selection_confirmation  id  NA  MOT  0  Click Confirm Location Button
-.  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Enforcement Vehicle Search - Non MOT Test
-.  .  .  .  .  .  0  .
-MOTEnforcementNonMotTestRegistrationNumber  standardKeys  reg-input  id  GGG455  MOT  0  Enter reg number into registration text field
-MOTEnforcementNonMotTestVinDropDown  standardKeys  vin-type-select  id  N  MOT  0  Select No Vin in the Vin drop down field
-MOTEnforcementNonMotTestSearchButton  click  vehicle-search  id  NA  MOT  0  Click Search Button
-.  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Enforcement Vehicle Confirmation - Non MOT test
-.  .  .  .  .  .  0  .
-MOTEnforcementVehicleConfirmationConfirmButton  click  confirm_vehicle_confirmation  id  NA  MOT  0  Click Confirm Vehicle button
-.  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Enforcement Non MOT test results entry
-.  .  .  .  .  .  0  .
-MOTEnforcementNonMotTestResultsEntryOdometerEdit  click  addOdometer  id  NA  MOT  0  Click Edit button to enter in odometer reading
