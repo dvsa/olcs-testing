@@ -555,6 +555,6 @@ MOTEnforcementNonMotTestResultsSubmitBrakeTest  click  brake_test_results_submit
 MOTEnforcementNonMotTestResultsClickSummaryDone  click  brake_test_summary_done  id  NA  MOT  0  Click Done
 MOTEnforcementNonMotTestResultsClickCreateCert  click  createCertificate  id  NA  MOT  0  Click Review
 MOTEnforcementNonMotTestResultsClickFinTest  click  confirm_test_result  id  NA  MOT  0  Click Finish Test and Complete
-MOTEnforcementNonMotTestResultsClickPrintDocuments  click  confirm_test_result  id  NA  MOT  5000  Click Print Documents
+MOTEnforcementNonMotTestResultsClickPrintDocuments  click  reprint-certificate  id  NA  MOT  5000  Click Print Documents
 MOTEnforcementNonMotTestResultsBackToUserHome  click  quit  id  NA  MOT  0  Click Back to user home link
 MOTEnforcementNonMotTestResultsSignOut  click  quit  id  NA  MOT  0  Click Sign Out
