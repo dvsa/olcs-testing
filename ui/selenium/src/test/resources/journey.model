@@ -204,6 +204,7 @@ MOTReasonForRejectionVechicleBreadcrumbCLICK  click  Vehicle  xpathLinkContains 
 MOTCanelTestButtonWAIT  wait  cancelMotTest  id  NA  MOT  0  Wait for cancel Test button, this cancels the MOT test
 MOTCanelTestButtonCLICK  click  cancelMotTest  id  NA  MOT  0  Click cancel Test button, this cancels the MOT test
 MOTPrintDocumentsCLICK  click  reprint-certificate  id  NA  MOT  15000  Print documents button at the end of an MOT test
+MOTsignOut  click  logout  id  NA  MOT  5000  Sign Out link at the top of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Home / Menu screen
 .  .  .  .  .  .  0  .
@@ -518,6 +519,11 @@ MOTpurchaseSlotPayNowCLICK  click  submitButton  id  NA  MOT  2000  Click Pay No
 .  .  .  .  .  .  0  Enforcement Homepage
 .  .  .  .  .  .  0  .
 MOTEnforcementHomepageRecordNonMotInspectionCLICK  click  Record Non-MOT Inspection  xpathLinkContains  NA  MOT  0  Click Record Non-MOT Inspection Link
+MOTEnforcementHomepageMotForms  click  MOT Forms  xpathLinkContains  NA  MOT  0  Click link to MOT Forms
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  MOT Forms
+.  .  .  .  .  .  0  .
+MOTEnforcementMotFormsVT29  click  VT29 Inspection Checklist  xpathLinkContains  NA  MOT  6000  Click link to VT29 Inspection Checklist
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Enforcement Inspection Location Confirmation
 .  .  .  .  .  .  0  .
@@ -557,4 +563,3 @@ MOTEnforcementNonMotTestResultsClickCreateCert  click  createCertificate  id  NA
 MOTEnforcementNonMotTestResultsClickFinTest  click  confirm_test_result  id  NA  MOT  0  Click Finish Test and Complete
 MOTEnforcementNonMotTestResultsClickPrintDocuments  click  reprint-certificate  id  NA  MOT  8000  Click Print Documents
 MOTEnforcementNonMotTestResultsReturnToHomepage  click  Return to Homepage  xpathLinkContains  NA  MOT  0  Click link to return user to the home page
-MOTEnforcementNonMotTestResultsSignOut  click  Sign out  xpathLinkContains  NA  MOT  0  Click Sign Out
