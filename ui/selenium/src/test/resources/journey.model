@@ -536,4 +536,25 @@ MOTEnforcementVehicleConfirmationConfirmButton  click  confirm_vehicle_confirmat
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Enforcement Non MOT test results entry
 .  .  .  .  .  .  0  .
-MOTEnforcementNonMotTestResultsEntryOdometerEdit  click  addOdometer  id  NA  MOT  0  Click Edit button to enter in odometer reading
+MOTEnforcementNonMotTestResultsOdometerEdit  click  addOdometer  id  NA  MOT  0  Click Edit button to enter in odometer reading
+MOTEnforcementNonMotTestResultsEnterMiles standardKeys odometer id 100000 MOT 0 Enter miles for enforcement
+MOTEnforcementNonMotTestResultsOdometerSubmit  click  odometer_submit  id  NA  MOT  0  Click Add button to enter brake results
+MOTEnforcementNonMotTestResultsAddBrakeTest  click  addBrakeTestResults  id  NA  MOT  0  Click Add for Brake Test
+MOTEnforcementNonMotTestResultsClickVSI  click  weightType-vsi  id  NA  MOT  0  Click VSI
+MOTEnforcementNonMotTestResultsEnterVehicleWeightDelClick  click  vehicleWeight  id  NA  MOT  0  Click Vechicle Weight
+MOTEnforcementNonMotTestResultsEnterVehicleWeightDelKey  specialKeys  vehicleWeight  id  DELETE  MOT  0  presses delete key
+MOTEnforcementNonMotTestResultsEnterVehicleWeight  standardKeys  vehicleWeight  id  1000  MOT  0  Enter Vechicle Weight
+MOTEnforcementNonMotTestResultsBrakeConfigTestNext  click  brake_test_results_submit  id  NA  MOT  0  Click Next
+MOTEnforcementNonMotTestResultsEnterBrakeAxleNS1  standardKeys  serviceBrakeEffortNearsideAxle1  id  440  MOT  0  Enter service brake effort NS axle 1
+MOTEnforcementNonMotTestResultsEnterBrakeAxleOS1  standardKeys  serviceBrakeEffortOffsideAxle1  id  440  MOT  0  Enter service brake effort OS axle 1
+MOTEnforcementNonMotTestResultsEnterBrakeAxleNS2  standardKeys  serviceBrakeEffortNearsideAxle2  id  200  MOT  0  Enter service brake effort NS axle 2
+MOTEnforcementNonMotTestResultsEnterBrakeAxleOS2  standardKeys  serviceBrakeEffortOffsideAxle2  id  200  MOT  0  Enter service brake effort OS axle 2
+MOTEnforcementNonMotTestResultsEnterParkingBrakeNS  standardKeys  parkingBrakeEffortNearside  id  100  MOT  0  Enter parking brake effort NS
+MOTEnforcementNonMotTestResultsEnterParkingBrakeOS  standardKeys  parkingBrakeEffortOffside  id  100  MOT  0  Enter parking brake effort OS
+MOTEnforcementNonMotTestResultsSubmitBrakeTest  click  brake_test_results_submit  id  NA  MOT  0  Click submit
+MOTEnforcementNonMotTestResultsClickSummaryDone  click  brake_test_summary_done  id  NA  MOT  0  Click Done
+MOTEnforcementNonMotTestResultsClickCreateCert  click  createCertificate  id  NA  MOT  0  Click Review
+MOTEnforcementNonMotTestResultsClickFinTest  click  confirm_test_result  id  NA  MOT  0  Click Finish Test and Complete
+MOTEnforcementNonMotTestResultsClickPrintDocuments  click  confirm_test_result  id  NA  MOT  5000  Click Print Documents
+MOTEnforcementNonMotTestResultsBackToUserHome  click  quit  id  NA  MOT  0  Click Back to user home link
+MOTEnforcementNonMotTestResultsSignOut  click  quit  id  NA  MOT  0  Click Sign Out
