@@ -537,7 +537,7 @@ MOTEnforcementVehicleConfirmationConfirmButton  click  confirm_vehicle_confirmat
 .  .  .  .  .  .  0  Enforcement Non MOT test results entry
 .  .  .  .  .  .  0  .
 MOTEnforcementNonMotTestResultsOdometerEdit  click  addOdometer  id  NA  MOT  0  Click Edit button to enter in odometer reading
-MOTEnforcementNonMotTestResultsEnterMiles standardKeys odometer id 100000 MOT 0 Enter miles for enforcement
+MOTEnforcementNonMotTestResultsEnterMiles  standardKeys  odometer  id  100000  MOT  0  Enter miles for enforcement
 MOTEnforcementNonMotTestResultsOdometerSubmit  click  odometer_submit  id  NA  MOT  0  Click Add button to enter brake results
 MOTEnforcementNonMotTestResultsAddBrakeTest  click  addBrakeTestResults  id  NA  MOT  0  Click Add for Brake Test
 MOTEnforcementNonMotTestResultsClickVSI  click  weightType-vsi  id  NA  MOT  0  Click VSI
