@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.JavascriptExecutor
-import org.openqa.selenium.support.ui.Select
 
 class seleniumObject {
 
@@ -133,7 +132,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       splitCases.forEach [ testCase |
       	caseObjects.forEach [
       	  if (testCase.equals(bddIdentifier)) {
-      	  print(testCase)
+      	  print("-- " + testCase + "\n")
             val splitSequence = bddSequence.split(",")
             val startUrl = startPoint
             splitSequence.forEach [ sequenceIdentifier |
@@ -143,24 +142,22 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
                   if (jtcAction == "start" && jtcBddIdentifier == startUrl) {
       		  	    driver.get(jtcInputCheck)
       	            if (recordVideo == "Y") startVideo(reportDirectory, uniqueRunIdentifier, videoPause)
-      	            waitForElement(jtcByElement, jtcNameElement, driver)
       	          }
       	         val journeyCaseStartUrl = driver.getCurrentUrl
                  val journeyDocumentReadyState = getDocumentReadyState(driver)
                  if (journeyDocumentReadyState == "complete") {
                   if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
-                   print(jtcBddIdentifier)
+                   print("  |-- " + jtcComments + "\n")
                    switch jtcAction {
                      case (jtcAction == "wait") : waitForElement(jtcByElement, jtcNameElement, driver)
                      case (jtcAction == "click") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      case (jtcAction == "standardKeys") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      case (jtcAction == "specialKeys") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
-                     case (jtcAction == "checkContent"): fetchElement(jtcByElement, jtcNameElement, driver).getText.contains(jtcInputCheck)
+                     case (jtcAction == "checkContent"): patternMatch(jtcByElement, jtcNameElement, driver, jtcInputCheck)
                      case (jtcAction == "checkUrl") : driver.getCurrentUrl.contains(jtcInputCheck)
                      case (jtcAction == "switch") : if (jtcNameElement != "defaultContent") driver.switchTo.frame(jtcNameElement) else driver.switchTo.defaultContent
                      case (jtcAction == "url") : doUrlNavigation(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcAction, jtcInputCheck)
                      case (jtcAction == "hover") : doHover(jtcByElement, jtcNameElement, driver)
-                     case (jtcAction == "select") : doSelect(jtcByElement, jtcNameElement, jtcInputCheck, driver)
                    }
                    Thread.sleep(jtcPause) 
                  } 
@@ -177,11 +174,14 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
   
 }
 
-def doSelect(String jtcByElement, String jtcNameElement, String jtcInputCheck, RemoteWebDriver driver) {
-  val String[] sections = jtcInputCheck.split(",")
-  //val bySelect = sections.get(0)
-  //val dropDown = new Select(driver.findElement(By::id(jtcNameElement)))
-  //dropDown.selectByValue(bySelect)
+def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver driver, String jtcInputCheck) {
+  if (fetchElement(jtcByElement, jtcNameElement, driver).getText.contains(jtcInputCheck) == true) {
+    print("     |-- SUCCESS" + "\n")
+  }
+  else {
+    print("     |-- FAILURE" + "\n")
+    System.exit(0)
+  }
 }
 
 def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
