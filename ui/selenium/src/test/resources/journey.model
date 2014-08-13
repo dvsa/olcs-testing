@@ -203,7 +203,7 @@ MOTReasonForRejectionVechicleBreadcrumbWAIT  wait  Vehicle  xpathLinkContains  N
 MOTReasonForRejectionVechicleBreadcrumbCLICK  click  Vehicle  xpathLinkContains  NA  MOT  0  Click Vechicle breadcrumbs link found thoughout the reason for rejection screens
 MOTCanelTestButtonWAIT  wait  cancelMotTest  id  NA  MOT  0  Wait for cancel Test button, this cancels the MOT test
 MOTCanelTestButtonCLICK  click  cancelMotTest  id  NA  MOT  0  Click cancel Test button, this cancels the MOT test
-MOTPrintDocumentsCLICK  click  reprint-certificate  id  NA  MOT  15000  Print documents button at the end of an MOT test
+MOTPrintDocumentsCLICK  click  reprint-certificate  id  NA  MOT  10000  Print documents button
 MOTsignOut  click  logout  id  NA  MOT  5000  Sign Out link at the top of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Home / Menu screen
