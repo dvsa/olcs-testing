@@ -142,7 +142,7 @@ MOTsubmitMileage  click  odometer_submit  id  NA  MOT  0  Click Submit button
 MOTaddBrakeTest  click  addBrakeTestResults  id  NA  MOT  0  Click Add for Brake Test
 MOTclickVSI  click  weightType-vsi  id  NA  MOT  0  Click VSI
 MOTenterVehicleWeightDelClick  click  vehicleWeight  id  NA  MOT  0  Click Vechicle Weight
-MOTenterVehicleWeightDelKey  specialKeys  vehicleWeight  id  DELETE  MOT  0  presses delete key
+MOTenterVehicleWeightDelKey  specialKeys  vehicleWeight  id  DELETE  MOT  0  press delete key
 MOTenterVehicleWeight  standardKeys  vehicleWeight  id  1000  MOT  0  Enter Vechicle Weight
 MOTbrakeConfigTestNext  click  brake_test_results_submit  id  NA  MOT  0  Click Next
 MOTenterBrakeAxleNS1  standardKeys  serviceBrakeEffortNearsideAxle1  id  440  MOT  0  Enter service brake effort NS axle 1
@@ -188,7 +188,7 @@ MOTclickReasonForRejectionBodyBodyConditionModification8459FAILDescAdd  click  r
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Logins for MOT
 .  .  .  .  .  .  0  .
-MOTloginUser  standardKeys  username  inputName  tester3  MOT  0  login using tester1
+MOTloginUser  standardKeys  username  inputName  tester3  MOT  0  login using tester3
 MOTloginPassword  standardKeys  password  inputName  t  MOT  0  login using password t
 MOTloginUserFT  standardKeys  username  inputName  ft-enf-tester  MOT  0  login using ft-enf-tester
 MOTloginPasswordFT  standardKeys  password  inputName  t  MOT  0  login using password t
