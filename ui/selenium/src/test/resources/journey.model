@@ -145,12 +145,12 @@ MOTenterVehicleWeightDelClick  click  vehicleWeight  id  NA  MOT  0  Click Vechi
 MOTenterVehicleWeightDelKey  specialKeys  vehicleWeight  id  DELETE  MOT  0  press delete key
 MOTenterVehicleWeight  standardKeys  vehicleWeight  id  1000  MOT  0  Enter Vechicle Weight
 MOTbrakeConfigTestNext  click  brake_test_results_submit  id  NA  MOT  0  Click Next
-MOTenterBrakeAxleNS1  standardKeys  serviceBrakeEffortNearsideAxle1  id  440  MOT  0  Enter service brake effort NS axle 1
-MOTenterBrakeAxleOS1  standardKeys  serviceBrakeEffortOffsideAxle1  id  440  MOT  0  Enter service brake effort OS axle 1
-MOTenterBrakeAxleNS2  standardKeys  serviceBrakeEffortNearsideAxle2  id  200  MOT  0  Enter service brake effort NS axle 2
-MOTenterBrakeAxleOS2  standardKeys  serviceBrakeEffortOffsideAxle2  id  200  MOT  0  Enter service brake effort OS axle 2
-MOTenterParkingBrakeNS  standardKeys  parkingBrakeEffortNearside  id  100  MOT  0  Enter parking brake effort NS
-MOTenterParkingBrakeOS  standardKeys  parkingBrakeEffortOffside  id  100  MOT  0  Enter parking brake effort OS
+MOTenterBrakeAxleNS1  standardKeys  serviceBrakeEffortNearsideAxle1  id  440  MOT  0  Enter service brake effort NS axle 1 as 440 KGS
+MOTenterBrakeAxleOS1  standardKeys  serviceBrakeEffortOffsideAxle1  id  440  MOT  0  Enter service brake effort OS axle 1 as 440 KGS
+MOTenterBrakeAxleNS2  standardKeys  serviceBrakeEffortNearsideAxle2  id  200  MOT  0  Enter service brake effort NS axle 2 as 200 KGS
+MOTenterBrakeAxleOS2  standardKeys  serviceBrakeEffortOffsideAxle2  id  200  MOT  0  Enter service brake effort OS axle 2 as 200 KGS
+MOTenterParkingBrakeNS  standardKeys  parkingBrakeEffortNearside  id  100  MOT  0  Enter parking brake effort NS as 100 KGS
+MOTenterParkingBrakeOS  standardKeys  parkingBrakeEffortOffside  id  100  MOT  0  Enter parking brake effort OS as 100 KGS
 MOTsubmitBrakeTest  click  brake_test_results_submit  id  NA  MOT  0  Click submit
 MOTclickSummaryDone  click  brake_test_summary_done  id  NA  MOT  0  Click Done
 MOTclickCreateCert  click  createCertificate  id  NA  MOT  0  Click Review
