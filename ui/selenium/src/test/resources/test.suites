@@ -1,6 +1,6 @@
 OLCS-001  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 OLCS-ST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-OLCS-TR  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+OLCS-TR  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
 OLCS-001old  1,2,4  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-ST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-FAIL-TYRE  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
@@ -17,5 +17,5 @@ MOT-2629-1  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-
 MOT-2629-2  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-2629-3  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 MOT-2823  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-MOT-2985  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
-MOT-2630  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
+MOT-2985  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+MOT-2630  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
