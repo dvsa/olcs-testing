@@ -18,10 +18,10 @@ OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkTex
 OLCSSelfserveOperatorLocationGreatBritainWAIT  wait  niFlag  id  NA  OLCS  0  Wait for 'Great Britain' radio button
 OLCSSelfserveOperatorLocationGreatBritainCLICK  click  niFlag  id  NA  OLCS  0  Click 'Great Britain' radio button
 OLCSSelfserveOperatorLocationNorthernIrelandCLICK  click  data[niFlag]  inputName  NA  OLCS  0  Click 'Northern Ireland' radio button
-OLCSSelfserveOperatorTypeGoodsWAIT wait  goodsOrPsv  id  NA  OLCS  0  Wait for 'Goods' radio button
+OLCSSelfserveOperatorTypeGoodsWAIT  wait  goodsOrPsv  id  NA  OLCS  0  Wait for 'Goods' radio button
 OLCSSelfserveOperatorTypeGoodsCLICK  click  goodsOrPsv  id  NA  OLCS  0  Click 'Goods' radio button
 OLCSSelfserveOperatorTypePsvCLICK  click  data[goodsOrPsv]  inputName  NA  OLCS  0  Click 'PSV' radio button
-OLCSSelfserveLicenceTypeRestrictedWAIT click  licenceType  id  NA  OLCS  0  Click 'Restricted' radio button
+OLCSSelfserveLicenceTypeRestrictedWAIT  wait  licenceType  id  NA  OLCS  0  Wait for 'Restricted' radio button
 OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType  id  NA  OLCS  0  Click 'Restricted' radio button
 OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard National' radio button
 OLCSSelfserveOperatorTypeRStandardInternationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard International' radio button
