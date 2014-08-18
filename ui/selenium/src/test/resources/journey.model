@@ -26,7 +26,7 @@ OLCSSelfserveOperatorTypePsvCLICK  click  data[goodsOrPsv]  inputName  NA  OLCS 
 .  .  .  .  .  .  0  .
 OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType  id  NA  OLCS  0  Click 'Restricted' radio button
 OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard National' radio button
-OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard International' radio button
+OLCSSelfserveOperatorTypeRStandardInternationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard International' radio button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
