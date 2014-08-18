@@ -29,7 +29,7 @@ OLCSSelfserveOperatorTypeRStandardInternationalCLICK  click  data[licenceType]  
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
 OLCSSelfserveYourBusinessBusinessTypeWhatType  click  organisationType  id  NA  OLCS  0  Drop down 'What business are you?'
-OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK click  data[companyNumber][company_number]  id  NA  OLCS  0  Click on Registered company number text field
+OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Click on Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  press delete key in Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Enter 12345678 into Registered company number text field
 OLCSSelfserveYourBusinessBusinessTypeFindCompanyCLICK  click  data[companyNumber][submit_lookup_company]  inputName  NA  OLCS  0  Find Company button
