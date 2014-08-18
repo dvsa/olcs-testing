@@ -9,7 +9,7 @@ OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operat
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  ..
-OLCSSelfserveDashboardCheck  checkContent  body  tagName  Dashboard  OLCS  0  Check 'Dashboard' is displayed
+OLCSSelfserveDashboardCheck  checkContent  body  tagName  <h1>Dashboard</h1>  OLCS  0  Check 'Dashboard' is displayed
 OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Click 'Start new application' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Operator Location
