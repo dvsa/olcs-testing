@@ -1,30 +1,30 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Start Selfserve Application
-OLCSSelfserveContinueButtonCHECK  wait  submit  id  NA  OLCS  0  Check is present 'Continue' button or 'Save' button
-OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continue' button or 'Save' button
-OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Check is present 'Back' button
-OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click on 'Back' button
-OLCSSelfserveBackToHomeLinkCHECK  wait  Back to home  xpathLinkContains  NA  OLCS  0  Check is present 'Back to home' link
-OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to home' link
-OLCSSelfserveAddButtonCHECK  wait  add  id  NA  OLCS  0  Check is present 'Add' button
-OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Click 'Add' button
-OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Check 'GOV.UK' is displayed on the top left of the screen
-OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Check 'Operator Licensing' is displayed on the top right of the screen
+OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
+OLCSSelfserveContinueButtonCHECK  wait  submit  id  NA  OLCS  0  Framework -- Check is present 'Continue' button or 'Save' button
+OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Framework -- Click 'Continue' button or 'Save' button
+OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Framework -- Check is present 'Back' button
+OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Framework -- Click on 'Back' button
+OLCSSelfserveBackToHomeLinkCHECK  wait  Back to home  xpathLinkContains  NA  OLCS  0  Framework -- Check is present 'Back to home' link
+OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Framework -- Click 'Back to home' link
+OLCSSelfserveAddButtonCHECK  wait  add  id  NA  OLCS  0  Framework -- Check is present 'Add' button
+OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Framework -- Click 'Add' button
+OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
+OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  ..
-OLCSSelfserveDashboardCheck  checkContent  body  tagName  Dashboard  OLCS  0  Check 'Dashboard' is displayed
-OLCSSelfserveDashboardCheck2  checkContent  body  tagName  Applications  OLCS  0  Check 'Applications' is displayed
-OLCSSelfserveDashboardCheck3  checkContent  body  tagName  These are all your current licences and licence applications you have.  OLCS  0  Check 'These are all your current licences and licence applications you have.' is displayed
-OLCSSelfserveDashboardCheck4  checkContent  body  tagName  Notifications  OLCS  0  Check 'Notifications' is displayed on right hand side
-OLCSSelfserveDashboardCheck5  checkContent  body  tagName  Lic/App number  OLCS  0  Check 'Lic/App number' is displayed at top of table
-OLCSSelfserveDashboardCheck6  checkContent  body  tagName  App ID  OLCS  0  Check 'App ID' is displayed at top of table
-OLCSSelfserveDashboardCheck7  checkContent  body  tagName  Date created  OLCS  0  Check 'Date created' is displayed at top of table
-OLCSSelfserveDashboardCheck8  checkContent  body  tagName  Date submitted  OLCS  0  Check 'Date submitted' is displayed at top of table
-OLCSSelfserveDashboardCheck9  checkContent  body  tagName  Status  OLCS  0  Check 'Status' is displayed at top of table
-OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Click 'Start new application' button
+OLCSSelfserveDashboardCheck  checkContent  body  tagName  Dashboard  OLCS  0  Dashboard -- Check 'Dashboard' is displayed
+OLCSSelfserveDashboardCheck2  checkContent  body  tagName  Applications  OLCS  0  Dashboard -- Check 'Applications' is displayed
+OLCSSelfserveDashboardCheck3  checkContent  body  tagName  These are all your current licences and licence applications you have.  OLCS  0  Dashboard -- Check 'These are all your current licences and licence applications you have.' is displayed
+OLCSSelfserveDashboardCheck4  checkContent  body  tagName  Notifications  OLCS  0  Dashboard -- Check 'Notifications' is displayed on right hand side
+OLCSSelfserveDashboardCheck5  checkContent  body  tagName  Lic/App number  OLCS  0  Dashboard -- Check 'Lic/App number' is displayed at top of table
+OLCSSelfserveDashboardCheck6  checkContent  body  tagName  App ID  OLCS  0  Dashboard -- Check 'App ID' is displayed at top of table
+OLCSSelfserveDashboardCheck7  checkContent  body  tagName  Date created  OLCS  0  Dashboard -- Check 'Date created' is displayed at top of table
+OLCSSelfserveDashboardCheck8  checkContent  body  tagName  Date submitted  OLCS  0  Dashboard -- Check 'Date submitted' is displayed at top of table
+OLCSSelfserveDashboardCheck9  checkContent  body  tagName  Status  OLCS  0  Dashboard -- Check 'Status' is displayed at top of table
+OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Dashboard -- Click 'Start new application' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Type of licence
 .  .  .  .  .  .  0  .
@@ -70,7 +70,8 @@ OLCSSelfserveYourBusinessContentCheck5  checkContent  body  tagName  Addresses  
 OLCSSelfserveYourBusinessContentCheck6  checkContent  body  tagName  People  OLCS  0  Your business -- Check 'People' is displayed on the left hand side menu
 OLCSSelfserveYourBusinessContentCheck7  checkContent  body  tagName  Business type  OLCS  0  Your business -- Check 'Business type' heading is displayed
 OLCSSelfserveYourBusinessContentCheck8  checkContent  body  tagName  What type of business are you?  OLCS  0  Your business -- Check 'What type of business are you?' question text is displayed
-OLCSSelfserveYourBusinessBusinessTypeWhatType  click  organisationType  id  NA  OLCS  0  Drop down 'What business are you?'
+OLCSSelfserveYourBusinessBusinessTypeWhatType  click  type  id  NA  OLCS  0  Your business -- Click on Drop down 'What type of business are you?'
+OLCSSelfserveYourBusinessBusinessTypeWhatTypeLtdCompany  standardKeys  type  id  Limited company  OLCS  10000  Your business -- Select Limited company from 'What type of business are you?' drop down
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Click on Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  press delete key in Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Enter 12345678 into Registered company number text field
