@@ -2,10 +2,14 @@
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Start Selfserve Application
-OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continue' button / can also be the 'Save' button
-OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click 'Back' button
-OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
-OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operating centre
+OLCSSelfserveContinueButtonWAIT  wait  submit  id  NA  OLCS  0  Check is present or Wait for 'Continue' button or 'Save' button
+OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continue' button or 'Save' button
+OLCSSelfserveBackButtonWAIT  wait  back  id  NA  OLCS  0  Check is present or Wait for 'Back' button
+OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click on 'Back' button
+OLCSSelfserveBackToHomeLinkWAIT  wait  Back to home  xpathLabelContains  NA  OLCS  0  Check is present or Wait for 'Back to Home' link
+OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' link
+OLCSSelfserveAddButtonWAIT  wait  add  id  NA  OLCS  0  Check is present or Wait for 'Add' button
+OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Click 'Add' button
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Check 'GOV.UK' is displayed on the top left of the screen
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Check 'Operator Licensing' is displayed on the top right of the screen
 .  .  .  .  .  .  0  .
@@ -25,18 +29,29 @@ OLCSSelfserveTypeOfLicenceContentCheck5  checkContent  body  tagName  Northern I
 OLCSSelfserveTypeOfLicenceContentCheck6  checkContent  body  tagName  Operator type  OLCS  0  Check 'Operator type' heading text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck7  checkContent  body  tagName  What type of operator are you?  OLCS  0  Check 'What type of operator are you?' question is displayed
 OLCSSelfserveTypeOfLicenceContentCheck8  checkContent  body  tagName  Goods  OLCS  0  Check 'Goods' question text isdisplayed
-OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  PSV  OLCS  20000  Check 'PSV' question text is displayed
-OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainWAIT  wait  niFlag  id  NA  OLCS  0  Check/Wait for 'Great Britain' radio button
+OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  PSV  OLCS  0  Check 'PSV' question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck10  checkContent  body  tagName  Licence type  OLCS  0  Check 'Licence type' Heading is displayed
+OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  What type of licence do you want to apply for?  OLCS  0  Check 'What type of licence do you want to apply for?' Question is displayed
+OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Restricted  OLCS  0  Check 'Restricted' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck13  checkContent  body  tagName  Standard National  OLCS  0  Check 'Standard National' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck14  checkContent  body  tagName  Standard International  OLCS  0  Check 'Standard International' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck15  checkContent  body  tagName  Special Restricted  OLCS  0  Check 'Special Restricted' Question text is displayed
+OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainWAIT  wait  niFlag  id  NA  OLCS  0  Check is present or Wait for 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  niFlag  id  NA  OLCS  0  Click on 'Great Britain' radio button
-OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandWAIT  wait  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Check/Wait for 'Northern Ireland' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandWAIT  wait  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Check is present or Wait for 'Northern Ireland' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Click 'Northern Ireland' radio button
-OLCSSelfserveOperatorTypeGoodsWAIT  wait  goodsOrPsv  id  NA  OLCS  0  Wait for 'Goods' radio button
+OLCSSelfserveOperatorTypeGoodsWAIT  wait  goodsOrPsv  id  NA  OLCS  0  Check is present or Wait for 'Goods' radio button
 OLCSSelfserveOperatorTypeGoodsCLICK  click  goodsOrPsv  id  NA  OLCS  0  Click 'Goods' radio button
-OLCSSelfserveOperatorTypePsvCLICK  click  data[goodsOrPsv]  inputName  NA  OLCS  0  Click 'PSV' radio button
-OLCSSelfserveLicenceTypeRestrictedWAIT  wait  licenceType  id  NA  OLCS  0  Wait for 'Restricted' radio button
+OLCSSelfserveOperatorTypePsvWAIT  wait  //*[@id="application_type-of-licence_form"]/fieldset[2]/fieldset/label[2]/input  xpath  NA  OLCS  0  Check is present or wait for 'PSV' radio button
+OLCSSelfserveOperatorTypePsvCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[2]/fieldset/label[2]/input  xpath  NA  OLCS  0  Click 'PSV' radio button
+OLCSSelfserveLicenceTypeRestrictedWAIT  wait  licenceType  id  NA  OLCS  0  Check is present or Wait for 'Restricted' radio button
 OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType  id  NA  OLCS  0  Click 'Restricted' radio button
-OLCSSelfserveOperatorTypeRStandardNationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard National' radio button
-OLCSSelfserveOperatorTypeRStandardInternationalCLICK  click  data[licenceType]  inputName  NA  OLCS  0  Click 'Standard International' radio button
+OLCSSelfserveOperatorTypeStandardNationalWAIT  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Check is present or Wait for 'Standard National' radio button
+OLCSSelfserveOperatorTypeStandardNationalCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Click 'Standard National' radio button
+OLCSSelfserveOperatorTypeStandardInternationalWAIT  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[3]/input  xpath  NA  OLCS  0  Check is present or Wait for 'Standard International' radio button
+OLCSSelfserveOperatorTypeStandardInternationalCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[3]/input  xpath  NA  OLCS  0  Click 'Standard International' radio button
+OLCSSelfserveOperatorTypeSpecialRestrictedWAIT  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Check is present or Wait for 'Special Restricted' radio button
+OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Click 'Special Restricted' radio button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
