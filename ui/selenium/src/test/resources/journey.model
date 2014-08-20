@@ -70,9 +70,9 @@ OLCSSelfserveYourBusinessContentCheck5  checkContent  body  tagName  Addresses  
 OLCSSelfserveYourBusinessContentCheck6  checkContent  body  tagName  People  OLCS  0  Your business -- Check 'People' is displayed on the left hand side menu
 OLCSSelfserveYourBusinessContentCheck7  checkContent  body  tagName  Business type  OLCS  0  Your business -- Check 'Business type' heading is displayed
 OLCSSelfserveYourBusinessContentCheck8  checkContent  body  tagName  What type of business are you?  OLCS  0  Your business -- Check 'What type of business are you?' question text is displayed
-OLCSSelfserveYourBusinessBusinessTypeWhatTypeCLICK  click  type  id  NA  OLCS  0  Your business -- Click on Drop down 'What type of business are you?'
-OLCSSelfserveYourBusinessBusinessTypeWhatTypePs  standardKeys  type  id  pl  OLCS  0  Your business -- Select 'Please Select' from 'What type of business are you?' drop down
-OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id  ARROW_DOWN  OLCS  0  Your business -- Send down arrow key event to 'What type of business are you?' drop down
+OLCSSelfserveYourBusinessBusinessTypeWhatTypeCLICK  click  type  id  NA  OLCS  5000  Your business -- Click on Drop down 'What type of business are you?'
+OLCSSelfserveYourBusinessBusinessTypeWhatTypePs  standardKeys  type  id  pl  OLCS  5000  Your business -- Select 'Please Select' from 'What type of business are you?' drop down
+OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id  ARROW_DOWN  OLCS  5000  Your business -- Send down arrow key event to 'What type of business are you?' drop down
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Click on Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  press delete key in Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Enter 12345678 into Registered company number text field
