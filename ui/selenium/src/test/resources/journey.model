@@ -6,7 +6,7 @@ OLCSSelfserveContinueButtonCHECK  wait  submit  id  NA  OLCS  0  Check is presen
 OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continue' button or 'Save' button
 OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Check is present 'Back' button
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click on 'Back' button
-OLCSSelfserveBackToHomeLinkCHECK  wait  Back to home  xpathLabelContains  NA  OLCS  0  Check is present 'Back to home' link
+OLCSSelfserveBackToHomeLinkCHECK  wait  Back to home  xpathLinkContains  NA  OLCS  0  Check is present 'Back to home' link
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to home' link
 OLCSSelfserveAddButtonCHECK  wait  add  id  NA  OLCS  0  Check is present 'Add' button
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Click 'Add' button
