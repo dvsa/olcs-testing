@@ -176,7 +176,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
 
 def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver driver, String jtcInputCheck) {
   if (fetchElement(jtcByElement, jtcNameElement, driver).getText.contains(jtcInputCheck) == true) {
-    print("     |-- SUCCESS" + "\n")
+//    print("     |-- SUCCESS" + "\n")
   }
   else {
     print("     |-- FAILURE" + "\n")
