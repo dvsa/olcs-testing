@@ -15,9 +15,19 @@ OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkTex
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Type of licence
 .  .  .  .  .  .  0  .
-OLCSSelfserveOperatorLocationGreatBritainWAIT  wait  niFlag  id  NA  OLCS  0  Wait for 'Great Britain' radio button
-OLCSSelfserveOperatorLocationGreatBritainCLICK  click  niFlag  id  NA  OLCS  0  Click 'Great Britain' radio button
-OLCSSelfserveOperatorLocationNorthernIrelandCLICK  click  data[niFlag]  inputName  NA  OLCS  0  Click 'Northern Ireland' radio button
+OLCSSelfserveTypeOfLicenceContentCheck1  checkContent  body  tagName  Type of licence  OLCS  0  Check 'Type of licence' is displayed under the icon top left of screen
+OLCSSelfserveTypeOfLicenceContentCheck2  checkContent  body  tagName  Operator location  OLCS  0  Check 'Operator location' heading is displayed
+OLCSSelfserveTypeOfLicenceContentCheck3  checkContent  body  tagName  Where do you operate from?  OLCS  0  Check 'Where do you operate from?' question is displayed
+OLCSSelfserveTypeOfLicenceContentCheck4  checkContent  body  tagName  Great Britain  OLCS  0  Check 'Great Britain' question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck5  checkContent  body  tagName  Northern Ireland  OLCS  0  Check 'Northern Ireland' question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck6  checkContent  body  tagName  Operator type  OLCS  0  Check 'Operator type' heading text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck7  checkContent  body  tagName  What type of operator are you?  OLCS  0  Check 'What type of operator are you?' question is displayed
+OLCSSelfserveTypeOfLicenceContentCheck8  checkContent  body  tagName  Goods  OLCS  0  Check 'Goods' question text isdisplayed
+OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  PSV  OLCS  20000  Check 'PSV' question text is displayed
+OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainWAIT  wait  niFlag  id  NA  OLCS  0  Check/Wait for 'Great Britain' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  niFlag  id  NA  OLCS  0  Click on 'Great Britain' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandWAIT  wait  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Check/Wait for 'Northern Ireland' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Click 'Northern Ireland' radio button
 OLCSSelfserveOperatorTypeGoodsWAIT  wait  goodsOrPsv  id  NA  OLCS  0  Wait for 'Goods' radio button
 OLCSSelfserveOperatorTypeGoodsCLICK  click  goodsOrPsv  id  NA  OLCS  0  Click 'Goods' radio button
 OLCSSelfserveOperatorTypePsvCLICK  click  data[goodsOrPsv]  inputName  NA  OLCS  0  Click 'PSV' radio button
