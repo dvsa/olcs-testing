@@ -6,6 +6,8 @@ OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Click 'Continu
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Click 'Back' button
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Click 'Back to Home' button
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Add button to add an operating centre
+OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Check 'GOV.UK' is displayed on the top left of the screen
+OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Check 'Operator Licensing' is displayed on the top right of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  ..
