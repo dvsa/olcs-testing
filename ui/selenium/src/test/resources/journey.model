@@ -565,3 +565,8 @@ MOTEnforcementNonMotTestResultsClickCreateCert  click  createCertificate  id  NA
 MOTEnforcementNonMotTestResultsClickFinTest  click  confirm_test_result  id  NA  MOT  0  Click Finish Test and Complete
 MOTEnforcementNonMotTestResultsClickPrintDocuments  click  reprint-certificate  id  NA  MOT  8000  Click Print Documents
 MOTEnforcementNonMotTestResultsReturnToHomepage  click  Return to Homepage  xpathLinkContains  NA  MOT  0  Click link to return user to the home page
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Rest Client
+.  .  .  .  .  .  0  .
+startRestClient  start  NA  NA  chrome://restclient/content/restclient.html  OLCS  0  Start the RESTClient plugin for API testing
+enterPostRequestEndpointGetToken  standardKeys  request-url  id  http://payment-service.psdv-ap01.ps.npm/api/token  OLCS  0  Enter the 'get token' endpoint
