@@ -7,7 +7,9 @@ OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Framework -- C
 OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Framework -- Check is present 'Back' button
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Framework -- Click on 'Back' button
 OLCSSelfserveBackToHomeLinkCHECK  wait  Back to home  xpathLinkContains  NA  OLCS  0  Framework -- Check is present 'Back to home' link
-OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLabelContains  NA  OLCS  0  Framework -- Click 'Back to home' link
+OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Back to home' link
+OLCSSelfserveEditButtonCHECK  wait  Edit  xpathLinkContains  NA  OLCS  0  Framework -- Check is present 'Edit' button
+OLCSSelfserveEditButtonCLICK  click  Edit  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Edit' button
 OLCSSelfserveAddButtonCHECK  wait  add  id  NA  OLCS  0  Framework -- Check is present 'Add' button
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Framework -- Click 'Add' button
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
@@ -61,7 +63,7 @@ OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  //*[@id="application_type
 OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
-.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Business Type
 OLCSSelfserveYourBusinessContentCheck1  checkContent  body  tagName  Your business  OLCS  0  Your business -- Check 'Your business' is displayed under the edit icon top of the screen
 OLCSSelfserveYourBusinessContentCheck2  checkContent  body  tagName  In this section  OLCS  0  Your business -- Check 'In this section' heading is displayed on the left hand side
 OLCSSelfserveYourBusinessContentCheck3  checkContent  body  tagName  Business type  OLCS  0  Your business -- Check 'Business type' is displayed on the left hand side menu
@@ -74,6 +76,7 @@ OLCSSelfserveYourBusinessBusinessTypeWhatTypeCHECK  wait  type  id  NA  OLCS  0 
 OLCSSelfserveYourBusinessBusinessTypeWhatTypeCLICK  click  type  id  NA  OLCS  0  Your business -- Click on Drop down 'What type of business are you?'
 OLCSSelfserveYourBusinessBusinessTypeWhatTypePsUpArrow  specialKeys  type  id  ARROW_UP  OLCS  0  Your business -- Send up arrow key event to 'What type of business are you?' drop down
 OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id  ARROW_Down  OLCS  0  Your business -- Send down arrow key event to 'What type of business are you?' drop down
+.  .  .  .  .  .  0  Business details
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Click on Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  press delete key in Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Enter 12345678 into Registered company number text field
