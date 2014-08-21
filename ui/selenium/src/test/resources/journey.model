@@ -75,7 +75,7 @@ OLCSSelfserveYourBusinessContentCheck8  checkContent  body  tagName  What type o
 OLCSSelfserveYourBusinessBusinessTypeWhatTypeCHECK  wait  type  id  NA  OLCS  0  Your business -- Check is present Drop down 'What type of business are you?'
 OLCSSelfserveYourBusinessBusinessTypeWhatTypeCLICK  click  type  id  NA  OLCS  0  Your business -- Click on Drop down 'What type of business are you?'
 OLCSSelfserveYourBusinessBusinessTypeWhatTypePsUpArrow  specialKeys  type  id  ARROW_UP  OLCS  0  Your business -- Send up arrow key event to 'What type of business are you?' drop down
-OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id  ARROW_Down  OLCS  0  Your business -- Send down arrow key event to 'What type of business are you?' drop down
+OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id  ARROW_DOWN  OLCS  0  Your business -- Send down arrow key event to 'What type of business are you?' drop down
 .  .  .  .  .  .  0  Business details
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Click on Registered company number text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  press delete key in Registered company number text field
