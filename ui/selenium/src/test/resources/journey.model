@@ -65,20 +65,20 @@ OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  //*[@id="application_typ
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
 OLCSSelfserveYourBusinessBusinessTypeLinkCHECK  wait  Business type  xpathLinkContains  NA  OLCS  0  Your Business -- Check is present 'Business type' clickable link on the left hand side menu
-OLCSSelfserveYourBusinessBusinessTypeLinkCLICK  click  Business type  xpathLinkContains  NA  OLCS  0  Your Business -- Click 'Business type' link on the left hand side menu
-OLCSSelfserveYourBusinessBusinessDetailsLinkCHECK  wait  Business details  xpathLinkContains  NA  OLCS  0  Your Business -- Check is present 'Business details' link on the left hand side menu
-OLCSSelfserveYourBusinessBusinessDetailsLinkCLICK  click  Business details  xpathLinkContains  NA  OLCS  0  Your Business -- Click present 'Business details' link on the left hand side menu
-OLCSSelfserveYourBusinessAddressesLinkCHECK  wait  Addresses  xpathLinkContains  NA  OLCS  0  Your Business -- Check is present 'Addresses' link on the left hand side menu
-OLCSSelfserveYourBusinessAddressesLinkCLICK  click  Addresses  xpathLinkContains  NA  OLCS  0  Your Business -- Click 'Addresses' link on the left hand side menu
-OLCSSelfserveYourBusinessPeopleLinkCHECK  wait  People  xpathLinkContains  NA  OLCS  0  Your Business -- Check is present 'People' link on the left hand side menu
+OLCSSelfserveYourBusinessBusinessTypeLinkCLICK  click  Business type  xpathLinkContains  NA  OLCS  0  Your Business -- Click 'Business type' on the left hand side menu
+OLCSSelfserveYourBusinessBusinessDetailsLinkCHECK  wait  Business details  xpathLinkContains  NA  OLCS  0  Your Business -- Check is present 'Business details' clickable link on the left hand side menu
+OLCSSelfserveYourBusinessBusinessDetailsLinkCLICK  click  Business details  xpathLinkContains  NA  OLCS  0  Your Business -- Click present 'Business details' on the left hand side menu
+OLCSSelfserveYourBusinessAddressesLinkCHECK  wait  Addresses  xpathLinkContains  NA  OLCS  0  Your Business -- Check is present 'Addresses' clickable link on the left hand side menu
+OLCSSelfserveYourBusinessAddressesLinkCLICK  click  Addresses  xpathLinkContains  NA  OLCS  0  Your Business -- Click 'Addresses' on the left hand side menu
+OLCSSelfserveYourBusinessPeopleLinkCHECK  wait  People  xpathLinkContains  NA  OLCS  0  Your Business -- Check is present 'People' clickable link on the left hand side menu
 OLCSSelfserveYourBusinessPeopleLinkCLICK  click  People  xpathLinkContains  NA  OLCS  0  Your Business -- Click 'People' link on the left hand side menu
 .  .  .  .  .  .  0  Business Type
 OLCSSelfserveYourBusinessContentCheck1  checkContent  body  tagName  Your business  OLCS  0  Your business -- Check 'Your business' is displayed under the edit icon top of the screen
 OLCSSelfserveYourBusinessContentCheck2  checkContent  body  tagName  In this section  OLCS  0  Your business -- Check 'In this section' heading is displayed on the left hand side
-OLCSSelfserveYourBusinessContentCheck3  checkContent  body  tagName  Business type  OLCS  0  Your business -- Check 'Business type' is displayed on the left hand side menu
-OLCSSelfserveYourBusinessContentCheck4  checkContent  body  tagName  Business details  OLCS  0  Your business -- Check 'Business details' is displayed on the left hand side menu
-OLCSSelfserveYourBusinessContentCheck5  checkContent  body  tagName  Addresses  OLCS  0  Your business -- Check 'Addresses' is displayed on the left hand side menu
-OLCSSelfserveYourBusinessContentCheck6  checkContent  body  tagName  People  OLCS  0  Your business -- Check 'People' is displayed on the left hand side menu
+OLCSSelfserveYourBusinessContentCheck3  checkContent  body  tagName  Business type  OLCS  0  Your business -- Check 'Business type' text is displayed on the left hand side menu
+OLCSSelfserveYourBusinessContentCheck4  checkContent  body  tagName  Business details  OLCS  0  Your business -- Check 'Business details' text is displayed on the left hand side menu
+OLCSSelfserveYourBusinessContentCheck5  checkContent  body  tagName  Addresses  OLCS  0  Your business -- Check 'Addresses' text is displayed on the left hand side menu
+OLCSSelfserveYourBusinessContentCheck6  checkContent  body  tagName  People  OLCS  0  Your business -- Check 'People' text is displayed on the left hand side menu
 OLCSSelfserveYourBusinessContentCheck7  checkContent  body  tagName  Business type  OLCS  0  Your business -- Check 'Business type' heading is displayed
 OLCSSelfserveYourBusinessContentCheck8  checkContent  body  tagName  What type of business are you?  OLCS  0  Your business -- Check 'What type of business are you?' question text is displayed
 OLCSSelfserveYourBusinessBusinessTypeWhatTypeCHECK  wait  type  id  NA  OLCS  0  Your business -- Check is present Drop down 'What type of business are you?'
