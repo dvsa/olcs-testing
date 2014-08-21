@@ -70,6 +70,7 @@ OLCSSelfserveYourBusinessContentCheck5  checkContent  body  tagName  Addresses  
 OLCSSelfserveYourBusinessContentCheck6  checkContent  body  tagName  People  OLCS  0  Your business -- Check 'People' is displayed on the left hand side menu
 OLCSSelfserveYourBusinessContentCheck7  checkContent  body  tagName  Business type  OLCS  0  Your business -- Check 'Business type' heading is displayed
 OLCSSelfserveYourBusinessContentCheck8  checkContent  body  tagName  What type of business are you?  OLCS  0  Your business -- Check 'What type of business are you?' question text is displayed
+OLCSSelfserveYourBusinessBusinessTypeWhatTypeCHECK  wait  type  id  NA  OLCS  0  Your business -- Check is present Drop down 'What type of business are you?'
 OLCSSelfserveYourBusinessBusinessTypeWhatTypeCLICK  click  type  id  NA  OLCS  0  Your business -- Click on Drop down 'What type of business are you?'
 OLCSSelfserveYourBusinessBusinessTypeWhatTypePsUpArrow  specialKeys  type  id  ARROW_UP  OLCS  0  Your business -- Send up arrow key event to 'What type of business are you?' drop down
 OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id  ARROW_Down  OLCS  0  Your business -- Send down arrow key event to 'What type of business are you?' drop down
