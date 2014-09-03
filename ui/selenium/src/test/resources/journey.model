@@ -96,7 +96,7 @@ OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id 
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCHECK  wait  data[companyNumber][company_number]  id  NA  OLCS  0  Your business - Business details -- Check is present 'Registered company number' text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Your business - Business details -- Click on 'Registered company number' text field
 OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  Your business - Business details -- press delete key in Registered company number text field
-OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Your business - Business details -- Enter 12345678 into Registered company number text field
+OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  01989005  OLCS  0  Your business - Business details -- Enter 12345678 into Registered company number text field
 OLCSSelfserveYourBusinessBusinessTypeFindCompanyCLICK  click  data[companyNumber][submit_lookup_company]  inputName  NA  OLCS  0  Your business - Business details -- Find Company button
 OLCSSelfserveYourBusinessBusinessDetailsCompanyNameCHECK  wait  name  id  NA  OLCS  0  Your business - Business details -- Check is present 'Company name' text field
 OLCSSelfserveYourBusinessBusinessDetailsCompanyName  standardKeys  name  id  John Smith Haulage Ltd  OLCS  0  Your business - Business details -- Company name text field
