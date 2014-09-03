@@ -93,30 +93,30 @@ OLCSSelfserveYourBusinessBusinessTypeWhatTypeCLICK  click  type  id  NA  OLCS  0
 OLCSSelfserveYourBusinessBusinessTypeWhatTypePsUpArrow  specialKeys  type  id  ARROW_UP  OLCS  0  Your business -- Send up arrow key event to 'What type of business are you?' drop down
 OLCSSelfserveYourBusinessBusinessTypeWhatTypePsDownArrow  specialKeys  type  id  ARROW_DOWN  OLCS  0  Your business -- Send down arrow key event to 'What type of business are you?' drop down
 .  .  .  .  .  .  0  Business details
-OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCHECK  wait  data[companyNumber][company_number]  id  NA  OLCS  0  Your business - Business details -- Check is present 'Registered company number' text field
-OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Your business - Business details -- Click on 'Registered company number' text field
-OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  Your business - Business details -- press delete key in Registered company number text field
-OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  01989005  OLCS  0  Your business - Business details -- Enter 12345678 into Registered company number text field
-OLCSSelfserveYourBusinessBusinessTypeFindCompanyCLICK  click  data[companyNumber][submit_lookup_company]  inputName  NA  OLCS  0  Your business - Business details -- Find Company button
-OLCSSelfserveYourBusinessBusinessDetailsCompanyNameCHECK  wait  name  id  NA  OLCS  0  Your business - Business details -- Check is present 'Company name' text field
-OLCSSelfserveYourBusinessBusinessDetailsCompanyName  standardKeys  name  id  John Smith Haulage Ltd  OLCS  0  Your business - Business details -- Company name text field
-OLCSSelfserveYourBusinessBusinessDetailsTradingNamesCHECK0  wait  data[tradingNames][trading_name][0][text]  inputName  NA  OLCS  0  Your business - Business details -- Check is present 'Trading names (optional)' text field
-OLCSSelfserveYourBusinessBusinessDetailsTradingNames0  standardKeys  data[tradingNames][trading_name][0][text]  inputName  John Jones Haulage  OLCS  0  Your business - Business details -- Trading names (optional) text field
-OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCHECK  wait  data[tradingNames][submit_add_trading_name]  inputName  NA  OLCS  0  Your business - Business details -- Check is present 'Add Another button'
-OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCLICK  click  data[tradingNames][submit_add_trading_name]  inputName  NA  OLCS  0  Your business - Business details -- Add Another button
-OLCSSelfserveYourBusinessAddressesPostCode  standardKeys  correspondence_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Your business - Addresses -- Post Code Search text field
-OLCSSelfserveYourBusinessAddressesFindAddressCLICK  click  correspondence_address[searchPostcode][search]  inputName  NA  OLCS  0  Your business - Addresses -- Find Address button
-OLCSSelfserveYourBusinessAddressesAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Your business - Addresses -- Select VOSA in the drop down address picker
-OLCSSelfserveYourBusinessAddressesAddressDropDownSelectButtonCLICK  click  correspondence_address[searchPostcode][select]  inputName  NA  OLCS  0  Your business - Addresses -- Select button to select address in the drop down
-OLCSSelfserveYourBusinessAddressesBusinessPhoneNumber  standardKeys  phone_business  id  0123456789  OLCS  0  Your business - Addresses -- Enter Business telphone number
-OLCSSelfserveYourBusinessAddressesHomePhoneNumber  standardKeys  phone_home  id  1234567890  OLCS  0  Your business - Addresses -- Enter Home telephone number
-OLCSSelfserveYourBusinessAddressesMobilePhoneNumber  standardKeys  phone_mobile  id  2345678901  OLCS  0  Your business - Addresses -- Enter Mobile telephone number
-OLCSSelfserveYourBusinessAddressesFaxPhoneNumber  standardKeys  phone_fax  id  3456789012  OLCS  0  Your business - Addresses -- Enter Fax telephone number
-OLCSSelfserveYourBusinessAddressesEmailAddress  standardKeys  email  id  user@email.com  OLCS  0  Your business - Addresses -- Enter email address
-OLCSSelfserveYourBusinessAddressesRegisteredOfficePostCode  standardKeys  registered_office_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Your business - Addresses -- Registered office Post Code Search text field
-OLCSSelfserveYourBusinessAddressesRegisteredOfficeFindAddressCLICK  click  registered_office_address[searchPostcode][search]  inputName  NA  OLCS  0  Your business - Addresses -- Registered office find Address button
-OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDown  standardKeys  registered_office_address[searchPostcode][addresses]  inputName  v  OLCS  0  Your business - Addresses -- Select VOSA in the Registered office drop down address picker
-OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLICK  click  registered_office_address[searchPostcode][select]  inputName  NA  OLCS  0  Your business - Addresses -- Select button to select Registered office address in the drop down
+OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCHECK  wait  data[companyNumber][company_number]  id  NA  OLCS  0  Your business -> Business details -- Check is present 'Registered company number' text field
+OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Your business -> Business details -- Click on 'Registered company number' text field
+OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumberDeleteKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  Your business -> Business details -- press delete key in Registered company number text field
+OLCSSelfserveYourBusinessBusinessBusinessDetailsCompanyNumber  standardKeys  data[companyNumber][company_number]  id  01989005  OLCS  0  Your business -> Business details -- Enter 12345678 into Registered company number text field
+OLCSSelfserveYourBusinessBusinessTypeFindCompanyCLICK  click  data[companyNumber][submit_lookup_company]  inputName  NA  OLCS  0  Your business -> Business details -- Find Company button
+OLCSSelfserveYourBusinessBusinessDetailsCompanyNameCHECK  wait  name  id  NA  OLCS  0  Your business -> Business details -- Check is present 'Company name' text field
+OLCSSelfserveYourBusinessBusinessDetailsCompanyName  standardKeys  name  id  John Smith Haulage Ltd  OLCS  0  Your business -> Business details -- Company name text field
+OLCSSelfserveYourBusinessBusinessDetailsTradingNamesCHECK0  wait  data[tradingNames][trading_name][0][text]  inputName  NA  OLCS  0  Your business -> Business details -- Check is present 'Trading names (optional)' text field
+OLCSSelfserveYourBusinessBusinessDetailsTradingNames0  standardKeys  data[tradingNames][trading_name][0][text]  inputName  John Jones Haulage  OLCS  0  Your business -> Business details -- Trading names (optional) text field
+OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCHECK  wait  data[tradingNames][submit_add_trading_name]  inputName  NA  OLCS  0  Your business -> Business details -- Check is present 'Add Another button'
+OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCLICK  click  data[tradingNames][submit_add_trading_name]  inputName  NA  OLCS  0  Your business -> Business details -- Add Another button
+OLCSSelfserveYourBusinessAddressesPostCode  standardKeys  correspondence_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Your business -> Addresses -- Post Code Search text field
+OLCSSelfserveYourBusinessAddressesFindAddressCLICK  click  correspondence_address[searchPostcode][search]  inputName  NA  OLCS  0  Your business -> Addresses -- Find Address button
+OLCSSelfserveYourBusinessAddressesAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Your business -> Addresses -- Select VOSA in the drop down address picker
+OLCSSelfserveYourBusinessAddressesAddressDropDownSelectButtonCLICK  click  correspondence_address[searchPostcode][select]  inputName  NA  OLCS  0  Your business -> Addresses -- Select button to select address in the drop down
+OLCSSelfserveYourBusinessAddressesBusinessPhoneNumber  standardKeys  phone_business  id  0123456789  OLCS  0  Your business -> Addresses -- Enter Business telphone number
+OLCSSelfserveYourBusinessAddressesHomePhoneNumber  standardKeys  phone_home  id  1234567890  OLCS  0  Your business -> Addresses -- Enter Home telephone number
+OLCSSelfserveYourBusinessAddressesMobilePhoneNumber  standardKeys  phone_mobile  id  2345678901  OLCS  0  Your business -> Addresses -- Enter Mobile telephone number
+OLCSSelfserveYourBusinessAddressesFaxPhoneNumber  standardKeys  phone_fax  id  3456789012  OLCS  0  Your business -> Addresses -- Enter Fax telephone number
+OLCSSelfserveYourBusinessAddressesEmailAddress  standardKeys  email  id  user@email.com  OLCS  0  Your business -> Addresses -- Enter email address
+OLCSSelfserveYourBusinessAddressesRegisteredOfficePostCode  standardKeys  registered_office_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Your business -> Addresses -- Registered office Post Code Search text field
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeFindAddressCLICK  click  registered_office_address[searchPostcode][search]  inputName  NA  OLCS  0  Your business -> Addresses -- Registered office find Address button
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDown  standardKeys  registered_office_address[searchPostcode][addresses]  inputName  v  OLCS  0  Your business -> Addresses -- Select VOSA in the Registered office drop down address picker
+OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLICK  click  registered_office_address[searchPostcode][select]  inputName  NA  OLCS  0  Your business -> Addresses -- Select button to select Registered office address in the drop down
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Operating Centres
 .  .  .  .  .  .  0  .
