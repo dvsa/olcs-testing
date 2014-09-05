@@ -12,6 +12,10 @@ OLCSSelfserveEditButtonCHECK  wait  Edit  xpathLinkContains  NA  OLCS  0  Framew
 OLCSSelfserveEditButtonCLICK  click  Edit  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Edit' button
 OLCSSelfserveAddButtonCHECK  wait  add  id  NA  OLCS  0  Framework -- Check is present 'Add' button
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Framework -- Click 'Add' button
+OLCSSelfserveSaveAndAnotherButtonCHECK  wait  addAnother  id  NA  OLCS  0  Framework -- Check is present 'Save & add another' button
+OLCSSelfserveSaveAndAnotherButtonCLICK  click  addAnother  id  NA  OLCS  0  Framework -- Click 'Save & add another' button
+OLCSSelfserveCancelButtonCHECK  wait  cancel  id  NA  OLCS  0  Framework -- Check is present 'Save & add another' button
+OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  0  Framework -- Click 'Save & add another' button
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
 .  .  .  .  .  .  0  .
@@ -104,6 +108,13 @@ OLCSSelfserveYourBusinessBusinessDetailsTradingNamesCHECK0  wait  data[tradingNa
 OLCSSelfserveYourBusinessBusinessDetailsTradingNames0  standardKeys  data[tradingNames][trading_name][0][text]  inputName  John Jones Haulage  OLCS  0  Your business -> Business details -- Trading names (optional) text field
 OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCHECK  wait  data[tradingNames][submit_add_trading_name]  inputName  NA  OLCS  0  Your business -> Business details -- Check is present 'Add Another button'
 OLCSSelfserveYourBusinessBusinessDetailsAddAnotherCLICK  click  data[tradingNames][submit_add_trading_name]  inputName  NA  OLCS  0  Your business -> Business details -- Add Another button
+.  .  .  .  .  .  0  Business details - Subsidiary companies (Optiional)
+OLCSSelfserveYourBusinessBusinessBusinessDetailsSubsidiaryCHECK1  checkContent  body  tagName  Add subsidiary company  OLCS  0  Your business -> Business details -> Add subsidiary company -- Check 'Add subsidiary company' text is displayed
+OLCSSelfserveYourBusinessBusinessBusinessDetailsSubsidiaryCHECK2  checkContent  body  tagName  Company name  OLCS  0  Your business -> Business details -> Add subsidiary company -- Check 'Company name' text is displayed
+OLCSSelfserveYourBusinessBusinessBusinessDetailsSubsidiaryCHECK3  checkContent  body  tagName  Company number  OLCS  0  Your business -> Business details -> Add subsidiary company -- Check 'Company number' text is displayed
+OLCSSelfserveYourBusinessBusinessDetailsSubsidiaryCompanyNameCHECK  wait  name  id  NA  OLCS  0  Your business -> Business details -> Add subsidiary company -- Check is present 'Company name' text field
+OLCSSelfserveYourBusinessBusinessDetailsSubsidiaryCompanyNumberCHECK  wait  companyNo  id  NA  OLCS  0  Your business -> Business details -> Add subsidiary company -- Check is present 'Company number' text field
+.  .  .  .  .  .  0  Business Addresses
 OLCSSelfserveYourBusinessAddressesPostCode  standardKeys  correspondence_address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Your business -> Addresses -- Post Code Search text field
 OLCSSelfserveYourBusinessAddressesFindAddressCLICK  click  correspondence_address[searchPostcode][search]  inputName  NA  OLCS  0  Your business -> Addresses -- Find Address button
 OLCSSelfserveYourBusinessAddressesAddressDropDown  standardKeys  correspondence_address[searchPostcode][addresses]  inputName  v  OLCS  0  Your business -> Addresses -- Select VOSA in the drop down address picker
