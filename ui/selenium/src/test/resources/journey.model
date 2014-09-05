@@ -14,8 +14,8 @@ OLCSSelfserveAddButtonCHECK  wait  add  id  NA  OLCS  0  Framework -- Check is p
 OLCSSelfserveAddButton  click  add  id  NA  OLCS  0  Framework -- Click 'Add' button
 OLCSSelfserveSaveAndAnotherButtonCHECK  wait  addAnother  id  NA  OLCS  0  Framework -- Check is present 'Save & add another' button
 OLCSSelfserveSaveAndAnotherButtonCLICK  click  addAnother  id  NA  OLCS  0  Framework -- Click 'Save & add another' button
-OLCSSelfserveCancelButtonCHECK  wait  cancel  id  NA  OLCS  0  Framework -- Check is present 'Save & add another' button
-OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  0  Framework -- Click 'Save & add another' button
+OLCSSelfserveCancelButtonCHECK  wait  cancel  id  NA  OLCS  0  Framework -- Check is present 'Cancel' button
+OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  0  Framework -- Click 'Cancel' button
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
 .  .  .  .  .  .  0  .
