@@ -142,7 +142,8 @@ OLCSSelfserveOperatingCentresAddOperatingCentrePostCode  standardKeys  address[s
 OLCSSelfserveOperatingCentresAddOperatingCentreFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
 OLCSSelfserveOperatingCentresAddOperatingCentreAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
 OLCSSelfserveOperatingCentresAddOperatingCentreAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  0  Select button to select address in the drop down
-OLCSSelfserveOperatingCentresAddOperatingCentreTotalVehicles  standardKeys  numberOfVehicles  id  5  OLCS  0  Enter the total amount of vehicles
+OLCSSelfserveOperatingCentresAddOperatingCentreTotalVehicles  standardKeys  noOfVehiclesPossessed  id  5  OLCS  0  Enter the total amount of vehicles
+OLCSSelfserveOperatingCentresAddOperatingCentreTotalVehicles5  standardKeys  noOfVehiclesPossessed  id  5  OLCS  0  Enter 5 vehicles into the 'Total number of vehicles' text field
 OLCSSelfserveOperatingCentresAddOperatingCentreTotalTrailers  standardKeys  numberOfTrailers  id  5  OLCS  0  Enter the total amount of trailers
 OLCSSelfserveOperatingCentresAddOperatingCentreParkingCLICK  click  sufficientParking  id  NA  OLCS  0  Checkbox, I have enough parking spaces available...
 OLCSSelfserveOperatingCentresAddOperatingCentrePermissionCLICK  click  permission  id  NA  OLCS  0  Checkbox, I am either the site owner or have permission...
