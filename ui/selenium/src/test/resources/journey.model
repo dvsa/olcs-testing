@@ -154,22 +154,32 @@ OLCSSelfserveOperatingCentresAddOperatingCentrePermissionCLICK  click  permissio
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Vechicle & Safety
 .  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Vechicle & Safety -> Add vehicle
+.  .  .  .  .  .  0  Vechicle & Safety -> Vehicles
+OLCSSelfserveVechicleSafetyRegNumberNo  click  //*[@id="application_vehicle-safety_vehicle-psv_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Vehicle & safety -- Vehicles -- Click No 'Would you like to enter the registration numbers of your vehicles?' radio button
+.  .  .  .  .  .  0  Vechicle & Safety -> Safety inspections
 OLCSSelfserveVechicleSafetyAddVehicleVRM  standardKeys  vrm  id  VRM1  OLCS  0  Enter a vehicle registration mark
 OLCSSelfserveVechicleSafetyAddVehiclePlatedWeight  standardKeys  platedWeight  id  750  OLCS  0  Enter a vehicle gross plated weight in KG
+.  .  .  .  .  .  0  Vechicle & Safety -> Vehicle Undertakings
+OLCSSelfserveVechicleSafetyUndertakingsOperateSmallVehiclesNo  click  //*[@id="application_vehicle-safety_undertakings_form"]/fieldset[2]/fieldset/label[2]/input  xpath  NA  OLCS  0  Vehicle & safety -- Vehicle Undertakings -- Click No 'Do you intend to operate small vehicles as a small part of a large bus business as detailed by Section 79A of the Public Passenger Vehicles Act (as amended by Section 265 of the Transport Act 2000)?' radio button
+OLCSSelfserveVechicleSafetyUndertakingsConfirmConditionsUndertakingsSmallCLICK  click  psvSmallVhlConfirmation  id  NA  OLCS  0  Vehicle & safety -- Vehicle Undertakings -- Click 'Confirm that you agree to the above conditions and undertakings being specified on your licence (if granted)' tick box
+OLCSSelfserveVechicleSafetyUndertakingsLimousinesNoveltyNo  click  //*[@id="application_vehicle-safety_undertakings_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Vehicle & safety -- Vehicle Undertakings -- Click No 'Are the vehicles you are applying for to be used as Limousines or novelty type vehicles?' radio button
+OLCSSelfserveVechicleSafetyUndertakingsLimousinesNoveltyNotToBeOperatedCLICK  click  psvNoLimousineConfirmation  id  NA  OLCS  0  Vehicle & safety -- Vehicle Undertakings -- Click 'Limousines and novelty type vehicles are not to be operated under this operator's licence' tick box
+OLCSSelfserveVechicleSafetyUndertakingsLimousinesNovelty9seatsCLICK  click  psvOnlyLimousinesConfirmation  id  NA  OLCS  0  Vehicle & safety -- Vehicle Undertakings -- Click 'Limousines and novelty type vehicles with nine passenger seats or more and issued with a valid Certificate will be used under the licence' tick box
 .  .  .  .  .  .  0  Vechicle & Safety -> Safety inspections
 OLCSSelfserveVechicleSafetySafetyInspectionsMaxTimeVehicleDropDown  standardKeys  safetyInsVehicles  id  1  OLCS  0  Maximum time between vechile safety inspections drop down
 OLCSSelfserveVechicleSafetySafetyInspectionsMaxTimeTrailerDropDown  standardKeys  safetyInsTrailers  id  1  OLCS  0  Maximum time between trailer safety inspections drop down
 OLCSSelfserveVechicleSafetySafetyInspectionsFreqYES  click  safetyInsVaries  id  NA  OLCS  0  Are some of your vehicles or trailers inspected more frequently than the interval stated above?
+OLCSSelfserveVechicleSafetySafetyInspectionsFreqNO  click  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[1]/label[2]/input  xpath  NA  OLCS  0  Vehicle & safety -- Safety inspectionsk -- Click No 'Are some of the vehicles inspected more frequently than the interval stated above?' radio button
 OLCSSelfserveVechicleSafetySafetyInspectionsTachYourself  click  tachographIns  id  NA  OLCS  0  Who analyses your tachograph records? Yourself or another employee of the business holding the operator's licence
+OLCSSelfserveVechicleSafetySafetyInspectionsTachOwner  click  tachographIns  id  NA  OLCS  0  Vehicle & safety -- Safety inspections -- Click 'An owner or employee of the business' radio button
 OLCSSelfserveVechicleSafetySafetyInspectionsConfirm  click  safetyConfirmation  id  NA  OLCS  0  Please confirm that you have suitable arrangements in place to keep the vehicles you wish to use in a fit and serviceable condition at all times
 .  .  .  .  .  .  0  Vechicle & Safety -> Safety inspections -> Add safety inspection provider
-OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderYour  click  isExternal  id  NA  OLCS  0  Who will carry out the safety inspections? Yourself or another employee of the business holding the operator's licence
-OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderContractorsName  standardKeys  fao  id  Joe Bloggs  OLCS  0  Contractor's name or person's full name if performed internally
-OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderPostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
-OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
-OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Select VOSA in the drop down address picker
-OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  0  Select button to select address in the drop down
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderYour  click  isExternal  id  NA  OLCS  0  Vehicle & safety -- Safety inspections --  Add safety inspection provider -- Click 'Yourself or another employee of the business holding the operator's licence' Radio button
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderContractorsName  standardKeys  fao  id  Joe Bloggs  OLCS  0  Vehicle & safety -- Safety inspections -- Add safety inspection provider -- Enter 'Joe Bloggs' into the Contractor's name or person's full name if performed internally text field
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderPostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Vehicle & safety -- Safety inspections --  Add safety inspection provider -- Post Code Search text field
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Vehicle & safety -- Safety inspections --  Add safety inspection provider -- Find Address button
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDown  standardKeys  address[searchPostcode][addresses]  inputName  v  OLCS  0  Vehicle & safety -- Safety inspections --  Add safety inspection provider -- Select VOSA in the drop down address picker
+OLCSSelfserveVechicleSafetySafetyInspectionsAddProviderAddressDropDownSelectButtonCLICK  click  address[searchPostcode][select]  inputName  NA  OLCS  0  Vehicle & safety -- Safety inspections --  Add safety inspection provider -- Select button to select address in the drop down
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Previous history -> Financial history
 .  .  .  .  .  .  0  .
