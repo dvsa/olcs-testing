@@ -139,9 +139,9 @@ OLCSSelfserveOperatingCentresTotalVehicles  standardKeys  totAuthVehicles  id  5
 OLCSSelfserveOperatingCentresTotalTrailers  standardKeys  totAuthTrailers  id  5  OLCS  0  Enter the total amount of trailers
 OLCSSelfserveOperatingCentresSmallVehiclesWAIT   wait  totAuthSmallVehicles  id  1  OLCS  0  Wait for Small vehicles text field
 OLCSSelfserveOperatingCentresSmallVehicles1  standardKeys  //*[@id="totAuthSmallVehicles"]  xpath  1  OLCS  0  Enter 1 into the Small vehicles text field
-OLCSSelfserveOperatingCentres9-16Seats2   standardKeys  totAuthMediumVehicles  id  2  OLCS  0  Enter 2 into the 9 - 16 passenger seats text field
-OLCSSelfserveOperatingCentres17OrMore2   standardKeys  totAuthLargeVehicles  id  1  OLCS  0  Enter 2 into the 17 or more passenger seats text field
-OLCSSelfserveOperatingCentresCommunity0   standardKeys  totCommunityLicences  id  1  OLCS  0  Enter 0 into the How many community licences text field
+OLCSSelfserveOperatingCentres9-16Seats2   standardKeys  //*[@id="totAuthMediumVehicles"]  xpath  2  OLCS  0  Enter 2 into the 9 - 16 passenger seats text field
+OLCSSelfserveOperatingCentres17OrMore2   standardKeys  //*[@id="totAuthLargeVehicles"]  xpath  1  OLCS  0  Enter 2 into the 17 or more passenger seats text field
+OLCSSelfserveOperatingCentresCommunity0   standardKeys  //*[@id="totCommunityLicences"]  xpath  1  OLCS  0  Enter 0 into the How many community licences text field
 .  .  .  .  .  .  0  Operating Centres -> Add Operating Centre
 OLCSSelfserveOperatingCentresAddOperatingCentrePostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
 OLCSSelfserveOperatingCentresAddOperatingCentreFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
