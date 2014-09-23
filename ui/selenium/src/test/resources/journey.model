@@ -137,6 +137,7 @@ OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLI
 .  .  .  .  .  .  0  .
 OLCSSelfserveOperatingCentresTotalVehicles  standardKeys  totAuthVehicles  id  5  OLCS  0  Enter the total amount of vehicles
 OLCSSelfserveOperatingCentresTotalTrailers  standardKeys  totAuthTrailers  id  5  OLCS  0  Enter the total amount of trailers
+OLCSSelfserveOperatingCentresSmallVehiclesWAIT   wait  totAuthSmallVehicles  id  1  OLCS  0  Wait for Small vehicles text field
 OLCSSelfserveOperatingCentresSmallVehicles1   standardKeys  totAuthSmallVehicles  id  1  OLCS  0  Enter 1 into the Small vehicles text field
 OLCSSelfserveOperatingCentres9-16Seats2   standardKeys  totAuthMediumVehicles  id  2  OLCS  0  Enter 2 into the 9 - 16 passenger seats text field
 OLCSSelfserveOperatingCentres17OrMore2   standardKeys  totAuthLargeVehicles  id  1  OLCS  0  Enter 2 into the 17 or more passenger seats text field
