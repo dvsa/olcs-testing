@@ -31,7 +31,7 @@ OLCSSelfserveDashboardCheck7  checkContent  body  tagName  Date created  OLCS  0
 OLCSSelfserveDashboardCheck8  checkContent  body  tagName  Date submitted  OLCS  0  Dashboard -- Check 'Date submitted' is displayed at top of table
 OLCSSelfserveDashboardCheck9  checkContent  body  tagName  Status  OLCS  0  Dashboard -- Check 'Status' is displayed at top of table
 OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Dashboard -- Click 'Start new application' button
-OLCSSelfserveDashboardClickNo14  click  14  xpathLinkContains  NA  OLCS  0  Framework -- Click '14' hyperlink on the dashboard page to bring up licence
+OLCSSelfserveDashboardClickNo14  click  7  xpathLinkContains  NA  OLCS  0  Framework -- Click '7' hyperlink on the dashboard page to bring up licence
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Type of licence
 .  .  .  .  .  .  0  .
