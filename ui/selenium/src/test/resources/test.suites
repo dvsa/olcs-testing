@@ -21,5 +21,5 @@ MOT-2985  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-ro
 MOT-2630  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 OLCS-ST1  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
 OLCS-TEST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
-OLCS-PSV-ST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
-OLCS-PSV-ST1  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+OLCS-PSV-ST  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  N
+OLCS-PSV-ST1  2  1  Y  N  1000  N  N  1000  Common-  /home/jenkins-remote/jenkins-root/reports/  Y
