@@ -29,6 +29,7 @@ OLCSinternalHomeCheck20  wait  taskSubCategory  id  NA  OLCS  0  Home Page -- Ch
 OLCSinternalHomeCheck21  wait  date  id  NA  OLCS  0  Home Page -- Check is present 'Date' drop down element
 OLCSinternalHomeCheck22  wait  status  id  NA  OLCS  0  Home Page -- Check is present 'Status' drop down element
 OLCSinternalHomeCheck23  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
+OLCSinternalHomeCheck24  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
