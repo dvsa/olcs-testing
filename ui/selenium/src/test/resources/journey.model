@@ -22,6 +22,13 @@ OLCSinternalHomeCheck13  wait  Date  xpathLinkContains  NA  OLCS  0  Home Page -
 OLCSinternalHomeCheck14  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
 OLCSinternalHomeCheck15  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
 OLCSinternalHomeCheck16  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
+OLCSinternalHomeCheck17  wait  assignedToTeam  id  NA  OLCS  0  Home Page -- Check is present 'Team' drop down element
+OLCSinternalHomeCheck18  wait  assignedToUser  id  NA  OLCS  0  Home Page -- Check is present 'Owner' drop down element
+OLCSinternalHomeCheck19  wait  category  id  NA  OLCS  0  Home Page -- Check is present 'Category' drop down element
+OLCSinternalHomeCheck20  wait  taskSubCategory  id  NA  OLCS  0  Home Page -- Check is present 'Sub category' drop down element
+OLCSinternalHomeCheck21  wait  date  id  NA  OLCS  0  Home Page -- Check is present 'Date' drop down element
+OLCSinternalHomeCheck22  wait  status  id  NA  OLCS  0  Home Page -- Check is present 'Status' drop down element
+OLCSinternalHomeCheck23  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
