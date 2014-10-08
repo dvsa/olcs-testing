@@ -6,14 +6,15 @@ OLCSinternalCheck1  checkContent  body  tagName  OLCS  OLCS  0  Framework -- Che
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Home Page
 .  .  .  .  .  .  0  .
-OLCSinternalHomeCheck1  checkContent  body  tagName  Home  OLCS  0  Framework -- Check 'Home' is displayed on the top left of the screen
-OLCSinternalHomeCheck2  checkContent  body  tagName  Team  OLCS  0  Framework -- Check 'Team' is displayed on the left filters
-OLCSinternalHomeCheck3  checkContent  body  tagName  Owner  OLCS  0  Framework -- Check 'Owner' is displayed on the left filters
-OLCSinternalHomeCheck4  checkContent  body  tagName  Category  OLCS  0  Framework -- Check 'Category' is displayed on the left filters
-OLCSinternalHomeCheck5  checkContent  body  tagName  Sub category  OLCS  0  Framework -- Check 'Sub category' is displayed on the left filters
-OLCSinternalHomeCheck6  checkContent  body  tagName  Date  OLCS  0  Framework -- Check 'Date' is displayed on the left filters
-OLCSinternalHomeCheck7  checkContent  body  tagName  Status  OLCS  0  Framework -- Check 'Status' is displayed on the left filters
-OLCSinternalHomeCheck8  checkContent  body  tagName  Urgent  OLCS  0  Framework -- Check 'Urgent' is displayed on the left filters
+OLCSinternalHomeCheck1  checkContent  body  tagName  Home  OLCS  0  Home Page -- Check 'Home' is displayed on the top left of the screen
+OLCSinternalHomeCheck2  checkContent  body  tagName  Team  OLCS  0  Home Page -- Check 'Team' is displayed on the left filters
+OLCSinternalHomeCheck3  checkContent  body  tagName  Owner  OLCS  0  Home Page -- Check 'Owner' is displayed on the left filters
+OLCSinternalHomeCheck4  checkContent  body  tagName  Category  OLCS  0  Home Page -- Check 'Category' is displayed on the left filters
+OLCSinternalHomeCheck5  checkContent  body  tagName  Sub category  OLCS  0  Home Page -- Check 'Sub category' is displayed on the left filters
+OLCSinternalHomeCheck6  checkContent  body  tagName  Date  OLCS  0  Home Page -- Check 'Date' is displayed on the left filters
+OLCSinternalHomeCheck7  checkContent  body  tagName  Status  OLCS  0  Home Page -- Check 'Status' is displayed on the left filters
+OLCSinternalHomeCheck8  checkContent  body  tagName  Urgent  OLCS  0  Home Page -- Check 'Urgent' is displayed on the left filters
+OLCSinternalHomeCheck9  wait  Link  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Link' filter
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
