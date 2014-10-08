@@ -15,6 +15,13 @@ OLCSinternalHomeCheck6  checkContent  body  tagName  Date  OLCS  0  Home Page --
 OLCSinternalHomeCheck7  checkContent  body  tagName  Status  OLCS  0  Home Page -- Check 'Status' is displayed on the left filters
 OLCSinternalHomeCheck8  checkContent  body  tagName  Urgent  OLCS  0  Home Page -- Check 'Urgent' is displayed on the left filters
 OLCSinternalHomeCheck9  wait  Link  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Link' filter
+OLCSinternalHomeCheck10  wait  Category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Category' filter
+OLCSinternalHomeCheck11  wait  Sub category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Sub category' filter
+OLCSinternalHomeCheck12  wait  Description  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Description' filter
+OLCSinternalHomeCheck13  wait  Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Date' filter
+OLCSinternalHomeCheck14  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
+OLCSinternalHomeCheck15  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
+OLCSinternalHomeCheck16  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
