@@ -1,4 +1,20 @@
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
+.  .  .  .  .  .  0  .
+OLCSinternalStart  start  Start new application  linkText  http://http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  Framework -- Start Internal Application
+OLCSinternalCheck1  checkContent  body  tagName  OLCS  OLCS  0  Framework -- Check 'OLCS' is displayed on the top left of the screen
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS Internal - Home Page
+.  .  .  .  .  .  0  .
+OLCSinternalHomeCheck1  checkContent  body  tagName  Home  OLCS  0  Framework -- Check 'Home' is displayed on the top left of the screen
+OLCSinternalHomeCheck2  checkContent  body  tagName  Team  OLCS  0  Framework -- Check 'Team' is displayed on the left filters
+OLCSinternalHomeCheck3  checkContent  body  tagName  Owner  OLCS  0  Framework -- Check 'Owner' is displayed on the left filters
+OLCSinternalHomeCheck4  checkContent  body  tagName  Category  OLCS  0  Framework -- Check 'Category' is displayed on the left filters
+OLCSinternalHomeCheck5  checkContent  body  tagName  Sub category  OLCS  0  Framework -- Check 'Sub category' is displayed on the left filters
+OLCSinternalHomeCheck6  checkContent  body  tagName  Date  OLCS  0  Framework -- Check 'Date' is displayed on the left filters
+OLCSinternalHomeCheck7  checkContent  body  tagName  Staus  OLCS  0  Framework -- Check 'Staus' is displayed on the left filters
+OLCSinternalHomeCheck8  checkContent  body  tagName  Urgent  OLCS  0  Framework -- Check 'Urgent' is displayed on the left filters
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
