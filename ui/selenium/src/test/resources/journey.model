@@ -76,18 +76,19 @@ OLCSinternalSearchSearch1Click  click  search[search]  id  NA  OLCS  0  Search P
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Search Results Page
 .  .  .  .  .  .  0  .
-OLCSinternalSearchResultsCheck1  checkContent  body  tagName  Search results  OLCS  0  Search Page -- Check 'Search results' is displayed at the top of the table results
-OLCSinternalSearchResultsCheck2  checkContent  body  tagName  Result list  OLCS  0  Search Page -- Check 'Result list' is displayed at the top of the table results
-OLCSinternalSearchResultsCheck3  checkContent  body  tagName  Cases  OLCS  0  Search Page -- Check 'Cases' is displayed at the top of the table results
-OLCSinternalSearchResultsCheck4  checkContent  body  tagName  MLH  OLCS  0  Search Page -- Check 'MLH' is displayed at the top of the table results
-OLCSinternalSearchResultsCheck5  checkContent  body  tagName  Info  OLCS  0  Search Page -- Check 'Info' is displayed at the top of the table results
-OLCSinternalSearchResultsCheck6  wait  Lic no/status  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Lic no/status' link top of the table results
-OLCSinternalSearchResultsCheck7  wait  App ID/status  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'App ID/status' link top of the table results
-OLCSinternalSearchResultsCheck8  wait  Op/trading name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Op/trading name' link top of the table results
-OLCSinternalSearchResultsCheck9  checkContent  body  tagName  Entity / Lic Type  OLCS  0  Search Page -- Check 'Entity / Lic Type' is displayed at the top of the table results
-OLCSinternalSearchResultsCheck10  wait  Last act CN/Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Last act CN/Date' link top of the table results
-OLCSinternalSearchResultsCheck11  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Correspondence address' link top of the table results
-OLCSinternalSearchResultsCheck12  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Correspondence address' link top of the table results
+OLCSinternalSearchResultsCheck1  checkContent  body  tagName  Search results  OLCS  0  Search Results Page -- Check 'Search results' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck2  checkContent  body  tagName  Result list  OLCS  0  Search Results Page -- Check 'Result list' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck3  checkContent  body  tagName  Cases  OLCS  0  Search Results Page -- Check 'Cases' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck4  checkContent  body  tagName  MLH  OLCS  0  Search Results Page -- Check 'MLH' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck5  checkContent  body  tagName  Info  OLCS  0  Search Results Page -- Check 'Info' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck6  wait  Lic no/status  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Lic no/status' link top of the table results
+OLCSinternalSearchResultsCheck7  wait  App ID/status  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'App ID/status' link top of the table results
+OLCSinternalSearchResultsCheck8  wait  Op/trading name  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Op/trading name' link top of the table results
+OLCSinternalSearchResultsCheck9  checkContent  body  tagName  Entity / Lic Type  OLCS  0  Search Results Page -- Check 'Entity / Lic Type' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck10  wait  Last act CN/Date  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Last act CN/Date' link top of the table results
+OLCSinternalSearchResultsCheck11  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Correspondence address' link top of the table results
+OLCSinternalSearchResultsCheck12  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Correspondence address' link top of the table results
+OLCSinternalSearchResultsOB1234567Click  click  OB1234567  xpathLinkContains  NA  OLCS  0  Search Results Page -- Click on Licence number OB1234567 from the results table (Test data)
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
