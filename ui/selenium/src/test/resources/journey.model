@@ -74,6 +74,21 @@ OLCSinternalSearchCheck36  wait  search[search]  id  NA  OLCS  0  Search Page --
 OLCSinternalSearchCheck37  wait  advanced  id  NA  OLCS  0  Search Page -- Check is present 'Search' button at the bottom of the page
 OLCSinternalSearchSearch1Click  click  search[search]  id  NA  OLCS  0  Search Page -- Click 'Search' button in the middle of the page
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS Internal - Search Results Page
+.  .  .  .  .  .  0  .
+OLCSinternalSearchResultsCheck1  checkContent  body  tagName  Search results  OLCS  0  Search Page -- Check 'Search results' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck2  checkContent  body  tagName  Result list  OLCS  0  Search Page -- Check 'Result list' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck3  checkContent  body  tagName  Cases  OLCS  0  Search Page -- Check 'Cases' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck4  checkContent  body  tagName  MLH  OLCS  0  Search Page -- Check 'MLH' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck5  checkContent  body  tagName  Info  OLCS  0  Search Page -- Check 'Info' is displayed at the top of the table results
+OLCSinternalSearchResultsCheck6  wait  Lic no/status  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Lic no/status' link top of the table results
+OLCSinternalSearchResultsCheck7  wait  App ID/status  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'App ID/status' link top of the table results
+OLCSinternalSearchResultsCheck8  wait  Op/trading name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Op/trading name' link top of the table results
+OLCSinternalSearchResultsCheck9  wait  Entity / Lic Type  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Entity / Lic Type' link top of the table results
+OLCSinternalSearchResultsCheck10  wait  Last act CN/Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Last act CN/Date' link top of the table results
+OLCSinternalSearchResultsCheck11  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Correspondence address' link top of the table results
+OLCSinternalSearchResultsCheck12  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Correspondence address' link top of the table results
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
