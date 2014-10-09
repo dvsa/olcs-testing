@@ -30,7 +30,7 @@ OLCSinternalHomeCheck21  wait  date  id  NA  OLCS  0  Home Page -- Check is pres
 OLCSinternalHomeCheck22  wait  status  id  NA  OLCS  0  Home Page -- Check is present 'Status' drop down element
 OLCSinternalHomeCheck23  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
 OLCSinternalHomeCheck24  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
-OLCSinternalHomeCheck25  wait  Advanced  className  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
+OLCSinternalHomeCheck25  wait  Advanced  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
 OLCSinternalHomeAdvancedCLICK  click  submit  id  NA  OLCS  0  Framework -- Click 'Continue' button or 'Save' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Search Page - accessed from the advanced link from top of screen
