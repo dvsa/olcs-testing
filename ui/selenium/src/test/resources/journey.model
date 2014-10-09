@@ -84,7 +84,7 @@ OLCSinternalSearchResultsCheck5  checkContent  body  tagName  Info  OLCS  0  Sea
 OLCSinternalSearchResultsCheck6  wait  Lic no/status  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Lic no/status' link top of the table results
 OLCSinternalSearchResultsCheck7  wait  App ID/status  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'App ID/status' link top of the table results
 OLCSinternalSearchResultsCheck8  wait  Op/trading name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Op/trading name' link top of the table results
-OLCSinternalSearchResultsCheck9  wait  Entity / Lic Type  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Entity / Lic Type' link top of the table results
+OLCSinternalSearchResultsCheck9  checkContent  body  tagName  Entity / Lic Type  OLCS  0  Search Page -- Check 'Entity / Lic Type' is displayed at the top of the table results
 OLCSinternalSearchResultsCheck10  wait  Last act CN/Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Last act CN/Date' link top of the table results
 OLCSinternalSearchResultsCheck11  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Correspondence address' link top of the table results
 OLCSinternalSearchResultsCheck12  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Correspondence address' link top of the table results
