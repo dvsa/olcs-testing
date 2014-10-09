@@ -72,6 +72,7 @@ OLCSinternalSearchCheck34  wait  search-advanced[fabsRef]  id  NA  OLCS  0  Sear
 OLCSinternalSearchCheck35  wait  search-advanced[companyNo]  id  NA  OLCS  0  Search Page -- Check is present 'Company number' text field
 OLCSinternalSearchCheck36  wait  search[search]  id  NA  OLCS  0  Search Page -- Check is present 'Search' button in the middle of the page
 OLCSinternalSearchCheck37  wait  advanced  id  NA  OLCS  0  Search Page -- Check is present 'Search' button at the bottom of the page
+OLCSinternalSearchSearch1Click  click  search[search]  id  NA  OLCS  0  Search Page -- Click 'Search' button in the middle of the page
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
