@@ -31,6 +31,46 @@ OLCSinternalHomeCheck22  wait  status  id  NA  OLCS  0  Home Page -- Check is pr
 OLCSinternalHomeCheck23  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
 OLCSinternalHomeCheck24  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
 OLCSinternalHomeCheck25  wait  Advanced  className  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
+OLCSinternalHomeAdvancedCLICK  click  submit  id  NA  OLCS  0  Framework -- Click 'Continue' button or 'Save' button
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS Internal - Search Page - accessed from the advanced link from top of screen
+.  .  .  .  .  .  0  .
+OLCSinternalSearchCheck1  checkContent  body  tagName  Search  OLCS  0  Search Page -- Check 'Search' is displayed on the top left of the screen
+OLCSinternalSearchCheck2  checkContent  body  tagName  Search for licences using any of the following fields  OLCS  0  Search Page -- Check 'Search for licences using any of the following fields' is displayed on the top left of the screen
+OLCSinternalSearchCheck3  checkContent  body  tagName  Licence number  OLCS  0  Search Page -- Check 'Licence number' text is displayed
+OLCSinternalSearchCheck4  checkContent  body  tagName  Operator/trading name  OLCS  0  Search Page -- Check 'Operator/trading name' text is displayed
+OLCSinternalSearchCheck5  checkContent  body  tagName  Postcode  OLCS  0  Search Page -- Check 'Postcode' text is displayed
+OLCSinternalSearchCheck6  checkContent  body  tagName  First name(s)  OLCS  0  Search Page -- Check 'First name(s)' text is displayed
+OLCSinternalSearchCheck7  checkContent  body  tagName  Last name  OLCS  0  Search Page -- Check 'Last name' text is displayed
+OLCSinternalSearchCheck8  checkContent  body  tagName  Date of birth  OLCS  0  Search Page -- Check 'Date of birth' text is displayed
+OLCSinternalSearchCheck9  checkContent  body  tagName  Advanced search  OLCS  0  Search Page -- Check 'Advanced search' text is displayed
+OLCSinternalSearchCheck10  checkContent  body  tagName  Address  OLCS  0  Search Page -- Check 'Address' text is displayed
+OLCSinternalSearchCheck11  checkContent  body  tagName  Town  OLCS  0  Search Page -- Check 'Town' text is displayed
+OLCSinternalSearchCheck12  checkContent  body  tagName  Case number  OLCS  0  Search Page -- Check 'Case number' text is displayed
+OLCSinternalSearchCheck13  checkContent  body  tagName  Transport manager ID  OLCS  0  Search Page -- Check 'Transport manager ID' text is displayed
+OLCSinternalSearchCheck14  checkContent  body  tagName  Operator ID  OLCS  0  Search Page -- Check 'Operator ID' text is displayed
+OLCSinternalSearchCheck15  checkContent  body  tagName  Vehicle registration mark  OLCS  0  Search Page -- Check 'Vehicle registration mark' text is displayed
+OLCSinternalSearchCheck16  checkContent  body  tagName  Disc serial number  OLCS  0  Search Page -- Check 'Disc serial number' text is displayed
+OLCSinternalSearchCheck17  checkContent  body  tagName  Fabs reference  OLCS  0  Search Page -- Check 'Fabs reference' text is displayed
+OLCSinternalSearchCheck18  checkContent  body  tagName  Company number  OLCS  0  Search Page -- Check 'Company number' text is displayed
+OLCSinternalSearchCheck19  wait  search[licNo]  id  NA  OLCS  0  Search Page -- Check is present 'Licence number' text field
+OLCSinternalSearchCheck20  wait  search[operatorName]  id  NA  OLCS  0  Search Page -- Check is present 'Operator/trading name' text field
+OLCSinternalSearchCheck21  wait  search[postcode]  id  NA  OLCS  0  Search Page -- Check is present 'Postcode' text field
+OLCSinternalSearchCheck22  wait  search[forename]  id  NA  OLCS  0  Search Page -- Check is present 'First name(s)' text field
+OLCSinternalSearchCheck23  wait  search[familyName]  id  NA  OLCS  0  Search Page -- Check is present 'Last name' text field
+OLCSinternalSearchCheck24  wait  search[birthDate][day]  inputName  NA  OLCS  0  Search Page -- Check is present 'Date of birth (Day)' drop down
+OLCSinternalSearchCheck25  wait  search[birthDate][month]  inputName  NA  OLCS  0  Search Page -- Check is present 'Date of birth (Month)' drop down
+OLCSinternalSearchCheck26  wait  search[birthDate][year]  inputName  NA  OLCS  0  Search Page -- Check is present 'Date of birth (Year)' drop down
+OLCSinternalSearchCheck27  wait  search-advanced[address]  id  NA  OLCS  0  Search Page -- Check is present 'Address' text field
+OLCSinternalSearchCheck28  wait  search-advanced[town]  id  NA  OLCS  0  Search Page -- Check is present 'Town' text field
+OLCSinternalSearchCheck29  wait  search-advanced[caseNumber]  id  NA  OLCS  0  Search Page -- Check is present 'Case number' text field
+OLCSinternalSearchCheck30  wait  search-advanced[transportManagerId]  id  NA  OLCS  0  Search Page -- Check is present 'Transport manager ID' text field
+OLCSinternalSearchCheck31  wait  search-advanced[operatorId]  id  NA  OLCS  0  Search Page -- Check is present 'Operator ID' text field
+OLCSinternalSearchCheck32  wait  search-advanced[vehicleRegMark]  id  NA  OLCS  0  Search Page -- Check is present 'Vehicle registration mark' text field
+OLCSinternalSearchCheck33  wait  search-advanced[diskSerialNumber]  id  NA  OLCS  0  Search Page -- Check is present 'Disc serial number' text field
+OLCSinternalSearchCheck34  wait  search-advanced[fabsRef]  id  NA  OLCS  0  Search Page -- Check is present 'Fabs reference' text field
+OLCSinternalSearchCheck35  wait  search-advanced[companyNo]  id  NA  OLCS  0  Search Page -- Check is present 'Company number' text field
+OLCSinternalSearchCheck36  wait  advanced  id  NA  OLCS  0  Search Page -- Check is present 'Search' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
