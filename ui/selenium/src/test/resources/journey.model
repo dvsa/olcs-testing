@@ -90,6 +90,24 @@ OLCSinternalSearchResultsCheck11  wait  Correspondence address  xpathLinkContain
 OLCSinternalSearchResultsCheck12  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Correspondence address' link top of the table results
 OLCSinternalSearchResultsOB1234567Click  click  OB1234567  xpathLinkContains  NA  OLCS  0  Search Results Page -- Click on Licence number OB1234567 from the results table (Test data)
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS Internal - Licence details section URL example http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/details/overview
+.  .  .  .  .  .  0  .
+OLCSinternalLicenceDetailsInfo  checkContent  body  tagName  Licence details  OLCS  0  Licence details section - page content check to follow, example URL http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/details/overview
+OLCSinternalLicenceDetailsCheck1  checkContent  body  tagName  Licence details  OLCS  0  Licence details section -- Check 'Licence details' is displayed
+OLCSinternalLicenceDetailsCheck2  checkContent  body  tagName  Overview  OLCS  0  Licence details section -- Check 'Overview' is displayed
+OLCSinternalLicenceDetailsCheck3  wait  Overview  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Overview' left hand menu link
+OLCSinternalLicenceDetailsCheck4  wait  Type of licence  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Type of licence' left hand menu link
+OLCSinternalLicenceDetailsCheck5  wait  Business details  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Business details' left hand menu link
+OLCSinternalLicenceDetailsCheck6  wait  Addresses  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Addresses' left hand menu link
+OLCSinternalLicenceDetailsCheck7  wait  People  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'People' left hand menu link
+OLCSinternalLicenceDetailsCheck8  wait  Operating centres & authorisation  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Operating centres & authorisation' left hand menu link
+OLCSinternalLicenceDetailsCheck9  wait  Transport managers  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Transport managers' left hand menu link
+OLCSinternalLicenceDetailsCheck10  wait  Vehicles  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Vehicles' left hand menu link
+OLCSinternalLicenceDetailsCheck11  wait  Safety  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Safety' left hand menu link
+OLCSinternalLicenceDetailsCheck12  wait  Conditions & undertakings  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Conditions & undertakings' left hand menu link
+
+
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
