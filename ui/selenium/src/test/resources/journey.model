@@ -105,6 +105,7 @@ OLCSinternalLicenceDetailsCheck9  wait  Transport managers  xpathLinkContains  N
 OLCSinternalLicenceDetailsCheck10  wait  Vehicles  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Vehicles' left hand menu link
 OLCSinternalLicenceDetailsCheck11  wait  Safety  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Safety' left hand menu link
 OLCSinternalLicenceDetailsCheck12  wait  Conditions & undertakings  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Conditions & undertakings' left hand menu link
+OLCSinternalLicenceDetailsTypeOfLicenceClick  click  Type of licence  xpathLinkContains  NA  OLCS  0  Search Results Page -- Click on 'Type of licence' from the left hand menu
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
