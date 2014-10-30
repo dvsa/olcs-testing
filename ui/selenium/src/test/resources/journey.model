@@ -88,6 +88,7 @@ OLCSinternalSearchResultsCheck9  checkContent  body  tagName  Entity / Lic Type 
 OLCSinternalSearchResultsCheck10  wait  Last act CN/Date  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Last act CN/Date' link top of the table results
 OLCSinternalSearchResultsCheck11  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Correspondence address' link top of the table results
 OLCSinternalSearchResultsCheck12  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Correspondence address' link top of the table results
+OLCSinternalSearchResultsCheck13  wait  Licence discs  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Licence discs' link top of the table results
 OLCSinternalSearchResultsOB1234567Click  click  OB1234567  xpathLinkContains  NA  OLCS  0  Search Results Page -- Click on Licence number OB1234567 from the results table (Test data)
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Licence details section URL example http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/details/overview
