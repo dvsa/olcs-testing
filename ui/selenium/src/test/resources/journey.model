@@ -106,6 +106,13 @@ OLCSinternalLicenceDetailsCheck10  wait  Vehicles  xpathLinkContains  NA  OLCS  
 OLCSinternalLicenceDetailsCheck11  wait  Safety  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Safety' left hand menu link
 OLCSinternalLicenceDetailsCheck12  wait  Conditions & undertakings  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Conditions & undertakings' left hand menu link
 OLCSinternalLicenceDetailsCheck13  wait  Licence discs  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Licence discs' left hand menu link
+OLCSinternalLicenceDetailsCheck14  wait  Licence details  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Licence details' top menu link
+OLCSinternalLicenceDetailsCheck15  wait  Bus reg  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Bus reg' top menu link
+OLCSinternalLicenceDetailsCheck16  wait  Cases  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Cases' top menu link
+OLCSinternalLicenceDetailsCheck17  wait  Opposition  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Opposition' top menu link
+OLCSinternalLicenceDetailsCheck18  wait  Docs & attachments  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Docs & attachments' top menu link
+OLCSinternalLicenceDetailsCheck19  wait  Processing  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Processing' top menu link
+OLCSinternalLicenceDetailsCheck20  wait  Fees  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Fees' top menu link
 OLCSinternalLicenceDetailsOverviewClick  click  Overview  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Overview' from the left hand menu
 OLCSinternalLicenceDetailsTypeOfLicenceClick  click  Type of licence  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Type of licence' from the left hand menu
 OLCSinternalLicenceDetailsBusinessDetailsClick  click  Business details  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Business details' from the left hand menu
