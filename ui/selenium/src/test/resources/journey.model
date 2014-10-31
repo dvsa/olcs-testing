@@ -136,7 +136,7 @@ OLCSinternalLicenceDetailsCheck38  checkContent  body  tagName  Total number of 
 OLCSinternalLicenceDetailsCheck39  wait  totAuthVehicles  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Total number of vehicles' text filed
 OLCSinternalLicenceDetailsCheck40  wait  totAuthTrailers  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Total number of trailers' text filed
 OLCSinternalLicenceDetailsCheck41  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Save' button
-OLCSinternalLicenceDetailsCheck41  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Cancel' button
+OLCSinternalLicenceDetailsCheck42  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Cancel' button
 OLCSinternalLicenceDetailsOverviewClick  click  Overview  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Overview' from the left hand menu
 OLCSinternalLicenceDetailsTypeOfLicenceClick  click  Type of licence  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Type of licence' from the left hand menu
 OLCSinternalLicenceDetailsBusinessDetailsClick  click  Business details  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Business details' from the left hand menu
