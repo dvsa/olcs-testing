@@ -1,7 +1,7 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
-OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  Framework -- Start Internal Application
+OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/  OLCS  0  Framework -- Start Internal Application
 OLCSinternalCheck1  checkContent  body  tagName  OLCS  OLCS  0  Framework -- Check 'OLCS' is displayed on the top left of the screen
 OLCSinternalAdvancedCLICK  click  Advanced  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Advanced' link
 .  .  .  .  .  .  0  .
