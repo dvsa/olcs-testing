@@ -177,7 +177,17 @@ OLCSinternalLicenceDetailsCheck66  checkContent  body  tagName  Workshop address
 OLCSinternalLicenceDetailsCheck67  checkContent  body  tagName  Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.  OLCS  0  Licence details -> Safety section -- Check 'Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.' is displayed - only when no safety inspection providers are provided
 OLCSinternalLicenceDetailsCheck68  wait  safetyInsVehicles  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between vehicle safety inspections' drop down
 OLCSinternalLicenceDetailsCheck69  wait  safetyInsTrailers  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between trailer safety inspections' drop down
-
+OLCSinternalLicenceDetailsCheck70  wait  safetyInsVaries  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' Yes radio button
+OLCSinternalLicenceDetailsCheck71  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[1]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' No radio button
+OLCSinternalLicenceDetailsCheck72  wait  tachographIns  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An owner or employee of the business' radio button
+OLCSinternalLicenceDetailsCheck73  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An external contractor' radio button
+OLCSinternalLicenceDetailsCheck74  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[3]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Not applicable' radio button
+OLCSinternalLicenceDetailsCheck75  wait  tachographInsName  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'The company or full name of the external contractor who analyses the tachograph records' text field
+OLCSinternalLicenceDetailsCheck76  wait  add  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Safety inspection providers' Add button
+OLCSinternalLicenceDetailsCheck77  wait  isMaintenanceSuitable  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' Yes radio button
+OLCSinternalLicenceDetailsCheck78  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' No radio button
+OLCSinternalLicenceDetailsCheck79  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Save' button
+OLCSinternalLicenceDetailsCheck80  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Cancel' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
