@@ -148,7 +148,7 @@ OLCSinternalLicenceDetailsVehiclesClick  click  Vehicles  xpathLinkContains  NA 
 OLCSinternalLicenceDetailsLicenceDiscsClick  click  Licence discs  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Licence discs' from the left hand menu
 OLCSinternalLicenceDetailsSafetyClick  click  Safety  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Safety' from the left hand menu
 OLCSinternalLicenceDetailsConditionsUndertakingsClick  click  Conditions & undertakings  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Conditions & undertakings' from the left hand menu
-.  .  .  .  .  .  0  . CHECK Safety
+.  .  .  .  .  .  0  . CHECK Vehicles
 OLCSinternalLicenceDetailsCheck43  checkContent  body  tagName  Vehicles  OLCS  0  Licence details -> Vehicles section -- Check 'Vehicles' is displayed
 OLCSinternalLicenceDetailsCheck44  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Save' button
 OLCSinternalLicenceDetailsCheck45  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Cancel' button
@@ -158,6 +158,26 @@ OLCSinternalLicenceDetailsCheck48  checkContent  body  tagName  Gross plated wei
 OLCSinternalLicenceDetailsCheck49  checkContent  body  tagName  Specified  OLCS  0  Licence details -> Vehicles section -- Check 'Specified' is displayed
 OLCSinternalLicenceDetailsCheck50  checkContent  body  tagName  Removed  OLCS  0  Licence details -> Vehicles section -- Check 'Removed' is displayed
 OLCSinternalLicenceDetailsCheck51  checkContent  body  tagName  Disc no  OLCS  0  Licence details -> Vehicles section -- Check 'Disc no' is displayed
+.  .  .  .  .  .  0  . CHECK Safety
+OLCSinternalLicenceDetailsCheck52  checkContent  body  tagName  Safety  OLCS  0  Licence details -> Safety section -- Check 'Safety' is displayed
+OLCSinternalLicenceDetailsCheck53  checkContent  body  tagName  Maximum time between vehicle safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between vehicle safety inspections' is displayed
+OLCSinternalLicenceDetailsCheck54  checkContent  body  tagName  Maximum time between trailer safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between trailer safety inspections' is displayed
+OLCSinternalLicenceDetailsCheck55  checkContent  body  tagName  Are some of the vehicles or trailers inspected more frequently than the interval stated above?  OLCS  0  Licence details -> Safety section -- Check 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' is displayed
+OLCSinternalLicenceDetailsCheck56  checkContent  body  tagName  This can sometimes be the case for particularly old vehicles  OLCS  0  Licence details -> Safety section -- Check 'This can sometimes be the case for particularly old vehicles' is displayed
+OLCSinternalLicenceDetailsCheck57  checkContent  body  tagName  Who analyses the tachograph records?  OLCS  0  Licence details -> Safety section -- Check 'Who analyses the tachograph records?' is displayed
+OLCSinternalLicenceDetailsCheck58  checkContent  body  tagName  An owner or employee of the business  OLCS  0  Licence details -> Safety section -- Check 'An owner or employee of the business' is displayed
+OLCSinternalLicenceDetailsCheck59  checkContent  body  tagName  An external contractor  OLCS  0  Licence details -> Safety section -- Check 'An external contractor' is displayed
+OLCSinternalLicenceDetailsCheck60  checkContent  body  tagName  Not applicable  OLCS  0  Licence details -> Safety section -- Check 'Not applicable' is displayed
+OLCSinternalLicenceDetailsCheck61  checkContent  body  tagName  The company or full name of the external contractor who analyses the tachograph records  OLCS  0  Licence details -> Safety section -- Check 'The company or full name of the external contractor who analyses the tachograph records' is displayed
+OLCSinternalLicenceDetailsCheck62  checkContent  body  tagName  Safety inspection providers  OLCS  0  Licence details -> Safety section -- Check 'Safety inspection providers' is displayed
+OLCSinternalLicenceDetailsCheck63  checkContent  body  tagName  Suitable maintenance  OLCS  0  Licence details -> Safety section -- Check 'Suitable maintenance' is displayed
+OLCSinternalLicenceDetailsCheck64  checkContent  body  tagName  Provider's name  OLCS  0  Licence details -> Safety section -- Check 'Provider's name' is displayed on table heading
+OLCSinternalLicenceDetailsCheck65  checkContent  body  tagName  External?  OLCS  0  Licence details -> Safety section -- Check 'External?' is displayed on table heading
+OLCSinternalLicenceDetailsCheck66  checkContent  body  tagName  Workshop address  OLCS  0  Licence details -> Safety section -- Check 'Workshop address' is displayed as table heading
+OLCSinternalLicenceDetailsCheck67  checkContent  body  tagName  Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.  OLCS  0  Licence details -> Safety section -- Check 'Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.' is displayed - only when no safety inspection providers are provided
+OLCSinternalLicenceDetailsCheck68  wait  safetyInsVehicles  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between vehicle safety inspections' drop down
+OLCSinternalLicenceDetailsCheck69  wait  safetyInsTrailers  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between trailer safety inspections' drop down
+
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
