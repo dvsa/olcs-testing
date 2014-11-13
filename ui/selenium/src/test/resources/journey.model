@@ -96,7 +96,7 @@ OLCSinternalLicenceDetailsInfo  checkContent  body  tagName  Licence details  OL
 OLCSinternalLicenceDetailsCheck1  checkContent  body  tagName  Licence details  OLCS  0  Licence details section -- Check 'Licence details' is displayed
 OLCSinternalLicenceDetailsCheck2  checkContent  body  tagName  Overview  OLCS  0  Licence details section -- Check 'Overview' is displayed
 OLCSinternalLicenceDetailsCheck3  wait  Overview  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Overview' left hand menu link
-OLCSinternalLicenceDetailsCheck4  wait  <span>Type of licence</span>  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Type of licence' left hand menu link
+OLCSinternalLicenceDetailsCheck4  wait  //*[@id="main"]/div[1]/div/div[1]/ul/li[2]/a/span  xpath  NA  OLCS  0  Licence details section -- Check is present 'Type of licence' left hand menu link
 OLCSinternalLicenceDetailsCheck5  wait  Business details  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Business details' left hand menu link
 OLCSinternalLicenceDetailsCheck6  wait  Addresses  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Addresses' left hand menu link
 OLCSinternalLicenceDetailsCheck7  wait  People  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'People' left hand menu link
