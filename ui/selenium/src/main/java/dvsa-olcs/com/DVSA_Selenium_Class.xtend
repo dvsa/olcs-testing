@@ -185,7 +185,7 @@ def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver dri
   }
 }
 
-def maximizeBrowser(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
+def maximizeBrowser() {
     diver.manage().window().maximize();
 }
 
