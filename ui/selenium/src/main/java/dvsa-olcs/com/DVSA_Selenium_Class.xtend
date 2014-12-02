@@ -158,6 +158,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
                      case (jtcAction == "switch") : if (jtcNameElement != "defaultContent") driver.switchTo.frame(jtcNameElement) else driver.switchTo.defaultContent
                      case (jtcAction == "url") : doUrlNavigation(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcAction, jtcInputCheck)
                      case (jtcAction == "hover") : doHover(jtcByElement, jtcNameElement, driver)
+                     case (jtcAction == "maximizeBrowser") : maximizeBrowser(jtcByElement, jtcNameElement, driver)
                    }
                    Thread.sleep(jtcPause) 
                  } 
@@ -182,6 +183,18 @@ def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver dri
     print("     |-- FAILURE" + "\n")
     System.exit(0)
   }
+}
+
+def maximizeBrowser(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
+    diver.manage().window().maximize();
+}
+
+def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
+  val hover = fetchElement(jtcByElement, jtcNameElement, driver)
+  val JavascriptExecutor executor = driver
+  executor.executeScript("arguments[0].scrollIntoView(true);", hover);
+  val hoverAction = new Actions(driver)
+  hoverAction.moveToElement(hover).build.perform
 }
 
 def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
