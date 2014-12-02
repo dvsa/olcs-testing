@@ -197,14 +197,6 @@ def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) 
   hoverAction.moveToElement(hover).build.perform
 }
 
-def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
-  val hover = fetchElement(jtcByElement, jtcNameElement, driver)
-  val JavascriptExecutor executor = driver
-  executor.executeScript("arguments[0].scrollIntoView(true);", hover);
-  val hoverAction = new Actions(driver)
-  hoverAction.moveToElement(hover).build.perform
-}
-
 def getSurface(RemoteWebDriver driver, String testCaseUrl, String testCaseIdentifier, String reportDirectory, String testRunIdentifier) {
   val String[] sections = testRunIdentifier.split("-")
   val testIdentifier = sections.get(0)
