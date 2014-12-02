@@ -43,7 +43,7 @@ def fetchElement(String tcByElement, String tcNameElement, RemoteWebDriver drive
     case (tcByElement == "xpathLabelContains") : driver.findElement(By::xpath("//label[contains(.,'"+ tcNameElement +"')]/input"))
     case (tcByElement == "inputName") : driver.findElement(By::name(tcNameElement))
     case (tcByElement == "xpath") : driver.findElement(By::xpath(tcNameElement))
-    case (tcByElement == "maximizeBrowser") : diver.manage().window().maximize()
+   // case (tcByElement == "maximizeBrowser") : diver.manage().window().maximize()
     default : null
   }
   return resultElement
