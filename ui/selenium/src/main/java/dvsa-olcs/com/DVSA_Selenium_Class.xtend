@@ -43,6 +43,7 @@ def fetchElement(String tcByElement, String tcNameElement, RemoteWebDriver drive
     case (tcByElement == "xpathLabelContains") : driver.findElement(By::xpath("//label[contains(.,'"+ tcNameElement +"')]/input"))
     case (tcByElement == "inputName") : driver.findElement(By::name(tcNameElement))
     case (tcByElement == "xpath") : driver.findElement(By::xpath(tcNameElement))
+    case (tcByElement == "maximizeBrowser") : diver.manage().window().maximize()
     default : null
   }
   return resultElement
@@ -145,9 +146,6 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       	          }
       	         val journeyCaseStartUrl = driver.getCurrentUrl
                  val journeyDocumentReadyState = getDocumentReadyState(driver)
-                       	           if (jtcAction == "maximizeBrowser") {
-      		  	    diver.manage().window().maximize()
-						}
                  if (journeyDocumentReadyState == "complete") {
                   if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
                    print("  |-- " + jtcComments + "\n")
