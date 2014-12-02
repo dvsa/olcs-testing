@@ -143,11 +143,11 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       		  	    driver.get(jtcInputCheck)
       	            if (recordVideo == "Y") startVideo(reportDirectory, uniqueRunIdentifier, videoPause)
       	          }
-      	           if (jtcAction == "maximizeBrowser") {
-      		  	    diver.manage().window().maximize()
-						}
       	         val journeyCaseStartUrl = driver.getCurrentUrl
                  val journeyDocumentReadyState = getDocumentReadyState(driver)
+                       	           if (jtcAction == "maximizeBrowser") {
+      		  	    diver.manage().window().maximize()
+						}
                  if (journeyDocumentReadyState == "complete") {
                   if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
                    print("  |-- " + jtcComments + "\n")
