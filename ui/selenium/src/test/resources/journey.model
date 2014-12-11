@@ -118,7 +118,7 @@ OLCSinternalLicenceDetailsCheck20  wait  Fees  xpathLinkContains  NA  OLCS  0  L
 OLCSinternalLicenceDetailsCheck21  checkContent  body  tagName  Operating centres & authorisation  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Operating centres & authorisation' is displayed
 OLCSinternalLicenceDetailsCheck22  checkContent  body  tagName  Making changes to some fields within this section may require a  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Making changes to some fields within this section may require a' is displayed
 OLCSinternalLicenceDetailsCheck23  wait  variation application  xpathLinkContains  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'variation application' link
-OLCSinternalLicenceDetailsCheck24  checkContent  body  tagName  Operating centre address  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Operating centre address' is displayed
+OLCSinternalLicenceDetailsCheck24  checkContent  body  tagName  Operating centres  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Operating centres' is displayed
 OLCSinternalLicenceDetailsCheck25  checkContent  body  tagName  Vehicles  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Vehicles' is displayed
 OLCSinternalLicenceDetailsCheck26  checkContent  body  tagName  Trailers  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Trailers' is displayed
 OLCSinternalLicenceDetailsCheck27  checkContent  body  tagName  Permission  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Permission' is displayed
