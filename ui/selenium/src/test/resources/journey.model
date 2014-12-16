@@ -212,15 +212,25 @@ OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  F
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  ..
-OLCSSelfserveDashboardCheck  checkContent  body  tagName  Dashboard  OLCS  0  Dashboard -- Check 'Dashboard' is displayed
-OLCSSelfserveDashboardCheck2  checkContent  body  tagName  Applications  OLCS  0  Dashboard -- Check 'Applications' is displayed
-OLCSSelfserveDashboardCheck3  checkContent  body  tagName  These are all your current licences and licence applications you have.  OLCS  0  Dashboard -- Check 'These are all your current licences and licence applications you have.' is displayed
-OLCSSelfserveDashboardCheck4  checkContent  body  tagName  Notifications  OLCS  0  Dashboard -- Check 'Notifications' is displayed on right hand side
-OLCSSelfserveDashboardCheck5  checkContent  body  tagName  Lic/App number  OLCS  0  Dashboard -- Check 'Lic/App number' is displayed at top of table
-OLCSSelfserveDashboardCheck6  checkContent  body  tagName  App ID  OLCS  0  Dashboard -- Check 'App ID' is displayed at top of table
-OLCSSelfserveDashboardCheck7  checkContent  body  tagName  Date created  OLCS  0  Dashboard -- Check 'Date created' is displayed at top of table
-OLCSSelfserveDashboardCheck8  checkContent  body  tagName  Date submitted  OLCS  0  Dashboard -- Check 'Date submitted' is displayed at top of table
-OLCSSelfserveDashboardCheck9  checkContent  body  tagName  Status  OLCS  0  Dashboard -- Check 'Status' is displayed at top of table
+OLCSSelfserveDashboardCheck  checkContent  body  tagName  Home  OLCS  0  Dashboard -- Check 'Home' is displayed
+OLCSSelfserveDashboardCheck2  checkContent  body  tagName  Licences  OLCS  0  Dashboard -- Check 'Licences' is displayed as a table
+OLCSSelfserveDashboardCheck3  checkContent  body  tagName  Licence No.  OLCS  0  Dashboard -- Check 'Licence No.' is displayed as a table header in Licences
+OLCSSelfserveDashboardCheck4  checkContent  body  tagName  Type  OLCS  0  Dashboard -- Check 'Type' is displayed as a table header
+OLCSSelfserveDashboardCheck5  checkContent  body  tagName  Status  OLCS  0  Dashboard -- Check 'Status' is displayed as a table header
+OLCSSelfserveDashboardCheck6  checkContent  body  tagName  Variation applications  OLCS  0  Dashboard -- Check 'Variation applications' is displayed as a table header
+OLCSSelfserveDashboardCheck7  checkContent  body  tagName  Application No.  OLCS  0  Dashboard -- Check 'Application No.' is displayed at top of the Variation applications table
+OLCSSelfserveDashboardCheck8  checkContent  body  tagName  Licence No.  OLCS  0  Dashboard -- Check 'Licence No.' is displayed at top of the Variation applications table
+OLCSSelfserveDashboardCheck9  checkContent  body  tagName  Created  OLCS  0  Dashboard -- Check 'Created' is displayed at top of the Variation applications table
+OLCSSelfserveDashboardCheck10  checkContent  body  tagName  Submitted  OLCS  0  Dashboard -- Check 'Submitted' is displayed at top of the Variation applications table
+OLCSSelfserveDashboardCheck11  checkContent  body  tagName  Status  OLCS  0  Dashboard -- Check 'Status' is displayed at top of the Variation applications table
+OLCSSelfserveDashboardCheck12  checkContent  body  tagName  New applications  OLCS  0  Dashboard -- Check 'New applications' is displayed as a table header
+OLCSSelfserveDashboardCheck13  checkContent  body  tagName  Application No.  OLCS  0  Dashboard -- Check 'Application No.' is displayed at top of the New applications table
+OLCSSelfserveDashboardCheck14  checkContent  body  tagName  Licence No.  OLCS  0  Dashboard -- Check 'Licence No.' is displayed at top of the New applications table
+OLCSSelfserveDashboardCheck15  checkContent  body  tagName  Created  OLCS  0  Dashboard -- Check 'Created' is displayed at top of the New applications table
+OLCSSelfserveDashboardCheck16  checkContent  body  tagName  Submitted  OLCS  0  Dashboard -- Check 'Submitted' is displayed at top of the New applications table
+OLCSSelfserveDashboardCheck17  checkContent  body  tagName  Status  OLCS  0  Dashboard -- Check 'Status' is displayed at top of the New applications table
+OLCSSelfserveDashboardCheck18  checkContent  body  tagName  Useful information for operators  OLCS  0  Dashboard -- Check 'Useful information for operators' is displayed on the right hand side
+OLCSSelfserveDashboardCheck19  checkContent  body  tagName  Support  OLCS  0  Dashboard -- Check 'Support' is displayed on the right hand side
 OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Dashboard -- Click 'Start new application' button
 OLCSSelfserveDashboardClickNo14  click  7  xpathLinkContains  NA  OLCS  0  Framework -- Click '7' hyperlink on the dashboard page to bring up licence
 .  .  .  .  .  .  0  .
