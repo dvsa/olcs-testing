@@ -211,7 +211,7 @@ OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- 
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
-.  .  .  .  .  .  0  ..
+.  .  .  .  .  .  0  .
 OLCSSelfserveDashboardCheck  checkContent  body  tagName  Home  OLCS  0  Dashboard -- Check 'Home' is displayed
 OLCSSelfserveDashboardCheck2  checkContent  body  tagName  Licences  OLCS  0  Dashboard -- Check 'Licences' is displayed as a table
 OLCSSelfserveDashboardCheck3  checkContent  body  tagName  Licence No.  OLCS  0  Dashboard -- Check 'Licence No.' is displayed as a table header in Licences
