@@ -237,20 +237,17 @@ OLCSSelfserveDashboardClickNo14  click  7  xpathLinkContains  NA  OLCS  0  Frame
 .  .  .  .  .  .  0  Type of licence
 .  .  .  .  .  .  0  .
 OLCSSelfserveTypeOfLicenceContentCheck1  checkContent  body  tagName  Type of licence  OLCS  0  Type of licence -- Check 'Type of licence' is displayed under the icon top left of screen
-OLCSSelfserveTypeOfLicenceContentCheck2  checkContent  body  tagName  Operator location  OLCS  0  Type of licence -- Check 'Operator location' heading is displayed
-OLCSSelfserveTypeOfLicenceContentCheck3  checkContent  body  tagName  Where do you operate from?  OLCS  0  Type of licence -- Check 'Where do you operate from?' question is displayed
-OLCSSelfserveTypeOfLicenceContentCheck4  checkContent  body  tagName  Great Britain  OLCS  0  Type of licence -- Check 'Great Britain' question text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck5  checkContent  body  tagName  Northern Ireland  OLCS  0  Type of licence -- Check 'Northern Ireland' question text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck6  checkContent  body  tagName  Operator type  OLCS  0  Type of licence -- Check 'Operator type' heading text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck7  checkContent  body  tagName  What type of operator are you?  OLCS  0  Type of licence -- Check 'What type of operator are you?' question is displayed
-OLCSSelfserveTypeOfLicenceContentCheck8  checkContent  body  tagName  Goods  OLCS  0  Type of licence -- Check 'Goods' question text isdisplayed
-OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  PSV  OLCS  0  Type of licence -- Check 'PSV' question text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck10  checkContent  body  tagName  Licence type  OLCS  0  Type of licence -- Check 'Licence type' Heading is displayed
-OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  What type of licence do you want to apply for?  OLCS  0  Type of licence -- Check 'What type of licence do you want to apply for?' Question is displayed
-OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Restricted  OLCS  0  Type of licence -- Check 'Restricted' Question text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck13  checkContent  body  tagName  Standard National  OLCS  0  Type of licence -- Check 'Standard National' Question text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck14  checkContent  body  tagName  Standard International  OLCS  0  Type of licence -- Check 'Standard International' Question text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck15  checkContent  body  tagName  Special Restricted  OLCS  0  Type of licence -- Check 'Special Restricted' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck2  checkContent  body  tagName  Where do you operate from?  OLCS  0  Type of licence -- Check 'Where do you operate from?' question is displayed
+OLCSSelfserveTypeOfLicenceContentCheck3  checkContent  body  tagName  Great Britain  OLCS  0  Type of licence -- Check 'Great Britain' question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck4  checkContent  body  tagName  Northern Ireland  OLCS  0  Type of licence -- Check 'Northern Ireland' question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck5  checkContent  body  tagName  What type of operator are you?  OLCS  0  Type of licence -- Check 'What type of operator are you?' question is displayed
+OLCSSelfserveTypeOfLicenceContentCheck6  checkContent  body  tagName  Goods  OLCS  0  Type of licence -- Check 'Goods' question text isdisplayed
+OLCSSelfserveTypeOfLicenceContentCheck7  checkContent  body  tagName  PSV  OLCS  0  Type of licence -- Check 'PSV' question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck8  checkContent  body  tagName  What type of licence do you want to apply for?  OLCS  0  Type of licence -- Check 'What type of licence do you want to apply for?' Question is displayed
+OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  Restricted  OLCS  0  Type of licence -- Check 'Restricted' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck10  checkContent  body  tagName  Standard National  OLCS  0  Type of licence -- Check 'Standard National' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  Standard International  OLCS  0  Type of licence -- Check 'Standard International' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Special Restricted  OLCS  0  Type of licence -- Check 'Special Restricted' Question text is displayed
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCHECK  wait  niFlag  id  NA  OLCS  0  Type of licence -- Check is present 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  niFlag  id  NA  OLCS  0  Type of licence -- Click on 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Northern Ireland' radio button
