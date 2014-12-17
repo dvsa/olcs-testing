@@ -231,7 +231,7 @@ OLCSSelfserveDashboardCheck16  checkContent  body  tagName  Submitted  OLCS  0  
 OLCSSelfserveDashboardCheck17  checkContent  body  tagName  Status  OLCS  0  Dashboard -- Check 'Status' is displayed at top of the New applications table
 OLCSSelfserveDashboardCheck18  checkContent  body  tagName  Useful information for operators  OLCS  0  Dashboard -- Check 'Useful information for operators' is displayed on the right hand side
 OLCSSelfserveDashboardCheck19  checkContent  body  tagName  Support  OLCS  0  Dashboard -- Check 'Support' is displayed on the right hand side
-OLCSSelfserveDashboardNewApplicationCLICK  click  Start new application  linkText  NA  OLCS  0  Dashboard -- Click 'Start new application' button
+OLCSSelfserveDashboardNewApplicationCLICK  click  Apply for a new licence  linkText  NA  OLCS  0  Dashboard -- Click 'Apply for a new licence' button
 OLCSSelfserveDashboardClickNo14  click  7  xpathLinkContains  NA  OLCS  0  Framework -- Click '7' hyperlink on the dashboard page to bring up licence
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Type of licence
