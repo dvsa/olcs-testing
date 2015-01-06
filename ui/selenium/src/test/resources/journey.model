@@ -309,7 +309,6 @@ OLCSSelfserveApplicationOverviewContentCheck40  wait  Advertise your application
 OLCSSelfserveApplicationOverviewContentCheck41  wait  Financial information  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Financial information' is present on the right hand side of the screen
 OLCSSelfserveApplicationOverviewContentCheck42  wait  A guide to operator fees  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'A guide to operator fees' is present on the right hand side of the screen
 OLCSSelfserveApplicationOverviewContentCheck43  wait  How to draw up a maintenance contract  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'How to draw up a maintenance contract' is present on the right hand side of the screen
-
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
