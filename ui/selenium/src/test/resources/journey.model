@@ -265,7 +265,8 @@ OLCSSelfserveOperatorTypeStandardInternationalCLICK  click  //*[@id="application
 OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  0  Type of licence -- Click 'Continue' button
-
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Application overview
 OLCSSelfserveApplicationOverviewContentCheck1  checkContent  body  tagName  Application overview  OLCS  0  Application overview -- Check 'Application overview' is displayed
 OLCSSelfserveApplicationOverviewContentCheck2  checkContent  body  tagName  Application No.  OLCS  0  Application overview -- Check 'Application No.' is displayed
 OLCSSelfserveApplicationOverviewContentCheck3  checkContent  body  tagName  Addresses  OLCS  0  Application overview -- Check 'Addresses' is displayed greyed out
