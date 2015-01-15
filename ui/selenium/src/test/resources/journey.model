@@ -246,7 +246,7 @@ OLCSSelfserveTypeOfLicenceContentCheck7  checkContent  body  tagName  PSV  OLCS 
 OLCSSelfserveTypeOfLicenceContentCheck8  checkContent  body  tagName  What type of licence do you want to apply for?  OLCS  0  Type of licence -- Check 'What type of licence do you want to apply for?' Question is displayed
 OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  Restricted  OLCS  0  Type of licence -- Check 'Restricted' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck10  checkContent  body  tagName  Standard National  OLCS  0  Type of licence -- Check 'Standard National' Question text is displayed
-OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  Standard International  OLCS  0  Type of licence -- Check 'Standard International' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  Standard International  OLCS  20  Type of licence -- Check 'Standard International' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Special Restricted  OLCS  0  Type of licence -- Check 'Special Restricted' Question text is displayed
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCHECK  wait  niFlag  id  NA  OLCS  0  Type of licence -- Check is present 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  type-of-licence[operator-location]  id  NA  OLCS  0  Type of licence -- Click on 'Great Britain' radio button
