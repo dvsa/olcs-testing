@@ -268,7 +268,7 @@ OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS 
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Application overview
 .  .  .  .  .  .  0  .
-OLCSSelfserveApplicationOverviewContentCheck1WAIT  wait  Edit type of licence  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Edit type of licence' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck1WAIT  wait  body  tagName  Application overview  OLCS  0  Application overview -- Check 'Application overview' is displayed
 OLCSSelfserveApplicationOverviewContentCheck1  checkContent  body  tagName  Application overview  OLCS  0  Application overview -- Check 'Application overview' is displayed
 OLCSSelfserveApplicationOverviewContentCheck2  checkContent  body  tagName  Application No.  OLCS  0  Application overview -- Check 'Application No.' is displayed
 OLCSSelfserveApplicationOverviewContentCheck3  checkContent  body  tagName  Addresses  OLCS  0  Application overview -- Check 'Addresses' is displayed greyed out
