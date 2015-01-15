@@ -261,7 +261,7 @@ OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType  id  NA  OLCS  0  Ty
 OLCSSelfserveOperatorTypeStandardNationalCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Standard National' radio button
 OLCSSelfserveOperatorTypeStandardNationalCLICK  click  //*[@id="lva-type-of-licence"]/fieldset[1]/fieldset[3]/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Standard National' radio button
 OLCSSelfserveOperatorTypeStandardInternationalCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[3]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Standard International' radio button
-OLCSSelfserveOperatorTypeStandardInternationalCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[3]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Standard International' radio button
+OLCSSelfserveOperatorTypeStandardInternationalCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[3]/input  xpath  NA  OLCS  20  Type of licence -- Click 'Standard International' radio button
 OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  20  Type of licence -- Click 'Continue' button
