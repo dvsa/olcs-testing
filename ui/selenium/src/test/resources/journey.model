@@ -249,7 +249,7 @@ OLCSSelfserveTypeOfLicenceContentCheck10  checkContent  body  tagName  Standard 
 OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  Standard International  OLCS  20  Type of licence -- Check 'Standard International' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Special Restricted  OLCS  0  Type of licence -- Check 'Special Restricted' Question text is displayed
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCHECK  wait  niFlag  id  NA  OLCS  0  Type of licence -- Check is present 'Great Britain' radio button
-OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  Y  xpathValue  NA  OLCS  2000  Type of licence -- Click on 'Great Britain' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  N  xpathValue  NA  OLCS  2000  Type of licence -- Click on 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Northern Ireland' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Northern Ireland' radio button
 OLCSSelfserveOperatorTypeGoodsCHECK  wait  goodsOrPsv  id  NA  OLCS  0  Type of licence -- Check is present 'Goods' radio button
