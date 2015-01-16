@@ -41,6 +41,7 @@ def fetchElement(String tcByElement, String tcNameElement, RemoteWebDriver drive
     case (tcByElement == "xpathLinkContains") : driver.findElement(By::xpath("//a[contains(text(), '" + tcNameElement + "')]"))
     case (tcByElement == "cssSelector") : driver.findElement(By::cssSelector(tcNameElement +" > ul.multiselect > li > div > a"))
     case (tcByElement == "xpathLabelContains") : driver.findElement(By::xpath("//label[contains(.,'"+ tcNameElement +"')]/input"))
+    case (tcByElement == "xpathValue") : driver.findElement(By::xpath("//input[@value='"+ tcNameElement +"']"))
     case (tcByElement == "inputName") : driver.findElement(By::name(tcNameElement))
     case (tcByElement == "xpath") : driver.findElement(By::xpath(tcNameElement))
    // case (tcByElement == "maximizeBrowser") : diver.manage().window().maximize()
@@ -69,6 +70,7 @@ def waitForElement(String tcByElement, String tcNameElement, RemoteWebDriver dri
     case (tcByElement == "xpathLinkContains") : wait.until[findElement(By::xpath("//a[contains(text(), '" + tcNameElement + "')]"))].isDisplayed
     case (tcByElement == "cssSelector") : wait.until[findElement(By::cssSelector(tcNameElement +" > ul.multiselect > li > div > a"))].isDisplayed
     case (tcByElement == "xpathLabelContains") : wait.until[findElement(By.xpath("//label[contains(.,'"+ tcNameElement +"')]/input"))].isDisplayed
+    case (tcByElement == "xpathValue") : driver.findElement(By::xpath("//input[@value='"+ tcNameElement +"']"))
     case (tcByElement == "inputName") : driver.findElement(By::name(tcNameElement)).isDisplayed
     case (tcByElement == "xpath") : driver.findElement(By::xpath(tcNameElement)).isDisplayed
   }
