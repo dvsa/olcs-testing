@@ -248,6 +248,7 @@ OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  Restricted
 OLCSSelfserveTypeOfLicenceContentCheck10  checkContent  body  tagName  Standard National  OLCS  0  Type of licence -- Check 'Standard National' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  Standard International  OLCS  20  Type of licence -- Check 'Standard International' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Special Restricted  OLCS  0  Type of licence -- Check 'Special Restricted' Question text is displayed
+OLCSSelfserveTypeOfLicenceContentCheck13  checkContent  body  tagName  Step 1  OLCS  0  Type of licence -- Check 'Step 1' is display above the main heading "Type of licence"
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCHECK  wait  N  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  N  xpathValue  NA  OLCS  2000  Type of licence -- Click on 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCHECK  wait  Y  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Northern Ireland' radio button
@@ -264,8 +265,11 @@ OLCSSelfserveOperatorTypeStandardInternationalCHECK  wait  ltyp_si  xpathValue  
 OLCSSelfserveOperatorTypeStandardInternationalCLICK  click  ltyp_si  xpathValue  NA  OLCS  20  Type of licence -- Click 'Standard International' radio button
 OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  ltyp_sr  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  ltyp_sr  xpathValue  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
-OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  10000  Type of licence -- Click 'Continue' button
-OLCSSelfserveOperatorTypeContinueCLICKWait20  click  form-actions[save]  id  NA  OLCS  20  Type of licence -- Click 'Continue' button
+OLCSSelfserveOperatorTypeContinueCHECK  wait  form-actions[save]  id  NA  OLCS  0  Type of licence -- Check 'Continue' button is present
+OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  0  Type of licence -- Click 'Continue' button
+OLCSSelfserveOperatorTypeContinueCLICKWait_T20000  click  form-actions[save]  id  NA  OLCS  20000  Type of licence -- Click 'Continue' button and wait 20 seconds
+OLCSSelfserveOperatorTypeCancelCHECK  wait  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Check 'Cancel' link is present
+OLCSSelfserveOperatorTypeCancelCLICK  click  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Click 'Cancel'
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Application overview
 .  .  .  .  .  .  0  .
