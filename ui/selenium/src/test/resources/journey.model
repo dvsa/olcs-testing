@@ -248,22 +248,22 @@ OLCSSelfserveTypeOfLicenceContentCheck9  checkContent  body  tagName  Restricted
 OLCSSelfserveTypeOfLicenceContentCheck10  checkContent  body  tagName  Standard National  OLCS  0  Type of licence -- Check 'Standard National' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  Standard International  OLCS  20  Type of licence -- Check 'Standard International' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Special Restricted  OLCS  0  Type of licence -- Check 'Special Restricted' Question text is displayed
-OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCHECK  wait  niFlag  id  NA  OLCS  0  Type of licence -- Check is present 'Great Britain' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCHECK  wait  N  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  N  xpathValue  NA  OLCS  2000  Type of licence -- Click on 'Great Britain' radio button
-OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Northern Ireland' radio button
-OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Northern Ireland' radio button
-OLCSSelfserveOperatorTypeGoodsCHECK  wait  goodsOrPsv  id  NA  OLCS  0  Type of licence -- Check is present 'Goods' radio button
-OLCSSelfserveOperatorTypeGoodsCLICK  click  type-of-licence[operator-type]  id  NA  OLCS  20  Type of licence -- Click 'Goods' radio button
-OLCSSelfserveOperatorTypePsvCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[2]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'PSV' radio button
-OLCSSelfserveOperatorTypePsvCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[2]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Click 'PSV' radio button
-OLCSSelfserveLicenceTypeRestrictedCHECK  wait  licenceType  id  NA  OLCS  0  Type of licence -- Check is present 'Restricted' radio button
-OLCSSelfserveLicenceTypeRestrictedCLICK  click  licenceType  id  NA  OLCS  0  Type of licence -- Click 'Restricted' radio button
-OLCSSelfserveOperatorTypeStandardNationalCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Standard National' radio button
-OLCSSelfserveOperatorTypeStandardNationalCLICK  click  //*[@id="lva-type-of-licence"]/fieldset[1]/fieldset[3]/label[2]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Standard National' radio button
-OLCSSelfserveOperatorTypeStandardInternationalCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[3]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Standard International' radio button
-OLCSSelfserveOperatorTypeStandardInternationalCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[3]/input  xpath  NA  OLCS  20  Type of licence -- Click 'Standard International' radio button
-OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Type of licence -- Check is present 'Special Restricted' radio button
-OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  //*[@id="application_type-of-licence_form"]/fieldset[3]/fieldset/label[4]/input  xpath  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCHECK  wait  Y  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Northern Ireland' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCLICK  click  Y  xpathValue  NA  OLCS  0  Type of licence -- Click 'Northern Ireland' radio button
+OLCSSelfserveOperatorTypeGoodsCHECK  wait  lcat_gv  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Goods' radio button
+OLCSSelfserveOperatorTypeGoodsCLICK  click  lcat_gv  xpathValue  NA  OLCS  0  Type of licence -- Click 'Goods' radio button
+OLCSSelfserveOperatorTypePsvCHECK  wait  lcat_psv  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'PSV' radio button
+OLCSSelfserveOperatorTypePsvCLICK  click  lcat_psv  xpathValue  NA  OLCS  0  Type of licence -- Click 'PSV' radio button
+OLCSSelfserveLicenceTypeRestrictedCHECK  wait  ltyp_r  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Restricted' radio button
+OLCSSelfserveLicenceTypeRestrictedCLICK  click  ltyp_r  xpathValue  NA  OLCS  0  Type of licence -- Click 'Restricted' radio button
+OLCSSelfserveOperatorTypeStandardNationalCHECK  wait  ltyp_sn  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Standard National' radio button
+OLCSSelfserveOperatorTypeStandardNationalCLICK  click  ltyp_sn  xpathValue  NA  OLCS  0  Type of licence -- Click 'Standard National' radio button
+OLCSSelfserveOperatorTypeStandardInternationalCHECK  wait  ltyp_si  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Standard International' radio button
+OLCSSelfserveOperatorTypeStandardInternationalCLICK  click  ltyp_si  xpathValue  NA  OLCS  20  Type of licence -- Click 'Standard International' radio button
+OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  ltyp_sr  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Special Restricted' radio button
+OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  ltyp_sr  xpathValue  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  10000  Type of licence -- Click 'Continue' button
 OLCSSelfserveOperatorTypeContinueCLICKWait20  click  form-actions[save]  id  NA  OLCS  20  Type of licence -- Click 'Continue' button
 .  .  .  .  .  .  0  .
