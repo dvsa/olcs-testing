@@ -288,14 +288,14 @@ OLCSSelfserveApplicationOverviewContentCheck13  wait  Add business details  xpat
 OLCSSelfserveApplicationOverviewContentCheck15  wait  Add addresses  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add addresses' hyperlink is present
 OLCSSelfserveApplicationOverviewContentCheck17  wait  Add people  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add people' hyperlink is present
 OLCSSelfserveApplicationOverviewContentCheck19  wait  overview-item__operating_centres  id  NA  OLCS  0  Application overview -- Check 'Add operating centre' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck21  wait  Add financial evidence  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add financial evidence' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck23  wait  Add transport managers  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add transport managers' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck25  wait  Add vehicles  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add vehicles' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck27  wait  Add safety  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add safety' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck29  wait  Add financial history  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add financial history' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck31  wait  Add licence history  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add licence history' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck33  wait  Add convictions & penalties  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add convictions & penalties' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck35  wait  Add declarations  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add declarations' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck21  wait  overview-item__financial_evidence  id  NA  OLCS  0  Application overview -- Check 'Add financial evidence' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck23  wait  overview-item__transport_managers  id  NA  OLCS  0  Application overview -- Check 'Add transport managers' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck25  wait  overview-item__vehicles  id  NA  OLCS  0  Application overview -- Check 'Add vehicles' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck27  wait  overview-item__safety  id  NA  OLCS  0  Application overview -- Check 'Add safety' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck29  wait  overview-item__financial_history  id  NA  OLCS  0  Application overview -- Check 'Add financial history' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck31  wait  overview-item__licence_history  id  NA  OLCS  0  Application overview -- Check 'Add licence history' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck33  wait  overview-item__convictions_penalties  id  NA  OLCS  0  Application overview -- Check 'Add convictions & penalties' hyperlink is present
+OLCSSelfserveApplicationOverviewContentCheck35  wait  overview-item__undertakings  id  NA  OLCS  0  Application overview -- Check 'Add declarations' hyperlink is present
 OLCSSelfserveApplicationOverviewContentCheck36  checkContent  body  tagName  Application fee  OLCS  0  Application overview -- Check 'Application fee' is displayed at the bottom of the screen
 OLCSSelfserveApplicationOverviewContentCheck37  wait  submitPay  id  NA  OLCS  0  Application overview -- Check 'Submit & pay' button is present at bottom of screen
 OLCSSelfserveApplicationOverviewContentCheck38  checkContent  body  tagName  Applying for a new licence  OLCS  0  Application overview -- Check 'Applying for a new licence' is displayed on the right of the screen
