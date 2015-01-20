@@ -308,7 +308,7 @@ OLCSSelfserveApplicationOverview_MaintenanceContract  wait  How to draw up a mai
 .  .  .  .  .  .  0  Business Type
 .  .  .  .  .  .  0  .
 OLCSSelfserveBusinessType_HomeBreadcrumb  wait  Home  xpathLinkContains  NA  OLCS  0  Business Type -- Check 'Home' breadcrumb hyperlink is present top left of the screen
-OLCSSelfserveBusinessType_ApplicationOverviewBreadcrumb  wait  Business Type  xpathLinkContains  NA  OLCS  0  Business Type -- Check 'Application overview' breadcrumb hyperlink is present top left of the screen
+OLCSSelfserveBusinessType_ApplicationOverviewBreadcrumb  wait  Application overview  xpathLinkContains  NA  OLCS  0  Business Type -- Check 'Application overview' breadcrumb hyperlink is present top left of the screen
 OLCSSelfserveBusinessType_Step2of14  checkContent  body  tagName  Step 2 of 14  OLCS  0  Business Type -- Check 'Step 2 of 14' is displayed above main heading
 OLCSSelfserveBusinessType_Heading  checkContent  body  tagName  Business type  OLCS  0  Business Type -- Check 'Business type' is displayed as the main heading
 OLCSSelfserveBusinessType_BusinessType  checkContent  body  tagName  What type of business are you?  OLCS  0  Business Type -- Check 'What type of business are you?' question is displayed
