@@ -328,9 +328,9 @@ OLCSSelfserveBusinessType_OtherText  checkContent  body  tagName  Sole Trader  O
 OLCSSelfserveBusinessType_Other  wait  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' radio button is present
 OLCSSelfserveBusinessType_OtherCLICK  click  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Click 'Other (e.g. public authority, charity, trust, university)' radio button
 OLCSSelfserveBusinessType_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Business Type -- Check 'Continue' button button is present
-OLCSSelfserveBusinessType_ContinueButton CLICK  click  form-actions[saveAndContinue]  id  0  Business Type -- Click 'Continue' radio button
+OLCSSelfserveBusinessType_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  0  Business Type -- Click 'Continue' radio button
 OLCSSelfserveBusinessType_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Business Type -- Check 'Save & Return' button button is present
-OLCSSelfserveBusinessType_SaveReturnButton CLICK  click  form-actions[save]  id  0  Business Type -- Click 'Save & Return' radio button
+OLCSSelfserveBusinessType_SaveReturnButtonCLICK  click  form-actions[save]  id  0  Business Type -- Click 'Save & Return' radio button
 OLCSSelfserveBusinessType_CancelLink  wait  Cancel  xpathLinkContains  NA  OLCS  0  Business Type -- Check 'Home' breadcrumb hyperlink is present top left of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
