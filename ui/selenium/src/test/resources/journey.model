@@ -267,7 +267,7 @@ OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  ltyp_sr  xpathValue  NA  
 OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  ltyp_sr  xpathValue  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeContinueCHECK  wait  form-actions[save]  id  NA  OLCS  0  Type of licence -- Check 'Continue' button is present
 OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  0  Type of licence -- Click 'Continue' button
-OLCSSelfserveOperatorTypeContinueCLICKWait_T20000  click  form-actions[save]  id  NA  OLCS  20000  Type of licence -- Click 'Continue' button and wait 20 seconds
+OLCSSelfserveOperatorTypeContinueCLICKWait_T10000  click  form-actions[save]  id  NA  OLCS  10000  Type of licence -- Click 'Continue' button and wait 20 seconds
 OLCSSelfserveOperatorTypeCancelCHECK  wait  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Check 'Cancel' link is present
 OLCSSelfserveOperatorTypeCancelCLICK  click  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Click 'Cancel'
 .  .  .  .  .  .  0  .
