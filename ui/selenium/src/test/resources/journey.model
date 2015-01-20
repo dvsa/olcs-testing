@@ -321,7 +321,7 @@ OLCSSelfserveBusinessType_SoleTraderCLICK  click  org_t_st  xpathValue  NA  OLCS
 OLCSSelfserveBusinessType_PartnershipText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Partnership' question is displayed
 OLCSSelfserveBusinessType_Partnership  wait  org_t_p  xpathValue  NA  OLCS  0  Business Type -- Check 'Partnership' radio button is present
 OLCSSelfserveBusinessType_PartnershipCLICK  click  org_t_p  xpathValue  NA  OLCS  0  Business Type -- Click 'Partnership' radio button
-OLCSSelfserveBusinessType_LLPText checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Limited Liability Partnership' question is displayed
+OLCSSelfserveBusinessType_LLPText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Limited Liability Partnership' question is displayed
 OLCSSelfserveBusinessType_LLP  wait  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Check 'Limited Liability Partnership' radio button is present
 OLCSSelfserveBusinessType_LLPCLICK  click  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Click 'Limited Liability Partnership' radio button
 OLCSSelfserveBusinessType_OtherText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' question is displayed
