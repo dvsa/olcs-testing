@@ -275,7 +275,7 @@ OLCSSelfserveOperatorTypeCancelCLICK  click  Cancel  xpathLinkContains  NA  OLCS
 .  .  .  .  .  .  0  .
 OLCSSelfserveApplicationOverview_Heading  checkContent  body  tagName  Application overview  OLCS  0  Application overview -- Check 'Application overview' is displayed
 OLCSSelfserveApplicationOverview_ApplicationNo  checkContent  body  tagName  Application No.  OLCS  0  Application overview -- Check 'Application No.' is displayed
-OLCSSelfserveApplicationOverview_BusinessDetailsDisable  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'People' is displayed but disabled to the user
+OLCSSelfserveApplicationOverview_BusinessDetailsDisable  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'Business details' is displayed but disabled to the user
 OLCSSelfserveApplicationOverview_AddressDisabled  checkContent  body  tagName  Addresses  OLCS  0  Application overview -- Check 'Addresses' is displayed but disabled to the user
 OLCSSelfserveApplicationOverview_PeopleDisable  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'People' is displayed but disabled to the user
 OLCSSelfserveApplicationOverview_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Home' hyperlink is present top left of the screen
