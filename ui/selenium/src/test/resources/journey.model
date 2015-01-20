@@ -273,37 +273,36 @@ OLCSSelfserveOperatorTypeCancelCLICK  click  Cancel  xpathLinkContains  NA  OLCS
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Application overview
 .  .  .  .  .  .  0  .
-OLCSSelfserveApplicationOverviewContentCheck1WAIT  wait  body  tagName  Application overview  OLCS  0  Application overview -- Wait for 'Application overview' text
-OLCSSelfserveApplicationOverviewContentCheck1  checkContent  body  tagName  Application overview  OLCS  0  Application overview -- Check 'Application overview' is displayed
-OLCSSelfserveApplicationOverviewContentCheck2  checkContent  body  tagName  Application No.  OLCS  0  Application overview -- Check 'Application No.' is displayed
-OLCSSelfserveApplicationOverviewContentCheck3  checkContent  body  tagName  Addresses  OLCS  0  Application overview -- Check 'Addresses' is displayed greyed out
-OLCSSelfserveApplicationOverviewContentCheck4  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'People' is displayed greyed out
-OLCSSelfserveApplicationOverviewContentCheck5  wait  Home  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Home' hyperlink is present top left of the screen
-OLCSSelfserveApplicationOverviewContentCheck6  wait  Print application  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Print application' hyperlink is present on right hand side of the screen
-OLCSSelfserveApplicationOverviewContentCheck7  wait  Cancel application  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Cancel application' hyperlink is present on right hand side of the screen
-OLCSSelfserveApplicationOverviewContentCheck8  wait  Type of licence  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Type of licence' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck9  wait  overview-item__licence_history  id  NA  OLCS  0  Application overview -- Check 'Edit type of licence' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck11  wait  overview-item__business_type  id  NA  OLCS  0  Application overview -- Check 'Add business type' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck13  wait  Add business details  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add business details' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck15  wait  Add addresses  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add addresses' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck17  wait  Add people  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add people' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck19  wait  overview-item__operating_centres  id  NA  OLCS  0  Application overview -- Check 'Add operating centre' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck21  wait  overview-item__financial_evidence  id  NA  OLCS  0  Application overview -- Check 'Add financial evidence' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck23  wait  overview-item__transport_managers  id  NA  OLCS  0  Application overview -- Check 'Add transport managers' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck25  wait  overview-item__vehicles  id  NA  OLCS  0  Application overview -- Check 'Add vehicles' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck27  wait  overview-item__safety  id  NA  OLCS  0  Application overview -- Check 'Add safety' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck29  wait  overview-item__financial_history  id  NA  OLCS  0  Application overview -- Check 'Add financial history' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck31  wait  overview-item__licence_history  id  NA  OLCS  0  Application overview -- Check 'Add licence history' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck33  wait  overview-item__convictions_penalties  id  NA  OLCS  0  Application overview -- Check 'Add convictions & penalties' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck35  wait  overview-item__undertakings  id  NA  OLCS  0  Application overview -- Check 'Add declarations' hyperlink is present
-OLCSSelfserveApplicationOverviewContentCheck36  checkContent  body  tagName  Application fee  OLCS  0  Application overview -- Check 'Application fee' is displayed at the bottom of the screen
-OLCSSelfserveApplicationOverviewContentCheck37  wait  submitPay  id  NA  OLCS  0  Application overview -- Check 'Submit & pay' button is present at bottom of screen
-OLCSSelfserveApplicationOverviewContentCheck38  checkContent  body  tagName  Applying for a new licence  OLCS  0  Application overview -- Check 'Applying for a new licence' is displayed on the right of the screen
-OLCSSelfserveApplicationOverviewContentCheck39_BROKEN  wait  Complete your applications for a goods vehicle operator's licence  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Complete your applications for a goods vehicle operator's licence' hyperlink is present on the right hand side of the screen
-OLCSSelfserveApplicationOverviewContentCheck40  wait  Advertise your application for a licence  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Advertise your application for a licence' is present on the right hand side of the screen
-OLCSSelfserveApplicationOverviewContentCheck41  wait  Financial information  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Financial information' is present on the right hand side of the screen
-OLCSSelfserveApplicationOverviewContentCheck42  wait  A guide to operator fees  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'A guide to operator fees' is present on the right hand side of the screen
-OLCSSelfserveApplicationOverviewContentCheck43  wait  How to draw up a maintenance contract  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'How to draw up a maintenance contract' is present on the right hand side of the screen
+OLCSSelfserveApplicationOverview_Heading  checkContent  body  tagName  Application overview  OLCS  0  Application overview -- Check 'Application overview' is displayed
+OLCSSelfserveApplicationOverview_ApplicationNo  checkContent  body  tagName  Application No.  OLCS  0  Application overview -- Check 'Application No.' is displayed
+OLCSSelfserveApplicationOverview_BusinessDetailsDisable  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'People' is displayed greyed out
+OLCSSelfserveApplicationOverview_AddressDisabled  checkContent  body  tagName  Addresses  OLCS  0  Application overview -- Check 'Addresses' is displayed greyed out
+OLCSSelfserveApplicationOverview_PeopleDisable  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'People' is displayed greyed out
+OLCSSelfserveApplicationOverview_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Home' hyperlink is present top left of the screen
+OLCSSelfserveApplicationOverview_PrintApplication  wait  Print application  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Print application' hyperlink is present on right hand side of the screen
+OLCSSelfserveApplicationOverview_CancelApplication  wait  Cancel application  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Cancel application' hyperlink is present on right hand side of the screen
+OLCSSelfserveApplicationOverview_TypeOfLicence  wait  overview-item__type_of_licence  id  NA  OLCS  0  Application overview -- Check 'Edit type of licence' hyperlink is present
+OLCSSelfserveApplicationOverview_BusinessType  wait  overview-item__business_type  id  NA  OLCS  0  Application overview -- Check 'Add business type' hyperlink is present
+OLCSSelfserveApplicationOverview_BusinessDetails  wait  Add business details  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add business details' hyperlink is present
+OLCSSelfserveApplicationOverview_Addresses  wait  Add addresses  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add addresses' hyperlink is present
+OLCSSelfserveApplicationOverview_People  wait  Add people  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add people' hyperlink is present
+OLCSSelfserveApplicationOverview_OperatingCentres  wait  overview-item__operating_centres  id  NA  OLCS  0  Application overview -- Check 'Add operating centre' hyperlink is present
+OLCSSelfserveApplicationOverview_FinancialEvidence  wait  overview-item__financial_evidence  id  NA  OLCS  0  Application overview -- Check 'Add financial evidence' hyperlink is present
+OLCSSelfserveApplicationOverview_TransportManagers  wait  overview-item__transport_managers  id  NA  OLCS  0  Application overview -- Check 'Add transport managers' hyperlink is present
+OLCSSelfserveApplicationOverview_Vehicles  wait  overview-item__vehicles  id  NA  OLCS  0  Application overview -- Check 'Add vehicles' hyperlink is present
+OLCSSelfserveApplicationOverview_Safety  wait  overview-item__safety  id  NA  OLCS  0  Application overview -- Check 'Add safety' hyperlink is present
+OLCSSelfserveApplicationOverview_FinancialHistory  wait  overview-item__financial_history  id  NA  OLCS  0  Application overview -- Check 'Add financial history' hyperlink is present
+OLCSSelfserveApplicationOverview_LicenceHistory  wait  overview-item__licence_history  id  NA  OLCS  0  Application overview -- Check 'Add licence history' hyperlink is present
+OLCSSelfserveApplicationOverview_ConvictionsPenalties  wait  overview-item__convictions_penalties  id  NA  OLCS  0  Application overview -- Check 'Add convictions & penalties' hyperlink is present
+OLCSSelfserveApplicationOverview_Declarations  wait  overview-item__undertakings  id  NA  OLCS  0  Application overview -- Check 'Add declarations' hyperlink is present
+OLCSSelfserveApplicationOverview_ApplicationFee  checkContent  body  tagName  Application fee  OLCS  0  Application overview -- Check 'Application fee' is displayed at the bottom of the screen
+OLCSSelfserveApplicationOverview_SubmitPay  wait  submitPay  id  NA  OLCS  0  Application overview -- Check 'Submit & pay' button is present at bottom of screen
+OLCSSelfserveApplicationOverview_ApplyNewLicence  checkContent  body  tagName  Applying for a new licence  OLCS  0  Application overview -- Check 'Applying for a new licence' is displayed on the right of the screen
+OLCSSelfserveApplicationOverview_CompleteLicence_BROKEN  wait  Complete your applications for a goods vehicle operator's licence  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Complete your applications for a goods vehicle operator's licence' hyperlink is present on the right hand side of the screen
+OLCSSelfserveApplicationOverview_AdvertiseApplication  wait  Advertise your application for a licence  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Advertise your application for a licence' is present on the right hand side of the screen
+OLCSSelfserveApplicationOverview_FinancialInformation  wait  Financial information  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Financial information' is present on the right hand side of the screen
+OLCSSelfserveApplicationOverview_GuideOperatorFees  wait  A guide to operator fees  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'A guide to operator fees' is present on the right hand side of the screen
+OLCSSelfserveApplicationOverview_MaintenanceContract  wait  How to draw up a maintenance contract  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'How to draw up a maintenance contract' is present on the right hand side of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
