@@ -283,7 +283,7 @@ OLCSSelfserveApplicationOverview_PrintApplication  wait  Print application  xpat
 OLCSSelfserveApplicationOverview_CancelApplication  wait  Cancel application  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Cancel application' hyperlink is present on right hand side of the screen
 OLCSSelfserveApplicationOverview_TypeOfLicence  wait  overview-item__type_of_licence  id  NA  OLCS  0  Application overview -- Check 'Edit type of licence' hyperlink is present
 OLCSSelfserveApplicationOverview_BusinessType  wait  overview-item__business_type  id  NA  OLCS  0  Application overview -- Check 'Add business type' hyperlink is present
-OLCSSelfserveApplicationOverview_BusinessTypeCLICK  wait  overview-item__business_type  id  NA  OLCS  0  Application overview -- Click 'Add business type' hyperlink
+OLCSSelfserveApplicationOverview_BusinessTypeCLICK  click  overview-item__business_type  id  NA  OLCS  0  Application overview -- Click 'Add business type' hyperlink
 OLCSSelfserveApplicationOverview_BusinessDetails  wait  Add business details  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add business details' hyperlink is present
 OLCSSelfserveApplicationOverview_Addresses  wait  Add addresses  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add addresses' hyperlink is present
 OLCSSelfserveApplicationOverview_People  wait  Add people  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add people' hyperlink is present
