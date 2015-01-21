@@ -162,6 +162,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
                      case (jtcAction == "switch") : if (jtcNameElement != "defaultContent") driver.switchTo.frame(jtcNameElement) else driver.switchTo.defaultContent
                      case (jtcAction == "url") : doUrlNavigation(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcAction, jtcInputCheck)
                      case (jtcAction == "hover") : doHover(jtcByElement, jtcNameElement, driver)
+                     case (jtcAction == "clear") : doClear(jtcByElement, jtcNameElement, driver)
                    }
                    Thread.sleep(jtcPause) 
                  } 
@@ -186,6 +187,14 @@ def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver dri
     print("     |-- FAILURE" + "\n")
     System.exit(0)
   }
+}
+
+def doClear(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
+  val clearField = fetchElement(jtcByElement, jtcNameElement, driver)
+  val JavascriptExecutor executor = driver
+  executor.executeScript("arguments[0].scrollIntoView(true);", clearField);
+  val clearAction = new Actions(driver)
+  clearField.clear()
 }
 
 def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
