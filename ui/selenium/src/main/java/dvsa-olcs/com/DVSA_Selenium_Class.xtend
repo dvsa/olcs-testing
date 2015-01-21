@@ -82,6 +82,7 @@ def doUserAction(String accessibilityPluginEnabled, String currentUrl, int acces
     case (action == "click") : execute.click
     case (action == "standardKeys") : execute.sendKeys(input)
     case (action == "specialKeys") : execute.sendKeys(Keys.valueOf(input))
+    case (action == "clear") : execute.clear()
   }
   if (accessibilityPluginEnabled == "Y") unloadAccessibilityPlugin(driver)
 }
