@@ -336,6 +336,7 @@ OLCSSelfserveBusinessType_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Business Details
 .  .  .  .  .  .  0  .
+OLCSSelfserveBusinessDetails_BusinessTypeUpdatedText  checkContent  body  tagName  Business type section has been updated  OLCS  0  Business Details -- Check 'Business type section has been updated' text is displayed
 OLCSSelfserveBusinessDetails_Step3of14Text  checkContent  body  tagName  Step 3 of 14  OLCS  0  Business Details -- Check 'Step 3 of 14' text is displayed above main heading
 OLCSSelfserveBusinessDetails_BusinessDetailsHeading  checkContent  body  tagName  Business details  OLCS  0  Business Details -- Check 'Business details' is displayed (Main Heading)
 OLCSSelfserveBusinessDetails_RegisteredCompanyNumberText  checkContent  body  tagName  Registered company number  OLCS  0  Business Details -- Check 'Registered company number' text is displayed
@@ -351,7 +352,7 @@ OLCSSelfserveBusinessDetails_SubsidiaryCompaniesText  checkContent  body  tagNam
 OLCSSelfserveBusinessDetails_IfYouHaveSubsidiaryCompaniesText  checkContent  body  tagName  If you have any subsidiary companies, add them here  OLCS  0  Business Details -- Check 'If you have any subsidiary companies, add them here' text is displayed
 OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Business Details -- Click 'Registered company number' field box
 OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldDelKey  specialKeys  data[companyNumber][company_number]  id  DELETE  MOT  0  Business Details -- Press delete key in the 'Registered company number' field
-OLCSSelfserveBusinessDetails_CompanyNameFieldCLICK  click  data[name]  id  NA  OLCS  20000  Business Details -- Click 'Company name' field box
+OLCSSelfserveBusinessDetails_CompanyNameFieldCLICK  click  data[name]  id  NA  OLCS  0  Business Details -- Click 'Company name' field box
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
