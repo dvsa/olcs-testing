@@ -162,7 +162,7 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
                      case (jtcAction == "switch") : if (jtcNameElement != "defaultContent") driver.switchTo.frame(jtcNameElement) else driver.switchTo.defaultContent
                      case (jtcAction == "url") : doUrlNavigation(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcAction, jtcInputCheck)
                      case (jtcAction == "hover") : doHover(jtcByElement, jtcNameElement, driver)
-                     case (jtcAction == "clear") : doClear(jtcByElement, jtcNameElement, driver)
+                     case (jtcAction == "clear") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                    }
                    Thread.sleep(jtcPause) 
                  } 
