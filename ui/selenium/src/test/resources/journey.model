@@ -354,7 +354,7 @@ OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldCLICK  click  data[comp
 OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldDelKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  Business Details -- Press delete key in the 'Registered company number' field
 OLCSSelfserveBusinessDetails_CompanyNameFieldCLICK  click  data[name]  id  NA  OLCS  0  Business Details -- Click 'Company name' field box
 OLCSSelfserveBusinessDetails_RegisteredCompanyNumberField12345678  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Business Details -- Enter '12345678' into the Registered company number field box
-OLCSSelfserveBusinessDetails_CompanyNameFieldCLEAR  clear  data[name]  id  NA  OLCS  0  Business Details -- Clear 'Company name' field box
+OLCSSelfserveBusinessDetails_CompanyNameFieldCLEAR  clear  data[name]  id  NA  OLCS  20000  Business Details -- Clear 'Company name' field box
 OLCSSelfserveBusinessDetails_CompanyNumberFieldCLEAR  clear  data[companyNumber][company_number]  id  NA  OLCS  0  Business Details -- Clear 'Company number' field box
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
