@@ -209,6 +209,8 @@ OLCSSelfserveCancelButtonCHECK  wait  cancel  id  NA  OLCS  0  Framework -- Chec
 OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  0  Framework -- Click 'Cancel' button
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
+OLCSSelfserveBreadCrumb_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Home' Breadcrumb hyperlink is present top left of the screen
+OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Application overview  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
@@ -278,7 +280,6 @@ OLCSSelfserveApplicationOverview_ApplicationNo  checkContent  body  tagName  App
 OLCSSelfserveApplicationOverview_BusinessDetailsDisable  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'Business details' is displayed but disabled to the user
 OLCSSelfserveApplicationOverview_AddressDisabled  checkContent  body  tagName  Addresses  OLCS  0  Application overview -- Check 'Addresses' is displayed but disabled to the user
 OLCSSelfserveApplicationOverview_PeopleDisable  checkContent  body  tagName  People  OLCS  0  Application overview -- Check 'People' is displayed but disabled to the user
-OLCSSelfserveApplicationOverview_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Home' hyperlink is present top left of the screen
 OLCSSelfserveApplicationOverview_PrintApplication  wait  Print application  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Print application' hyperlink is present on right hand side of the screen
 OLCSSelfserveApplicationOverview_CancelApplication  wait  Cancel application  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Cancel application' hyperlink is present on right hand side of the screen
 OLCSSelfserveApplicationOverview_TypeOfLicence  wait  overview-item__type_of_licence  id  NA  OLCS  0  Application overview -- Check 'Edit type of licence' hyperlink is present
@@ -332,6 +333,25 @@ OLCSSelfserveBusinessType_ContinueButtonCLICK  click  form-actions[saveAndContin
 OLCSSelfserveBusinessType_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Business Type -- Check 'Save & Return' button button is present
 OLCSSelfserveBusinessType_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  0  Business Type -- Click 'Save & Return' radio button
 OLCSSelfserveBusinessType_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Business Type -- Check 'Cancel' hyperlink is present at the bottom of the screen
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Business Details
+.  .  .  .  .  .  0  .
+OLCSSelfserveBusinessDetails_Step3of14Text  checkContent  body  tagName  Step 3 of 14  OLCS  0  Business Details -- Check 'Step 3 of 14' text is displayed above main heading
+OLCSSelfserveBusinessDetails_BusinessDetailsHeading  checkContent  body  tagName  Business details  OLCS  0  Business Details -- Check 'Business details' is displayed (Main Heading)
+OLCSSelfserveBusinessDetails_RegisteredCompanyNumberText  checkContent  body  tagName  Registered company number  OLCS  0  Business Details -- Check 'Registered company number' text is displayed
+OLCSSelfserveBusinessDetails_CompanyNumberToHandText  checkContent  body  tagName  Registered company number  OLCS  0  Business Details -- Check 'If you don't have your company number to hand, or are having problems retrieving your company details, please enter them manually below.' text is displayed
+OLCSSelfserveBusinessDetails_CompanyNameText  checkContent  body  tagName  Company name  OLCS  0  Business Details -- Check 'Company name' text is displayed
+OLCSSelfserveBusinessDetails_TradingNamesText  checkContent  body  tagName  Trading names (optional)  OLCS  0  Business Details -- Check 'Trading names (optional)' text is displayed
+OLCSSelfserveBusinessDetails_NatureOfBusinessText  checkContent  body  tagName  Nature of business  OLCS  0  Business Details -- Check 'Nature of business' text is displayed
+OLCSSelfserveBusinessDetails_PleaseEnterBusinessTypeText  checkContent  body  tagName  Please enter your business type. You can find a list of business types at Companies House  OLCS  0  Business Details -- Check 'Please enter your business type. You can find a list of business types at Companies House' text is displayed
+OLCSSelfserveBusinessDetails_RegisteredAddressText  checkContent  body  tagName  Registered address  OLCS  0  Business Details -- Check 'Registered address' text is displayed
+OLCSSelfserveBusinessDetails_AddressLinesText  checkContent  body  tagName  Address lines  OLCS  0  Business Details -- Check 'Address lines' text is displayed
+OLCSSelfserveBusinessDetails_PostcodeText  checkContent  body  tagName  Postcode  OLCS  0  Business Details -- Check 'Postcode' text is displayed
+OLCSSelfserveBusinessDetails_SubsidiaryCompaniesText  checkContent  body  tagName  Subsidiary companies (optional)  OLCS  0  Business Details -- Check 'Subsidiary companies (optional)' text is displayed
+OLCSSelfserveBusinessDetails_IfYouHaveSubsidiaryCompaniesText  checkContent  body  tagName  If you have any subsidiary companies, add them here  OLCS  0  Business Details -- Check 'If you have any subsidiary companies, add them here' text is displayed
+OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Business Details -- Click 'Registered company number' field box
+OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldDelKey  specialKeys  data[companyNumber][company_number]  id  DELETE  MOT  0  Business Details -- Press delete key in the 'Registered company number' field
+OLCSSelfserveBusinessDetails_CompanyNameFieldCLICK  click  data[name]  id  NA  OLCS  20000  Business Details -- Click 'Company name' field box
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
