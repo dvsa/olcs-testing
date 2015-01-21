@@ -351,8 +351,9 @@ OLCSSelfserveBusinessDetails_PostcodeText  checkContent  body  tagName  Postcode
 OLCSSelfserveBusinessDetails_SubsidiaryCompaniesText  checkContent  body  tagName  Subsidiary companies (optional)  OLCS  0  Business Details -- Check 'Subsidiary companies (optional)' text is displayed
 OLCSSelfserveBusinessDetails_IfYouHaveSubsidiaryCompaniesText  checkContent  body  tagName  If you have any subsidiary companies, add them here  OLCS  0  Business Details -- Check 'If you have any subsidiary companies, add them here' text is displayed
 OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldCLICK  click  data[companyNumber][company_number]  id  NA  OLCS  0  Business Details -- Click 'Registered company number' field box
-OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldDelKey  specialKeys  data[companyNumber][company_number]  id  DELETE  MOT  0  Business Details -- Press delete key in the 'Registered company number' field
+OLCSSelfserveBusinessDetails_RegisteredCompanyNumberFieldDelKey  specialKeys  data[companyNumber][company_number]  id  DELETE  OLCS  0  Business Details -- Press delete key in the 'Registered company number' field
 OLCSSelfserveBusinessDetails_CompanyNameFieldCLICK  click  data[name]  id  NA  OLCS  0  Business Details -- Click 'Company name' field box
+OLCSSelfserveBusinessDetails_RegisteredCompanyNumberField12345678  standardKeys  12345678  id  100000  OLCS  0  Business Details -- Enter '12345678' into the Registered company number field box
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
