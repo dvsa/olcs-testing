@@ -44,7 +44,7 @@ def fetchElement(String tcByElement, String tcNameElement, RemoteWebDriver drive
     case (tcByElement == "xpathValue") : driver.findElement(By::xpath("//input[@value='"+ tcNameElement +"']"))
     case (tcByElement == "inputName") : driver.findElement(By::name(tcNameElement))
     case (tcByElement == "xpath") : driver.findElement(By::xpath(tcNameElement))
-   // case (tcByElement == "maximizeBrowser") : diver.manage().window().maximize()
+    case (tcByElement == "maximizeBrowser") : diver.manage().window()
     default : null
   }
   return resultElement
@@ -73,6 +73,8 @@ def waitForElement(String tcByElement, String tcNameElement, RemoteWebDriver dri
     case (tcByElement == "xpathValue") : driver.findElement(By::xpath("//input[@value='"+ tcNameElement +"']"))
     case (tcByElement == "inputName") : driver.findElement(By::name(tcNameElement)).isDisplayed
     case (tcByElement == "xpath") : driver.findElement(By::xpath(tcNameElement)).isDisplayed
+    case (tcByElement == "maximizeBrowser") : diver.manage().window()
+
   }
 }
 
@@ -83,7 +85,7 @@ def doUserAction(String accessibilityPluginEnabled, String currentUrl, int acces
     case (action == "standardKeys") : execute.sendKeys(input)
     case (action == "specialKeys") : execute.sendKeys(Keys.valueOf(input))
     case (action == "clear") : execute.clear()
-    //case (action == "maximizeBrowser") : diver.manage().window().maximize()
+    case (action == "maximizeBrowser") : execute.maximize()
   }
   if (accessibilityPluginEnabled == "Y") unloadAccessibilityPlugin(driver)
 }
