@@ -190,14 +190,6 @@ def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver dri
   }
 }
 
-def doClear(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
-  val clearField = fetchElement(jtcByElement, jtcNameElement, driver)
-  val JavascriptExecutor executor = driver
-  executor.executeScript("arguments[0].scrollIntoView(true);", clearField);
-  val clearAction = new Actions(driver)
-  clearField.clear()
-}
-
 def doHover(String jtcByElement, String jtcNameElement, RemoteWebDriver driver) {
   val hover = fetchElement(jtcByElement, jtcNameElement, driver)
   val JavascriptExecutor executor = driver
