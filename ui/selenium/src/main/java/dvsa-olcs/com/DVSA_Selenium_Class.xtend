@@ -83,6 +83,7 @@ def doUserAction(String accessibilityPluginEnabled, String currentUrl, int acces
     case (action == "standardKeys") : execute.sendKeys(input)
     case (action == "specialKeys") : execute.sendKeys(Keys.valueOf(input))
     case (action == "clear") : execute.clear()
+    case (action == "maximizeBrowser") : execute.manage().window().maximize()
   }
   if (accessibilityPluginEnabled == "Y") unloadAccessibilityPlugin(driver)
 }
