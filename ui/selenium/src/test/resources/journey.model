@@ -193,7 +193,6 @@ OLCSinternalLicenceDetailsCheck80  wait  form-actions[cancel]  id  NA  OLCS  0  
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
-OLCSinternalmaximizeBrowser  maximizeBrowser  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Maximize Browser
 OLCSSelfserveContinueButtonCHECK  wait  submit  id  NA  OLCS  0  Framework -- Check is present 'Continue' button or 'Save' button
 OLCSSelfserveContinueButtonCLICK  click  submit  id  NA  OLCS  0  Framework -- Click 'Continue' button or 'Save' button
 OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Framework -- Check is present 'Back' button
