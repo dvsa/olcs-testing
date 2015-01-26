@@ -211,6 +211,11 @@ OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- 
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
 OLCSSelfserveBreadCrumb_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Home' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Application overview  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
+OLCSSelfserve_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Business Type -- Check 'Continue' button button is present
+OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  0  Business Type -- Click 'Continue' radio button
+OLCSSelfserve_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Business Type -- Check 'Save & Return' button button is present
+OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  0  Business Type -- Click 'Save & Return' radio button
+OLCSSelfserve_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Business Type -- Check 'Cancel' hyperlink is present at the bottom of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
@@ -328,11 +333,6 @@ OLCSSelfserveBusinessType_LLPCLICK  click  org_t_llp  xpathValue  NA  OLCS  0  B
 OLCSSelfserveBusinessType_OtherText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' question is displayed
 OLCSSelfserveBusinessType_Other  wait  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' radio button is present
 OLCSSelfserveBusinessType_OtherCLICK  click  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Click 'Other (e.g. public authority, charity, trust, university)' radio button
-OLCSSelfserveBusinessType_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Business Type -- Check 'Continue' button button is present
-OLCSSelfserveBusinessType_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  0  Business Type -- Click 'Continue' radio button
-OLCSSelfserveBusinessType_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Business Type -- Check 'Save & Return' button button is present
-OLCSSelfserveBusinessType_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  0  Business Type -- Click 'Save & Return' radio button
-OLCSSelfserveBusinessType_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Business Type -- Check 'Cancel' hyperlink is present at the bottom of the screen
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Business Details
 .  .  .  .  .  .  0  .
@@ -367,6 +367,7 @@ OLCSSelfserveBusinessDetails_AddressLine2_SeleniumIndustrialEstate  standardKeys
 OLCSSelfserveBusinessDetails_AddressLine3_Selenium  standardKeys  registeredAddress[addressLine3]  id  Selenium  OLCS  0  Business Details -- Enter 'Selenium' into the address line 3 field box
 OLCSSelfserveBusinessDetails_AddressTown_AutomationTown  standardKeys  registeredAddress[town]  id  Automation Town  OLCS  0  Business Details -- Enter 'Automation' into the address town field box
 OLCSSelfserveBusinessDetails_Postcode_LS96NF  standardKeys  registeredAddress[postcode]  id  LS9 6NF  OLCS  0  Business Details -- Enter 'LS9 6NF' into the post code field box
+
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
