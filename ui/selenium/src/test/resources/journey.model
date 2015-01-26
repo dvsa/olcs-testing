@@ -215,6 +215,8 @@ OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA 
 OLCSSelfserve_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Framework -- Check 'Save & Return' button is present
 OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  0  Framework -- Click 'Save & Return' button
 OLCSSelfserve_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Framework -- Check 'Cancel' hyperlink is present at the bottom of the screen
+OLCSSelfserve_AddButton  wait  add  id  NA  OLCS  0  Framework -- Check 'Add' button is present
+OLCSSelfserve_AddCLICK  click  add  id  NA  OLCS  0  Framework -- Click 'Add' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
