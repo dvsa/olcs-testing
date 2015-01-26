@@ -368,6 +368,14 @@ OLCSSelfserveBusinessDetails_AddressLine2_SeleniumIndustrialEstate  standardKeys
 OLCSSelfserveBusinessDetails_AddressLine3_Selenium  standardKeys  registeredAddress[addressLine3]  id  Selenium  OLCS  0  Business Details -- Enter 'Selenium' into the address line 3 field box
 OLCSSelfserveBusinessDetails_AddressTown_AutomationTown  standardKeys  registeredAddress[town]  id  Automation Town  OLCS  0  Business Details -- Enter 'Automation' into the address town field box
 OLCSSelfserveBusinessDetails_Postcode_LS96NF  standardKeys  registeredAddress[postcode]  id  LS9 6NF  OLCS  0  Business Details -- Enter 'LS9 6NF' into the post code field box
+.  .  .  .  .  .  0  Business Details -> Add subsidiary company
+OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_AddSubsidiaryCompanyText  checkContent  body  tagName  Add subsidiary company  OLCS  0  Business Details -> Add subsidiary company -- Check 'Add subsidiary company' text is displayed
+OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyNameText  checkContent  body  tagName  Company name  OLCS  0  Business Details -> Add subsidiary company -- Check 'Company name' text is displayed
+OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyNumberText  checkContent  body  tagName  Company number  OLCS  0  Business Details -> Add subsidiary company -- Check 'Company number' text is displayed
+OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyName  wait  data[name]  id  NA  OLCS  0  Business Details -> Add subsidiary company -- Check 'Company name' text field is present
+OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyNumber  wait  data[companyNo]  id  NA  OLCS  0  Business Details -> Add subsidiary company -- Check 'Company number' text field is present
+OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyName_SubsidiaryCompany  standardKeys  data[name]  id  Subsidiary Company Name  OLCS  0  Business Details -> Add subsidiary company -- Enter 'Subsidiary Company Name' into the Company Name text field box
+OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyNumber_12345679  standardKeys  data[companyNo]  id  12345679  OLCS  0  Business Details -> Add subsidiary company -- Enter '12345679' into the Company Name text field box
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
