@@ -354,7 +354,6 @@ OLCSSelfserveBusinessDetails_RegisteredCompanyNumberField12345678  standardKeys 
 OLCSSelfserveBusinessDetails_CompanyNumberFieldCLEAR  clear  data[companyNumber][company_number]  id  NA  OLCS  0  Business Details -- Clear 'Company number' field box
 OLCSSelfserveBusinessDetails_CompanyNameFieldCLEAR  clear  data[name]  id  NA  OLCS  0  Business Details -- Clear 'Company name' field box
 OLCSSelfserveBusinessDetails_CompanyTradingNameCLEAR  clear  data[tradingNames][trading_name][0]  id  NA  OLCS  0  Business Details -- Clear 'Trading names (optional)' field box
-OLCSSelfserveBusinessDetails_NatureOfBusinessCLEAR  clear  data[natureOfBusiness]  id  NA  OLCS  0  Business Details -- Clear 'Nature of business' field box
 OLCSSelfserveBusinessDetails_AddressLine1CLEAR  clear  registeredAddress[addressLine1]  id  NA  OLCS  0  Business Details -- Clear 'Address Line 1' field box
 OLCSSelfserveBusinessDetails_AddressLine2CLEAR  clear  registeredAddress[addressLine2]  id  NA  OLCS  0  Business Details -- Clear 'Address Line 2' field box
 OLCSSelfserveBusinessDetails_AddressLine3CLEAR  clear  registeredAddress[addressLine3]  id  NA  OLCS  0  Business Details -- Clear 'Address Line 3' field box
