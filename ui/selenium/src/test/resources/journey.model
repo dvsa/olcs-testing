@@ -350,7 +350,6 @@ OLCSSelfserveBusinessDetails_AddressLinesText  checkContent  body  tagName  Addr
 OLCSSelfserveBusinessDetails_PostcodeText  checkContent  body  tagName  Postcode  OLCS  0  Business Details -- Check 'Postcode' text is displayed
 OLCSSelfserveBusinessDetails_SubsidiaryCompaniesText  checkContent  body  tagName  Subsidiary companies (optional)  OLCS  0  Business Details -- Check 'Subsidiary companies (optional)' text is displayed
 OLCSSelfserveBusinessDetails_IfYouHaveSubsidiaryCompaniesText  checkContent  body  tagName  If you have any subsidiary companies, add them here  OLCS  0  Business Details -- Check 'If you have any subsidiary companies, add them here' text is displayed
-OLCSSelfserveBusinessDetails_RegisteredCompanyNumberField12345678  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Business Details -- Enter '12345678' into the Registered company number field box
 OLCSSelfserveBusinessDetails_CompanyNumberFieldCLEAR  clear  data[companyNumber][company_number]  id  NA  OLCS  0  Business Details -- Clear 'Company number' field box
 OLCSSelfserveBusinessDetails_CompanyNameFieldCLEAR  clear  data[name]  id  NA  OLCS  0  Business Details -- Clear 'Company name' field box
 OLCSSelfserveBusinessDetails_CompanyTradingNameCLEAR  clear  data[tradingNames][trading_name][0]  id  NA  OLCS  0  Business Details -- Clear 'Trading names (optional)' field box
@@ -360,6 +359,14 @@ OLCSSelfserveBusinessDetails_AddressLine3CLEAR  clear  registeredAddress[address
 OLCSSelfserveBusinessDetails_AddressLine4CLEAR  clear  registeredAddress[addressLine4]  id  NA  OLCS  0  Business Details -- Clear 'Address Line 4' field box
 OLCSSelfserveBusinessDetails_AddressTownCLEAR  clear  registeredAddress[town]  id  NA  OLCS  0  Business Details -- Clear 'Address town' field box
 OLCSSelfserveBusinessDetails_AddressPostcodeCLEAR  clear  registeredAddress[postcode]  id  NA  OLCS  0  Business Details -- Clear 'Address Post Code' field box
+OLCSSelfserveBusinessDetails_RegisteredCompanyNumberField12345678  standardKeys  data[companyNumber][company_number]  id  12345678  OLCS  0  Business Details -- Enter '12345678' into the Registered company number field box
+OLCSSelfserveBusinessDetails_RegisteredCompanyNameField_AutomationName  standardKeys  data[name]  id  Automation Company Name  OLCS  0  Business Details -- Enter 'Automation Company Name' into the Company name field box
+OLCSSelfserveBusinessDetails_RegisteredTradingNameField_TaAutomationName  standardKeys  data[tradingNames][trading_name][0]  id  Automation Company Name  OLCS  0  Business Details -- Enter 'T/A Automation Company Name' into the Trading names (optional) field box
+OLCSSelfserveBusinessDetails_AddressLine1_1AutomationStreet  standardKeys  registeredAddress[addressLine1]  id  1 Automation Street  OLCS  0  Business Details -- Enter '1 Automation Street' into the address line 1 field box
+OLCSSelfserveBusinessDetails_AddressLine2_SeleniumIndustrialEstate  standardKeys  registeredAddress[addressLine2]  id  Selenium Industrial Estate  OLCS  0  Business Details -- Enter 'Selenium Industrial Estate' into the address line 2 field box
+OLCSSelfserveBusinessDetails_AddressLine3_Selenium  standardKeys  registeredAddress[addressLine3]  id  Selenium  OLCS  0  Business Details -- Enter 'Selenium' into the address line 3 field box
+OLCSSelfserveBusinessDetails_AddressTown_AutomationTown  standardKeys  registeredAddress[town]  id  Automation Town  OLCS  0  Business Details -- Enter 'Automation' into the address town field box
+OLCSSelfserveBusinessDetails_Postcode_LS96NF  standardKeys  registeredAddress[postcode]  id  LS9 6NF  OLCS  30000  Business Details -- Enter 'LS9 6NF' into the post code field box
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
