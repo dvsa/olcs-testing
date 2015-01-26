@@ -366,7 +366,6 @@ OLCSSelfserveBusinessDetails_AddressLine2_SeleniumIndustrialEstate  standardKeys
 OLCSSelfserveBusinessDetails_AddressLine3_Selenium  standardKeys  registeredAddress[addressLine3]  id  Selenium  OLCS  0  Business Details -- Enter 'Selenium' into the address line 3 field box
 OLCSSelfserveBusinessDetails_AddressTown_AutomationTown  standardKeys  registeredAddress[town]  id  Automation Town  OLCS  0  Business Details -- Enter 'Automation' into the address town field box
 OLCSSelfserveBusinessDetails_Postcode_LS96NF  standardKeys  registeredAddress[postcode]  id  LS9 6NF  OLCS  0  Business Details -- Enter 'LS9 6NF' into the post code field box
-
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
