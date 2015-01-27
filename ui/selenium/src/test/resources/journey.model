@@ -400,11 +400,11 @@ OLCSSelfserveAddresses_CaCountryText  checkContent  body  tagName  Country  OLCS
 OLCSSelfserveAddresses_ContactDetailsHeadingText  checkContent  body  tagName  Contact details  OLCS  0  Addresses -- Check 'Contact details' text is displayed (Heading)
 OLCSSelfserveAddresses_LeastOneTelephoneNumberText  checkContent  body  tagName  Please enter at least one telephone number  OLCS  0  Addresses -- Check 'Please enter at least one telephone number' text is displayed
 OLCSSelfserveAddresses_BusinessTelephoneText  checkContent  body  tagName  Business telephone No. (optional)  OLCS  0  Addresses -- Check 'Business telephone No. (optional)' text is displayed
-OLCSSelfserveAddresses_HomeTelephoneText checkContent  body  tagName  Home telephone No. (optional)  OLCS  0  Addresses -- Check 'Home telephone No. (optional)' text is displayed
-OLCSSelfserveAddresses_MobileTelephoneText checkContent  body  tagName  Mobile telephone No. (optional)  OLCS  0  Addresses -- Check 'Mobile telephone No. (optional)' text is displayed
-OLCSSelfserveAddresses_FaxTelephoneText checkContent  body  tagName  Fax telephone No. (optional)  OLCS  0  Addresses -- Check 'Fax telephone No. (optional)' text is displayed
-OLCSSelfserveAddresses_EmailAddressText checkContent  body  tagName  E-mail address  OLCS  0  Addresses -- Check 'E-mail address' text is displayed
-OLCSSelfserveAddresses_EstablishmentAddressHeadingText checkContent  body  tagName  Establishment address  OLCS  0  Addresses -- Check 'Establishment address' text is displayed (Heading)
+OLCSSelfserveAddresses_HomeTelephoneText  checkContent  body  tagName  Home telephone No. (optional)  OLCS  0  Addresses -- Check 'Home telephone No. (optional)' text is displayed
+OLCSSelfserveAddresses_MobileTelephoneText  checkContent  body  tagName  Mobile telephone No. (optional)  OLCS  0  Addresses -- Check 'Mobile telephone No. (optional)' text is displayed
+OLCSSelfserveAddresses_FaxTelephoneText  checkContent  body  tagName  Fax telephone No. (optional)  OLCS  0  Addresses -- Check 'Fax telephone No. (optional)' text is displayed
+OLCSSelfserveAddresses_EmailAddressText  checkContent  body  tagName  E-mail address  OLCS  0  Addresses -- Check 'E-mail address' text is displayed
+OLCSSelfserveAddresses_EstablishmentAddressHeadingText  checkContent  body  tagName  Establishment address  OLCS  0  Addresses -- Check 'Establishment address' text is displayed (Heading)
 OLCSSelfserveAddresses_EaPostcodeSearchText  checkContent  body  tagName  For attention of (optional)  OLCS  0  Addresses -- Check 'Postcode search' text is displayed (Establishment address)
 OLCSSelfserveAddresses_EaStreetText  checkContent  body  tagName  Street  OLCS  0  Addresses -- Check 'Street' text is displayed (Establishment address)
 OLCSSelfserveAddresses_EaTownCityText  checkContent  body  tagName  Town/City  OLCS  0  Addresses -- Check 'Town/City' text is displayed (Establishment address)
