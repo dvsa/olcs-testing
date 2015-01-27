@@ -387,7 +387,7 @@ OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyNumber_12345679  standar
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Addresses (Section 4 of the Application process)
 .  .  .  .  .  .  0  .
-OLCSSelfserveAddresses_BusinessDetailsUpdatedText  checkContent  body  tagName  Business type section has been updated  OLCS  0  Addresses -- Check 'Business details section has been updated' text is displayed
+OLCSSelfserveAddresses_BusinessDetailsUpdatedText  checkContent  body  tagName  Business details section has been update  OLCS  0  Addresses -- Check 'Business details section has been updated' text is displayed
 OLCSSelfserveAddresses_Step4of14Text  checkContent  body  tagName  Step 4 of 14  OLCS  0  Addresses -- Check 'Step 4 of 14' text is displayed above main heading
 OLCSSelfserveAddresses_AddressesHeading  checkContent  body  tagName  Addresses  OLCS  0  Addresses -- Check 'Addresses' is displayed (Main Heading)
 OLCSSelfserveAddresses_CorrespondenceAddressText  checkContent  body  tagName  Correspondence address  OLCS  0  Addresses -- Check 'Correspondence address' is displayed (Heading)
