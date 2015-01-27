@@ -316,7 +316,7 @@ OLCSSelfserveApplicationOverview_FinancialInformation  wait  Financial informati
 OLCSSelfserveApplicationOverview_GuideOperatorFees  wait  A guide to operator fees  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'A guide to operator fees' is present on the right hand side of the screen
 OLCSSelfserveApplicationOverview_MaintenanceContract  wait  How to draw up a maintenance contract  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'How to draw up a maintenance contract' is present on the right hand side of the screen
 .  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Business Type
+.  .  .  .  .  .  0  Business Type (Section 2 of the Application process)
 .  .  .  .  .  .  0  .
 OLCSSelfserveBusinessType_HomeBreadcrumb  wait  Home  xpathLinkContains  NA  OLCS  0  Business Type -- Check 'Home' breadcrumb hyperlink is present top left of the screen
 OLCSSelfserveBusinessType_ApplicationOverviewBreadcrumb  wait  Application overview  xpathLinkContains  NA  OLCS  0  Business Type -- Check 'Application overview' breadcrumb hyperlink is present top left of the screen
@@ -339,7 +339,7 @@ OLCSSelfserveBusinessType_OtherText  checkContent  body  tagName  Sole Trader  O
 OLCSSelfserveBusinessType_Other  wait  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' radio button is present
 OLCSSelfserveBusinessType_OtherCLICK  click  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Click 'Other (e.g. public authority, charity, trust, university)' radio button
 .  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Business Details
+.  .  .  .  .  .  0  Business Details (Section 3 of the Application process)
 .  .  .  .  .  .  0  .
 OLCSSelfserveBusinessDetails_BusinessTypeUpdatedText  checkContent  body  tagName  Business type section has been updated  OLCS  0  Business Details -- Check 'Business type section has been updated' text is displayed
 OLCSSelfserveBusinessDetails_Step3of14Text  checkContent  body  tagName  Step 3 of 14  OLCS  0  Business Details -- Check 'Step 3 of 14' text is displayed above main heading
@@ -384,6 +384,56 @@ OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyName  wait  data[name]  
 OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyNumber  wait  data[companyNo]  id  NA  OLCS  0  Business Details -> Add subsidiary company -- Check 'Company number' text field is present
 OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyName_SubsidiaryCompany  standardKeys  data[name]  id  Subsidiary Company Name  OLCS  0  Business Details -> Add subsidiary company -- Enter 'Subsidiary Company Name' into the Company Name text field box
 OLCSSelfserveBusinessDetailsAddSubsidiaryCompany_CompanyNumber_12345679  standardKeys  data[companyNo]  id  12345679  OLCS  0  Business Details -> Add subsidiary company -- Enter '12345679' into the Company Name text field box
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Addresses (Section 4 of the Application process)
+.  .  .  .  .  .  0  .
+OLCSSelfserveAddresses_BusinessDetailsUpdatedText  checkContent  body  tagName  Business type section has been updated  OLCS  0  Addresses -- Check 'Business details section has been updated' text is displayed
+OLCSSelfserveAddresses_Step4of14Text  checkContent  body  tagName  Step 4 of 14  OLCS  0  Addresses -- Check 'Step 4 of 14' text is displayed above main heading
+OLCSSelfserveAddresses_AddressesHeading  checkContent  body  tagName  Addresses  OLCS  0  Addresses -- Check 'Addresses' is displayed (Main Heading)
+OLCSSelfserveAddresses_CorrespondenceAddressText  checkContent  body  tagName  Correspondence address  OLCS  0  Addresses -- Check 'Correspondence address' is displayed (Heading)
+OLCSSelfserveAddresses_CaForAttentionText  checkContent  body  tagName  For attention of (optional)  OLCS  0  Addresses -- Check 'For attention of (optional)' text is displayed (Correspondance address)
+OLCSSelfserveAddresses_CaPostcodeSearchText  checkContent  body  tagName  For attention of (optional)  OLCS  0  Addresses -- Check 'Postcode search' text is displayed (Correspondance address)
+OLCSSelfserveAddresses_CaStreetText  checkContent  body  tagName  Street  OLCS  0  Addresses -- Check 'Street' text is displayed (Correspondance address)
+OLCSSelfserveAddresses_CaTownCityText  checkContent  body  tagName  Town/City  OLCS  0  Addresses -- Check 'Town/City' text is displayed (Correspondance address)
+OLCSSelfserveAddresses_CaPostcodeText  checkContent  body  tagName  Postcode  OLCS  0  Addresses -- Check 'Postcode' text is displayed (Correspondance address)
+OLCSSelfserveAddresses_CaCountryText  checkContent  body  tagName  Country  OLCS  0  Addresses -- Check 'Country' text is displayed (Correspondance address)
+OLCSSelfserveAddresses_ContactDetailsHeadingText  checkContent  body  tagName  Contact details  OLCS  0  Addresses -- Check 'Contact details' text is displayed (Heading)
+OLCSSelfserveAddresses_LeastOneTelephoneNumberText  checkContent  body  tagName  Please enter at least one telephone number  OLCS  0  Addresses -- Check 'Please enter at least one telephone number' text is displayed
+OLCSSelfserveAddresses_BusinessTelephoneText checkContent  body  tagName  Business telephone No. (optional)  OLCS  0  Addresses -- Check 'Business telephone No. (optional)' text is displayed
+OLCSSelfserveAddresses_HomeTelephoneText checkContent  body  tagName  Home telephone No. (optional)  OLCS  0  Addresses -- Check 'Home telephone No. (optional)' text is displayed
+OLCSSelfserveAddresses_MobileTelephoneText checkContent  body  tagName  Mobile telephone No. (optional)  OLCS  0  Addresses -- Check 'Mobile telephone No. (optional)' text is displayed
+OLCSSelfserveAddresses_FaxTelephoneText checkContent  body  tagName  Fax telephone No. (optional)  OLCS  0  Addresses -- Check 'Fax telephone No. (optional)' text is displayed
+OLCSSelfserveAddresses_EmailAddressText checkContent  body  tagName  E-mail address  OLCS  0  Addresses -- Check 'E-mail address' text is displayed
+OLCSSelfserveAddresses_EstablishmentAddressHeadingText checkContent  body  tagName  Establishment address  OLCS  0  Addresses -- Check 'Establishment address' text is displayed (Heading)
+OLCSSelfserveAddresses_EaPostcodeSearchText  checkContent  body  tagName  For attention of (optional)  OLCS  0  Addresses -- Check 'Postcode search' text is displayed (Establishment address)
+OLCSSelfserveAddresses_EaStreetText  checkContent  body  tagName  Street  OLCS  0  Addresses -- Check 'Street' text is displayed (Establishment address)
+OLCSSelfserveAddresses_EaTownCityText  checkContent  body  tagName  Town/City  OLCS  0  Addresses -- Check 'Town/City' text is displayed (Establishment address)
+OLCSSelfserveAddresses_EaPostcodeText  checkContent  body  tagName  Postcode  OLCS  0  Addresses -- Check 'Postcode' text is displayed (Establishment address)
+OLCSSelfserveAddresses_EaCountryText  checkContent  body  tagName  Country  OLCS  0  Addresses -- Check 'Country' text is displayed (Establishment address)
+OLCSSelfserveAddresses_CaForAttentionOf  wait  correspondence[fao]  id  NA  OLCS  0  Addresses -- Check is present 'For attention of (optional)' input field
+OLCSSelfserveAddresses_CaPostCode  wait  correspondence_address[searchPostcode][postcode]  id  NA  OLCS  0  Addresses -- Check is present 'Postcode Search' input field (Correspondance address)
+OLCSSelfserveAddresses_CaFindAddress  wait  correspondence_address[searchPostcode][search]  id  NA  OLCS  0  Addresses -- Check is present 'Find Address' button (Correspondance address)
+OLCSSelfserveAddresses_CaAddressLine1  wait  correspondence_address[addressLine1]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 1' input field (Correspondance address)
+OLCSSelfserveAddresses_CaAddressLine2  wait  correspondence_address[addressLine2]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 2' input field (Correspondance address)
+OLCSSelfserveAddresses_CaAddressLine3  wait  correspondence_address[addressLine3]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 3' input field (Correspondance address)
+OLCSSelfserveAddresses_CaAddressLine4  wait  correspondence_address[addressLine4]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 4' input field (Correspondance address)
+OLCSSelfserveAddresses_CaAddressTownCity  wait  correspondence_address[town]  id  NA  OLCS  0  Addresses -- Check is present 'Address Town/City' input field (Correspondance address)
+OLCSSelfserveAddresses_CaPostcode  wait  correspondence_address[postcode]  id  NA  OLCS  0  Addresses -- Check is present 'Postcode' input field (Correspondance address)
+OLCSSelfserveAddresses_CaCountry  wait  correspondence_address[countryCode]  id  NA  OLCS  0  Addresses -- Check is present 'Country drop down' input field (Correspondance address)
+OLCSSelfserveAddresses_BusinessTelephone  wait  contact[phone_business]  id  NA  OLCS  0  Addresses -- Check is present 'Business telephone No. (optional)' input field (Contact details)
+OLCSSelfserveAddresses_HomeTelephone  wait  contact[phone_home]  id  NA  OLCS  0  Addresses -- Check is present 'Home telephone No. (optional)' input field (Contact details)
+OLCSSelfserveAddresses_MobileTelephone  wait  contact[phone_mobile]  id  NA  OLCS  0  Addresses -- Check is present 'Mobile telephone No. (optional)' input field (Contact details)
+OLCSSelfserveAddresses_FaxTelephone  wait  contact[phone_fax]  id  NA  OLCS  0  Addresses -- Check is present 'Fax telephone No. (optional)' input field (Contact details)
+OLCSSelfserveAddresses_EmailAddress  wait  contact[email]  id  NA  OLCS  0  Addresses -- Check is present 'E-mail address' input field (Contact details)
+OLCSSelfserveAddresses_EaPostCode  wait  establishment_address[searchPostcode][postcode]  id  NA  OLCS  0  Addresses -- Check is present 'Postcode Search' input field (Establishment address)
+OLCSSelfserveAddresses_EaFindAddress  wait  establishment_address[searchPostcode][search]  id  NA  OLCS  0  Addresses -- Check is present 'Find Address' button (Establishment address)
+OLCSSelfserveAddresses_EaAddressLine1  wait  establishment_address[addressLine1]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 1' input field (Establishment address)
+OLCSSelfserveAddresses_EaAddressLine2  wait  establishment_address[addressLine2]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 2' input field (Establishment address)
+OLCSSelfserveAddresses_EaAddressLine3  wait  establishment_address[addressLine3]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 3' input field (Establishment address)
+OLCSSelfserveAddresses_EaAddressLine4  wait  establishment_address[addressLine4]  id  NA  OLCS  0  Addresses -- Check is present 'Address line 4' input field (Establishment address)
+OLCSSelfserveAddresses_EaAddressTownCity  wait  establishment_address[town]  id  NA  OLCS  0  Addresses -- Check is present 'Address Town/City' input field (Establishment address)
+OLCSSelfserveAddresses_EaAddressPostcode  wait  establishment_address[postcode]  id  NA  OLCS  0  Addresses -- Check is present 'Postcode' input field (Establishment address)
+OLCSSelfserveAddresses_EaCountry  wait  establishment_address[countryCode]  id  NA  OLCS  0  Addresses -- Check is present 'Country drop down' input field (Establishment address)
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
