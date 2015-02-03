@@ -306,7 +306,8 @@ OLCSSelfserveApplicationOverview_Safety  wait  overview-item__safety  id  NA  OL
 OLCSSelfserveApplicationOverview_FinancialHistory  wait  overview-item__financial_history  id  NA  OLCS  0  Application overview -- Check 'Add financial history' hyperlink is present
 OLCSSelfserveApplicationOverview_LicenceHistory  wait  overview-item__licence_history  id  NA  OLCS  0  Application overview -- Check 'Add licence history' hyperlink is present
 OLCSSelfserveApplicationOverview_ConvictionsPenalties  wait  overview-item__convictions_penalties  id  NA  OLCS  0  Application overview -- Check 'Add convictions & penalties' hyperlink is present
-OLCSSelfserveApplicationOverview_Declarations  wait  overview-item__undertakings  id  NA  OLCS  0  Application overview -- Check 'Add declarations' hyperlink is present
+OLCSSelfserveApplicationOverview_DeclarationsDisabled  checkContent  body  tagName  Declarations  OLCS  0  Application overview -- Check 'Declarations' hyperlink is present
+OLCSSelfserveApplicationOverview_Declarations  wait  overview-item__undertakings  id  NA  OLCS  0  Application overview -- Check 'Declarations' is displayed but disabled to the user
 OLCSSelfserveApplicationOverview_ApplicationFee  checkContent  body  tagName  Application fee  OLCS  0  Application overview -- Check 'Application fee' is displayed at the bottom of the screen
 OLCSSelfserveApplicationOverview_SubmitPay  wait  submitPay  id  NA  OLCS  0  Application overview -- Check 'Submit & pay' button is present at bottom of screen
 OLCSSelfserveApplicationOverview_ApplyNewLicence  checkContent  body  tagName  Applying for a new licence  OLCS  0  Application overview -- Check 'Applying for a new licence' is displayed on the right of the screen
