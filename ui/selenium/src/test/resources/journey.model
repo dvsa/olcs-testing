@@ -1,4 +1,7 @@
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  Framework -- Start Internal Application
@@ -306,8 +309,8 @@ OLCSSelfserveApplicationOverview_Safety  wait  overview-item__safety  id  NA  OL
 OLCSSelfserveApplicationOverview_FinancialHistory  wait  overview-item__financial_history  id  NA  OLCS  0  Application overview -- Check 'Add financial history' hyperlink is present
 OLCSSelfserveApplicationOverview_LicenceHistory  wait  overview-item__licence_history  id  NA  OLCS  0  Application overview -- Check 'Add licence history' hyperlink is present
 OLCSSelfserveApplicationOverview_ConvictionsPenalties  wait  overview-item__convictions_penalties  id  NA  OLCS  0  Application overview -- Check 'Add convictions & penalties' hyperlink is present
-OLCSSelfserveApplicationOverview_DeclarationsDisabled  checkContent  body  tagName  Declarations  OLCS  0  Application overview -- Check 'Declarations' hyperlink is present
-OLCSSelfserveApplicationOverview_Declarations  wait  overview-item__undertakings  id  NA  OLCS  0  Application overview -- Check 'Declarations' is displayed but disabled to the user
+OLCSSelfserveApplicationOverview_DeclarationsDisabled  checkContent  body  tagName  Declarations  OLCS  0  Application overview -- Check 'Declarations' is displayed but disabled to the user
+OLCSSelfserveApplicationOverview_Declarations  wait  overview-item__undertakings  id  NA  OLCS  0  Application overview -- Check 'Declarations' hyperlink is present
 OLCSSelfserveApplicationOverview_ApplicationFee  checkContent  body  tagName  Application fee  OLCS  0  Application overview -- Check 'Application fee' is displayed at the bottom of the screen
 OLCSSelfserveApplicationOverview_SubmitPay  wait  submitPay  id  NA  OLCS  0  Application overview -- Check 'Submit & pay' button is present at bottom of screen
 OLCSSelfserveApplicationOverview_ApplyNewLicence  checkContent  body  tagName  Applying for a new licence  OLCS  0  Application overview -- Check 'Applying for a new licence' is displayed on the right of the screen
@@ -459,6 +462,19 @@ OLCSSelfserveAddresses_EaAddressLine4_Line4  standardKeys  establishment_address
 OLCSSelfserveAddresses_EaAddressTownCity_Leeds  standardKeys  establishment_address[town]  id  Leeds  OLCS  0  Addresses -- Enter 'Leeds' into the 'Address Town/City' input field (Establishment address)
 OLCSSelfserveAddresses_EaAddressPostcode_LS96NF  standardKeys  establishment_address[postcode]  id  LS9 6NF  OLCS  0  Addresses -- Enter into 'LS9 6NF' the 'Postcode' input field (Establishment address)
 OLCSSelfserveAddresses_EaCountry_UK  standardKeys  establishment_address[countryCode]  id  United Kingdom  OLCS  0  Addresses -- Enter 'United Kingdom' into the 'Country drop down' input field (Establishment address)
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  People (Section 5 of the Application process)
+.  .  .  .  .  .  0  .
+OLCSSelfservePeople_BusinessDetailsUpdatedText  checkContent  body  tagName  Addresses section has been updated  OLCS  0  Addresses -- Check 'Addresses section has been updated' text is displayed
+OLCSSelfservePeople_Step5of14Text  checkContent  body  tagName  Step 5 of 14  OLCS  0  People -- Check 'Step 5 of 14' text is displayed above main heading
+OLCSSelfservePeople_PeopleHeading  checkContent  body  tagName  People  OLCS  0  People -- Check 'People' is displayed (Main Heading)
+OLCSSelfservePeople_DirectorsText  checkContent  body  tagName  Directors  OLCS  0  People -- Check 'Directors' text is displayed
+OLCSSelfservePeople_NameText  checkContent  body  tagName  Name  OLCS  0  People -- Check 'Name' text is displayed
+OLCSSelfservePeople_OtherNamesText  checkContent  body  tagName  Other names  OLCS  0  People -- Check 'Other names' text is displayed
+OLCSSelfservePeople_DOBText  checkContent  body  tagName  DOB  OLCS  0  People -- Check 'DOB' text is displayed
+OLCSSelfservePeople_PleaseProvideText  checkContent  body  tagName  Please provide details of the company directors. This must be the same as the details that are on the companies house register  OLCS  0  People -- Check 'Please provide details of the company directors. This must be the same as the details that are on the companies house register' text is displayed
+OLCSSelfservePeople_CheckboxCheckAll  wait  checkall  inputName  NA  OLCS  0  People -- Check is present 'Check All' check box
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
