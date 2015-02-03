@@ -1,4 +1,4 @@
-BDD Identifier  BDD Author  BDD Type  BDD Title  BDD Story  Start Point  BDD Sequence
+Column Headings -- "BDD Identifier"  "BDD Author"  "BDD Type"  "BDD Title"  "BDD Story"  "Start Point"  "BDD Sequence"
 .  .  .  .  .  .  .
 OLCS-Selfserve-Sart  ADT  Selfserve  Selfserve  Start Application  OLCSSelfservestart  OLCSSelfservestart
 OLCS-Selfserve-Sart  ADT  Selfserve  Selfserve  Start Application  OLCSSelfservestart  OLCSSelfservestart
