@@ -220,7 +220,7 @@ OLCSSelfserve_SaveCLICK  click  form-actions[submit]  id  NA  OLCS  6000  Framew
 OLCSSelfserve_SaveAddAnotherButton  wait  form-actions[addAnother]  id  NA  OLCS  0  Framework -- Check 'Save & add another' button is present
 OLCSSelfserve_SaveAddAnotherCLICK  click  form-actions[addAnother]  id  NA  OLCS  0  Framework -- Click 'Save & add another' button
 OLCSSelfserve_CancelButton  wait  cancel  id  NA  OLCS  0  Framework -- Check 'Cancel' button is present
-OLCSSelfserve_CancelCLICK  click  cancel  id  NA  OLCS  0  Framework -- Click 'Cancel' button
+OLCSSelfserve_CancelCLICK  click  cancel  id  NA  OLCS  5000  Framework -- Click 'Cancel' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
