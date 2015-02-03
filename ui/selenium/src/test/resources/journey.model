@@ -282,7 +282,7 @@ OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  ltyp_sr  xpathValue  NA  
 OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  ltyp_sr  xpathValue  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeContinueCHECK  wait  form-actions[save]  id  NA  OLCS  0  Type of licence -- Check 'Continue' button is present
 OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  0  Type of licence -- Click 'Continue' button
-OLCSSelfserveOperatorTypeContinueCLICKWait_T10000  click  form-actions[save]  id  NA  OLCS  10000  Type of licence -- Click 'Continue' button and wait 10 seconds
+OLCSSelfserveOperatorTypeContinueCLICKWait_T10000  click  form-actions[save]  id  NA  OLCS  10000  Type of licence -- Click 'Continue' button
 OLCSSelfserveOperatorTypeCancelCHECK  wait  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Check 'Cancel' link is present
 OLCSSelfserveOperatorTypeCancelCLICK  click  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Click 'Cancel'
 .  .  .  .  .  .  0  .
@@ -465,7 +465,7 @@ OLCSSelfserveAddresses_EaCountry_UK  standardKeys  establishment_address[country
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  People (Section 5 of the Application process)
 .  .  .  .  .  .  0  .
-OLCSSelfservePeople_BusinessDetailsUpdatedText  checkContent  body  tagName  Addresses section has been updated  OLCS  0  Addresses -- Check 'Addresses section has been updated' text is displayed
+OLCSSelfservePeople_BusinessDetailsUpdatedText  checkContent  body  tagName  Addresses section has been updated  OLCS  0  People -- Check 'Addresses section has been updated' text is displayed
 OLCSSelfservePeople_Step5of14Text  checkContent  body  tagName  Step 5 of 14  OLCS  0  People -- Check 'Step 5 of 14' text is displayed above main heading
 OLCSSelfservePeople_PeopleHeading  checkContent  body  tagName  People  OLCS  0  People -- Check 'People' is displayed (Main Heading)
 OLCSSelfservePeople_DirectorsText  checkContent  body  tagName  Directors  OLCS  0  People -- Check 'Directors' text is displayed
@@ -474,7 +474,54 @@ OLCSSelfservePeople_OtherNamesText  checkContent  body  tagName  Other names  OL
 OLCSSelfservePeople_DOBText  checkContent  body  tagName  DOB  OLCS  0  People -- Check 'DOB' text is displayed
 OLCSSelfservePeople_PleaseProvideText  checkContent  body  tagName  Please provide details of the company directors. This must be the same as the details that are on the companies house register  OLCS  0  People -- Check 'Please provide details of the company directors. This must be the same as the details that are on the companies house register' text is displayed
 OLCSSelfservePeople_CheckboxCheckAll  wait  checkall  inputName  NA  OLCS  0  People -- Check is present 'Check All' check box
+.  .  .  .  .  .  0  Add person popup
+OLCSSelfservePeopleAddPerson_Heading  checkContent  body  tagName  Add person  OLCS  0  People - Add person -- Check 'Add person' is displayed (Main Heading)
+OLCSSelfservePeopleAddPerson_Title  checkContent  body  tagName  Title  OLCS  0  People - Add person -- Check 'Title' is displayed
+OLCSSelfservePeopleAddPerson_FirstName  checkContent  body  tagName  First name(s)  OLCS  0  People - Add person -- Check 'First name(s)' is displayed
+OLCSSelfservePeopleAddPerson_LastName  checkContent  body  tagName  Last name  OLCS  0  People - Add person -- Check 'Last name' is displayed
+OLCSSelfservePeopleAddPerson_OtherNames  checkContent  body  tagName  Other names  OLCS  0  People - Add person -- Check 'Other names' is displayed
+OLCSSelfservePeopleAddPerson_DOB  checkContent  body  tagName  Date of birth  OLCS  0  People - Add person -- Check 'Date of birth' is displayed
+OLCSSelfservePeople_TitleCHECK  wait  data[title]  id  NA  OLCS  0  People -- Check is present 'Title' drop down
+OLCSSelfservePeople_FirstNameCHECK  wait  data[forename]  id  NA  OLCS  0  People -- Check is present 'First name(s)' input field
+OLCSSelfservePeople_LastNameCHECK  wait  data[familyName]  id  NA  OLCS  0  People -- Check is present 'Last Name' input field
+OLCSSelfservePeople_OtherNamesCHECK  wait  data[otherName]  id  NA  OLCS  0  People -- Check is present 'Other Names' input field
+OLCSSelfservePeople_DOBdayCHECK  wait  data[birthDate][day]  inputName  NA  OLCS  0  People -- Check is present 'Date of birth day' drop down
+OLCSSelfservePeople_DOBmonthCHECK  wait  data[birthDate][month]  inputName  NA  OLCS  0  People -- Check is present 'Date of birth month' drop down
+OLCSSelfservePeople_DOByearCHECK  wait  data[birthDate][year]  inputName  NA  OLCS  0  People -- Check is present 'Date of birth year' drop down
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Operating centres & authorisation (Section 6 of the Application process)
+.  .  .  .  .  .  0  .
+OLCSSelfserveOperatingCentres_PeopleUpdatedText  checkContent  body  tagName  People section has been updated  OLCS  0  Operating centres & authorisation -- Check 'People section has been updated' text is displayed
+OLCSSelfserveOperatingCentres_Step6of14Text  checkContent  body  tagName  Step 6 of 14  OLCS  0  Operating centres & authorisation -- Check 'Step 6 of 14' text is displayed above main heading
+OLCSSelfserveOperatingCentres_OperatingCentresHeading  checkContent  body  tagName  Operating centres & authorisation  OLCS  0  Operating centres & authorisation -- Check 'Operating centres & authorisation' is displayed (Main Heading)
+OLCSSelfserveOperatingCentres_AddYourFirstText  checkContent  body  tagName  Add your first operating centre here  OLCS  0  Operating centres & authorisation -- Check 'Add your first operating centre here' text is displayed in the Operating centres table
+OLCSSelfserveOperatingCentres_AuthorisationText  checkContent  body  tagName  Authorisation  OLCS  0  Operating centres & authorisation -- Check 'Authorisation' text is displayed
+OLCSSelfserveOperatingCentres_EnterTheTotalText  checkContent  body  tagName  Enter the total amount of vehicles & trailers that you want authorised on the licence you are applying for.  OLCS  0  Operating centres & authorisation -- Check 'Enter the total amount of vehicles & trailers that you want authorised on the licence you are applying for.' text is displayed
+OLCSSelfserveOperatingCentres_TotalVehiclesText  checkContent  body  tagName  Total number of vehicles  OLCS  0  Operating centres & authorisation -- Check 'Total number of vehicles' text is displayed
+OLCSSelfserveOperatingCentres_TotalTrailersText  checkContent  body  tagName  Total number of trailers  OLCS  0  Operating centres & authorisation -- Check 'Total number of trailers' text is displayed
+OLCSSelfserveOperatingCentres_TotalVehiclesCHECK  wait  data[totAuthVehicles]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Total number of vehicles' input field
+OLCSSelfserveOperatingCentres_TotalTrailersCHECK  wait  data[totAuthTrailers]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Total number of trailers' input field
+OLCSSelfserveOperatingCentres_TotalVehicles_1  standardKeys  data[totAuthVehicles]  id  1  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of vehicles' input field
+OLCSSelfserveOperatingCentres_TotalTrailers_1  standardKeys  data[totAuthTrailers]  id  1  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of trailers' input field
+.  .  .  .  .  .  0  Operating centres & authorisation - Add operating centre
+OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Add operating centre' text is displayed (Popup title)
+OLCSSelfserveOperatingCentresAdd_Heading  checkContent  body  tagName  Add Address  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Address' text is displayed (Main heading)
+OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Add operating centre' text is displayed (Popup title)
+OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centrePostcode search -- Check 'Add operating centre' text is displayed (Popup title)
+OLCSSelfserveOperatingCentresAdd_PostcodeSearchText  checkContent  body  tagName  Postcode search  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Postcode search' text is displayed
+OLCSSelfserveOperatingCentresAdd_StreetText  checkContent  body  tagName  Street  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Street' text is displayed
+OLCSSelfserveOperatingCentresAdd_TownCityText  checkContent  body  tagName  Town/City  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Town/City' text is displayed
+OLCSSelfserveOperatingCentresAdd_PostcodeText  checkContent  body  tagName  Postcode  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Postcode' text is displayed
+OLCSSelfserveOperatingCentresAdd_CountryText  checkContent  body  tagName  Country  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Country' text is displayed
+OLCSSelfserveOperatingCentresAdd_VehiclesTrailersText  checkContent  body  tagName  Vehicles & trailers  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Vehicles & trailers' text is displayed (Heading)
+OLCSSelfserveOperatingCentresAdd_TotalVehiclesText  checkContent  body  tagName  Total number of vehicles  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Total number of vehicles' text is displayed
+OLCSSelfserveOperatingCentresAdd_TotalTrailersText  checkContent  body  tagName  Total number of trailers  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Total number of trailers' text is displayed
+OLCSSelfserveOperatingCentresAdd_IhaveEnoughText  checkContent  body  tagName  I have enough parking spaces available for the total number of vehicles and trailers that I want to keep at this address  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'I have enough parking spaces available for the total number of vehicles and trailers that I want to keep at this address' text is displayed
+OLCSSelfserveOperatingCentresAdd_IamEitherText  checkContent  body  tagName  I am either the site owner or have permission from the site owner to use the premises to park the number of vehicles and trailers stated  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'I am either the site owner or have permission from the site owner to use the premises to park the number of vehicles and trailers stated' text is displayed
+OLCSSelfserveOperatingCentresAdd_AdvertisementsHeading  checkContent  body  tagName  Advertisements  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Advertisements' text is displayed
+OLCSSelfserveOperatingCentresAdd_HaveYouAdvertisedText  checkContent  body  tagName  Have you advertised your application for this operating centre in your local newspaper?  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Have you advertised your application for this operating centre in your local newspaper?' text is displayed
+OLCSSelfserveOperatingCentresAdd_YesText  checkContent  body  tagName  Yes  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Yes' text is displayed by a checkbox
+OLCSSelfserveOperatingCentresAdd_NoText  checkContent  body  tagName  No  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'No' text is displayed by a checkbox
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
