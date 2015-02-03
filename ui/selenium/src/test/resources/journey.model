@@ -505,7 +505,7 @@ OLCSSelfserveOperatingCentres_TotalVehicles_1  standardKeys  data[totAuthVehicle
 OLCSSelfserveOperatingCentres_TotalTrailers_1  standardKeys  data[totAuthTrailers]  id  1  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of trailers' input field
 .  .  .  .  .  .  0  Operating centres & authorisation - Add operating centre
 OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Add operating centre' text is displayed (Popup title)
-OLCSSelfserveOperatingCentresAdd_Heading  checkContent  body  tagName  Add Address  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Address' text is displayed (Main heading)
+OLCSSelfserveOperatingCentresAdd_Heading  checkContent  body  tagName  Address  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Address' text is displayed (Main heading)
 OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Add operating centre' text is displayed (Popup title)
 OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centrePostcode search -- Check 'Add operating centre' text is displayed (Popup title)
 OLCSSelfserveOperatingCentresAdd_PostcodeSearchText  checkContent  body  tagName  Postcode search  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Postcode search' text is displayed
