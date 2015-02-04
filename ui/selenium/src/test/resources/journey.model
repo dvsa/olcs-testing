@@ -224,6 +224,10 @@ OLCSSelfserve_SaveAddAnotherButton  wait  form-actions[addAnother]  id  NA  OLCS
 OLCSSelfserve_SaveAddAnotherCLICK  click  form-actions[addAnother]  id  NA  OLCS  0  Framework -- Click 'Save & add another' button
 OLCSSelfserve_CancelButton  wait  cancel  id  NA  OLCS  0  Framework -- Check 'Cancel' button is present
 OLCSSelfserve_CancelCLICK  click  cancel  id  NA  OLCS  5000  Framework -- Click 'Cancel' button
+OLCSSelfserve_FindAddressButton  wait  address[searchPostcode][search]  id  NA  OLCS  0  Framework -- Check 'Find address' button is present
+OLCSSelfserve_FindAddressCLICK  click  address[searchPostcode][search]  id  NA  OLCS  5000  Framework -- Click 'Find address' button
+OLCSSelfserve_SelectAddressButton  wait  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Check 'Select' address button is present
+OLCSSelfserve_SelectAddressCLICK  click  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Click 'Select' address button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
@@ -522,6 +526,9 @@ OLCSSelfserveOperatingCentresAdd_AdvertisementsHeading  checkContent  body  tagN
 OLCSSelfserveOperatingCentresAdd_HaveYouAdvertisedText  checkContent  body  tagName  Have you advertised your application for this operating centre in your local newspaper?  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Have you advertised your application for this operating centre in your local newspaper?' text is displayed
 OLCSSelfserveOperatingCentresAdd_YesText  checkContent  body  tagName  Yes  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Yes' text is displayed by a checkbox
 OLCSSelfserveOperatingCentresAdd_NoText  checkContent  body  tagName  No  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'No' text is displayed by a checkbox
+OLCSSelfserveOperatingCentresAdd_PostcodeSearch_LS96NF  standardKeys  address[searchPostcode][postcode]  id  LS9 6NF  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'LS9 6NF' into the 'Postcode Search' input field
+OLCSSelfserveOperatingCentresAdd_AddressDropDown  wait  address[searchPostcode][addresses]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Address' drop down from a returned search result
+OLCSSelfserveOperatingCentresAdd_AddressSelect_V  standardKeys  address[searchPostcode][postcode]  id  V  OLCS  0  Operating centres & authorisation - Add operating centre -- Select 'V O S A, Hillcrest House Harehills Lane, Harehills, Leeds' into the 'Postcode Search' drop down
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
