@@ -193,6 +193,88 @@ OLCSinternalLicenceDetailsCheck78  wait  //*[@id="application_vehicle-safety_saf
 OLCSinternalLicenceDetailsCheck79  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Save' button
 OLCSinternalLicenceDetailsCheck80  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Cancel' button
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Internal
+.  .  .  .  .  .  0  .
+OLCSinternalHomeCheck1b  checkContent  body  tagName  Home  OLCS  0  Home Page -- Check 'Home' is displayed on the top left of the screen
+OLCSinternalHomeCheck2b  checkContent  body  tagName  Team  OLCS  0  Home Page -- Check 'Team' is displayed on the left filters
+OLCSinternalHomeCheck3b  checkContent  body  tagName  Owner  OLCS  0  Home Page -- Check 'Owner' is displayed on the left filters
+OLCSinternalHomeCheck4b  checkContent  body  tagName  Category  OLCS  0  Home Page -- Check 'Category' is displayed on the left filters
+OLCSinternalHomeCheck5b  checkContent  body  tagName  Sub category  OLCS  0  Home Page -- Check 'Sub category' is displayed on the left filters
+OLCSinternalHomeCheck6b  checkContent  body  tagName  Date  OLCS  0  Home Page -- Check 'Date' is displayed on the left filters
+OLCSinternalHomeCheck7b  checkContent  body  tagName  Status  OLCS  0  Home Page -- Check 'Status' is displayed on the left filters
+OLCSinternalHomeCheck8b  checkContent  body  tagName  Urgent  OLCS  0  Home Page -- Check 'Urgent' is displayed on the left filters
+OLCSinternalHomeCheck9b  wait  Link  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Link' filter
+OLCSinternalHomeCheck10b  wait  Category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Category' filter
+OLCSinternalHomeCheck11b  wait  Sub category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Sub category' filter
+OLCSinternalHomeCheck12b  wait  Description  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Description' filter
+OLCSinternalHomeCheck13b  wait  Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Date' filter
+OLCSinternalHomeCheck14b  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
+OLCSinternalHomeCheck15b  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
+OLCSinternalHomeCheck16b  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
+OLCSinternalHomeCheck17b  wait  assignedToTeam  id  NA  OLCS  0  Home Page -- Check is present 'Team' drop down element
+OLCSinternalHomeCheck18b  wait  assignedToUser  id  NA  OLCS  0  Home Page -- Check is present 'Owner' drop down element
+OLCSinternalHomeCheck19b  wait  category  id  NA  OLCS  0  Home Page -- Check is present 'Category' drop down element
+OLCSinternalHomeCheck20b  wait  taskSubCategory  id  NA  OLCS  0  Home Page -- Check is present 'Sub category' drop down element
+OLCSinternalHomeCheck21b  wait  date  id  NA  OLCS  0  Home Page -- Check is present 'Date' drop down element
+OLCSinternalHomeCheck22b  wait  status  id  NA  OLCS  0  Home Page -- Check is present 'Status' drop down element
+OLCSinternalHomeCheck23b  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
+OLCSinternalHomeCheck24b  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
+OLCSinternalHomeCheck25b  wait  Advanced  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
+OLCSinternalHomeCheck1c  checkContent  body  tagName  Home  OLCS  0  Home Page -- Check 'Home' is displayed on the top left of the screen
+OLCSinternalHomeCheck2c  checkContent  body  tagName  Team  OLCS  0  Home Page -- Check 'Team' is displayed on the left filters
+OLCSinternalHomeCheck3c  checkContent  body  tagName  Owner  OLCS  0  Home Page -- Check 'Owner' is displayed on the left filters
+OLCSinternalHomeCheck4c  checkContent  body  tagName  Category  OLCS  0  Home Page -- Check 'Category' is displayed on the left filters
+OLCSinternalHomeCheck5c  checkContent  body  tagName  Sub category  OLCS  0  Home Page -- Check 'Sub category' is displayed on the left filters
+OLCSinternalHomeCheck6c  checkContent  body  tagName  Date  OLCS  0  Home Page -- Check 'Date' is displayed on the left filters
+OLCSinternalHomeCheck7c  checkContent  body  tagName  Status  OLCS  0  Home Page -- Check 'Status' is displayed on the left filters
+OLCSinternalHomeCheck8c  checkContent  body  tagName  Urgent  OLCS  0  Home Page -- Check 'Urgent' is displayed on the left filters
+OLCSinternalHomeCheck9c  wait  Link  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Link' filter
+OLCSinternalHomeCheck10c  wait  Category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Category' filter
+OLCSinternalHomeCheck11c  wait  Sub category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Sub category' filter
+OLCSinternalHomeCheck12c  wait  Description  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Description' filter
+OLCSinternalHomeCheck13c  wait  Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Date' filter
+OLCSinternalHomeCheck14c  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
+OLCSinternalHomeCheck15c  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
+OLCSinternalHomeCheck16c  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
+OLCSinternalHomeCheck17c  wait  assignedToTeam  id  NA  OLCS  0  Home Page -- Check is present 'Team' drop down element
+OLCSinternalHomeCheck18c  wait  assignedToUser  id  NA  OLCS  0  Home Page -- Check is present 'Owner' drop down element
+OLCSinternalHomeCheck19c  wait  category  id  NA  OLCS  0  Home Page -- Check is present 'Category' drop down element
+OLCSinternalHomeCheck20c  wait  taskSubCategory  id  NA  OLCS  0  Home Page -- Check is present 'Sub category' drop down element
+OLCSinternalHomeCheck21c  wait  date  id  NA  OLCS  0  Home Page -- Check is present 'Date' drop down element
+OLCSinternalHomeCheck22c  wait  status  id  NA  OLCS  0  Home Page -- Check is present 'Status' drop down element
+OLCSinternalHomeCheck23c  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
+OLCSinternalHomeCheck24c  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
+OLCSinternalHomeCheck25c  wait  Advanced  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
+OLCSinternalLicenceDetailsCheck52a  checkContent  body  tagName  Safety  OLCS  0  Licence details -> Safety section -- Check 'Safety' is displayed
+OLCSinternalLicenceDetailsCheck53a  checkContent  body  tagName  Maximum time between vehicle safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between vehicle safety inspections' is displayed
+OLCSinternalLicenceDetailsCheck54a  checkContent  body  tagName  Maximum time between trailer safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between trailer safety inspections' is displayed
+OLCSinternalLicenceDetailsCheck55a  checkContent  body  tagName  Are some of the vehicles or trailers inspected more frequently than the interval stated above?  OLCS  0  Licence details -> Safety section -- Check 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' is displayed
+OLCSinternalLicenceDetailsCheck56a  checkContent  body  tagName  This can sometimes be the case for particularly old vehicles  OLCS  0  Licence details -> Safety section -- Check 'This can sometimes be the case for particularly old vehicles' is displayed
+OLCSinternalLicenceDetailsCheck57a  checkContent  body  tagName  Who analyses the tachograph records?  OLCS  0  Licence details -> Safety section -- Check 'Who analyses the tachograph records?' is displayed
+OLCSinternalLicenceDetailsCheck58a  checkContent  body  tagName  An owner or employee of the business  OLCS  0  Licence details -> Safety section -- Check 'An owner or employee of the business' is displayed
+OLCSinternalLicenceDetailsCheck59a  checkContent  body  tagName  An external contractor  OLCS  0  Licence details -> Safety section -- Check 'An external contractor' is displayed
+OLCSinternalLicenceDetailsCheck60a  checkContent  body  tagName  Not applicable  OLCS  0  Licence details -> Safety section -- Check 'Not applicable' is displayed
+OLCSinternalLicenceDetailsCheck61a  checkContent  body  tagName  The company or full name of the external contractor who analyses the tachograph records  OLCS  0  Licence details -> Safety section -- Check 'The company or full name of the external contractor who analyses the tachograph records' is displayed
+OLCSinternalLicenceDetailsCheck62a  checkContent  body  tagName  Safety inspection providers  OLCS  0  Licence details -> Safety section -- Check 'Safety inspection providers' is displayed
+OLCSinternalLicenceDetailsCheck63a  checkContent  body  tagName  Suitable maintenance  OLCS  0  Licence details -> Safety section -- Check 'Suitable maintenance' is displayed
+OLCSinternalLicenceDetailsCheck64a  checkContent  body  tagName  Provider's name  OLCS  0  Licence details -> Safety section -- Check 'Provider's name' is displayed on table heading
+OLCSinternalLicenceDetailsCheck65a  checkContent  body  tagName  External?  OLCS  0  Licence details -> Safety section -- Check 'External?' is displayed on table heading
+OLCSinternalLicenceDetailsCheck66a  checkContent  body  tagName  Workshop address  OLCS  0  Licence details -> Safety section -- Check 'Workshop address' is displayed as table heading
+OLCSinternalLicenceDetailsCheck67a  checkContent  body  tagName  Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.  OLCS  0  Licence details -> Safety section -- Check 'Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.' is displayed - only when no safety inspection providers are provided
+OLCSinternalLicenceDetailsCheck68a  wait  safetyInsVehicles  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between vehicle safety inspections' drop down
+OLCSinternalLicenceDetailsCheck69a  wait  safetyInsTrailers  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between trailer safety inspections' drop down
+OLCSinternalLicenceDetailsCheck70a  wait  safetyInsVaries  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' Yes radio button
+OLCSinternalLicenceDetailsCheck71a  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[1]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' No radio button
+OLCSinternalLicenceDetailsCheck72a  wait  tachographIns  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An owner or employee of the business' radio button
+OLCSinternalLicenceDetailsCheck73a  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An external contractor' radio button
+OLCSinternalLicenceDetailsCheck74a  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[3]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Not applicable' radio button
+OLCSinternalLicenceDetailsCheck75a  wait  tachographInsName  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'The company or full name of the external contractor who analyses the tachograph records' text field
+OLCSinternalLicenceDetailsCheck76a  wait  add  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Safety inspection providers' Add button
+OLCSinternalLicenceDetailsCheck77a  wait  isMaintenanceSuitable  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' Yes radio button
+OLCSinternalLicenceDetailsCheck78a  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' No radio button
+OLCSinternalLicenceDetailsCheck79a  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Save' button
+OLCSinternalLicenceDetailsCheck80a  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Cancel' button
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
@@ -228,6 +310,8 @@ OLCSSelfserve_FindAddressButton  wait  address[searchPostcode][search]  id  NA  
 OLCSSelfserve_FindAddressCLICK  click  address[searchPostcode][search]  id  NA  OLCS  5000  Framework -- Click 'Find address' button
 OLCSSelfserve_SelectAddressButton  wait  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Check 'Select' address button is present
 OLCSSelfserve_SelectAddressCLICK  click  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Click 'Select' address button
+OLCSSelfserve_UploadButton  wait  upload  id  NA  OLCS  0  Framework -- Check 'Upload' address button is present
+OLCSSelfserve_UploadCLICK  click  upload  id  NA  OLCS  0  Framework -- Click 'Upload' address button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Dashboard
 .  .  .  .  .  .  0  .
@@ -526,9 +610,59 @@ OLCSSelfserveOperatingCentresAdd_AdvertisementsHeading  checkContent  body  tagN
 OLCSSelfserveOperatingCentresAdd_HaveYouAdvertisedText  checkContent  body  tagName  Have you advertised your application for this operating centre in your local newspaper?  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Have you advertised your application for this operating centre in your local newspaper?' text is displayed
 OLCSSelfserveOperatingCentresAdd_YesText  checkContent  body  tagName  Yes  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Yes' text is displayed by a checkbox
 OLCSSelfserveOperatingCentresAdd_NoText  checkContent  body  tagName  No  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'No' text is displayed by a checkbox
+OLCSSelfserveOperatingCentresAdd_PostcodeSearchCHECK  wait  address[searchPostcode][postcode]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Postcode search' input field
+OLCSSelfserveOperatingCentresAdd_AddressLine1CHECK  wait  address[addressLine1]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Address line 1' input field
+OLCSSelfserveOperatingCentresAdd_AddressLine2CHECK  wait  address[addressLine2]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Address line 2' input field
+OLCSSelfserveOperatingCentresAdd_AddressLine3CHECK  wait  address[addressLine3]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Address line 3' input field
+OLCSSelfserveOperatingCentresAdd_AddressLine4CHECK  wait  address[addressLine4]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Address line 4' input field
+OLCSSelfserveOperatingCentresAdd_AddressTownCHECK  wait  address[town]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Address town' input field
+OLCSSelfserveOperatingCentresAdd_AddressPostcodeCHECK  wait  address[postcode]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Postcode' input field
+OLCSSelfserveOperatingCentresAdd_AddressCountryCHECK  wait  address[countryCode]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Country' drop down
+OLCSSelfserveOperatingCentresAdd_TotalNoVehiclesCHECK  wait  data[noOfVehiclesRequired]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Total number of vehicles' input field
+OLCSSelfserveOperatingCentresAdd_TotalNoTrailersCHECK  wait  data[noOfTrailersRequired]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Total number of trailers' input field
+OLCSSelfserveOperatingCentresAdd_IhaveEnoughCHECK  wait  data[sufficientParking]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'I have enough parking spaces available for the total number of vehicles and trailers that I want to keep at this address' tick box
+OLCSSelfserveOperatingCentresAdd_IamEitherCHECK  wait  data[permission]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'I am either the site owner or have permission from the site owner to use the premises to park the number of vehicles and trailers stated' tick box
+OLCSSelfserveOperatingCentresAdd_HaveYouAdvertisedYesCHECK  wait  adPlaced  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Have you advertised your application for this operating centre in your local newspaper?' (Yes) radio box
+OLCSSelfserveOperatingCentresAdd_HaveYouAdvertisedNoCHECK  xpathValue  N  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Have you advertised your application for this operating centre in your local newspaper?' (No) radio box
 OLCSSelfserveOperatingCentresAdd_PostcodeSearch_LS96NF  standardKeys  address[searchPostcode][postcode]  id  LS9 6NF  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'LS9 6NF' into the 'Postcode Search' input field
 OLCSSelfserveOperatingCentresAdd_AddressDropDown  wait  address[searchPostcode][addresses]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Check is present 'Address' drop down from a returned search result
-OLCSSelfserveOperatingCentresAdd_AddressSelect_V  standardKeys  address[searchPostcode][postcode]  id  V  OLCS  0  Operating centres & authorisation - Add operating centre -- Select 'V O S A, Hillcrest House Harehills Lane, Harehills, Leeds' into the 'Postcode Search' drop down
+OLCSSelfserveOperatingCentresAdd_AddressSelect_V  standardKeys  address[searchPostcode][addresses]  id  V  OLCS  0  Operating centres & authorisation - Add operating centre -- Select 'V O S A, Hillcrest House Harehills Lane, Harehills, Leeds' into the 'Postcode Search' drop down
+OLCSSelfserveOperatingCentresAdd_TotalNoVehicles_2  standardKeys  data[noOfVehiclesRequired]  id  2  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter '2' into the 'Total number of vehicles' input field
+OLCSSelfserveOperatingCentresAdd_TotalNoTrailers_2  standardKeys  data[noOfTrailersRequired]  id  2  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter '2' into the 'Total number of trailers' input field
+OLCSSelfserveOperatingCentresAdd_IhaveEnoughCLICK  click  data[sufficientParking]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Click 'I have enough parking spaces available for the total number of vehicles and trailers that I want to keep at this address' tick box
+OLCSSelfserveOperatingCentresAdd_IAmEitherCLICK  click  data[permission]  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Click 'I am either the site owner or have permission from the site owner to use the premises to park the number of vehicles and trailers stated' tick box
+OLCSSelfserveOperatingCentresAdd_HaveYouAdvertisedYesCLICK  click  adPlaced  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Click 'Have you advertised your application for this operating centre in your local newspaper?' (Yes) radio box
+OLCSSelfserveOperatingCentresAdd_NewspaperNameText  checkContent  body  tagName  Newspaper name  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Newspaper name' text is displayed
+OLCSSelfserveOperatingCentresAdd_DateAdvertisementText  checkContent  body  tagName  Date advertisement was placed  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Date advertisement was placed' text is displayed
+OLCSSelfserveOperatingCentresAdd_AdvertisementOptionalText  checkContent  body  tagName  Advertisement (optional)  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Advertisement (optional)' text is displayed
+OLCSSelfserveOperatingCentresAdd_PleaseUploadACopyText  checkContent  body  tagName  Please upload a copy of the advertisement you placed in your local newspaper in relation to your application.  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Please upload a copy of the advertisement you placed in your local newspaper in relation to your application.' text is displayed
+OLCSSelfserveOperatingCentresAdd_NewspaperNameCHECK  wait  adPlacedIn  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Newspaper name' input field
+OLCSSelfserveOperatingCentresAdd_DateAdvertDayCHECK  wait  advertisements[adPlacedDate][day]  inputName  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Day) drop down
+OLCSSelfserveOperatingCentresAdd_DateAdvertMonthCHECK  wait  advertisements[adPlacedDate][month]  inputName  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Month) drop down
+OLCSSelfserveOperatingCentresAdd_DateAdvertYearCHECK  wait  advertisements[adPlacedDate][year]  inputName  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Year) drop down
+OLCSSelfserveOperatingCentresAdd_AdvertUploadButtonCHECK  wait  advertisements[file][file-controls][upload]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Advertisement (optional)' upload button
+OLCSSelfserveOperatingCentresAdd_FileUploadButtonCHECK  wait  advertisements[file][file-controls][upload]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'File' upload button
+OLCSSelfserveOperatingCentresAdd_NewspaperName_LocalPaper  standardKeys  adPlacedIn  id  Local Paper  OLCS  0  Operating centres & authorisation -- Enter 'Local Paper' into the 'Newspaper name' input field
+OLCSSelfserveOperatingCentresAdd_DateAdvertDay_1  standardKeys  advertisements[adPlacedDate][day]  inputName  1  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Day) drop down
+OLCSSelfserveOperatingCentresAdd_DateAdvertMonth_January  standardKeys  advertisements[adPlacedDate][month]  inputName  J  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Month) drop down
+OLCSSelfserveOperatingCentresAdd_DateAdvertYear_2015  standardKeys  advertisements[adPlacedDate][year]  inputName  2015  OLCS  20000  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Year) drop down
+OLCSSelfserveOperatingCentres_TrafficAreaText  checkContent  body  tagName  Traffic area  OLCS  0  Operating centres & authorisation -- Check 'Traffic area' text is displayed
+OLCSSelfserveOperatingCentres_TrafficAreaText  checkContent  body  tagName  Traffic area  OLCS  0  Operating centres & authorisation -- Check 'Traffic area' text is displayed
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Financial evidence (Section 7 of the Application process) ******** updates required below
+.  .  .  .  .  .  0  .
+OLCSSelfserveFinancialEvidence_PeopleUpdatedText  checkContent  body  tagName  People section has been updated  OLCS  0  Financial evidence -- Check 'People section has been updated' text is displayed
+OLCSSelfserveFinancialEvidence_Step7of14Text  checkContent  body  tagName  Step 7 of 14  OLCS  0  Financial evidence -- Check 'Step 7 of 14' text is displayed above main heading
+OLCSSelfserveFinancialEvidence_OperatingCentresHeading  checkContent  body  tagName  Financial evidence  OLCS  0  Financial evidence -- Check 'Financial evidence' is displayed (Main Heading)
+OLCSSelfserveFinancialEvidence_FileNameText  checkContent  body  tagName  File name  OLCS  0  Financial evidence -- Check 'File name' is displayed
+OLCSSelfserveFinancialEvidence_EvidenceTypeText  checkContent  body  tagName  Evidence type  OLCS  0  Financial evidence -- Check 'Evidence type' is displayed
+OLCSSelfserveFinancialEvidence_TableCheckboxAll  wait  checkall  inputName  NA  OLCS  0  Financial evidence -- Check is present 'Check box ALL' Check box show at the top of the table that selects all items listed in the table
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Transport managers (Section 8 of the Application process)
+.  .  .  .  .  .  0  .
+OLCSSelfserveTransportManagers_PeopleUpdatedText  checkContent  body  tagName  People section has been updated  OLCS  0  Transport managers -- Check 'People section has been updated' text is displayed
+OLCSSelfserveTransportManagers_Step8of14Text  checkContent  body  tagName  Step 8 of 14  OLCS  0  Transport managers -- Check 'Step 8 of 14' text is displayed above main heading
+OLCSSelfserveTransportManagers_OperatingCentresHeading  checkContent  body  tagName  Transport managers  OLCS  0  Transport managers -- Check 'Transport managers' is displayed (Main Heading)
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
@@ -1132,4 +1266,4 @@ MOTEnforcementNonMotTestResultsReturnToHomepage  click  Return to Homepage  xpat
 .  .  .  .  .  .  0  Rest Client
 .  .  .  .  .  .  0  .
 startRestClient  start  NA  NA  chrome://restclient/content/restclient.html  OLCS  0  Start the RESTClient plugin for API testing
-enterPostRequestEndpointGetToken  standardKeys  request-url  id  http://payment-service.psdv-ap01.ps.npm/api/token  OLCS  0  Enter the 'get token' endpoint
+enterPostRequestEndpointGetToken  standardKeys  request-url  id  http://payment-service.psdv-ap01.ps.npm/api/token  OLCS  0  Enter the 'get token' endpointOLCSSelfserveOperatingCentresAdd
