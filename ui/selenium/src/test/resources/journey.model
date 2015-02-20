@@ -278,6 +278,8 @@ OLCSinternalLicenceDetailsCheck80a  wait  form-actions[cancel]  id  NA  OLCS  0 
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
+OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
+OLCSSelfservestartDebug180  checkContent  body  tagName  GOV.UK  OLCS  180000  DEBUG - WAIT 180 seconds
 OLCSSelfserveContinueButtonCHECK  wait  submit  id  NA  OLCS  0  Framework -- Check is present 'Continue' button or 'Save' button
 OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Framework -- Check is present 'Back' button
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Framework -- Click on 'Back' button
@@ -589,8 +591,13 @@ OLCSSelfserveOperatingCentres_TotalVehiclesText  checkContent  body  tagName  To
 OLCSSelfserveOperatingCentres_TotalTrailersText  checkContent  body  tagName  Total number of trailers  OLCS  0  Operating centres & authorisation -- Check 'Total number of trailers' text is displayed
 OLCSSelfserveOperatingCentres_TotalVehiclesCHECK  wait  data[totAuthVehicles]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Total number of vehicles' input field
 OLCSSelfserveOperatingCentres_TotalTrailersCHECK  wait  data[totAuthTrailers]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Total number of trailers' input field
-OLCSSelfserveOperatingCentres_TotalVehicles_1  standardKeys  data[totAuthVehicles]  id  1  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of vehicles' input field
-OLCSSelfserveOperatingCentres_TotalTrailers_1  standardKeys  data[totAuthTrailers]  id  1  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of trailers' input field
+OLCSSelfserveOperatingCentres_TotalVehicles_2  standardKeys  data[totAuthVehicles]  id  2  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of vehicles' input field
+OLCSSelfserveOperatingCentres_TotalTrailers_2  standardKeys  data[totAuthTrailers]  id  2  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of trailers' input field
+OLCSSelfserveOperatingCentres_TrafficAreaText  checkContent  body  tagName  Traffic area  OLCS  0  Operating centres & authorisation -- Check 'Traffic area' text is displayed
+OLCSSelfserveOperatingCentres_NorthEastOfEngland  checkContent  body  tagName  North East of England  OLCS  0  Operating centres & authorisation -- Check 'North East of England' text is displayed
+OLCSSelfserveOperatingCentres_YourTrafficArea  checkContent  body  tagName  Your traffic area is determined by the location of your operating centres.  OLCS  0  Operating centres & authorisation -- Check 'Your traffic area is determined by the location of your operating centres.' text is displayed
+OLCSSelfserveOperatingCentres_ForMoreInformation  checkContent  body  tagName  For more information and to find your traffic area please visit  OLCS  0  Operating centres & authorisation -- Check 'For more information and to find your traffic area please visit' text is displayed
+OLCSSelfserveOperatingCentres_ThisLink  wait  this link  xpathLinkContains  NA  OLCS  0  Operating centres & authorisation -- Check 'this link' hyperlink is displayed in the traffic area text
 .  .  .  .  .  .  0  Operating centres & authorisation - Add operating centre
 OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Add operating centre' text is displayed (Popup title)
 OLCSSelfserveOperatingCentresAdd_Heading  checkContent  body  tagName  Address  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Address' text is displayed (Main heading)
@@ -645,9 +652,13 @@ OLCSSelfserveOperatingCentresAdd_FileUploadButtonCHECK  wait  advertisements[fil
 OLCSSelfserveOperatingCentresAdd_NewspaperName_LocalPaper  standardKeys  adPlacedIn  id  Local Paper  OLCS  0  Operating centres & authorisation -- Enter 'Local Paper' into the 'Newspaper name' input field
 OLCSSelfserveOperatingCentresAdd_DateAdvertDay_1  standardKeys  advertisements[adPlacedDate][day]  inputName  1  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Day) drop down
 OLCSSelfserveOperatingCentresAdd_DateAdvertMonth_January  standardKeys  advertisements[adPlacedDate][month]  inputName  J  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Month) drop down
-OLCSSelfserveOperatingCentresAdd_DateAdvertYear_2015  standardKeys  advertisements[adPlacedDate][year]  inputName  2015  OLCS  20000  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Year) drop down
-OLCSSelfserveOperatingCentres_TrafficAreaText  checkContent  body  tagName  Traffic area  OLCS  0  Operating centres & authorisation -- Check 'Traffic area' text is displayed
-OLCSSelfserveOperatingCentres_TrafficAreaText  checkContent  body  tagName  Traffic area  OLCS  0  Operating centres & authorisation -- Check 'Traffic area' text is displayed
+OLCSSelfserveOperatingCentresAdd_DateAdvertYear_2015  standardKeys  advertisements[adPlacedDate][year]  inputName  2015  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Year) drop down
+OLCSSelfserveOperatingCentresAdd_AddressLine1_VOSA  standardKeys  address[addressLine1]  id  V O S A  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'V O S A' into the 'Address line 1' input field
+OLCSSelfserveOperatingCentresAdd_AddressLine2_HillcrestHouse  standardKeys  address[addressLine2]  id  Hillcrest House Harehills Lane  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'Hillcrest House Harehills Lane' into the 'Address line 2' input field
+OLCSSelfserveOperatingCentresAdd_AddressLine3_Harehills  standardKeys  address[addressLine3]  id  Harehills  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'Harehills' into the 'Address line 3' input field
+OLCSSelfserveOperatingCentresAdd_AddressLine4_Line4  standardKeys  address[addressLine4]  id  Line 4  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'Line 4' into the 'Address line 4' input field
+OLCSSelfserveOperatingCentresAdd_AddressTown_Leeds  standardKeys  address[town]  id  Leeds  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'Leeds' into the 'Address town' input field
+OLCSSelfserveOperatingCentresAdd_AddressPostcode_LS96NF  standardKeys  address[postcode]  id  LS9 6NF  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'LS9 6NF' into the 'Postcode' input field
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Financial evidence (Section 7 of the Application process) ******** updates required below
 .  .  .  .  .  .  0  .
