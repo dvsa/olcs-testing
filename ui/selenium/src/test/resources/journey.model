@@ -1,13 +1,36 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
+OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
+OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
-OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  Framework -- Start Internal Application
+OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  0  Framework -- Start Internal Application
 OLCSinternalmaximizeBrowser  maximizeBrowser  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  Framework -- Start Internal Application
 OLCSinternalCheck1  checkContent  body  tagName  OLCS  OLCS  0  Framework -- Check 'OLCS' is displayed on the top left of the screen
 OLCSinternalAdvancedCLICK  click  Advanced  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Advanced' link
+OLCSinternalOlcsClick  click  OLCS  xpathLinkContains  NA  OLCS  0  Framework -- Click 'OLCS' link on teh top left of the screen
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS Internal - Sign In
+.  .  .  .  .  .  0  .
+OLCSinternalSignIn_SignInText  checkContent  body  tagName  Sign In  OLCS  0  Sign In page -- Check 'Sign In' is displayed (Main heading)
+OLCSinternalSignIn_NotRegisteredText  checkContent  body  tagName  Not registered?  OLCS  0  Sign In page -- Check 'Not registered?' is displayed
+OLCSinternalSignIn_SignUpLink  wait  Sign up!  xpathLinkContains  NA  OLCS  0  Sign In page -- Check is present 'Sign up!' link
+OLCSinternalSignIn_UsernameText  checkContent  body  tagName  Username  OLCS  0  Sign In page -- Check 'Username' text is displayed
+OLCSinternalSignIn_PasswordText  checkContent  body  tagName  Password  OLCS  0  Sign In page -- Check 'Password' text is displayed
+OLCSinternalSignIn_Identity  wait  identity  inputName  NA  OLCS  0  Sign In page -- Check is present 'identity' form field
+OLCSinternalSignIn_Credential  wait  credential  inputName  NA  OLCS  0  Sign In page -- Check is present 'credential' form field
+OLCSinternalSignIn_SignInButton  wait  submit  inputName  NA  OLCS  0  Sign In page -- Check is present 'Sign In' button
+OLCSinternalSignIn_IdentitySam  standardKeys  identity  inputName  sam  OLCS  0  Sign In page -- Enter 'sam' into the Username form field
+OLCSinternalSignIn_CredentialPassword  standardKeys  credential  inputName  password  OLCS  5000  Sign In page -- Enter 'password' into the Password form field
+OLCSinternalSignIn_SignInButtonClickOLD  click  submit  inputName  inputName  OLCS  0  Sign In page -- Click 'Sign In' button
+OLCSinternalSignIn_SignInButtonClick  specialKeys  credential  inputName  ENTER  OLCS  0  Sign In page -- Send ENTER key event to 'Password' input field
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  OLCS Internal - User page (after login - think this is a temp page)
+.  .  .  .  .  .  0  .
+OLCSinternalUserPage_HelloSamText  checkContent  body  tagName  Hello, sam!  OLCS  0  User page -- Check 'Hello, sam!' is displayed on the top left of the screen
+OLCSinternalUserPage_SignOutClick  click  Advanced  xpathLinkContains  NA  OLCS  0  User page -- Click 'Sign Out' link
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Home Page
 .  .  .  .  .  .  0  .
@@ -277,8 +300,6 @@ OLCSinternalLicenceDetailsCheck80a  wait  form-actions[cancel]  id  NA  OLCS  0 
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
-OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  0  Framework -- Start Selfserve Application
 OLCSSelfservestartDebug180  checkContent  body  tagName  GOV.UK  OLCS  180000  DEBUG - WAIT 180 seconds
 OLCSSelfserveContinueButtonCHECK  wait  submit  id  NA  OLCS  0  Framework -- Check is present 'Continue' button or 'Save' button
 OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Framework -- Check is present 'Back' button
@@ -591,8 +612,8 @@ OLCSSelfserveOperatingCentres_TotalVehiclesText  checkContent  body  tagName  To
 OLCSSelfserveOperatingCentres_TotalTrailersText  checkContent  body  tagName  Total number of trailers  OLCS  0  Operating centres & authorisation -- Check 'Total number of trailers' text is displayed
 OLCSSelfserveOperatingCentres_TotalVehiclesCHECK  wait  data[totAuthVehicles]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Total number of vehicles' input field
 OLCSSelfserveOperatingCentres_TotalTrailersCHECK  wait  data[totAuthTrailers]  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Total number of trailers' input field
-OLCSSelfserveOperatingCentres_TotalVehicles_2  standardKeys  data[totAuthVehicles]  id  2  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of vehicles' input field
-OLCSSelfserveOperatingCentres_TotalTrailers_2  standardKeys  data[totAuthTrailers]  id  2  OLCS  0  Operating centres & authorisation -- Enter '1' into the 'Total number of trailers' input field
+OLCSSelfserveOperatingCentres_TotalVehicles_2  standardKeys  data[totAuthVehicles]  id  2  OLCS  0  Operating centres & authorisation -- Enter '2' into the 'Total number of vehicles' input field
+OLCSSelfserveOperatingCentres_TotalTrailers_2  standardKeys  data[totAuthTrailers]  id  2  OLCS  0  Operating centres & authorisation -- Enter '2' into the 'Total number of trailers' input field
 OLCSSelfserveOperatingCentres_TrafficAreaText  checkContent  body  tagName  Traffic area  OLCS  0  Operating centres & authorisation -- Check 'Traffic area' text is displayed
 OLCSSelfserveOperatingCentres_NorthEastOfEngland  checkContent  body  tagName  North East of England  OLCS  0  Operating centres & authorisation -- Check 'North East of England' text is displayed
 OLCSSelfserveOperatingCentres_YourTrafficArea  checkContent  body  tagName  Your traffic area is determined by the location of your operating centres.  OLCS  0  Operating centres & authorisation -- Check 'Your traffic area is determined by the location of your operating centres.' text is displayed
@@ -660,20 +681,49 @@ OLCSSelfserveOperatingCentresAdd_AddressLine4_Line4  standardKeys  address[addre
 OLCSSelfserveOperatingCentresAdd_AddressTown_Leeds  standardKeys  address[town]  id  Leeds  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'Leeds' into the 'Address town' input field
 OLCSSelfserveOperatingCentresAdd_AddressPostcode_LS96NF  standardKeys  address[postcode]  id  LS9 6NF  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'LS9 6NF' into the 'Postcode' input field
 .  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  Financial evidence (Section 7 of the Application process) ******** updates required below
+.  .  .  .  .  .  0  Financial evidence (Section 7 of the Application process)
 .  .  .  .  .  .  0  .
-OLCSSelfserveFinancialEvidence_PeopleUpdatedText  checkContent  body  tagName  People section has been updated  OLCS  0  Financial evidence -- Check 'People section has been updated' text is displayed
-OLCSSelfserveFinancialEvidence_Step7of14Text  checkContent  body  tagName  Step 7 of 14  OLCS  0  Financial evidence -- Check 'Step 7 of 14' text is displayed above main heading
-OLCSSelfserveFinancialEvidence_OperatingCentresHeading  checkContent  body  tagName  Financial evidence  OLCS  0  Financial evidence -- Check 'Financial evidence' is displayed (Main Heading)
-OLCSSelfserveFinancialEvidence_FileNameText  checkContent  body  tagName  File name  OLCS  0  Financial evidence -- Check 'File name' is displayed
-OLCSSelfserveFinancialEvidence_EvidenceTypeText  checkContent  body  tagName  Evidence type  OLCS  0  Financial evidence -- Check 'Evidence type' is displayed
-OLCSSelfserveFinancialEvidence_TableCheckboxAll  wait  checkall  inputName  NA  OLCS  0  Financial evidence -- Check is present 'Check box ALL' Check box show at the top of the table that selects all items listed in the table
+olcsSelfserveFinancialEvidence_OperatingCentresText  checkContent  body  tagName  Operating centres & authorisation section has been updated  OLCS  0  Financial evidence -- Check 'Operating centres & authorisation section has been updated' text is displayed
+olcsSelfserveFinancialEvidence_Step7of14Text  checkContent  body  tagName  Step 7 of 14  OLCS  0  Financial evidence -- Check 'Step 7 of 14' text is displayed above main heading
+olcsSelfserveFinancialEvidence_OperatingCentresHeading  checkContent  body  tagName  Financial evidence  OLCS  0  Financial evidence -- Check 'Financial evidence' is displayed (Main Heading)
+olcsSelfserveFinancialEvidence_FileNameText  checkContent  body  tagName  File name  OLCS  0  Financial evidence -- Check 'File name' is displayed
+olcsSelfserveFinancialEvidence_EvidenceTypeText  checkContent  body  tagName  Evidence type  OLCS  0  Financial evidence -- Check 'Evidence type' is displayed
+olcsSelfserveFinancialEvidence_TableCheckboxAll  wait  checkall  inputName  NA  OLCS  0  Financial evidence -- Check is present 'Check box ALL' Check box show at the top of the table that selects all items listed in the table
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Transport managers (Section 8 of the Application process)
 .  .  .  .  .  .  0  .
-OLCSSelfserveTransportManagers_PeopleUpdatedText  checkContent  body  tagName  People section has been updated  OLCS  0  Transport managers -- Check 'People section has been updated' text is displayed
-OLCSSelfserveTransportManagers_Step8of14Text  checkContent  body  tagName  Step 8 of 14  OLCS  0  Transport managers -- Check 'Step 8 of 14' text is displayed above main heading
-OLCSSelfserveTransportManagers_OperatingCentresHeading  checkContent  body  tagName  Transport managers  OLCS  0  Transport managers -- Check 'Transport managers' is displayed (Main Heading)
+olcsSelfserveTransportManagers_FinancialEvidenceText  checkContent  body  tagName  Financial evidence section has been updated  OLCS  0  Transport managers -- Check 'Financial evidence section has been updated' text is displayed
+olcsSelfserveTransportManagers_Step8of14Text  checkContent  body  tagName  Step 8 of 14  OLCS  0  Transport managers -- Check 'Step 8 of 14' text is displayed above main heading
+olcsSelfserveTransportManagers_OperatingCentresHeading  checkContent  body  tagName  Transport managers  OLCS  0  Transport managers -- Check 'Transport managers' is displayed (Main Heading)
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Vehicles (Section 9 of the Application process)
+.  .  .  .  .  .  0  .
+olcsVehicles_TransportManagersText  checkContent  body  tagName  Transport managers section has been updated  OLCS  0  Vehicles -- Check 'Transport managers section has been updated' text is displayed
+olcsVehicles_Step9of14Text  checkContent  body  tagName  Step 9 of 14  OLCS  0  Vehicles -- Check 'Step 9 of 14' text is displayed above main heading
+olcsVehicles_OperatingCentresHeading  checkContent  body  tagName  Vehicles  OLCS  0  Vehicles -- Check 'Vehicles' is displayed (Main Heading)
+olcsVehicles_AreYouSubmittingText  checkContent  body  tagName  Are you submitting vehicle details?  OLCS  0  Vehicles -- Check 'Are you submitting vehicle details?' text is displayed
+olcsVehicles_AddYourText  checkContent  body  tagName  Are you submitting vehicle details?  OLCS  0  Vehicles -- Check 'Add your vehicles here' text is displayed
+olcsVehicles_FilterByText  checkContent  body  tagName  Filter by:  OLCS  0  Vehicles -- Check 'Filter by:' text is displayed
+olcsVehicles_VRMText  checkContent  body  tagName  VRM  OLCS  0  Vehicles -- Check 'VRM' text is displayed
+olcsVehicles_SpecifiedText  checkContent  body  tagName  Specified  OLCS  0  Vehicles -- Check 'Specified' text is displayed
+olcsVehicles_DiscText  checkContent  body  tagName  Disc  OLCS  0  Vehicles -- Check 'Disc' text is displayed
+olcsVehicles_IncludeRemovedText  checkContent  body  tagName  Include removed  OLCS  0  Vehicles -- Check 'Include removed' text is displayed
+olcsVehicles_YesText  checkContent  body  tagName  Yes  OLCS  0  Vehicles -- Check 'Yes' text is displayed
+olcsVehicles_NoText  checkContent  body  tagName  No  OLCS  0  Vehicles -- Check 'No' text is displayed
+olcsVehicles_AreYouSubmittingYes  wait  data[hasEnteredReg]  id  NA  OLCS  0  Your Business -- Check is present "Are you submitting vehicle details" 'Yes' radio check box
+olcsVehicles_AreYouSubmittingNo  wait  N  xpathValue  NA  OLCS  0  Your Business -- Check is present "Are you submitting vehicle details" 'No' radio check box
+.  .  .  .  .  .  0  Add vehicle
+olcsVehiclesAdd_AddVehicleText  checkContent  body  tagName  Add vehicle  OLCS  0  Vehicles - Add vehicle -- Check 'Add vehicle' text is displayed (main heading)
+olcsVehiclesAdd_VehicleRegistrationText  checkContent  body  tagName  Vehicle registration mark (VRM)  OLCS  0  Vehicles - Add vehicle -- Check 'Vehicle registration mark (VRM)' text is displayed
+olcsVehiclesAdd_GrossPlatedText  checkContent  body  tagName  Gross plated weight (Kg)  OLCS  0  Vehicles - Add vehicle -- Check 'Gross plated weight (Kg)' text is displayed
+olcsVehiclesAdd_SpecifiedDateText  checkContent  body  tagName  Specified date  OLCS  0  Vehicles - Add vehicle -- Check 'Specified date' text is displayed
+olcsVehiclesAdd_RemovedDateText  checkContent  body  tagName  Removed date  OLCS  0  Vehicles - Add vehicle -- Check 'Removed date' text is displayed
+olcsVehiclesAdd_DiscNoText  checkContent  body  tagName  Disc No.  OLCS  0  Vehicles - Add vehicle -- Check 'Disc No.' text is displayed
+olcsVehiclesAdd_VehicleRegistration  wait  vrm  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Vehicle registration mark (VRM)" inout field
+olcsVehiclesAdd_GrossPlated  wait  plated_weight  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Gross plated weight (Kg)" inout field
+olcsVehiclesAdd_GrossPlated  wait  plated_weight  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Gross plated weight (Kg)" inout field
+olcsVehiclesAdd_VehicleRegistration_v1abc  standardKeys  vrm  id  v1abc  OLCS  0  Vehicles - Add vehicle -- Enter 'v1abc' into the "Vehicle registration mark (VRM)" inout field
+olcsVehiclesAdd_GrossPlated_500  standardKeys  plated_weight  id  500  OLCS  0  Vehicles - Add vehicle -- Enter '500' into the "Gross plated weight (Kg)" inout field
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Your Business
 .  .  .  .  .  .  0  .
