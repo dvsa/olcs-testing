@@ -31,6 +31,7 @@ OLCSinternalSignIn_SignInButtonClick  specialKeys  credential  inputName  ENTER 
 .  .  .  .  .  .  0  .
 OLCSinternalUserPage_HelloSamText  checkContent  body  tagName  Hello, sam!  OLCS  0  User page -- Check 'Hello, sam!' is displayed on the top left of the screen
 OLCSinternalUserPage_SignOutClick  click  Advanced  xpathLinkContains  NA  OLCS  0  User page -- Click 'Sign Out' link
+OLCSinternalUserPage_SignOut  wait  Advanced  xpathLinkContains  NA  OLCS  0  User page -- Check is present 'Sign Out' link
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Home Page
 .  .  .  .  .  .  0  .
