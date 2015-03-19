@@ -23,7 +23,7 @@ OLCSinternalSignIn_Identity  wait  identity  inputName  NA  OLCS  0  Sign In pag
 OLCSinternalSignIn_Credential  wait  credential  inputName  NA  OLCS  0  Sign In page -- Check is present 'credential' form field
 OLCSinternalSignIn_SignInButton  wait  submit  inputName  NA  OLCS  0  Sign In page -- Check is present 'Sign In' button
 OLCSinternalSignIn_IdentitySam  standardKeys  identity  inputName  sam  OLCS  0  Sign In page -- Enter 'sam' into the Username form field
-OLCSinternalSignIn_CredentialPassword  standardKeys  credential  inputName  password  OLCS  5000  Sign In page -- Enter 'password' into the Password form field
+OLCSinternalSignIn_CredentialPassword  standardKeys  credential  inputName  password  OLCS  0  Sign In page -- Enter 'password' into the Password form field
 OLCSinternalSignIn_SignInButtonClickOLD  click  submit  inputName  inputName  OLCS  0  Sign In page -- Click 'Sign In' button
 OLCSinternalSignIn_SignInButtonClick  specialKeys  credential  inputName  ENTER  OLCS  0  Sign In page -- Send ENTER key event to 'Password' input field
 .  .  .  .  .  .  0  .
