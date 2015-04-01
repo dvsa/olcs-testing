@@ -7,11 +7,11 @@ OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-self
 OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
 OLCSSelfservestartQA  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start QA Selfserve Application
 OLCSSelfservestartLocal  start  Start new application  linkText  http://olcs-selfserve/dashboard  OLCS  10000  Framework -- Start Vagrant Selfserve Application
-OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  0  Framework -- Start Internal Application
-OLCSinternalStartDEV  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  0  Framework -- Start DEV Internal Application
-OLCSinternalStartDemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  0  Framework -- Start Demo Internal Application
-OLCSinternalStartQA  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  0  Framework -- Start QA Internal Application
-OLCSinternalStartLocal  start  Start new application  linkText  http://olcs-internal/user/login  OLCS  0  Framework -- Start Vagrant Internal Application
+OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Internal Application
+OLCSinternalStartDEV  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start DEV Internal Application
+OLCSinternalStartDemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
+OLCSinternalStartQA  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
+OLCSinternalStartLocal  start  Start new application  linkText  http://olcs-internal/user/login  OLCS  10000  Framework -- Start Vagrant Internal Application
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
