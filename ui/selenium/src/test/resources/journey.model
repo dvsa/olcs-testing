@@ -808,7 +808,7 @@ OLCSSelfserveFinancialHistoryConfirmTickBox  click  data[insolvencyConfirmation]
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Licence history (Section 12 of the Application process)
 .  .  .  .  .  .  0  .
-OLCSSelfserveLicenceHistoryCurrent  SpecialKeys  current[question]  id  ARROW_RIGHT  OLCS  0  Licence history -- Click No to question "1. Does any person named in this application (including partners, directors and transport managers) currently hold a goods or public service vehicle operator's licence in any traffic area?"
+OLCSSelfserveLicenceHistoryCurrent  specialKeys  current[question]  id  ARROW_RIGHT  OLCS  0  Licence history -- Click No to question "1. Does any person named in this application (including partners, directors and transport managers) currently hold a goods or public service vehicle operator's licence in any traffic area?"
 OLCSSelfserveLicenceHistoryApplied  specialKeys  applied[question]  id  ARROW_RIGHT  OLCS  0  Licence history -- Click No to question "a. Previously held or applied for a goods or public service vehicle operator's licence in any traffic area?"
 OLCSSelfserveLicenceHistoryRefused  specialKeys  refused[question]  id  ARROW_RIGHT  OLCS  0  Licence history -- Click No to question "b. Ever had an application for a goods or a public service vehicle operator's licence refused by any EU licensing authority?"
 OLCSSelfserveLicenceHistoryRevoked  specialKeys  revoked[question]  id  ARROW_RIGHT  OLCS  0  Licence history -- Click No to question "c. Ever had a goods or public service vehicle operator's licence revoked, suspended or curtailed by any EU licensing authority?"
