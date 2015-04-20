@@ -1,7 +1,7 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Selfserve Application
+OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Selfserve Application
 OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
 OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
 OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
@@ -326,7 +326,10 @@ OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  F
 OLCSSelfserveBreadCrumb_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Home' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Application overview  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserve_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Framework -- Check 'Continue' button is present
-OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  2000  Framework -- Click 'Continue' button
+OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  5000  Framework -- Click 'Continue' button
+OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  0  Framework -- Check 'Continue2' button is present
+OLCSSelfserve_ContinueButton2CLICK  specialKeys  form-actions[continue]  id  ENTER  OLCS  5000  Framework -- Send ENTER key event to 'Continue' button
+OLCSSelfserve_ContinueButton2CLICK_NotWorking  click  form-actions[continue]  id  NA  OLCS  5000  Framework -- Click 'Continue2' button
 OLCSSelfserve_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Framework -- Check 'Save & Return' button is present
 OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  10000  Framework -- Click 'Save & Return' button
 OLCSSelfserve_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Framework -- Check 'Cancel' hyperlink is present at the bottom of the screen
@@ -344,6 +347,8 @@ OLCSSelfserve_SelectAddressButton  wait  address[searchPostcode][select]  id  NA
 OLCSSelfserve_SelectAddressCLICK  click  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Click 'Select' address button
 OLCSSelfserve_UploadButton  wait  upload  id  NA  OLCS  0  Framework -- Check 'Upload' address button is present
 OLCSSelfserve_UploadCLICK  click  upload  id  NA  OLCS  0  Framework -- Click 'Upload' address button
+OLCSSelfserve_SendFormButton  wait  form-actions[send]  id  NA  OLCS  0  Framework -- Check 'Send Form' button is present
+OLCSSelfserve_SendFormButtonCLICK  click  form-actions[send]  id  NA  OLCS  5000  Framework -- Click 'Send Form' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Sign In
 .  .  .  .  .  .  0  .
@@ -397,6 +402,8 @@ OLCSSelfserveDashboardNewApplicationCLICK  click  Apply for a new licence  linkT
 OLCSSelfserveDashboardClickNo14  click  7  xpathLinkContains  NA  OLCS  0  Framework -- Click '7' hyperlink on the dashboard page to bring up licence
 OLCSSelfserveDashboardSubmitPay  wait  submitPay  id  NA  OLCS  0  Dashboard -- Check is present 'Submit & Pay' button
 OLCSSelfserveDashboardSubmitPayCLICK  click  submitPay  id  NA  OLCS  0  Dashboard -- Click 'Submit & Pay' button
+OLCSSelfserveDashboardApplication19  click  19  linkText  NA  OLCS  0  Dashboard -- Click 'Application 19' link
+OLCSSelfserveDashboardTransportManagersCLICK  click  overview-item__transport_managers  id  NA  OLCS  0  Dashboard -- Click 'Transport managers' link
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Type of licence
 .  .  .  .  .  .  0  .
@@ -741,6 +748,11 @@ olcsSelfserveFinancialEvidence_SendInThePostCLICK  click  N  xpathValue  NA  OLC
 olcsSelfserveTransportManagers_FinancialEvidenceText  checkContent  body  tagName  Financial evidence section has been updated  OLCS  0  Transport managers -- Check 'Financial evidence section has been updated' text is displayed
 olcsSelfserveTransportManagers_Step8of14Text  checkContent  body  tagName  Step 8 of 14  OLCS  0  Transport managers -- Check 'Step 8 of 14' text is displayed above main heading
 olcsSelfserveTransportManagers_OperatingCentresHeading  checkContent  body  tagName  Transport managers  OLCS  0  Transport managers -- Check 'Transport managers' is displayed (Main Heading)
+.  .  .  .  .  .  0  Add transport manager
+olcsSelfserveTransportManagersAddTransportManager_Heading  checkContent  body  tagName  Add transport manager  OLCS  0  Transport managers- Add transport manager -- Check 'Add transport manager' heading is displayed
+olcsSelfserveTransportManagersAddTransportManager_SelectUser  checkContent  body  tagName  Select from registered users  OLCS  0  Transport managers- Add transport manager -- Check 'Select from registered users' is displayed
+olcsSelfserveTransportManagersAddTransportManager_UserDropDown  wait  data[registeredUser]  id  NA  OLCS  0  Transport managers- Add transport manager -- Check is present "Registered users drop down" radio check box
+olcsSelfserveTransportManagersAddTransportManager_UserDropDownDownArrow  specialKeys  data[registeredUser]  id  ARROW_DOWN  OLCS  0  Transport managers- Add transport manager -- Send down arrow key event to 'Select from registered users' drop down so that the first option is selected
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Vehicles (Section 9 of the Application process)
 .  .  .  .  .  .  0  .
