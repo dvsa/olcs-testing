@@ -127,7 +127,7 @@
     <proxies>
     <proxy>
       <active>true</active>
-      <protocol>http</protocol>
+      <protocol>https</protocol>
       <host>fp01.inf.mgt.mtpdvsa</host>
       <port>3128</port>
       <nonProxyHosts>*.mtpdvsa</nonProxyHosts>
