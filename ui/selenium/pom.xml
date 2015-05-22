@@ -6,7 +6,16 @@
 	<artifactId>selenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>olcs-testing</name>
-
+  <proxies>
+    <proxy>
+      <id>myproxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>fp01.inf.mgt.mtpdvsa</host>
+      <port>3128</port>
+      <nonProxyHosts>*.mtpdvsa</nonProxyHosts>
+    </proxy>
+  </proxies>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
