@@ -122,4 +122,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	  <proxies>
+    <proxy>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>fp01.inf.mgt.mtpdvsa</host>
+      <port>3128</port>
+      <nonProxyHosts>*.mtpdvsa</nonProxyHosts>
+    </proxy>
+  </proxies>
 </project>
