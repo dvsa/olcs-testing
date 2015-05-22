@@ -122,7 +122,9 @@
 			</plugin>
 		</plugins>
 	</build>
-	  <proxies>
+</project>
+<settings>
+    <proxies>
     <proxy>
       <active>true</active>
       <protocol>http</protocol>
@@ -131,4 +133,4 @@
       <nonProxyHosts>*.mtpdvsa</nonProxyHosts>
     </proxy>
   </proxies>
-</project>
+  </settings>
