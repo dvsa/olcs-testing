@@ -1,7 +1,7 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
+OLCSSelfservestart  start  Start new application  linkText  http://test_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
 OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
 OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
 OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
