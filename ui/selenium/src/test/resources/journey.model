@@ -1,7 +1,7 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Selfserve Application
+OLCSSelfservestart  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
 OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
 OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
 OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
@@ -12,6 +12,7 @@ OLCSinternalStartDEV  start  Start new application  linkText  http://dvsa-intern
 OLCSinternalStartDemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
 OLCSinternalStartQA  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
 OLCSinternalStartLocal  start  Start new application  linkText  http://olcs-internal/user/login  OLCS  10000  Framework -- Start Vagrant Internal Application
+OLCSSelfservestartNewDev  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start New DEV Selfserve Application
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
@@ -19,6 +20,10 @@ OLCSinternalmaximizeBrowser  maximizeBrowser  Start new application  linkText  h
 OLCSinternalCheck1  checkContent  body  tagName  OLCS  OLCS  0  Framework -- Check 'OLCS' is displayed on the top left of the screen
 OLCSinternalAdvancedCLICK  click  Advanced  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Advanced' link
 OLCSinternalOlcsClick  click  OLCS  xpathLinkContains  NA  OLCS  0  Framework -- Click 'OLCS' link on teh top left of the screen
+OLCSinternalFrameworkSave  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Save' button
+OLCSinternalFrameworkCancel  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Cancel' button
+OLCSinternalFrameworkSaveClick  click  form-actions[save]  id  NA  OLCS  0  Framework -- Click 'Save' button
+OLCSinternalFrameworkCancelClick  click  form-actions[cancel]  id  NA  OLCS  0  Framework -- Click 'Cancel' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Sign In
 .  .  .  .  .  .  0  .
@@ -43,33 +48,34 @@ OLCSinternalUserPage_SignOut  wait  Sign Out  xpathLinkContains  NA  OLCS  0  Us
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Home Page
 .  .  .  .  .  .  0  .
-OLCSinternalHomeCheck1  checkContent  body  tagName  Home  OLCS  0  Home Page -- Check 'Home' is displayed on the top left of the screen
-OLCSinternalHomeCheck2  checkContent  body  tagName  Team  OLCS  0  Home Page -- Check 'Team' is displayed on the left filters
-OLCSinternalHomeCheck3  checkContent  body  tagName  Owner  OLCS  0  Home Page -- Check 'Owner' is displayed on the left filters
-OLCSinternalHomeCheck4  checkContent  body  tagName  Category  OLCS  0  Home Page -- Check 'Category' is displayed on the left filters
-OLCSinternalHomeCheck5  checkContent  body  tagName  Sub category  OLCS  0  Home Page -- Check 'Sub category' is displayed on the left filters
-OLCSinternalHomeCheck6  checkContent  body  tagName  Date  OLCS  0  Home Page -- Check 'Date' is displayed on the left filters
-OLCSinternalHomeCheck7  checkContent  body  tagName  Status  OLCS  0  Home Page -- Check 'Status' is displayed on the left filters
-OLCSinternalHomeCheck8  checkContent  body  tagName  Urgent  OLCS  0  Home Page -- Check 'Urgent' is displayed on the left filters
-OLCSinternalHomeCheck9  wait  Link  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Link' filter
-OLCSinternalHomeCheck10  wait  Category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Category' filter
-OLCSinternalHomeCheck11  wait  Sub category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Sub category' filter
-OLCSinternalHomeCheck12  wait  Description  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Description' filter
-OLCSinternalHomeCheck13  wait  Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Date' filter
-OLCSinternalHomeCheck14  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
-OLCSinternalHomeCheck15  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
-OLCSinternalHomeCheck16  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
-OLCSinternalHomeCheck17  wait  assignedToTeam  id  NA  OLCS  0  Home Page -- Check is present 'Team' drop down element
-OLCSinternalHomeCheck18  wait  assignedToUser  id  NA  OLCS  0  Home Page -- Check is present 'Owner' drop down element
-OLCSinternalHomeCheck19  wait  category  id  NA  OLCS  0  Home Page -- Check is present 'Category' drop down element
-OLCSinternalHomeCheck20  wait  taskSubCategory  id  NA  OLCS  0  Home Page -- Check is present 'Sub category' drop down element
-OLCSinternalHomeCheck21  wait  date  id  NA  OLCS  0  Home Page -- Check is present 'Date' drop down element
-OLCSinternalHomeCheck22  wait  status  id  NA  OLCS  0  Home Page -- Check is present 'Status' drop down element
-OLCSinternalHomeCheck23  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
-OLCSinternalHomeCheck24  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
-OLCSinternalHomeCheck25  wait  Advanced  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
+OLCSinternalHomeTextHome  checkContent  body  tagName  Home  OLCS  0  Home Page -- Check 'Home' is displayed on the top left of the screen
+OLCSinternalHomeTextTeam  checkContent  body  tagName  Team  OLCS  0  Home Page -- Check 'Team' is displayed on the left filters
+OLCSinternalHomeTextOwner  checkContent  body  tagName  Owner  OLCS  0  Home Page -- Check 'Owner' is displayed on the left filters
+OLCSinternalHomeTextCategory  checkContent  body  tagName  Category  OLCS  0  Home Page -- Check 'Category' is displayed on the left filters
+OLCSinternalHomeTextSubCategory  checkContent  body  tagName  Sub category  OLCS  0  Home Page -- Check 'Sub category' is displayed on the left filters
+OLCSinternalHomeTextDate  checkContent  body  tagName  Date  OLCS  0  Home Page -- Check 'Date' is displayed on the left filters
+OLCSinternalHomeTextStatus  checkContent  body  tagName  Status  OLCS  0  Home Page -- Check 'Status' is displayed on the left filters
+OLCSinternalHomeTextUrgent  checkContent  body  tagName  Urgent  OLCS  0  Home Page -- Check 'Urgent' is displayed on the left filters
+OLCSinternalHomeSortLink  wait  Link  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Link' filter
+OLCSinternalHomeSortCategory  wait  Category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Category' filter
+OLCSinternalHomeSortSubCategory  wait  Sub category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Sub category' filter
+OLCSinternalHomeSortDescription  wait  Description  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Description' filter
+OLCSinternalHomeSortDate  wait  Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Date' filter
+OLCSinternalHomeSortDate  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
+OLCSinternalHomeSortOwner  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
+OLCSinternalHomeTextTasks  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
+OLCSinternalHomeFilterTeam  wait  assignedToTeam  id  NA  OLCS  0  Home Page -- Check is present 'Team' drop down element
+OLCSinternalHomeFilterOwner  wait  assignedToUser  id  NA  OLCS  0  Home Page -- Check is present 'Owner' drop down element
+OLCSinternalHomeFilterCategory  wait  category  id  NA  OLCS  0  Home Page -- Check is present 'Category' drop down element
+OLCSinternalHomeFilterSubCategory  wait  taskSubCategory  id  NA  OLCS  0  Home Page -- Check is present 'Sub category' drop down element
+OLCSinternalHomeFilterDate  wait  date  id  NA  OLCS  0  Home Page -- Check is present 'Date' drop down element
+OLCSinternalHomeFilterStatus  wait  status  id  NA  OLCS  0  Home Page -- Check is present 'Status' drop down element
+OLCSinternalHomeFilterUrgent  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
+OLCSinternalHomeMenuAdmin  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
+OLCSinternalHomeSearchAdvanced  wait  Advanced  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
+OLCSinternalHomePD2737280CLICK  click  PD2737280  xpathLinkContains  NA  OLCS  0  Home Page -- Click 'PD2737280' hyperlink
 .  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  OLCS Internal - Search Page - accessed from the advanced link from top of screen
+.  .  .  .  .  .  0  OLCS Internal - Search Page - accessed from the advanced link from top of screen (This is now being removed)
 .  .  .  .  .  .  0  .
 OLCSinternalSearchCheck1  checkContent  body  tagName  Search  OLCS  0  Search Page -- Check 'Search' is displayed on the top left of the screen
 OLCSinternalSearchCheck2  checkContent  body  tagName  Search for licences using any of the following fields  OLCS  0  Search Page -- Check 'Search for licences using any of the following fields' is displayed on the top left of the screen
@@ -126,53 +132,147 @@ OLCSinternalSearchResultsCheck11  wait  Correspondence address  xpathLinkContain
 OLCSinternalSearchResultsCheck12  wait  Correspondence address  xpathLinkContains  NA  OLCS  0  Search Results Page -- Check is present 'Correspondence address' link top of the table results
 OLCSinternalSearchResultsOB1234567Click  click  OB1234567  xpathLinkContains  NA  OLCS  0  Search Results Page -- Click on Licence number OB1234567 from the results table (Test data)
 .  .  .  .  .  .  0  .
-.  .  .  .  .  .  0  OLCS Internal - Licence details section URL example http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/details/overview
+.  .  .  .  .  .  0  OLCS Internal - Licence details section URL example http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/
 .  .  .  .  .  .  0  .
-OLCSinternalLicenceDetailsInfo  checkContent  body  tagName  Licence details  OLCS  0  Licence details section - page content check to follow, example URL http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/details/overview
-OLCSinternalLicenceDetailsCheck1  checkContent  body  tagName  Licence details  OLCS  0  Licence details section -- Check 'Licence details' is displayed
-OLCSinternalLicenceDetailsCheck2  checkContent  body  tagName  Overview  OLCS  0  Licence details section -- Check 'Overview' is displayed
-OLCSinternalLicenceDetailsCheck3  wait  Overview  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Overview' left hand menu link
-OLCSinternalLicenceDetailsCheck4  wait  Type of licence  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Type of licence' left hand menu link
-OLCSinternalLicenceDetailsCheck5  wait  Business details  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Business details' left hand menu link
-OLCSinternalLicenceDetailsCheck6  wait  Addresses  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Addresses' left hand menu link
-OLCSinternalLicenceDetailsCheck7  wait  People  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'People' left hand menu link
-OLCSinternalLicenceDetailsCheck8  wait  Operating centres & authorisation  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Operating centres & authorisation' left hand menu link
-OLCSinternalLicenceDetailsCheck9  wait  Transport managers  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Transport managers' left hand menu link
-OLCSinternalLicenceDetailsCheck10  wait  Vehicles  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Vehicles' left hand menu link
-OLCSinternalLicenceDetailsCheck11  wait  Safety  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Safety' left hand menu link
-OLCSinternalLicenceDetailsCheck12  wait  Conditions & undertakings  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Conditions & undertakings' left hand menu link
-OLCSinternalLicenceDetailsCheck13  wait  Licence discs  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Licence discs' left hand menu link
-OLCSinternalLicenceDetailsCheck14  wait  Licence details  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Licence details' top menu link
-OLCSinternalLicenceDetailsCheck15  wait  Bus reg  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Bus reg' top menu link
-OLCSinternalLicenceDetailsCheck16  wait  Cases  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Cases' top menu link
-OLCSinternalLicenceDetailsCheck17  wait  Opposition  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Opposition' top menu link
-OLCSinternalLicenceDetailsCheck18  wait  Docs & attachments  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Docs & attachments' top menu link
-OLCSinternalLicenceDetailsCheck19  wait  Processing  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Processing' top menu link
-OLCSinternalLicenceDetailsCheck20  wait  Fees  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Fees' top menu link
-.  .  .  .  .  .  0  . CHECK Operating centres & authorisation from Licence details
-OLCSinternalLicenceDetailsCheck21  checkContent  body  tagName  Operating centres & authorisation  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Operating centres & authorisation' is displayed
-OLCSinternalLicenceDetailsCheck22  checkContent  body  tagName  Making changes to some fields within this section may require a  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Making changes to some fields within this section may require a' is displayed
-OLCSinternalLicenceDetailsCheck23  wait  variation application  xpathLinkContains  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'variation application' link
-OLCSinternalLicenceDetailsCheck24  checkContent  body  tagName  Operating centres  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Operating centres' is displayed
-OLCSinternalLicenceDetailsCheck25  checkContent  body  tagName  Vehicles  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Vehicles' is displayed
-OLCSinternalLicenceDetailsCheck26  checkContent  body  tagName  Trailers  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Trailers' is displayed
-OLCSinternalLicenceDetailsCheck27  checkContent  body  tagName  Permission  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Permission' is displayed
-OLCSinternalLicenceDetailsCheck28  checkContent  body  tagName  Advertised  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Advertised' is displayed
-OLCSinternalLicenceDetailsCheck28  checkContent  body  tagName  Total vehicles and trailers  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Total vehicles and trailers' is displayed
-OLCSinternalLicenceDetailsCheck29  wait  add  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Add' button
-OLCSinternalLicenceDetailsCheck30  wait  edit  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Edit' button
-OLCSinternalLicenceDetailsCheck31  wait  delete  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Delete' button
-OLCSinternalLicenceDetailsCheck32  checkContent  body  tagName  Your traffic area  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Your traffic area' is displayed
-OLCSinternalLicenceDetailsCheck33  checkContent  body  tagName  Your traffic area has been determined from your address.  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Your traffic area has been determined from your address.' is displayed
-OLCSinternalLicenceDetailsCheck34  wait  More about traffic areas  xpathLinkContains  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'More about traffic areas' link
-OLCSinternalLicenceDetailsCheck35  checkContent  body  tagName  Authorisation  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Authorisation' is displayed
-OLCSinternalLicenceDetailsCheck36  checkContent  body  tagName  Enter the total amount of vehicles & trailers that you want authorised on the licence you are applying for.  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Enter the total amount of vehicles & trailers that you want authorised on the licence you are applying for.' is displayed
-OLCSinternalLicenceDetailsCheck37  checkContent  body  tagName  Total number of vehicles  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Total number of vehicles' is displayed
-OLCSinternalLicenceDetailsCheck38  checkContent  body  tagName  Total number of trailers  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Total number of trailers' is displayed
-OLCSinternalLicenceDetailsCheck39  wait  totAuthVehicles  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Total number of vehicles' text filed
-OLCSinternalLicenceDetailsCheck40  wait  totAuthTrailers  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Total number of trailers' text filed
-OLCSinternalLicenceDetailsCheck41  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Save' button
-OLCSinternalLicenceDetailsCheck42  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Cancel' button
+OLCSinternalLicenceDetailsInfo  checkContent  body  tagName  Licence details  OLCS  0  Licence details section - page content check to follow, example URL http://dvsa-internal.olcsdv-ap01.olcs.npm/licence/7/
+OLCSinternalLicenceDetailsTextLicenceDetails  checkContent  body  tagName  Licence details  OLCS  0  Licence details section -- Check 'Licence details' is displayed
+OLCSinternalLicenceDetailsTextOverview  checkContent  body  tagName  Overview  OLCS  0  Licence details section -- Check 'Overview' is displayed
+OLCSinternalLicenceDetailsLinkOverview  wait  Overview  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Overview' left hand menu link
+OLCSinternalLicenceDetailsLinkTypeOfLicence  wait  Type of licence  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Type of licence' left hand menu link
+OLCSinternalLicenceDetailsLinkBusinessType  wait  Business type  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Business type' left hand menu link
+OLCSinternalLicenceDetailsLinkBusinessDetails  wait  Business details  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Business details' left hand menu link
+OLCSinternalLicenceDetailsLinkAddresses  wait  Addresses  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Addresses' left hand menu link
+OLCSinternalLicenceDetailsLinkPeople  wait  People  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'People' left hand menu link
+OLCSinternalLicenceDetailsLinkOperatingCentres  wait  Operating centres & authorisation  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Operating centres & authorisation' left hand menu link
+OLCSinternalLicenceDetailsLinkTransportManagers  wait  Transport managers  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Transport managers' left hand menu link
+OLCSinternalLicenceDetailsLinkVehicles  wait  Vehicles  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Vehicles' left hand menu link
+OLCSinternalLicenceDetailsLinkDiscs  wait  Discs  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Discs' left hand menu link
+OLCSinternalLicenceDetailsLinkCommunityLicences  wait  Community licences  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Community licences' left hand menu link
+OLCSinternalLicenceDetailsLinkSafety  wait  Safety  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Safety' left hand menu link
+OLCSinternalLicenceDetailsLinkConditionsUndertakings  wait  Conditions & undertakings  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Conditions & undertakings' left hand menu link
+OLCSinternalLicenceDetailsLinkLicenceDetails  wait  Licence details  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Licence details' top menu link
+OLCSinternalLicenceDetailsLinkBusReg  wait  Bus reg  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Bus registrations' top menu link
+OLCSinternalLicenceDetailsLinkCases  wait  Cases  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Cases' top menu link
+OLCSinternalLicenceDetailsLinkOpposition  wait  Opposition  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Opposition' top menu link
+OLCSinternalLicenceDetailsLinkDocsAttachments  wait  Docs & attachments  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Docs & attachments' top menu link
+OLCSinternalLicenceDetailsLinkProcessing  wait  Processing  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Processing' top menu link
+OLCSinternalLicenceDetailsLinkFees  wait  Fees  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'Fees' top menu link
+OLCSinternalLicenceDetailsLinkHistory  wait  History  xpathLinkContains  NA  OLCS  0  Licence details section -- Check is present 'History' top menu link
+OLCSinternalLicenceDetailsOperatorNameText  checkContent  body  tagName  Operator name  OLCS  0  Licence details -- Check "Operator name" is displayed
+OLCSinternalLicenceDetailsOperatorTradingNameText  checkContent  body  tagName  Trading name  OLCS  0  Licence details -- Check "Trading name" is displayed
+OLCSinternalLicenceDetailsOperatorNoOfLicencesText  checkContent  body  tagName  No of licences  OLCS  0  Licence details -- Check "No of licences" is displayed
+OLCSinternalLicenceDetailsOperatorCurrentApplicationsText  checkContent  body  tagName  Current applications  OLCS  0  Licence details -- Check "Current applications" is displayed
+OLCSinternalLicenceDetailsOperatorLicenceNumberText  checkContent  body  tagName  Licence number  OLCS  0  Licence details -- Check "Licence number" is displayed
+OLCSinternalLicenceDetailsOperatorLicenceStartDateText  checkContent  body  tagName  Licence Start Date  OLCS  0  Licence details -- Check "Licence Start Date" is displayed
+OLCSinternalLicenceDetailsOperatorLicenceTypeText  checkContent  body  tagName  Licence Type  OLCS  0  Licence details -- Check "Licence Type" is displayed
+OLCSinternalLicenceDetailsLicenceStatusText  checkContent  body  tagName  Licence status  OLCS  0  Licence details -- Check "Licence status" is displayed
+OLCSinternalLicenceDetailsNoOfVehiclesText  checkContent  body  tagName  No of Vehicles  OLCS  0  Licence details -- Check "No of Vehicles" is displayed
+OLCSinternalLicenceDetailsTotalVehicleAuthorisationText  checkContent  body  tagName  Total Vehicle Authorisation  OLCS  0  Licence details -- Check "Total Vehicle Authorisation" is displayed
+OLCSinternalLicenceDetailsNoOfCommunityLicsText  checkContent  body  tagName  No of Community Lics  OLCS  0  Licence details -- Check "No of Community Lics" is displayed
+OLCSinternalLicenceDetailsOpenCasesText  checkContent  body  tagName  Open cases  OLCS  0  Licence details -- Check "Open cases" is displayed
+OLCSinternalLicenceDetailsCurrentReviewComplaintsText  checkContent  body  tagName  Current Review Complaints  OLCS  0  Licence details -- Check "Current Review Complaints" is displayed
+OLCSinternalLicenceDetailsContinuationDateText  checkContent  body  tagName  Continuation Date  OLCS  0  Licence details -- Check "Continuation Date" is displayed
+OLCSinternalLicenceDetailsContinuationDateDay  wait  details[continuationDate][day]  inputName  NA  OLCS  0  Licence details -- Check is present 'Continuation Date' day drop down
+OLCSinternalLicenceDetailsContinuationDateMonth  wait  details[continuationDate][month]  inputName  NA  OLCS  0  Licence details -- Check is present 'Continuation Date' month drop down
+OLCSinternalLicenceDetailsContinuationDateYeah  wait  details[continuationDate][year]  inputName  NA  OLCS  0  Licence details -- Check is present 'Continuation Date' year drop down
+.  .  .  .  .  .  0  . Licence details -> Type of licence
+OLCSinternalLicenceDetailsTypeOfLicenceHeading  checkContent  body  tagName  Type of licence  OLCS  0  Licence details - Type of licence -- Check 'Type of licence' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceOperatorLocationText  checkContent  body  tagName  Operator location  OLCS  0  Licence details - Type of licence -- Check 'Operator location' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceGreatBritainText  checkContent  body  tagName  Great Britain  OLCS  0  Licence details - Type of licence -- Check 'Great Britain' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceNorthernIrelandText  checkContent  body  tagName  Northern Ireland  OLCS  0  Licence details - Type of licence -- Check 'Northern Ireland' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceOperatorTypeText  checkContent  body  tagName  Operator type  OLCS  0  Licence details - Type of licence -- Check 'Operator type' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceGoodsText  checkContent  body  tagName  Goods  OLCS  0  Licence details - Type of licence -- Check 'Goods' is displayed
+OLCSinternalLicenceDetailsTypeOfLicencePSVText  checkContent  body  tagName  PSV  OLCS  0  Licence details - Type of licence -- Check 'PSV' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceLicenceTypeText  checkContent  body  tagName  Licence type  OLCS  0  Licence details - Type of licence -- Check 'Licence type' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceRestrictedText  checkContent  body  tagName  Restricted  OLCS  0  Licence details - Type of licence -- Check 'Restricted' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceStandardNationalText  checkContent  body  tagName  Standard National  OLCS  0  Licence details - Type of licence -- Check 'Standard National' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceStandardInternationalText  checkContent  body  tagName  Standard International  OLCS  0  Licence details - Type of licence -- Check 'Standard International' is displayed
+OLCSinternalLicenceDetailsTypeOfLicenceGreatBritain  wait  //*[@id="type-of-licence[operator-location]"]  xpath  NA  OLCS  0  Licence details - Type of licence -- Check is present 'Great Britain' radio button
+OLCSinternalLicenceDetailsTypeOfLicenceNorthernIreland  wait  //*[@id="operator-location"]/label[2]/input  xpath  NA  OLCS  0  Licence details - Type of licence -- Check is present 'Northern Ireland' radio button
+OLCSinternalLicenceDetailsTypeOfLicenceGoods  wait  //*[@id="type-of-licence[operator-type]"]  xpath  NA  OLCS  0  Licence details - Type of licence -- Check is present 'Goods' radio button
+OLCSinternalLicenceDetailsTypeOfLicencePSV  wait  //*[@id="operator-type"]/label[2]/input  xpath  NA  OLCS  0  Licence details - Type of licence -- Check is present 'PSV' radio button
+OLCSinternalLicenceDetailsTypeOfLicenceRestricted  wait  //*[@id="type-of-licence[licence-type]"]  xpath  NA  OLCS  0  Licence details - Type of licence -- Check is present 'Restricted' radio button
+OLCSinternalLicenceDetailsTypeOfLicenceStandardNational  wait  //*[@id="licence-type"]/label[2]/input  xpath  NA  OLCS  0  Licence details - Type of licence -- Check is present 'Standard National' radio button
+OLCSinternalLicenceDetailsTypeOfLicenceStandardInternational  wait  //*[@id="licence-type"]/label[3]/input  xpath  NA  OLCS  0  Licence details - Type of licence -- Check is present 'Standard International' radio button
+.  .  .  .  .  .  0  . Licence details -> Business type
+OLCSinternalLicenceDetailsBusinessTypeHeading  checkContent  body  tagName  Business type  OLCS  0  Licence details - Business type -- Check 'Business type' is displayed
+OLCSinternalLicenceDetailsBusinessTypeWhatTypeOfBusinessText  checkContent  body  tagName  What type of business are you?  OLCS  0  Licence details - Business type -- Check 'What type of business are you?' is displayed
+OLCSinternalLicenceDetailsBusinessTypeLimitedCompanyText  checkContent  body  tagName  Limited company  OLCS  0  Licence details - Business type -- Check 'Limited company' is displayed
+OLCSinternalLicenceDetailsBusinessTypeSoleTraderText  checkContent  body  tagName  Sole Trader  OLCS  0  Licence details - Business type -- Check 'Sole Trader' is displayed
+OLCSinternalLicenceDetailsBusinessTypePartnershipText  checkContent  body  tagName  Partnership  OLCS  0  Licence details - Business type -- Check 'Partnership' is displayed
+OLCSinternalLicenceDetailsBusinessTypeLimitedLiabilityPartnershipText  checkContent  body  tagName  Limited Liability Partnership  OLCS  0  Licence details - Business type -- Check 'Limited Liability Partnership' is displayed
+OLCSinternalLicenceDetailsBusinessTypeOtherText  checkContent  body  tagName  Other (e.g. public authority, charity, trust, university)  OLCS  0  Licence details - Business type -- Check 'Other (e.g. public authority, charity, trust, university)' is displayed
+OLCSinternalLicenceDetailsBusinessTypeLimitedCompany  wait  //*[@id="data[type]"]  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Limited company' radio button
+OLCSinternalLicenceDetailsBusinessTypeSoleTrader  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Sole Trader' radio button
+OLCSinternalLicenceDetailsBusinessTypePartnership  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[3]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Partnership' radio button
+OLCSinternalLicenceDetailsBusinessTypeLimitedLiabilityPartnership  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[4]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Limited Liability Partnership' radio button
+OLCSinternalLicenceDetailsBusinessTypeOther  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[5]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Other (e.g. public authority, charity, trust, university)' radio button
+.  .  .  .  .  .  0  . Licence details -> Business details
+OLCSinternalLicenceDetailsBusinessDetailsHeading  checkContent  body  tagName  Business details  OLCS  0  Licence details - Business details -- Check 'Business details' is displayed
+OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameText  checkContent  body  tagName  Organisation name  OLCS  0  Licence details - Business details -- Check 'Organisation name' is displayed
+OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessText  checkContent  body  tagName  Nature of business  OLCS  0  Licence details - Business details -- Check 'Nature of business' is displayed
+OLCSinternalLicenceDetailsBusinessDetailsPleaseEnterYourBusinessTypeText  checkContent  body  tagName  Please enter your business type. You can find a list of business types at Companies House  OLCS  0  Licence details - Business details -- Check 'Please enter your business type. You can find a list of business types at Companies House' is displayed
+OLCSinternalLicenceDetailsBusinessDetailsLinkHyperlink  wait  here  xpathLinkContains  NA  OLCS  0  Licence details - Business details -- Check is present 'link' hyperlink for 'Please enter your business type. You can find a list of business types at Companies House'
+OLCSinternalLicenceDetailsBusinessDetailsOrganisationName  wait  data[name]  id  NA  OLCS  0  Licence details - Business details -- Check is present 'Organisation name' input field
+OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusiness  wait  data[natureOfBusinesses]  id  NA  OLCS  0  Licence details - Business details -- Check is present 'Nature of business' input field
+.  .  .  .  .  .  0  . Licence details -> Addresses
+OLCSinternalLicenceDetailsAddressesHeading  checkContent  body  tagName  Addresses  OLCS  0  Licence details - Addresses -- Check 'Addresses' is displayed
+OLCSinternalLicenceDetailsAddressesCorrespondenceAddress  checkContent  body  tagName  Correspondence address  OLCS  0  Licence details - Addresses -- Check 'Correspondence address' is displayed
+OLCSinternalLicenceDetailsAddressesForAttentionOf  checkContent  body  tagName  For attention of (optional)  OLCS  0  Licence details - Addresses -- Check 'For attention of (optional)' is displayed
+OLCSinternalLicenceDetailsAddressesPostcodeSearch  checkContent  body  tagName  Postcode search  OLCS  0  Licence details - Addresses -- Check 'Postcode search' is displayed
+OLCSinternalLicenceDetailsAddressesEnterAddressManually  wait  Enter address manually  xpathLinkContains  NA  OLCS  0  Licence details - Addresses -- Check is present 'Enter address manually' left hand menu link
+OLCSinternalLicenceDetailsAddressesContactDetails  checkContent  body  tagName  Contact details  OLCS  0  Licence details - Addresses -- Check 'Contact details' is displayed
+OLCSinternalLicenceDetailsAddressesPleaseEnterAtLeastOneTelephoneNumber  checkContent  body  tagName  Please enter at least one telephone number  OLCS  0  Licence details - Addresses -- Check 'Please enter at least one telephone number' is displayed
+OLCSinternalLicenceDetailsAddressesBusinessTelephoneNo  checkContent  body  tagName  Business telephone No. (optional)  OLCS  0  Licence details - Addresses -- Check 'Business telephone No. (optional)' is displayed
+OLCSinternalLicenceDetailsAddressesHomeTelephoneNo  checkContent  body  tagName  Home telephone No. (optional)  OLCS  0  Licence details - Addresses -- Check 'Home telephone No. (optional)' is displayed
+OLCSinternalLicenceDetailsAddressesMobileTelephoneNo  checkContent  body  tagName  Mobile telephone No. (optional)  OLCS  0  Licence details - Addresses -- Check 'Mobile telephone No. (optional)' is displayed
+OLCSinternalLicenceDetailsAddressesFaxTelephoneNo  checkContent  body  tagName  Fax telephone No. (optional)  OLCS  0  Licence details - Addresses -- Check 'Fax telephone No. (optional)' is displayed
+OLCSinternalLicenceDetailsAddressesEmailAddress  checkContent  body  tagName  E-mail address  OLCS  0  Licence details - Addresses -- Check 'E-mail address' is displayed
+OLCSinternalLicenceDetailsAddressesEstablishmentAddress  checkContent  body  tagName  Establishment address  OLCS  0  Licence details - Addresses -- Check 'Establishment address' is displayed
+OLCSinternalLicenceDetailsAddressesPostcodeSearch  checkContent  body  tagName  Postcode search  OLCS  0  Licence details - Addresses -- Check 'Postcode search' is displayed
+OLCSinternalLicenceDetailsAddressesTransportConsultant  checkContent  body  tagName  Transport Consultant  OLCS  0  Licence details - Addresses -- Check 'Transport Consultant' is displayed
+OLCSinternalLicenceDetailsAddressesDoYouWishToAddDetailsOfATransportConsultant  checkContent  body  tagName  Do you wish to add details of a Transport Consultant?  OLCS  0  Licence details - Addresses -- Check 'Do you wish to add details of a Transport Consultant?' is displayed
+OLCSinternalLicenceDetailsAddressesYes  checkContent  body  tagName  Yes  OLCS  0  Licence details - Addresses -- Check 'Yes' is displayed
+OLCSinternalLicenceDetailsAddressesNo  checkContent  body  tagName  No  OLCS  0  Licence details - Addresses -- Check 'No' is displayed
+OLCSinternalLicenceDetailsAddressesForAttentionOfInput  wait  correspondence[fao]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'For attention of (optional)' input field
+OLCSinternalLicenceDetailsAddressesCorrespondencePostcodeSearchInput  wait  correspondence_address[searchPostcode][postcode]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'Postcode search' input field
+OLCSinternalLicenceDetailsAddressesBusinessTelephoneInput  wait  contact[phone_business]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'Business telephone No. (optional)' input field
+OLCSinternalLicenceDetailsAddressesHomeTelephoneInput  wait  contact[phone_home]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'Home telephone No. (optional)' input field
+OLCSinternalLicenceDetailsAddressesMobileTelephoneInput  wait  contact[phone_mobile]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'Mobile telephone No. (optional)' input field
+OLCSinternalLicenceDetailsAddressesFaxTelephoneInput  wait  contact[phone_fax]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'Fax telephone No. (optional)' input field
+OLCSinternalLicenceDetailsAddressesEMailAddressInput  wait  contact[email]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'E-mail address' input field
+OLCSinternalLicenceDetailsAddressesEstablishmentPostcodeSearchInput  wait  establishment_address[searchPostcode][postcode]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'Postcode search' input field
+OLCSinternalLicenceDetailsAddressesTransportConsultantYesRadio  wait  consultant[add-transport-consultant]  id  NA  OLCS  0  Licence details - Addresses -- Check is present 'Transport Consultant' Yes radio button
+OLCSinternalLicenceDetailsAddressesTransportConsultantNoRadio  wait  //*[@id="lva-addresses"]/fieldset[6]/fieldset[1]/label[2]/input  xpath  NA  OLCS  0  Licence details - Addresses -- Check is present 'Transport Consultant' No radio button
+.  .  .  .  .  .  0  . Licence details -> People
+OLCSinternalLicenceDetailsPeopleHeading  checkContent  body  tagName  People  OLCS  0  Licence details - People -- Check 'People' is displayed
+OLCSinternalLicenceDetailsPeopleMakingChangesToThisPage  checkContent  body  tagName  Making changes to this page will require a variation application. To start a variation application  OLCS  0  Licence details - People -- Check 'Making changes to this page will require a variation application. To start a variation application' is displayed
+OLCSinternalLicenceDetailsPeopleClickHereHyperlink  wait  click here  xpathLinkContains  NA  OLCS  0  Licence details - people -- Check is present 'click here' hyperlink for 'Making changes to this page will require a variation application. To start a variation application'
+OLCSinternalLicenceDetailsPeopleDirectors  checkContent  body  tagName  Directors  OLCS  0  Licence details - People -- Check 'Directors' is displayed
+OLCSinternalLicenceDetailsPeoplePleaseProvideDetailsOfTheCompanyDirectors  checkContent  body  tagName  Please provide details of the company directors. This must be the same as the details that are on the companies house register  OLCS  0  Licence details - People -- Check 'Please provide details of the company directors. This must be the same as the details that are on the companies house register' is displayed
+.  .  .  .  .  .  0  . Licence details -> Operating centres & authorisation from Licence details
+OLCSinternalLicenceDetailsTextOperatingCentresAuth  checkContent  body  tagName  Operating centres & authorisation  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Operating centres & authorisation' is displayed
+OLCSinternalLicenceDetailsTextOperatingCentres  checkContent  body  tagName  Operating centres  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Operating centres' is displayed
+OLCSinternalLicenceDetailsTextVehicles  checkContent  body  tagName  Vehicles  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Vehicles' is displayed
+OLCSinternalLicenceDetailsTextTrailers  checkContent  body  tagName  Trailers  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Trailers' is displayed
+OLCSinternalLicenceDetailsTextPermission  checkContent  body  tagName  Permission  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Permission' is displayed
+OLCSinternalLicenceDetailsTextAdvertised  checkContent  body  tagName  Advertised  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Advertised' is displayed
+OLCSinternalLicenceDetailsTextTotalVehicles  checkContent  body  tagName  Total vehicles and trailers  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Total vehicles and trailers' is displayed
+OLCSinternalLicenceDetailsButtonAdd  wait  add  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Add' button
+OLCSinternalLicenceDetailsButtonEdit  wait  edit  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Edit' button
+OLCSinternalLicenceDetailsButtonDelete  wait  delete  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Delete' button
+OLCSinternalLicenceDetailsTextTrafficArea  checkContent  body  tagName  Traffic area  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Traffic area' is displayed
+OLCSinternalLicenceDetailsTextYourTraffic  checkContent  body  tagName  Your traffic area is determined by the location of your operating centres.  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Your traffic area is determined by the location of your operating centres.' is displayed
+OLCSinternalLicenceDetailsTextForMore  checkContent  body  tagName  For more information and to find your traffic area please visit  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'For more information and to find your traffic area please visit' is displayed
+OLCSinternalLicenceDetailsLinkThisLink  wait  More about traffic areas  xpathLinkContains  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'this link' link
+OLCSinternalLicenceDetailsTextAuthorisation  checkContent  body  tagName  Authorisation  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Authorisation' is displayed
+OLCSinternalLicenceDetailsTexttotalAmountOfVehiclesTrailers  checkContent  body  tagName  Enter the total amount of vehicles & trailers that you want authorised on the licence you are applying for.  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Enter the total amount of vehicles & trailers that you want authorised on the licence you are applying for.' is displayed
+OLCSinternalLicenceDetailsTextTotalNumberOfVehicles  checkContent  body  tagName  Total number of vehicles  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Total number of vehicles' is displayed
+OLCSinternalLicenceDetailsTextTotalNumberTrailers  checkContent  body  tagName  Total number of trailers  OLCS  0  Licence details -> Operating centres & authorisation section -- Check 'Total number of trailers' is displayed
+OLCSinternalLicenceDetailsTotalNumberOfVehicles  wait  totAuthVehicles  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Total number of vehicles' text filed
+OLCSinternalLicenceDetailsTotalNumberOfTrailers  wait  totAuthTrailers  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Total number of trailers' text filed
+OLCSinternalLicenceDetailsButtonSave  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Save' button
+OLCSinternalLicenceDetailsButtonCancel  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Operating centres & authorisation section -- Check is present 'Cancel' button
 OLCSinternalLicenceDetailsOverviewClick  click  Overview  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Overview' from the left hand menu
 OLCSinternalLicenceDetailsTypeOfLicenceClick  click  Type of licence  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Type of licence' from the left hand menu
 OLCSinternalLicenceDetailsBusinessDetailsClick  click  Business details  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Business details' from the left hand menu
@@ -184,30 +284,49 @@ OLCSinternalLicenceDetailsVehiclesClick  click  Vehicles  xpathLinkContains  NA 
 OLCSinternalLicenceDetailsLicenceDiscsClick  click  Licence discs  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Licence discs' from the left hand menu
 OLCSinternalLicenceDetailsSafetyClick  click  Safety  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Safety' from the left hand menu
 OLCSinternalLicenceDetailsConditionsUndertakingsClick  click  Conditions & undertakings  xpathLinkContains  NA  OLCS  0  Licence details section -- Click on 'Conditions & undertakings' from the left hand menu
-.  .  .  .  .  .  0  . CHECK Vehicles
-OLCSinternalLicenceDetailsCheck43  checkContent  body  tagName  Vehicles  OLCS  0  Licence details -> Vehicles section -- Check 'Vehicles' is displayed
-OLCSinternalLicenceDetailsCheck44  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Save' button
-OLCSinternalLicenceDetailsCheck45  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Cancel' button
-OLCSinternalLicenceDetailsCheck46  wait  action  inputName  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Select Actions' drop down
-OLCSinternalLicenceDetailsCheck47  checkContent  body  tagName  VRM  OLCS  0  Licence details -> Vehicles section -- Check 'VRM' is displayed
-OLCSinternalLicenceDetailsCheck48  checkContent  body  tagName  Gross plated weight (kg)  OLCS  0  Licence details -> Vehicles section -- Check 'Gross plated weight (kg)' is displayed
-OLCSinternalLicenceDetailsCheck49  checkContent  body  tagName  Specified  OLCS  0  Licence details -> Vehicles section -- Check 'Specified' is displayed
-OLCSinternalLicenceDetailsCheck50  checkContent  body  tagName  Removed  OLCS  0  Licence details -> Vehicles section -- Check 'Removed' is displayed
-OLCSinternalLicenceDetailsCheck51  checkContent  body  tagName  Disc no  OLCS  0  Licence details -> Vehicles section -- Check 'Disc no' is displayed
-.  .  .  .  .  .  0  . CHECK Safety
-OLCSinternalLicenceDetailsCheck52  checkContent  body  tagName  Safety  OLCS  0  Licence details -> Safety section -- Check 'Safety' is displayed
-OLCSinternalLicenceDetailsCheck53  checkContent  body  tagName  Maximum time between vehicle safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between vehicle safety inspections' is displayed
-OLCSinternalLicenceDetailsCheck54  checkContent  body  tagName  Maximum time between trailer safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between trailer safety inspections' is displayed
-OLCSinternalLicenceDetailsCheck55  checkContent  body  tagName  Are some of the vehicles or trailers inspected more frequently than the interval stated above?  OLCS  0  Licence details -> Safety section -- Check 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' is displayed
-OLCSinternalLicenceDetailsCheck56  checkContent  body  tagName  This can sometimes be the case for particularly old vehicles  OLCS  0  Licence details -> Safety section -- Check 'This can sometimes be the case for particularly old vehicles' is displayed
-OLCSinternalLicenceDetailsCheck57  checkContent  body  tagName  Who analyses the tachograph records?  OLCS  0  Licence details -> Safety section -- Check 'Who analyses the tachograph records?' is displayed
-OLCSinternalLicenceDetailsCheck58  checkContent  body  tagName  An owner or employee of the business  OLCS  0  Licence details -> Safety section -- Check 'An owner or employee of the business' is displayed
-OLCSinternalLicenceDetailsCheck59  checkContent  body  tagName  An external contractor  OLCS  0  Licence details -> Safety section -- Check 'An external contractor' is displayed
-OLCSinternalLicenceDetailsCheck60  checkContent  body  tagName  Not applicable  OLCS  0  Licence details -> Safety section -- Check 'Not applicable' is displayed
-OLCSinternalLicenceDetailsCheck61  checkContent  body  tagName  The company or full name of the external contractor who analyses the tachograph records  OLCS  0  Licence details -> Safety section -- Check 'The company or full name of the external contractor who analyses the tachograph records' is displayed
-OLCSinternalLicenceDetailsCheck62  checkContent  body  tagName  Safety inspection providers  OLCS  0  Licence details -> Safety section -- Check 'Safety inspection providers' is displayed
-OLCSinternalLicenceDetailsCheck63  checkContent  body  tagName  Suitable maintenance  OLCS  0  Licence details -> Safety section -- Check 'Suitable maintenance' is displayed
-OLCSinternalLicenceDetailsCheck64  checkContent  body  tagName  Provider's name  OLCS  0  Licence details -> Safety section -- Check 'Provider's name' is displayed on table heading
+.  .  .  .  .  .  0  . Licence details -> Transport managers
+OLCSinternalLicenceDetailsTransportManagersHeading  checkContent  body  tagName  Transport managers  OLCS  0  Licence details - Transport managers -- Check 'Transport managers' is displayed
+.  .  .  .  .  .  0  . Licence details -> Vehicles
+OLCSinternalLicenceDetailsVehiclesHeading  checkContent  body  tagName  Vehicles  OLCS  0  Licence details -> Vehicles section -- Check 'Vehicles' is displayed
+OLCSinternalLicenceDetailsVehicles  wait  action  inputName  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Select Actions' drop down
+OLCSinternalLicenceDetailsVehicles  checkContent  body  tagName  VRM  OLCS  0  Licence details -> Vehicles section -- Check 'VRM' is displayed
+OLCSinternalLicenceDetailsVehicles  checkContent  body  tagName  Gross plated weight (kg)  OLCS  0  Licence details -> Vehicles section -- Check 'Gross plated weight (kg)' is displayed
+OLCSinternalLicenceDetailsVehicles  checkContent  body  tagName  Specified  OLCS  0  Licence details -> Vehicles section -- Check 'Specified' is displayed
+OLCSinternalLicenceDetailsVehicles  checkContent  body  tagName  Removed  OLCS  0  Licence details -> Vehicles section -- Check 'Removed' is displayed
+OLCSinternalLicenceDetailsVehicles  checkContent  body  tagName  Disc no  OLCS  0  Licence details -> Vehicles section -- Check 'Disc no' is displayed
+.  .  .  .  .  .  0  . Licence details -> Vehicles -> Add vehicle
+OLCSinternalLicenceDetailsVehiclesAddVehicleHeading  checkContent  body  tagName  Add vehicle  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Add vehicle' is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleVehicleRegistrationNo  checkContent  body  tagName  Vehicle registration No.  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Vehicle registration No.' is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleMakeModel  checkContent  body  tagName  Make / model  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Make / model' is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleIsThisVehicleALimousineOr  checkContent  body  tagName  Is this vehicle a limousine or novelty type vehicle?  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Is this vehicle a limousine or novelty type vehicle?' is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleYes  checkContent  body  tagName  Yes  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Is this vehicle a limousine or novelty type vehicle?' Yes is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleNo  checkContent  body  tagName  No  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Is this vehicle a limousine or novelty type vehicle?' No is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleReceivedDate  checkContent  body  tagName  Received date  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Received date' is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleSpecifiedDate  checkContent  body  tagName  Specified date  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Specified date' is displayed
+OLCSinternalLicenceDetailsVehiclesAddVehicleRemovedDate  checkContent  body  tagName  Removed date  OLCS  0  Licence details -> Vehicles section -> Add vehicle -- Check 'Removed date' is displayed
+.  .  .  .  .  .  0  . Licence details -> Discs
+OLCSinternalLicenceDetailsDiscsHeading  checkContent  body  tagName  Licence discs  OLCS  0  Licence details - Licence discs -- Check 'Licence discs' is displayed
+OLCSinternalLicenceDetailsDiscsValidDiscs  checkContent  body  tagName  Valid discs  OLCS  0  Licence details - Licence discs -- Check 'Valid discs' is displayed
+OLCSinternalLicenceDetailsDiscsPending  checkContent  body  tagName  Pending  OLCS  0  Licence details - Licence discs -- Check 'Pending' is displayed
+OLCSinternalLicenceDetailsDiscNumber  checkContent  body  tagName  Disc number  OLCS  0  Licence details - Licence discs -- Check 'Disc number' is displayed
+OLCSinternalLicenceDetailsIssuedDate  checkContent  body  tagName  Issued date  OLCS  0  Licence details - Licence discs -- Check 'Issued date' is displayed
+OLCSinternalLicenceDetailsCeasedDate  checkContent  body  tagName  Ceased date  OLCS  0  Licence details - Licence discs -- Check 'Ceased date' is displayed
+OLCSinternalLicenceDetailsReplacement  checkContent  body  tagName  Replacement  OLCS  0  Licence details - Licence discs -- Check 'Replacement' is displayed
+OLCSinternalLicenceDetailsIncludeCeasedDiscs  checkContent  body  tagName  Include ceased discs  OLCS  0  Licence details - Licence discs -- Check 'Include ceased discs' is displayed in the left hand menu
+.  .  .  .  .  .  0  . Licence details -> Safety
+OLCSinternalLicenceDetailsCheckHeading  checkContent  body  tagName  Safety  OLCS  0  Licence details -> Safety section -- Check 'Safety' is displayed
+OLCSinternalLicenceDetailsMaximumTimeBetweenVehicle  checkContent  body  tagName  Maximum time between vehicle safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between vehicle safety inspections' is displayed
+OLCSinternalLicenceDetailsMaximumTimeBetweenTrailer  checkContent  body  tagName  Maximum time between trailer safety inspections  OLCS  0  Licence details -> Safety section -- Check 'Maximum time between trailer safety inspections' is displayed
+OLCSinternalLicenceDetailsAreSomeOfTheVehicles  checkContent  body  tagName  Are some of the vehicles or trailers inspected more frequently than the interval stated above?  OLCS  0  Licence details -> Safety section -- Check 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' is displayed
+OLCSinternalLicenceDetailsThisCanSometimesBe  checkContent  body  tagName  This can sometimes be the case for particularly old vehicles  OLCS  0  Licence details -> Safety section -- Check 'This can sometimes be the case for particularly old vehicles' is displayed
+OLCSinternalLicenceDetailsWhoAnalysesTheTachographRecords  checkContent  body  tagName  Who analyses the tachograph records?  OLCS  0  Licence details -> Safety section -- Check 'Who analyses the tachograph records?' is displayed
+OLCSinternalLicenceDetailsAnOwnerOrEmployeeOfTheBusiness  checkContent  body  tagName  An owner or employee of the business  OLCS  0  Licence details -> Safety section -- Check 'An owner or employee of the business' is displayed
+OLCSinternalLicenceDetailsAnExternalContractor  checkContent  body  tagName  An external contractor  OLCS  0  Licence details -> Safety section -- Check 'An external contractor' is displayed
+OLCSinternalLicenceDetailsNotApplicable  checkContent  body  tagName  Not applicable  OLCS  0  Licence details -> Safety section -- Check 'Not applicable' is displayed
+OLCSinternalLicenceDetailsTheCompanyOrFullName  checkContent  body  tagName  The company or full name of the external contractor who analyses the tachograph records  OLCS  0  Licence details -> Safety section -- Check 'The company or full name of the external contractor who analyses the tachograph records' is displayed
+OLCSinternalLicenceDetailsSafetyInspectionProviders  checkContent  body  tagName  Safety inspection providers  OLCS  0  Licence details -> Safety section -- Check 'Safety inspection providers' is displayed
+OLCSinternalLicenceDetailsSuitableMaintenance  checkContent  body  tagName  Suitable maintenance  OLCS  0  Licence details -> Safety section -- Check 'Suitable maintenance' is displayed
+OLCSinternalLicenceDetailsProvidersName  checkContent  body  tagName  Provider's name  OLCS  0  Licence details -> Safety section -- Check 'Provider's name' is displayed on table heading
 OLCSinternalLicenceDetailsCheck65  checkContent  body  tagName  External?  OLCS  0  Licence details -> Safety section -- Check 'External?' is displayed on table heading
 OLCSinternalLicenceDetailsCheck66  checkContent  body  tagName  Workshop address  OLCS  0  Licence details -> Safety section -- Check 'Workshop address' is displayed as table heading
 OLCSinternalLicenceDetailsCheck67  checkContent  body  tagName  Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.  OLCS  0  Licence details -> Safety section -- Check 'Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.' is displayed - only when no safety inspection providers are provided
@@ -224,6 +343,12 @@ OLCSinternalLicenceDetailsCheck77  wait  isMaintenanceSuitable  id  NA  OLCS  0 
 OLCSinternalLicenceDetailsCheck78  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' No radio button
 OLCSinternalLicenceDetailsCheck79  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Save' button
 OLCSinternalLicenceDetailsCheck80  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Cancel' button
+.  .  .  .  .  .  0  . Licence details -> Conditions & undertakings
+OLCSinternalLicenceDetailsConditionsUndertakingsHeading  checkContent  body  tagName  Conditions and undertakings  OLCS  0  Licence details -> Conditions & undertakings -- Check 'Conditions and undertakings' is displayed
+.  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Cases
+.  .  .  .  .  .  0  .
+OLCSinternalCasesHeading  checkContent  body  tagName  Cases  OLCS  0  Licence details -> Safety section -- Check 'Cases' is displayed
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Internal
 .  .  .  .  .  .  0  .
@@ -483,19 +608,19 @@ OLCSSelfserveBusinessType_ApplicationOverviewBreadcrumb  wait  Application overv
 OLCSSelfserveBusinessType_Step2of14  checkContent  body  tagName  Step 2 of 14  OLCS  0  Business Type -- Check 'Step 2 of 14' is displayed above main heading
 OLCSSelfserveBusinessType_Heading  checkContent  body  tagName  Business type  OLCS  0  Business Type -- Check 'Business type' is displayed as the main heading
 OLCSSelfserveBusinessType_BusinessType  checkContent  body  tagName  What type of business are you?  OLCS  0  Business Type -- Check 'What type of business are you?' question is displayed
-OLCSSelfserveBusinessType_LimitedCompanyText  checkContent  body  tagName  Limited company  OLCS  0  Business Type -- Check 'Limited company' question is displayed
+OLCSSelfserveBusinessType_LimitedCompanyText  checkContent  body  tagName  Limited Company  OLCS  0  Business Type -- Check 'Limited company' question is displayed
 OLCSSelfserveBusinessType_LimitedCompany  wait  org_t_rc  xpathValue  NA  OLCS  0  Business Type -- Check 'Limited company' radio button is present
 OLCSSelfserveBusinessType_LimitedCompanyCLICK  click  org_t_rc  xpathValue  NA  OLCS  0  Business Type -- Click 'Limited company' radio button
 OLCSSelfserveBusinessType_SoleTraderText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Sole Trader' question is displayed
 OLCSSelfserveBusinessType_SoleTrader  wait  org_t_st  xpathValue  NA  OLCS  0  Business Type -- Check 'Sole Trader' radio button is present
 OLCSSelfserveBusinessType_SoleTraderCLICK  click  org_t_st  xpathValue  NA  OLCS  0  Business Type -- Click 'Sole Trader' radio button
-OLCSSelfserveBusinessType_PartnershipText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Partnership' question is displayed
+OLCSSelfserveBusinessType_PartnershipText  checkContent  body  tagName  Partnership  OLCS  0  Business Type -- Check 'Partnership' question is displayed
 OLCSSelfserveBusinessType_Partnership  wait  org_t_p  xpathValue  NA  OLCS  0  Business Type -- Check 'Partnership' radio button is present
 OLCSSelfserveBusinessType_PartnershipCLICK  click  org_t_p  xpathValue  NA  OLCS  0  Business Type -- Click 'Partnership' radio button
-OLCSSelfserveBusinessType_LLPText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Limited Liability Partnership' question is displayed
+OLCSSelfserveBusinessType_LLPText  checkContent  body  tagName  Limited Liability Partnership  OLCS  0  Business Type -- Check 'Limited Liability Partnership' question is displayed
 OLCSSelfserveBusinessType_LLP  wait  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Check 'Limited Liability Partnership' radio button is present
 OLCSSelfserveBusinessType_LLPCLICK  click  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Click 'Limited Liability Partnership' radio button
-OLCSSelfserveBusinessType_OtherText  checkContent  body  tagName  Sole Trader  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' question is displayed
+OLCSSelfserveBusinessType_OtherText  checkContent  body  tagName  Other (e.g. public authority, charity, trust, university)  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' question is displayed
 OLCSSelfserveBusinessType_Other  wait  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Check 'Other (e.g. public authority, charity, trust, university)' radio button is present
 OLCSSelfserveBusinessType_OtherCLICK  click  org_t_llp  xpathValue  NA  OLCS  0  Business Type -- Click 'Other (e.g. public authority, charity, trust, university)' radio button
 .  .  .  .  .  .  0  .
@@ -506,7 +631,7 @@ OLCSSelfserveBusinessDetails_Step3of14Text  checkContent  body  tagName  Step 3 
 OLCSSelfserveBusinessDetails_BusinessDetailsHeading  checkContent  body  tagName  Business details  OLCS  0  Business Details -- Check 'Business details' is displayed (Main Heading)
 OLCSSelfserveBusinessDetails_RegisteredCompanyNumberText  checkContent  body  tagName  Registered company number  OLCS  0  Business Details -- Check 'Registered company number' text is displayed
 OLCSSelfserveBusinessDetails_CompanyNumberToHandText  checkContent  body  tagName  Registered company number  OLCS  0  Business Details -- Check 'If you don't have your company number to hand, or are having problems retrieving your company details, please enter them manually below.' text is displayed
-OLCSSelfserveBusinessDetails_CompanyNameText  checkContent  body  tagName  Company name  OLCS  0  Business Details -- Check 'Company name' text is displayed
+OLCSSelfserveBusinessDetails_OLCSSelfserveVechicleSafetyRegNumberNo  click  //*[@id="application_vehicle-safety_vehicle-psv_form"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Vehicle & safety -- Vehicles -- Click No 'Would you like to enter the registration numbers of your vehicles?' radio buttonCompanyNameText  checkContent  body  tagName  Company name  OLCS  0  Business Details -- Check 'Company name' text is displayed
 OLCSSelfserveBusinessDetails_TradingNamesText  checkContent  body  tagName  Trading names (optional)  OLCS  0  Business Details -- Check 'Trading names (optional)' text is displayed
 OLCSSelfserveBusinessDetails_NatureOfBusinessText  checkContent  body  tagName  Nature of business  OLCS  0  Business Details -- Check 'Nature of business' text is displayed
 OLCSSelfserveBusinessDetails_PleaseEnterBusinessTypeText  checkContent  body  tagName  Please enter your business type. You can find a list of business types at Companies House  OLCS  0  Business Details -- Check 'Please enter your business type. You can find a list of business types at Companies House' text is displayed
