@@ -1,13 +1,13 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://test_dvsa-selfserve.web02.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
+OLCSSelfservestart  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
 OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
 OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
 OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
 OLCSSelfservestartQA  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start QA Selfserve Application
 OLCSSelfservestartLocal  start  Start new application  linkText  http://olcs-selfserve/dashboard  OLCS  10000  Framework -- Start Vagrant Selfserve Application
-OLCSinternalStart  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Internal Application
+OLCSinternalStart  start  Start new application  linkText  http://dev_dvsa-internal.web01.olcs.mgt.mtpdvsa/  OLCS  10000  Framework -- Start Internal Application
 OLCSinternalStartDEV  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start DEV Internal Application
 OLCSinternalStartDemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
 OLCSinternalStartQA  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
@@ -17,9 +17,10 @@ OLCSSelfservestartNewDev  start  Start new application  linkText  http://dev_dvs
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
 OLCSinternalmaximizeBrowser  maximizeBrowser  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/  OLCS  0  Framework -- Start Internal Application
-OLCSinternalCheck1  checkContent  body  tagName  OLCS  OLCS  0  Framework -- Check 'OLCS' is displayed on the top left of the screen
+OLCSinternalCheck1OLD  checkContent  body  tagName  OLCS  OLCS  0  Framework -- Check 'OLCS' is displayed on the top left of the screen
+OLCSinternalCheck1FAIL  wait  OLCS  xpathLinkContains  NA  OLCS  0  Framework -- Check 'OLCS' link top left of the screen
 OLCSinternalAdvancedCLICK  click  Advanced  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Advanced' link
-OLCSinternalOlcsClick  click  OLCS  xpathLinkContains  NA  OLCS  0  Framework -- Click 'OLCS' link on teh top left of the screen
+OLCSinternalOlcsClick  click  OLCS  xpathLinkContains  NA  OLCS  5000  Framework -- Click 'OLCS' link on teh top left of the screen
 OLCSinternalFrameworkSave  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Save' button
 OLCSinternalFrameworkCancel  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Vehicles section -- Check is present 'Cancel' button
 OLCSinternalFrameworkSaveClick  click  form-actions[save]  id  NA  OLCS  0  Framework -- Click 'Save' button
@@ -61,8 +62,8 @@ OLCSinternalHomeSortCategory  wait  Category  xpathLinkContains  NA  OLCS  0  Ho
 OLCSinternalHomeSortSubCategory  wait  Sub category  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Sub category' filter
 OLCSinternalHomeSortDescription  wait  Description  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Description' filter
 OLCSinternalHomeSortDate  wait  Date  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Date' filter
-OLCSinternalHomeSortDate  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
-OLCSinternalHomeSortOwner  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
+OLCSinternalHomeSortOwner  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Owner' filter
+OLCSinternalHomeSortName  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
 OLCSinternalHomeTextTasks  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
 OLCSinternalHomeFilterTeam  wait  assignedToTeam  id  NA  OLCS  0  Home Page -- Check is present 'Team' drop down element
 OLCSinternalHomeFilterOwner  wait  assignedToUser  id  NA  OLCS  0  Home Page -- Check is present 'Owner' drop down element
@@ -73,7 +74,7 @@ OLCSinternalHomeFilterStatus  wait  status  id  NA  OLCS  0  Home Page -- Check 
 OLCSinternalHomeFilterUrgent  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
 OLCSinternalHomeMenuAdmin  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
 OLCSinternalHomeSearchAdvanced  wait  Advanced  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
-OLCSinternalHomePD2737280CLICK  click  PD2737280  xpathLinkContains  NA  OLCS  0  Home Page -- Click 'PD2737280' hyperlink
+OLCSinternalHomePD2737280CLICK  click  PD2737280  xpathLinkContains  NA  OLCS  5000  Home Page -- Click 'PD2737280' hyperlink
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Search Page - accessed from the advanced link from top of screen (This is now being removed)
 .  .  .  .  .  .  0  .
@@ -327,28 +328,50 @@ OLCSinternalLicenceDetailsTheCompanyOrFullName  checkContent  body  tagName  The
 OLCSinternalLicenceDetailsSafetyInspectionProviders  checkContent  body  tagName  Safety inspection providers  OLCS  0  Licence details -> Safety section -- Check 'Safety inspection providers' is displayed
 OLCSinternalLicenceDetailsSuitableMaintenance  checkContent  body  tagName  Suitable maintenance  OLCS  0  Licence details -> Safety section -- Check 'Suitable maintenance' is displayed
 OLCSinternalLicenceDetailsProvidersName  checkContent  body  tagName  Provider's name  OLCS  0  Licence details -> Safety section -- Check 'Provider's name' is displayed on table heading
-OLCSinternalLicenceDetailsCheck65  checkContent  body  tagName  External?  OLCS  0  Licence details -> Safety section -- Check 'External?' is displayed on table heading
-OLCSinternalLicenceDetailsCheck66  checkContent  body  tagName  Workshop address  OLCS  0  Licence details -> Safety section -- Check 'Workshop address' is displayed as table heading
-OLCSinternalLicenceDetailsCheck67  checkContent  body  tagName  Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.  OLCS  0  Licence details -> Safety section -- Check 'Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.' is displayed - only when no safety inspection providers are provided
-OLCSinternalLicenceDetailsCheck68  wait  safetyInsVehicles  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between vehicle safety inspections' drop down
-OLCSinternalLicenceDetailsCheck69  wait  safetyInsTrailers  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between trailer safety inspections' drop down
-OLCSinternalLicenceDetailsCheck70  wait  safetyInsVaries  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' Yes radio button
-OLCSinternalLicenceDetailsCheck71  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[1]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' No radio button
-OLCSinternalLicenceDetailsCheck72  wait  tachographIns  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An owner or employee of the business' radio button
-OLCSinternalLicenceDetailsCheck73  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An external contractor' radio button
-OLCSinternalLicenceDetailsCheck74  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[3]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Not applicable' radio button
-OLCSinternalLicenceDetailsCheck75  wait  tachographInsName  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'The company or full name of the external contractor who analyses the tachograph records' text field
-OLCSinternalLicenceDetailsCheck76  wait  add  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Safety inspection providers' Add button
-OLCSinternalLicenceDetailsCheck77  wait  isMaintenanceSuitable  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' Yes radio button
-OLCSinternalLicenceDetailsCheck78  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' No radio button
-OLCSinternalLicenceDetailsCheck79  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Save' button
-OLCSinternalLicenceDetailsCheck80  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Cancel' button
+OLCSinternalLicenceDetailsExternal  checkContent  body  tagName  External?  OLCS  0  Licence details -> Safety section -- Check 'External?' is displayed on table heading
+OLCSinternalLicenceDetailsWorkshopAddress  checkContent  body  tagName  Workshop address  OLCS  0  Licence details -> Safety section -- Check 'Workshop address' is displayed as table heading
+OLCSinternalLicenceDetailsCheckPleaseTellUsAbout  checkContent  body  tagName  Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.  OLCS  0  Licence details -> Safety section -- Check 'Please tell us about who will carry out the safety inspections on the vehicles and trailers you intend to operate under your licence.' is displayed - only when no safety inspection providers are provided
+OLCSinternalLicenceDetailsMaximumTimeBetweenVehicleInput  wait  safetyInsVehicles  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between vehicle safety inspections' drop down
+OLCSinternalLicenceDetailsMaximumTimeBetweenTrailerInput  wait  safetyInsTrailers  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Maximum time between trailer safety inspections' drop down
+OLCSinternalLicenceDetailsAreSomeOfTheVehiclesOrTrailersInput  wait  safetyInsVaries  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' Yes radio button
+OLCSinternalLicenceDetailsAreSomeOfTheVehiclesOrTrailersInspectedMoreInput  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[1]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Are some of the vehicles or trailers inspected more frequently than the interval stated above?' No radio button
+OLCSinternalLicenceDetailsAnOwnerOrEmployeeOfTheBusinessRadio  wait  tachographIns  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An owner or employee of the business' radio button
+OLCSinternalLicenceDetailsAnExternalContractorRadio  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'An external contractor' radio button
+OLCSinternalLicenceDetailsNotApplicableRadio  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[1]/fieldset[2]/label[3]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Not applicable' radio button
+OLCSinternalLicenceDetailsTheCompanyOrFullNameOfInput  wait  tachographInsName  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'The company or full name of the external contractor who analyses the tachograph records' text field
+OLCSinternalLicenceDetailsSafetyInspectionProvidersAddButton  wait  add  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Safety inspection providers' Add button
+OLCSinternalLicenceDetailsSuitableMaintenanceYesRadio  wait  isMaintenanceSuitable  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' Yes radio button
+OLCSinternalLicenceDetailsSuitableMaintenanceNoRadio  wait  //*[@id="application_vehicle-safety_safety_form"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Suitable maintenance' No radio button
+OLCSinternalLicenceDetailsSaveButton  wait  form-actions[save]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Save' button
+OLCSinternalLicenceDetailsCancelButton  wait  form-actions[cancel]  id  NA  OLCS  0  Licence details section -> Safety section -- Check is present 'Cancel' button
 .  .  .  .  .  .  0  . Licence details -> Conditions & undertakings
 OLCSinternalLicenceDetailsConditionsUndertakingsHeading  checkContent  body  tagName  Conditions and undertakings  OLCS  0  Licence details -> Conditions & undertakings -- Check 'Conditions and undertakings' is displayed
 .  .  .  .  .  .  0  .
+.  .  .  .  .  .  0  Bus registrations **
+.  .  .  .  .  .  0  .
+OLCSinternalBusRegistrationsHeading  checkContent  body  tagName  Bus registrations  OLCS  0  Bus registrations -- Check 'Bus registrations' is displayed
+OLCSinternalBusRegistrationsRegNo  checkContent  body  tagName  Reg No.  OLCS  0  Bus registrations -- Check 'Bus registrations' is displayed
+OLCSinternalBusRegistrationsVarNo  checkContent  body  tagName  Var No.  OLCS  0  Bus registrations -- Check 'Var No.' is displayed
+OLCSinternalBusRegistrationsServiceNo  checkContent  body  tagName  Service No.  OLCS  0  Bus registrations -- Check 'Service No.' is displayed
+OLCSinternalBusRegistrations1stRegistered  checkContent  body  tagName  1st registered / cancelled  OLCS  0  Bus registrations -- Check '1st registered / cancelled' is displayed
+OLCSinternalBusRegistrationsStartingPoint  checkContent  body  tagName  Starting point  OLCS  0  Bus registrations -- Check 'Starting point' is displayed
+OLCSinternalBusRegistrationsFinishingPoint  checkContent  body  tagName  Finishing point  OLCS  0  Bus registrations -- Check 'Finishing point' is displayed
+.  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Cases
 .  .  .  .  .  .  0  .
-OLCSinternalCasesHeading  checkContent  body  tagName  Cases  OLCS  0  Licence details -> Safety section -- Check 'Cases' is displayed
+OLCSinternalCasesHeading  checkContent  body  tagName  Cases  OLCS  0  Cases -- Check 'Cases' is displayed
+.  .  .  .  .  .  0  Cases-> Add
+OLCSinternalCasesAddHeading  checkContent  body  tagName  Cases  OLCS  0  Cases -> Add -- Check 'Cases' is displayed
+OLCSinternalCasesAddCaseType  checkContent  body  tagName  Case type  OLCS  0  Cases -> Add -- Check 'Case type' is displayed
+OLCSinternalCasesAddCaseCategory  checkContent  body  tagName  Case category  OLCS  0  Cases -> Add -- Check 'Case category' is displayed
+OLCSinternalCasesAddCaseOutline  checkContent  body  tagName  Case outline  OLCS  0  Cases -> Add -- Check 'Case outline' is displayed
+OLCSinternalCasesAddEcmsNumber  checkContent  body  tagName  ECMS Number  OLCS  0  Cases -> Add -- Check 'ECMS Number' is displayed
+OLCSinternalCasesAddOutcome  checkContent  body  tagName  Outcome  OLCS  0  Cases -> Add -- Check 'Outcome' is displayed
+OLCSinternalCasesAddCaseTypeDropDown  wait  fields[caseType]  id  NA  OLCS  0  Cases -> Add -- Check is present 'Case type' drop down
+OLCSinternalCasesAddCaseCategoryInput  wait  fields[categorys]  id  NA  OLCS  0  Cases -> Add -- Check is present 'Case category' mutli select
+OLCSinternalCasesAddCaseOutlineInput  wait  fields[description]  id  NA  OLCS  0  Cases -> Add -- Check is present 'Case outline' mutli select
+OLCSinternalCasesAddCaseEcmsNumberInput  wait  fields[ecmsNo]  id  NA  OLCS  0  Cases -> Add -- Check is present 'ECMS Number' mutli select
+OLCSinternalCasesAddCaseOutcomeInput  wait  fields[outcomes]  id  NA  OLCS  0  Cases -> Add -- Check is present 'Outcome' mutli select
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Internal
 .  .  .  .  .  .  0  .
