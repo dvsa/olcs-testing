@@ -1,13 +1,13 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://selfserve.cit.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
+OLCSSelfservestart  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
 OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
 OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
 OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
 OLCSSelfservestartQA  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start QA Selfserve Application
 OLCSSelfservestartLocal  start  Start new application  linkText  http://olcs-selfserve/dashboard  OLCS  10000  Framework -- Start Vagrant Selfserve Application
-OLCSinternalStart  start  Start new application  linkText  http://dev_dvsa-internal.web01.olcs.mgt.mtpdvsa/  OLCS  10000  Framework -- Start Internal Application
+OLCSinternalStart  start  Start new application  linkText  http://test_dvsa-internal.web02.olcs.mgt.mtpdvsa/  OLCS  10000  Framework -- Start Internal Application
 OLCSinternalStartDEV  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start DEV Internal Application
 OLCSinternalStartDemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
 OLCSinternalStartQA  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
@@ -74,7 +74,7 @@ OLCSinternalHomeFilterStatus  wait  status  id  NA  OLCS  0  Home Page -- Check 
 OLCSinternalHomeFilterUrgent  wait  urgent  id  NA  OLCS  0  Home Page -- Check is present 'Urgent' tick box
 OLCSinternalHomeMenuAdmin  wait  admin  className  NA  OLCS  0  Home Page -- Check is present 'Admin' link top right of screen
 OLCSinternalHomeSearchAdvanced  wait  Advanced  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Advanced' link top left of screen
-OLCSinternalHomePD2737280CLICK  click  PD2737280  xpathLinkContains  NA  OLCS  5000  Home Page -- Click 'PD2737280' hyperlink
+OLCSinternalHomePD2737280CLICK  click  PD2737280  xpathLinkContains  NA  OLCS  2000  Home Page -- Click 'PD2737280' hyperlink
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Search Page - accessed from the advanced link from top of screen (This is now being removed)
 .  .  .  .  .  .  0  .
@@ -857,7 +857,7 @@ OLCSSelfserveOperatingCentresAdd_IAmEitherCLICK  click  data[permission]  id  NA
 OLCSSelfserveOperatingCentresAdd_HaveYouAdvertisedYesCLICK  click  adPlaced  id  NA  OLCS  0  Operating centres & authorisation - Add operating centre -- Click 'Have you advertised your application for this operating centre in your local newspaper?' (Yes) radio box
 OLCSSelfserveOperatingCentresAdd_NewspaperNameText  checkContent  body  tagName  Newspaper name  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Newspaper name' text is displayed
 OLCSSelfserveOperatingCentresAdd_DateAdvertisementText  checkContent  body  tagName  Date advertisement was placed  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Date advertisement was placed' text is displayed
-OLCSSelfserveOperatingCentresAdd_AdvertisementOptionalText  checkContent  body  tagName  Advertisement (optional)  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Advertisement (optional)' text is displayed
+OLCSSelfserveOperatingCentresAdd_AdvertisementOptionalTextBUG  checkContent  body  tagName  Advertisement (optional)  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Advertisement (optional)' text is displayed
 OLCSSelfserveOperatingCentresAdd_PleaseUploadACopyText  checkContent  body  tagName  Please upload a copy of the advertisement you placed in your local newspaper in relation to your application.  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Please upload a copy of the advertisement you placed in your local newspaper in relation to your application.' text is displayed
 OLCSSelfserveOperatingCentresAdd_NewspaperNameCHECK  wait  adPlacedIn  id  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Newspaper name' input field
 OLCSSelfserveOperatingCentresAdd_DateAdvertDayCHECK  wait  advertisements[adPlacedDate][day]  inputName  NA  OLCS  0  Operating centres & authorisation -- Check is present 'Date advertisement was placed' (Day) drop down
