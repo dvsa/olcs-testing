@@ -12,18 +12,6 @@ public class suites {
     return this._testCases;
   }
   
-  private final String _browserList;
-  
-  public String getBrowserList() {
-    return this._browserList;
-  }
-  
-  private final String _hubList;
-  
-  public String getHubList() {
-    return this._hubList;
-  }
-  
   private final String _mapSurface;
   
   public String getMapSurface() {
@@ -78,11 +66,9 @@ public class suites {
     return this._includeGroup;
   }
   
-  public suites(final String testCases, final String browserList, final String hubList, final String mapSurface, final String recordVideo, final int videoPause, final String runSecurity, final String runAccessibility, final int accessibilityPause, final String groupRunIdentifier, final String reportDirectory, final String includeGroup) {
+  public suites(final String testCases, final String mapSurface, final String recordVideo, final int videoPause, final String runSecurity, final String runAccessibility, final int accessibilityPause, final String groupRunIdentifier, final String reportDirectory, final String includeGroup) {
     super();
     this._testCases = testCases;
-    this._browserList = browserList;
-    this._hubList = hubList;
     this._mapSurface = mapSurface;
     this._recordVideo = recordVideo;
     this._videoPause = videoPause;
@@ -99,8 +85,6 @@ public class suites {
     final int prime = 31;
     int result = 1;
     result = prime * result + ((_testCases== null) ? 0 : _testCases.hashCode());
-    result = prime * result + ((_browserList== null) ? 0 : _browserList.hashCode());
-    result = prime * result + ((_hubList== null) ? 0 : _hubList.hashCode());
     result = prime * result + ((_mapSurface== null) ? 0 : _mapSurface.hashCode());
     result = prime * result + ((_recordVideo== null) ? 0 : _recordVideo.hashCode());
     result = prime * result + _videoPause;
@@ -126,16 +110,6 @@ public class suites {
       if (other._testCases != null)
         return false;
     } else if (!_testCases.equals(other._testCases))
-      return false;
-    if (_browserList == null) {
-      if (other._browserList != null)
-        return false;
-    } else if (!_browserList.equals(other._browserList))
-      return false;
-    if (_hubList == null) {
-      if (other._hubList != null)
-        return false;
-    } else if (!_hubList.equals(other._hubList))
       return false;
     if (_mapSurface == null) {
       if (other._mapSurface != null)

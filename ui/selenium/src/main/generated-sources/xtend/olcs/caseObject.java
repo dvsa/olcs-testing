@@ -28,7 +28,8 @@ public class caseObject {
             String _next_3 = fields.next();
             String _next_4 = fields.next();
             String _next_5 = fields.next();
-            return new cases(_next, _next_1, _next_2, _next_3, _next_4, _next_5);
+            String _next_6 = fields.next();
+            return new cases(_next, _next_1, _next_2, _next_3, _next_4, _next_5, _next_6);
           }
         };
         List<cases> _map = ListExtensions.<String, cases>map(_readLines, _function);

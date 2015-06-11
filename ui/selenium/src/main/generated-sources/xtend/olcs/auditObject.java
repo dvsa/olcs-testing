@@ -92,21 +92,21 @@ public class auditObject {
     }
   }
   
-  public void surfaceAuditBaseline(final String testCaseUrl, final String testCaseIdentifier, final String currentInput, final String testIdentifier) {
+  public void surfaceAuditBaseline(final String testCaseUrl, final String testCaseIdentifier, final String currentInput, final String testIdentifier, final String reportDirectory) {
     try {
-      final File directory = new File(("C:\\ARC\\surface\\" + testIdentifier));
+      final File directory = new File(((reportDirectory + "surface/") + testIdentifier));
       boolean _exists = directory.exists();
       boolean _not = (!_exists);
       if (_not) {
         directory.mkdirs();
       }
-      String _plus = (directory + "//");
+      String _plus = (directory + "/");
       String _plus_1 = (_plus + testCaseIdentifier);
       String _plus_2 = (_plus_1 + ".txt");
       final File file = new File(_plus_2);
       boolean _exists_1 = file.exists();
       if (_exists_1) {
-        String _plus_3 = (directory + "//");
+        String _plus_3 = (directory + "/");
         String _plus_4 = (_plus_3 + testCaseIdentifier);
         String _plus_5 = (_plus_4 + ".txt");
         File _file = new File(_plus_5);
@@ -115,7 +115,7 @@ public class auditObject {
       boolean _exists_2 = file.exists();
       boolean _not_1 = (!_exists_2);
       if (_not_1) {
-        String _plus_6 = (directory + "//");
+        String _plus_6 = (directory + "/");
         String _plus_7 = (_plus_6 + testCaseIdentifier);
         String _plus_8 = (_plus_7 + ".txt");
         File _file_1 = new File(_plus_8);

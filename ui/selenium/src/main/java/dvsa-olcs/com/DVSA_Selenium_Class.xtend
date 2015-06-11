@@ -2,31 +2,40 @@ package olcs
 
 import java.net.URL
 import org.openqa.selenium.remote.RemoteWebDriver
-import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.JavascriptExecutor
+import java.util.ResourceBundle;
+import org.openqa.selenium.remote.DesiredCapabilities
 
 class seleniumObject {
 
-def startDriver(int hubIndex, int capabilitiesIndex) {
-  val capabilitiesMap = newHashMap (
-    1 -> DesiredCapabilities.internetExplorer,
-    2 -> DesiredCapabilities.firefox,
-    3 -> DesiredCapabilities.phantomjs,
-    4 -> DesiredCapabilities.chrome
-  )
-  val hubMap = newHashMap (
-    1 -> "http://selenium.inf.mgt.mtpdvsa:4444/wd/hub",  // Functional none x buffer "http://selenium.olcs.npm:4444/wd/hub" 9515 Chrome
-    2 -> "http://192.168.2.95:4445/wd/hub",  // Accessibility
-    3 -> "http://192.168.2.95:4446/wd/hub",  // Security
-    4 -> "http://192.168.2.95:4447/wd/hub",  // Operational
-    5 -> "http://192.168.2.95:4448/wd/hub"   // Performance
-  )
-  val driverResult = new RemoteWebDriver(new URL(hubMap.get(hubIndex)), capabilitiesMap.get(capabilitiesIndex))
+def startDriver() {
+	val capabilitiesMap = newHashMap (
+		1 -> DesiredCapabilities.internetExplorer,
+		2 -> DesiredCapabilities.firefox,
+		3 -> DesiredCapabilities.phantomjs,
+		4 -> DesiredCapabilities.chrome
+     )
+  var envName = System.getProperty("env")
+  if (null==envName) {
+  	envName = "dev"
+  }
+  val environment = envName
+  var browserIndex = System.getProperty("browser")
+  if (null==browserIndex) {
+  	browserIndex = "2"
+  }
+  val browser =  Integer.parseInt(browserIndex)
+  val rb = ResourceBundle.getBundle("environments");
+  System.out.println(capabilitiesMap)
+  System.out.println("Environment running in is " + envName)
+  System.out.println("Hub " + rb.getString("hub."+envName))
+  System.out.println("Browser " + capabilitiesMap.get(browser))
+  val driverResult = new RemoteWebDriver(new URL(rb.getString("hub."+envName)), capabilitiesMap.get(browser))
   return driverResult
 }
 
@@ -125,13 +134,11 @@ def unloadAccessibilityPlugin(RemoteWebDriver driver) {
   accessibilityAction.contextClick(accessibilityStream).sendKeys(Keys.ARROW_UP).sendKeys(Keys.ARROW_RIGHT).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).perform   
 }
 
-def executeTestSuite(String testCases, String browserList, String hubList, String mapSurface, String recordVideo, int videoPause, String runSecurity, String runAccessibility, int accessibilityPause, String groupRunIdentifier, String reportDirectory) {
+def executeTestSuite(String testCases, String mapSurface, String recordVideo, int videoPause, String runSecurity, String runAccessibility, int accessibilityPause, String groupRunIdentifier, String reportDirectory) {
   val splitCases = testCases.split(",")
-  val splitBrowser = browserList.split(",")
-  val splitHub = hubList.split(",")
-  splitBrowser.forEach [ capabilityIndex |
-    splitHub.forEach [ hubIndex |
-      val driver = startDriver(Integer.parseInt(hubIndex), Integer.parseInt(capabilityIndex))
+  
+ 
+      val driver = startDriver()
       splitCases.forEach [ testCase |
       	caseObjects.forEach [
       	  if (testCase.equals(bddIdentifier)) {
@@ -143,7 +150,14 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
                 val uniqueRunIdentifier = groupRunIdentifier+"_"+testCase
       		    if (sequenceIdentifier.equals(jtcBddIdentifier)) {
                   if (jtcAction == "start" && jtcBddIdentifier == startUrl) {
-      		  	    driver.get(jtcInputCheck)
+                  	var env = System.getProperty("env")
+                  	if (null==env) {
+                  		env = "dev"
+                  	}
+                  	
+                  	val inputCheckURLKey = "appStartPoint." + jtcBddIdentifier + env
+              	    val inputCheckURL = ResourceBundle.getBundle("environments").getString(inputCheckURLKey);
+      		  	    driver.get(inputCheckURL)
       	            if (recordVideo == "Y") startVideo(reportDirectory, uniqueRunIdentifier, videoPause)
       	          }
       	         val journeyCaseStartUrl = driver.getCurrentUrl
@@ -174,8 +188,6 @@ def executeTestSuite(String testCases, String browserList, String hubList, Strin
       ]
       if (recordVideo == "Y") stopVideo(videoPause)  
       driver.quit
-    ]
-  ]
   
 }
 

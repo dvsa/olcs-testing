@@ -30,7 +30,8 @@ public class journeyObject {
             String _next_5 = fields.next();
             String _next_6 = fields.next();
             int _parseInt = Integer.parseInt(_next_6);
-            return new journey(_next, _next_1, _next_2, _next_3, _next_4, _next_5, _parseInt);
+            String _next_7 = fields.next();
+            return new journey(_next, _next_1, _next_2, _next_3, _next_4, _next_5, _parseInt, _next_7);
           }
         };
         List<journey> _map = ListExtensions.<String, journey>map(_readLines, _function);

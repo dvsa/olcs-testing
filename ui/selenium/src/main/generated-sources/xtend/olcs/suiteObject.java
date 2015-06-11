@@ -26,17 +26,15 @@ public class suiteObject {
             String _next_1 = fields.next();
             String _next_2 = fields.next();
             String _next_3 = fields.next();
+            int _parseInt = Integer.parseInt(_next_3);
             String _next_4 = fields.next();
             String _next_5 = fields.next();
-            int _parseInt = Integer.parseInt(_next_5);
             String _next_6 = fields.next();
+            int _parseInt_1 = Integer.parseInt(_next_6);
             String _next_7 = fields.next();
             String _next_8 = fields.next();
-            int _parseInt_1 = Integer.parseInt(_next_8);
             String _next_9 = fields.next();
-            String _next_10 = fields.next();
-            String _next_11 = fields.next();
-            return new suites(_next, _next_1, _next_2, _next_3, _next_4, _parseInt, _next_6, _next_7, _parseInt_1, _next_9, _next_10, _next_11);
+            return new suites(_next, _next_1, _next_2, _parseInt, _next_4, _next_5, _parseInt_1, _next_7, _next_8, _next_9);
           }
         };
         List<suites> _map = ListExtensions.<String, suites>map(_readLines, _function);

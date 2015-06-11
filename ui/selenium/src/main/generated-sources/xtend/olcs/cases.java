@@ -12,6 +12,12 @@ public class cases {
     return this._bddIdentifier;
   }
   
+  private final String _bddAuthor;
+  
+  public String getBddAuthor() {
+    return this._bddAuthor;
+  }
+  
   private final String _bddType;
   
   public String getBddType() {
@@ -42,9 +48,10 @@ public class cases {
     return this._bddSequence;
   }
   
-  public cases(final String bddIdentifier, final String bddType, final String bddTitle, final String bddStory, final String startPoint, final String bddSequence) {
+  public cases(final String bddIdentifier, final String bddAuthor, final String bddType, final String bddTitle, final String bddStory, final String startPoint, final String bddSequence) {
     super();
     this._bddIdentifier = bddIdentifier;
+    this._bddAuthor = bddAuthor;
     this._bddType = bddType;
     this._bddTitle = bddTitle;
     this._bddStory = bddStory;
@@ -57,6 +64,7 @@ public class cases {
     final int prime = 31;
     int result = 1;
     result = prime * result + ((_bddIdentifier== null) ? 0 : _bddIdentifier.hashCode());
+    result = prime * result + ((_bddAuthor== null) ? 0 : _bddAuthor.hashCode());
     result = prime * result + ((_bddType== null) ? 0 : _bddType.hashCode());
     result = prime * result + ((_bddTitle== null) ? 0 : _bddTitle.hashCode());
     result = prime * result + ((_bddStory== null) ? 0 : _bddStory.hashCode());
@@ -78,6 +86,11 @@ public class cases {
       if (other._bddIdentifier != null)
         return false;
     } else if (!_bddIdentifier.equals(other._bddIdentifier))
+      return false;
+    if (_bddAuthor == null) {
+      if (other._bddAuthor != null)
+        return false;
+    } else if (!_bddAuthor.equals(other._bddAuthor))
       return false;
     if (_bddType == null) {
       if (other._bddType != null)

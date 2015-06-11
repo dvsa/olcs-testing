@@ -48,7 +48,13 @@ public class journey {
     return this._jtcPause;
   }
   
-  public journey(final String jtcBddIdentifier, final String jtcAction, final String jtcNameElement, final String jtcByElement, final String jtcInputCheck, final String jtcTitle, final int jtcPause) {
+  private final String _jtcComments;
+  
+  public String getJtcComments() {
+    return this._jtcComments;
+  }
+  
+  public journey(final String jtcBddIdentifier, final String jtcAction, final String jtcNameElement, final String jtcByElement, final String jtcInputCheck, final String jtcTitle, final int jtcPause, final String jtcComments) {
     super();
     this._jtcBddIdentifier = jtcBddIdentifier;
     this._jtcAction = jtcAction;
@@ -57,6 +63,7 @@ public class journey {
     this._jtcInputCheck = jtcInputCheck;
     this._jtcTitle = jtcTitle;
     this._jtcPause = jtcPause;
+    this._jtcComments = jtcComments;
   }
   
   @Override
@@ -70,6 +77,7 @@ public class journey {
     result = prime * result + ((_jtcInputCheck== null) ? 0 : _jtcInputCheck.hashCode());
     result = prime * result + ((_jtcTitle== null) ? 0 : _jtcTitle.hashCode());
     result = prime * result + _jtcPause;
+    result = prime * result + ((_jtcComments== null) ? 0 : _jtcComments.hashCode());
     return result;
   }
   
@@ -113,6 +121,11 @@ public class journey {
     } else if (!_jtcTitle.equals(other._jtcTitle))
       return false;
     if (other._jtcPause != _jtcPause)
+      return false;
+    if (_jtcComments == null) {
+      if (other._jtcComments != null)
+        return false;
+    } else if (!_jtcComments.equals(other._jtcComments))
       return false;
     return true;
   }

@@ -2,16 +2,17 @@
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
 OLCSSelfservestart  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
-OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
-OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
-OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
-OLCSSelfservestartQA  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start QA Selfserve Application
-OLCSSelfservestartLocal  start  Start new application  linkText  http://olcs-selfserve/dashboard  OLCS  10000  Framework -- Start Vagrant Selfserve Application
+OLCSSelfservestartdev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
+OLCSSelfservestartdemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
+OLCSSelfservestartpreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
+OLCSSelfservestartqa  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start QA Selfserve Application
+OLCSSelfservestartlocal  start  Start new application  linkText  http://olcs-selfserve/dashboard  OLCS  10000  Framework -- Start Vagrant Selfserve Application
 OLCSinternalStart  start  Start new application  linkText  http://test_dvsa-internal.web02.olcs.mgt.mtpdvsa/  OLCS  10000  Framework -- Start Internal Application
-OLCSinternalStartDEV  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start DEV Internal Application
-OLCSinternalStartDemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
-OLCSinternalStartQA  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
-OLCSinternalStartLocal  start  Start new application  linkText  http://olcs-internal/user/login  OLCS  10000  Framework -- Start Vagrant Internal Application
+OLCSinternalStartdev  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start DEV Internal Application
+OLCSinternalStartdemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
+OLCSinternalStartpreview  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
+OLCSinternalStartqa  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
+OLCSinternalStartlocal  start  Start new application  linkText  http://olcs-internal/user/login  OLCS  10000  Framework -- Start Vagrant Internal Application
 OLCSSelfservestartNewDev  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start New DEV Selfserve Application
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links

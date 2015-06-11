@@ -8,8 +8,6 @@ class suiteObject {
     val fields = line.split('  ').iterator
       return new suites (
         fields.next,
-        fields.next, 
-        fields.next,
         fields.next,
         fields.next,
         Integer.parseInt(fields.next),
@@ -25,8 +23,6 @@ class suiteObject {
 
 @Data class suites {
   String testCases
-  String browserList
-  String hubList
   String mapSurface
   String recordVideo
   int videoPause

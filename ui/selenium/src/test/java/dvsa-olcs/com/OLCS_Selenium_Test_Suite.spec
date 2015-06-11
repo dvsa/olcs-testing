@@ -15,7 +15,7 @@ fact
 
 suiteObjects.forEach [
   if (includeGroup == "Y") {
-    executeTestSuite(testCases, browserList, hubList, mapSurface, recordVideo, videoPause, runSecurity, runAccessibility, accessibilityPause, groupRunIdentifier+timeStamp, reportDirectory)
+    executeTestSuite(testCases, mapSurface, recordVideo, videoPause, runSecurity, runAccessibility, accessibilityPause, groupRunIdentifier+timeStamp, reportDirectory)
   }
 ]
 
