@@ -181,6 +181,9 @@ def executeTestSuite(String testCases, String mapSurface, String recordVideo, in
                   	
                   	val inputCheckURLKey = "appStartPoint." + jtcBddIdentifier + env
               	    val inputCheckURL = ResourceBundle.getBundle("environments").getString(inputCheckURLKey);
+              	    
+              	    println("App URL Key:" + inputCheckURLKey)
+              	    println("App URL:" + inputCheckURL)
       		  	    driver.get(inputCheckURL)
       	            if (recordVideo == "Y") startVideo(reportDirectory, uniqueRunIdentifier, videoPause)
       	          }
