@@ -29,14 +29,30 @@ def startDriver() {
   if (null==browserIndex) {
   	browserIndex = "2"
   }
+  
+  val hub = fetchHub(envName, browserIndex)
   val browser =  Integer.parseInt(browserIndex)
-  val rb = ResourceBundle.getBundle("environments");
+  val rb = ResourceBundle.getBundle("environments")
   System.out.println(capabilitiesMap)
   System.out.println("Environment running in is " + envName)
-  System.out.println("Hub " + rb.getString("hub."+envName))
+  System.out.println("Hub requested " + hub)
   System.out.println("Browser " + capabilitiesMap.get(browser))
-  val driverResult = new RemoteWebDriver(new URL(rb.getString("hub."+envName)), capabilitiesMap.get(browser))
+  val driverResult = new RemoteWebDriver(new URL(hub), capabilitiesMap.get(browser))
   return driverResult
+}
+
+def fetchHub(String envName, String browserIndex) {
+	val rb = ResourceBundle.getBundle("environments")
+	var hubToUse = ""
+	
+	try {hubToUse = rb.getString("hub." + envName + "." + browserIndex)} catch(Exception e){}
+	
+	if (hubToUse=="") {
+		hubToUse = rb.getString("hub." + envName)
+	}
+	System.out.println("Hub Chosen: " + hubToUse)
+	
+	return hubToUse
 }
 
 def fetchElement(String tcByElement, String tcNameElement, RemoteWebDriver driver) {
