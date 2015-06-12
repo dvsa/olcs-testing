@@ -105,7 +105,7 @@ def doUserAction(String accessibilityPluginEnabled, String currentUrl, int acces
   if (accessibilityPluginEnabled == "Y") loadAccessibilityPlugin(currentUrl, accessibilityPause, driver, testRunIdentifier, testRunIdentifierTimestamp, reportDirectory)  
   switch action {
     case (action == "click") : execute.click
-    //case (action == "standardKeys") : execute.sendKeys(input)
+    case (action == "standardKeysOneAtATime") : execute.sendKeys(input)
     case (action == "standardKeys") : sendFullValue(driver,input,execute)
     case (action == "specialKeys") : execute.sendKeys(Keys.valueOf(input))
     case (action == "clear") : execute.clear()
@@ -160,16 +160,17 @@ def unloadAccessibilityPlugin(RemoteWebDriver driver) {
 def executeTestSuite(String testCases, String mapSurface, String recordVideo, int videoPause, String runSecurity, String runAccessibility, int accessibilityPause, String groupRunIdentifier, String reportDirectory) {
   val splitCases = testCases.split(",")
   
- 
       val driver = startDriver()
       splitCases.forEach [ testCase |
       	caseObjects.forEach [
       	  if (testCase.equals(bddIdentifier)) {
+      	  	try {
       	  print("-- " + testCase + "\n")
             val splitSequence = bddSequence.split(",")
             val startUrl = startPoint
             splitSequence.forEach [ sequenceIdentifier |
               journeyObjects.forEach [
+              	
                 val uniqueRunIdentifier = groupRunIdentifier+"_"+testCase
       		    if (sequenceIdentifier.equals(jtcBddIdentifier)) {
                   if (jtcAction == "start" && jtcBddIdentifier == startUrl) {
@@ -187,13 +188,15 @@ def executeTestSuite(String testCases, String mapSurface, String recordVideo, in
                  val journeyDocumentReadyState = getDocumentReadyState(driver)
                  if (journeyDocumentReadyState == "complete") {
                   if (mapSurface == "Y") getSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier) else checkSurface(driver, journeyCaseStartUrl, jtcBddIdentifier, reportDirectory, uniqueRunIdentifier)
-                   print("  |-- " + jtcComments + "\n")
+                   print("  |-- " + jtcComments)
+                   
                    switch jtcAction {
                      case (jtcAction == "wait") : waitForElement(jtcByElement, jtcNameElement, driver)
                      case (jtcAction == "click") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      case (jtcAction == "standardKeys") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      case (jtcAction == "specialKeys") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
-                     case (jtcAction == "checkContent"): patternMatch(jtcByElement, jtcNameElement, driver, jtcInputCheck)
+                     case (jtcAction == "checkContent"): doNothing()//patternMatch(jtcByElement, jtcNameElement, driver, jtcInputCheck)
+                     case (jtcAction == "checkContentEnabled"): patternMatch(jtcByElement, jtcNameElement, driver, jtcInputCheck)
                      case (jtcAction == "checkUrl") : driver.getCurrentUrl.contains(jtcInputCheck)
                      case (jtcAction == "switch") : if (jtcNameElement != "defaultContent") driver.switchTo.frame(jtcNameElement) else driver.switchTo.defaultContent
                      case (jtcAction == "url") : doUrlNavigation(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcAction, jtcInputCheck)
@@ -202,18 +205,21 @@ def executeTestSuite(String testCases, String mapSurface, String recordVideo, in
                      case (jtcAction == "maximizeBrowser") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      
                    }
+                   println(" STEP COMPLETE")
                    Thread.sleep(jtcPause) 
                  } 
                 }
       		  ]
       		]
-      	  }
+      	  }catch(Exception e){println(" STEP FAILED") println("**** " + testCase + " TEST FAILED ****") }}
       	]
       ]
       if (recordVideo == "Y") stopVideo(videoPause)  
       driver.quit
   
 }
+
+def doNothing(){}
 
 def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver driver, String jtcInputCheck) {
   if (fetchElement(jtcByElement, jtcNameElement, driver).getText.contains(jtcInputCheck) == true) {
