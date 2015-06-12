@@ -198,7 +198,7 @@ def executeTestSuite(String testCases, String mapSurface, String recordVideo, in
                      case (jtcAction == "click") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      case (jtcAction == "standardKeys") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      case (jtcAction == "specialKeys") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
-                     case (jtcAction == "checkContent"): doNothing()//patternMatch(jtcByElement, jtcNameElement, driver, jtcInputCheck)
+                     case (jtcAction == "checkContent"): patternMatch(jtcByElement, jtcNameElement, driver, jtcInputCheck)
                      case (jtcAction == "checkContentEnabled"): patternMatch(jtcByElement, jtcNameElement, driver, jtcInputCheck)
                      case (jtcAction == "checkUrl") : driver.getCurrentUrl.contains(jtcInputCheck)
                      case (jtcAction == "switch") : if (jtcNameElement != "defaultContent") driver.switchTo.frame(jtcNameElement) else driver.switchTo.defaultContent
