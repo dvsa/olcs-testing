@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.JavascriptExecutor
 import java.util.ResourceBundle;
 import org.openqa.selenium.remote.DesiredCapabilities
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor
 
 class seleniumObject {
 
@@ -104,11 +105,17 @@ def doUserAction(String accessibilityPluginEnabled, String currentUrl, int acces
   if (accessibilityPluginEnabled == "Y") loadAccessibilityPlugin(currentUrl, accessibilityPause, driver, testRunIdentifier, testRunIdentifierTimestamp, reportDirectory)  
   switch action {
     case (action == "click") : execute.click
-    case (action == "standardKeys") : execute.sendKeys(input)
+    //case (action == "standardKeys") : execute.sendKeys(input)
+    case (action == "standardKeys") : sendFullValue(driver,input,execute)
     case (action == "specialKeys") : execute.sendKeys(Keys.valueOf(input))
     case (action == "clear") : execute.clear()
   }
   if (accessibilityPluginEnabled == "Y") unloadAccessibilityPlugin(driver)
+}
+
+def sendFullValue(RemoteWebDriver driver, String input, WebElement element) {
+    var jsExecutor = driver as JavascriptExecutor
+    jsExecutor.executeScript("arguments[0].value='" + input + "'", element);
 }
 
 def doUrlNavigation(String accessibilityPluginEnabled, String currentUrl, int accessibilityPause, RemoteWebDriver driver, String testRunIdentifier, String testRunIdentifierTimestamp, String reportDirectory, String action, String navigateUrl) {
@@ -193,6 +200,7 @@ def executeTestSuite(String testCases, String mapSurface, String recordVideo, in
                      case (jtcAction == "hover") : doHover(jtcByElement, jtcNameElement, driver)
                      case (jtcAction == "clear") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
                      case (jtcAction == "maximizeBrowser") : doUserAction(runAccessibility, driver.getCurrentUrl, accessibilityPause, driver, uniqueRunIdentifier, uniqueRunIdentifier+"_TC_"+jtcBddIdentifier, reportDirectory, jtcInputCheck, jtcAction, fetchElement(jtcByElement, jtcNameElement, driver))
+                     
                    }
                    Thread.sleep(jtcPause) 
                  } 
