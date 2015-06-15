@@ -13,6 +13,11 @@ import org.openqa.selenium.remote.DesiredCapabilities
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor
 
 class seleniumObject {
+	private boolean suiteSuccessful = true;
+
+def isSuiteSuccessful() {
+	return this.suiteSuccessful
+}
 
 def startDriver() {
 	val capabilitiesMap = newHashMap (
@@ -214,7 +219,7 @@ def executeTestSuite(String testCases, String mapSurface, String recordVideo, in
                 }
       		  ]
       		]
-      	  }catch(Exception e){println(" STEP FAILED") println("**** " + testCase + " TEST FAILED ****") }}
+      	  }catch(Exception e){this.suiteSuccessful= false println(" STEP FAILED") println("**** " + testCase + " TEST FAILED ****") }}
       	]
       ]
       if (recordVideo == "Y") stopVideo(videoPause)  

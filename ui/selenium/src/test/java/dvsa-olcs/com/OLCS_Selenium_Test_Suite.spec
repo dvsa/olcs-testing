@@ -3,6 +3,9 @@ package olcs
 import java.util.Date
 import java.text.SimpleDateFormat
 
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
 describe "OLCS_Selenium_Test_Framework"
 {
 
@@ -17,6 +20,10 @@ suiteObjects.forEach [
   if (includeGroup == "Y") {
     executeTestSuite(testCases, mapSurface, recordVideo, videoPause, runSecurity, runAccessibility, accessibilityPause, groupRunIdentifier+timeStamp, reportDirectory)
   }
+]
+
+suiteObjects.forEach [
+ assertThat(true, is(isSuiteSuccessful()))
 ]
 
 }
