@@ -1,6 +1,7 @@
 package olcs
 
 import java.net.URL
+import java.io.File
 import org.openqa.selenium.remote.RemoteWebDriver
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
@@ -214,10 +215,14 @@ class seleniumObject {
     }
 
     def executeTestSuite(String testCases, String mapSurface, String recordVideo, int videoPause, String runSecurity,
-        String runAccessibility, int accessibilityPause, String groupRunIdentifier, String reportDirectory) {
+        String runAccessibility, int accessibilityPause, String groupRunIdentifier, String reportDir) {
         val splitCases = testCases.split(",")
 
         val driver = startDriver()
+        val reportDirectory = System.getProperty("user.dir") + File.separator + reportDir
+        println("Reports will be generated in " + reportDirectory)
+        val reportDirectories = new File(reportDirectory)
+        reportDirectories.mkdirs()
         splitCases.forEach [ testCase |
             caseObjects.forEach [
                 if (testCase.equals(bddIdentifier)) {
