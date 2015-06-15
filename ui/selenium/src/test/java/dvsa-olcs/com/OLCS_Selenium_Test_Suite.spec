@@ -23,7 +23,7 @@ suiteObjects.forEach [
 ]
 
 suiteObjects.forEach [
- assertThat(true, is(isSuiteSuccessful()))
+ assertThat(isSuiteSuccessful(),is(true))
 ]
 
 }
