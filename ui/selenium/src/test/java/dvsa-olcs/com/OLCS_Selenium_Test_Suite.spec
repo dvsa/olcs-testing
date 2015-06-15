@@ -23,7 +23,7 @@ suiteObjects.forEach [
 ]
 
 suiteObjects.forEach [
- assertThat(isSuiteSuccessful(),is(true))
+ assertThat("At least one of the tests has failed. Please view the test report attached to discover which failures occurred.", isSuiteSuccessful(),is(true))
 ]
 
 }
