@@ -15,10 +15,10 @@ val timeStamp = simpleDateFormat.format(new Date)
 fact
 "Scriptless Selenium Test Suite" 
 {
-
 suiteObjects.forEach [
   if (includeGroup == "Y") {
-    executeTestSuite(testCases, mapSurface, recordVideo, videoPause, runSecurity, runAccessibility, accessibilityPause, groupRunIdentifier+timeStamp, reportDirectory)
+    println("Running Suite (Suite Id) :" + suiteId)
+    executeTestSuite(suiteId, testCases, mapSurface, recordVideo, videoPause, runSecurity, runAccessibility, accessibilityPause, groupRunIdentifier+timeStamp, reportDirectory)
   }
 ]
 

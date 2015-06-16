@@ -213,9 +213,23 @@ class seleniumObject {
             sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).
             sendKeys(Keys.ENTER).perform
     }
+    
+    def shouldRunTestSuite(String suiteId) {
+    	var runSuiteId = System.getProperty("suite.id")
+        if (null == runSuiteId || suiteId.equals(runSuiteId)) {
+            return true
+        }
+        println("Suite (" + suiteId + ") will not be executed because suite ("+runSuiteId+") was requested")
+        return false
+    }
 
-    def executeTestSuite(String testCases, String mapSurface, String recordVideo, int videoPause, String runSecurity,
+    def executeTestSuite(String suiteId, String testCases, String mapSurface, String recordVideo, int videoPause, String runSecurity,
         String runAccessibility, int accessibilityPause, String groupRunIdentifier, String reportDir) {
+        	
+        if (shouldRunTestSuite(suiteId)==false) {
+        	return false
+        }
+        
         val splitCases = testCases.split(",")
 
         val driver = startDriver()
@@ -333,7 +347,7 @@ class seleniumObject {
 
     }
 
-    def doNothing() {}
+    def doNothing() {print (" **DISABLED** ")}
 
     def patternMatch(String jtcByElement, String jtcNameElement, RemoteWebDriver driver, String jtcInputCheck) {
         if (fetchElement(jtcByElement, jtcNameElement, driver).getText.contains(jtcInputCheck) == true) {

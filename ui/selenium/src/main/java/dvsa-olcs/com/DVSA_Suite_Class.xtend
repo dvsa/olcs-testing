@@ -10,6 +10,7 @@ class suiteObject {
             fields.next,
             fields.next,
             fields.next,
+            fields.next,
             Integer.parseInt(fields.next),
             fields.next,
             fields.next,
@@ -22,6 +23,7 @@ class suiteObject {
 }
 
 @Data class suites {
+    String suiteId
     String testCases
     String mapSurface
     String recordVideo
