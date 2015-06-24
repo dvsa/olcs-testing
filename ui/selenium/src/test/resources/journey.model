@@ -929,7 +929,7 @@ olcsVehiclesAdd_DiscNoText  checkContent  body  tagName  Disc No.  OLCS  0  Vehi
 olcsVehiclesAdd_VehicleRegistration  wait  vrm  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Vehicle registration mark (VRM)" inout field
 olcsVehiclesAdd_GrossPlated  wait  plated_weight  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Gross plated weight (Kg)" inout field
 olcsVehiclesAdd_GrossPlated  wait  plated_weight  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Gross plated weight (Kg)" inout field
-olcsVehiclesAdd_VehicleRegistration_v1abc  standardKeys  VRM1  id  vrm1  OLCS  0  Vehicles - Add vehicle -- Enter 'VRM1' into the "Vehicle registration mark (VRM)" inout field
+olcsVehiclesAdd_VehicleRegistration_v1abc  standardKeys  vrm  id  VRM1  OLCS  0  Vehicles - Add vehicle -- Enter 'VRM1' into the "Vehicle registration mark (VRM)" inout field
 olcsVehiclesAdd_GrossPlated_500  standardKeys  plated_weight  id  500  OLCS  0  Vehicles - Add vehicle -- Enter '500' into the "Gross plated weight (Kg)" inout field
 olcsVehiclesAdd_VehicleIsSpecified  checkContent  body  tagName  This vehicle is specified on another licence. Please confirm you would like to continue adding this vehicle  OLCS  0  Vehicles - Add vehicle -- Check 'This vehicle is specified on another licence. Please confirm you would like to continue adding this vehicle' text is displayed
 olcsVehiclesAdd_IConfirm  checkContent  body  tagName  I confirm that I would like to continue adding this vehicle  OLCS  0  Vehicles - Add vehicle -- Check 'I confirm that I would like to continue adding this vehicle' text is displayed
