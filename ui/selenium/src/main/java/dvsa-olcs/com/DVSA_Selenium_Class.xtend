@@ -48,7 +48,7 @@ class seleniumObject {
         System.out.println("Hub requested " + hub)
         System.out.println("Browser " + capabilitiesMap.get(browser))
         val driverResult = new RemoteWebDriver(new URL(hub), capabilitiesMap.get(browser))
-        driverResult.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS)
+        driverResult.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS)
         return driverResult
     }
 
