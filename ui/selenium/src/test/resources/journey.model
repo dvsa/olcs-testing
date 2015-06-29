@@ -1,18 +1,17 @@
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Column Headings -- "BDD Identifier" "Action" "Name Element" "By Element" "Input Check" "Title" 0 "Comments"
 .  .  .  .  .  .  0  .
-OLCSSelfservestart  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start Selfserve Application
-OLCSSelfservestartdev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
-OLCSSelfservestartdemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
-OLCSSelfservestartpreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
-OLCSSelfservestartqa  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start QA Selfserve Application
-OLCSSelfservestartlocal  start  Start new application  linkText  http://olcs-selfserve/dashboard  OLCS  10000  Framework -- Start Vagrant Selfserve Application
+OLCSSelfservestart  start  Start new application  linkText  selfserve.cit.olcs.mgt.mtpdvsa/dashboard  OLCS  5000  Framework -- Start Selfserve Application
+OLCSSelfservestartDev  start  Start new application  linkText  http://dvsa-selfserve.olcsdv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start DEV Selfserve Application
+OLCSSelfservestartDemo  start  Start new application  linkText  http://dvsa-selfserve.olcsdm-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Demo Selfserve Application
+OLCSSelfservestartPreview  start  Start new application  linkText  http://dvsa-selfserve.olcspv-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start Preview Selfserve Application
+OLCSSelfservestartQA  start  Start new application  linkText  http://dvsa-selfserve.olcsqa-ap01.olcs.npm/dashboard  OLCS  10000  Framework -- Start QA Selfserve Application
+OLCSSelfservestartLocal  start  Start new application  linkText  http://olcs-selfserve/dashboard  OLCS  10000  Framework -- Start Vagrant Selfserve Application
 OLCSinternalStart  start  Start new application  linkText  http://test_dvsa-internal.web02.olcs.mgt.mtpdvsa/  OLCS  10000  Framework -- Start Internal Application
-OLCSinternalStartdev  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start DEV Internal Application
-OLCSinternalStartdemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
-OLCSinternalStartpreview  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
-OLCSinternalStartqa  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
-OLCSinternalStartlocal  start  Start new application  linkText  http://olcs-internal/user/login  OLCS  10000  Framework -- Start Vagrant Internal Application
+OLCSinternalStartDEV  start  Start new application  linkText  http://dvsa-internal.olcsdv-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start DEV Internal Application
+OLCSinternalStartDemo  start  Start new application  linkText  http://dvsa-internal.olcsdm-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start Demo Internal Application
+OLCSinternalStartQA  start  Start new application  linkText  http://dvsa-internal.olcsqa-ap01.olcs.npm/user/login  OLCS  10000  Framework -- Start QA Internal Application
+OLCSinternalStartLocal  start  Start new application  linkText  http://olcs-internal/user/login  OLCS  10000  Framework -- Start Vagrant Internal Application
 OLCSSelfservestartNewDev  start  Start new application  linkText  http://dev_dvsa-selfserve.web01.olcs.mgt.mtpdvsa/dashboard  OLCS  10000  Framework -- Start New DEV Selfserve Application
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS Internal - Framework buttons, links, URL's and any duplicated buttons links
@@ -212,6 +211,10 @@ OLCSinternalLicenceDetailsBusinessTypeOther  wait  //*[@id="application_your-bus
 .  .  .  .  .  .  0  . Licence details -> Business details
 OLCSinternalLicenceDetailsBusinessDetailsHeading  checkContent  body  tagName  Business details  OLCS  0  Licence details - Business details -- Check 'Business details' is displayed
 OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameText  checkContent  body  tagName  Organisation name  OLCS  0  Licence details - Business details -- Check 'Organisation name' is displayed
+OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameClear  clear  data[name]  id  NA  OLCS  0  Business Details -- Clear 'Organisation name' field box
+OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameinputLeedsCityCouncil  standardKeys  data[name]  id  Leeds city council  OLCS  0  Business Details -- Enter 'Leeds city council' into the Organisation name input field
+OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessClear  clear  data[natureOfBusinesses]  id  NA  OLCS  0  Business Details -- Clear 'Nature of business' field box
+OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessOperationOfBus  standardKeys  data[natureOfBusinesses]  id  Leeds city council  OLCS  0  Business Details -- Select 'Operation of bus and coach passenger facilities at bus and coach stations' in the Nature of business multi select
 OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessText  checkContent  body  tagName  Nature of business  OLCS  0  Licence details - Business details -- Check 'Nature of business' is displayed
 OLCSinternalLicenceDetailsBusinessDetailsPleaseEnterYourBusinessTypeText  checkContent  body  tagName  Please enter your business type. You can find a list of business types at Companies House  OLCS  0  Licence details - Business details -- Check 'Please enter your business type. You can find a list of business types at Companies House' is displayed
 OLCSinternalLicenceDetailsBusinessDetailsLinkHyperlink  wait  here  xpathLinkContains  NA  OLCS  0  Licence details - Business details -- Check is present 'link' hyperlink for 'Please enter your business type. You can find a list of business types at Companies House'
@@ -476,9 +479,10 @@ OLCSSelfserveBreadCrumb_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Br
 OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Application overview  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserve_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Framework -- Check 'Continue' button is present
 OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  5000  Framework -- Click 'Continue' button
-OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  0  Framework -- Check 'Continue2' button is present
-OLCSSelfserve_ContinueButton2CLICKX  specialKeys  form-actions[continue]  id  ENTER  OLCS  5000  Framework -- Send ENTER key event to 'Continue' button
+OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  5000  Framework -- Check 'Continue2' button is present
+OLCSSelfserve_ContinueButton2CLICKNotWorking  specialKeys  form-actions[continue]  id  ENTER  OLCS  5000  Framework -- Send ENTER key event to 'Continue' button
 OLCSSelfserve_ContinueButton2CLICK  click  form-actions[continue]  id  NA  OLCS  5000  Framework -- Click 'Continue2' button
+OLCSSelfserve_ContinueButton2CLICKX  click  //*[@id="form-actions[continue]"]  xpath  NA  OLCS  5000  Framework -- Click 'Continue2 using xpath' button
 OLCSSelfserve_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Framework -- Check 'Save & Return' button is present
 OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  10000  Framework -- Click 'Save & Return' button
 OLCSSelfserve_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Framework -- Check 'Cancel' hyperlink is present at the bottom of the screen
@@ -553,6 +557,7 @@ OLCSSelfserveDashboardSubmitPay  wait  submitPay  id  NA  OLCS  0  Dashboard -- 
 OLCSSelfserveDashboardSubmitPayCLICK  click  submitPay  id  NA  OLCS  0  Dashboard -- Click 'Submit & Pay' button
 OLCSSelfserveDashboardApplication19  click  19  linkText  NA  OLCS  0  Dashboard -- Click 'Application 19' link
 OLCSSelfserveDashboardTransportManagersCLICK  click  overview-item__transport_managers  id  NA  OLCS  0  Dashboard -- Click 'Transport managers' link
+OLCSSelfserveDashboardClickLicence7  click  7  linkText  NA  OLCS  0  Framework -- Click '7' hyperlink on the dashboard page to bring up licence
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Type of licence
 .  .  .  .  .  .  0  .
@@ -605,6 +610,7 @@ OLCSSelfserveApplicationOverview_BusinessType  wait  overview-item__business_typ
 OLCSSelfserveApplicationOverview_BusinessTypeCLICK  click  overview-item__business_type  id  NA  OLCS  0  Application overview -- Click 'Add business type' hyperlink
 OLCSSelfserveApplicationOverview_BusinessDetails  wait  Add business details  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add business details' hyperlink is present
 OLCSSelfserveApplicationOverview_Addresses  wait  Add addresses  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add addresses' hyperlink is present
+OLCSSelfserveApplicationOverview_AddressesClick  click  overview-item__addresses  id  NA  OLCS  0  Application overview -- Click 'Edit addresses' hyperlink
 OLCSSelfserveApplicationOverview_People  wait  Add people  xpathLinkContains  NA  OLCS  0  Application overview -- Check 'Add people' hyperlink is present
 OLCSSelfserveApplicationOverview_OperatingCentres  wait  overview-item__operating_centres  id  NA  OLCS  0  Application overview -- Check 'Add operating centre' hyperlink is present
 OLCSSelfserveApplicationOverview_FinancialEvidence  wait  overview-item__financial_evidence  id  NA  OLCS  0  Application overview -- Check 'Add financial evidence' hyperlink is present
@@ -743,6 +749,26 @@ OLCSSelfserveAddresses_EaAddressLine4  wait  establishment_address[addressLine4]
 OLCSSelfserveAddresses_EaAddressTownCity  wait  establishment_address[town]  id  NA  OLCS  0  Addresses -- Check is present 'Address Town/City' input field (Establishment address)
 OLCSSelfserveAddresses_EaAddressPostcode  wait  establishment_address[postcode]  id  NA  OLCS  0  Addresses -- Check is present 'Postcode' input field (Establishment address)
 OLCSSelfserveAddresses_EaCountry  wait  establishment_address[countryCode]  id  NA  OLCS  0  Addresses -- Check is present 'Country drop down' input field (Establishment address)
+OLCSSelfserveAddresses_CaForAttentionOfCLEAR  clear  correspondence[fao]  id  NA  OLCS  0  Addresses -- Clear 'For attention of (optional)' field box
+OLCSSelfserveAddresses_CaPostCodeCLEAR  clear  correspondence_address[searchPostcode][postcode]  id  NA  OLCS  0  Addresses -- Clear 'Postcode Search' field box
+OLCSSelfserveAddresses_CaAddressLine1CLEAR  clear  correspondence_address[addressLine1]  id  NA  OLCS  0  Addresses -- Clear 'Address line 1' field box
+OLCSSelfserveAddresses_CaAddressLine2CLEAR  clear  correspondence_address[addressLine2]  id  NA  OLCS  0  Addresses -- Clear 'Address line 2' field box
+OLCSSelfserveAddresses_CaAddressLine3CLEAR  clear  correspondence_address[addressLine3]  id  NA  OLCS  0  Addresses -- Clear 'Address line 3' field box
+OLCSSelfserveAddresses_CaAddressLine4CLEAR  clear  correspondence_address[addressLine4]  id  NA  OLCS  0  Addresses -- Clear 'Address line 4' field box
+OLCSSelfserveAddresses_CaAddressTownCityCLEAR  clear  correspondence_address[town]  id  NA  OLCS  0  Addresses -- Clear 'Address Town/City' field box
+OLCSSelfserveAddresses_CaPostcodeCLEAR  clear  correspondence_address[postcode]  id  NA  OLCS  0  Addresses -- Clear 'Postcode' field box
+OLCSSelfserveAddresses_BusinessTelephoneCLEAR  clear  contact[phone_business]  id  NA  OLCS  0  Addresses -- Clear 'Business telephone No. (optional)' field box
+OLCSSelfserveAddresses_HomeTelephoneCLEAR  clear  contact[phone_home]  id  NA  OLCS  0  Addresses -- Clear 'Home telephone No. (optional)' field box
+OLCSSelfserveAddresses_MobileTelephoneCLEAR  clear  contact[phone_mobile]  id  NA  OLCS  0  Addresses -- Clear 'Mobile telephone No. (optional)' field box
+OLCSSelfserveAddresses_FaxTelephoneCLEAR  clear  contact[phone_fax]  id  NA  OLCS  0  Addresses -- Clear 'Fax telephone No. (optional)' field box
+OLCSSelfserveAddresses_EmailAddressCLEAR  clear  contact[email]  id  NA  OLCS  0  Addresses -- Clear 'E-mail address' field box
+OLCSSelfserveAddresses_EaPostCodeCLEAR  clear  establishment_address[searchPostcode][postcode]  id  NA  OLCS  0  Addresses -- Clear 'Postcode Search' field box
+OLCSSelfserveAddresses_EaAddressLine1CLEAR  clear  establishment_address[addressLine1]  id  NA  OLCS  0  Addresses -- Clear 'Address line 1 (Establishment address)' field box
+OLCSSelfserveAddresses_EaAddressLine2CLEAR  clear  establishment_address[addressLine2]  id  NA  OLCS  0  Addresses -- Clear 'Address line 2 (Establishment address)' field box
+OLCSSelfserveAddresses_EaAddressLine3CLEAR  clear  establishment_address[addressLine3]  id  NA  OLCS  0  Addresses -- Clear 'Address line 3 (Establishment address)' field box
+OLCSSelfserveAddresses_EaAddressLine4CLEAR  clear  establishment_address[addressLine4]  id  NA  OLCS  0  Addresses -- Clear 'Address line 4 (Establishment address)' field box
+OLCSSelfserveAddresses_EaAddressTownCityCLEAR  clear  establishment_address[town]  id  NA  OLCS  0  Addresses -- Clear 'Address Town/City (Establishment address)' field box
+OLCSSelfserveAddresses_EaAddressPostcodeCLEAR  clear  establishment_address[postcode]  id  NA  OLCS  0  Addresses -- Clear 'Postcode (Establishment address)' field box
 OLCSSelfserveAddresses_CaForAttentionOf_FaoJoeBloggs  standardKeys  correspondence[fao]  id  FAO Joe Bloggs  OLCS  0  Addresses -- Enter 'FAO Joe Bloggs' into the 'For attention of (optional)' input field
 OLCSSelfserveAddresses_CaPostCode  standardKeys  correspondence_address[searchPostcode][postcode]  id  LS9 6NF  OLCS  0  Addresses -- Enter 'LS9 6NF' into the 'Postcode Search' input field (Correspondance address)
 OLCSSelfserveAddresses_CaFindAddressButton  click  correspondence_address[searchPostcode][search]  id  NA  OLCS  0  Addresses -- Click 'Find Address' button (Correspondance address)
