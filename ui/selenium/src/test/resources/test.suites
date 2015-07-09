@@ -20,3 +20,4 @@ Column Headings -- "Suite Id"  "TestCases"  "Map Surface"  "Record Video"  0  "R
 18  OLCS-PSV-ST  Y  N  1000  N  N  1000  Common-  jenkins-root/reports/  N
 19  OLCS-PSV-ST1  Y  N  1000  N  N  1000  Common-  jenkins-root/reports/  N
 20  OLCS_SelfServe_TestST,OLCS-Selfserve-Sart,OLCS-Selfserve-SignInCheck,OLCS-Selfserve-SignInOperatorAdmin,OLCS-Selfserve-UserOperatorAdminSignedIn  Y  N  1000  N  N  1000  Common-  jenkins-root/reports/  N
+21  InternalSignInAsSam,OLCS-Internal-Sart,OLCS-Internal-SignInAsSam,OLCS-Internal-FrameworkOlcsClick,OLCS-Internal-HomePageClickPD2737280,OLCS-Internal-LicenceDetailsTypeOfLicenceClick,OLCS-Internal-LicenceDetailsTypeOfLicenceCoreCheckPD2737280,OLCS-Internal-FrameworkSaveClick,OLCS-Internal-LicenceDetailsBusinessTypeClick,OLCS-Internal-LicenceDetailsBusinessTypeCoreCheck,OLCS-Internal-FrameworkSaveClick,OLCSinternalDebug180  Y  N  1000  N  N  1000  Common-  jenkins-root/reports/  Y
