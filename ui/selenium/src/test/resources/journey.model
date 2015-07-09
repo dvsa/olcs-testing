@@ -215,11 +215,11 @@ OLCSinternalLicenceDetailsBusinessTypeSoleTraderText  checkContent  body  tagNam
 OLCSinternalLicenceDetailsBusinessTypePartnershipText  checkContent  body  tagName  Partnership  OLCS  0  Licence details - Business type -- Check 'Partnership' is displayed
 OLCSinternalLicenceDetailsBusinessTypeLimitedLiabilityPartnershipText  checkContent  body  tagName  Limited Liability Partnership  OLCS  0  Licence details - Business type -- Check 'Limited Liability Partnership' is displayed
 OLCSinternalLicenceDetailsBusinessTypeOtherText  checkContent  body  tagName  Other (e.g. public authority, charity, trust, university)  OLCS  0  Licence details - Business type -- Check 'Other (e.g. public authority, charity, trust, university)' is displayed
-OLCSinternalLicenceDetailsBusinessTypeLimitedCompany  wait  //*[@id="data[type]"]  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Limited company' radio button
-OLCSinternalLicenceDetailsBusinessTypeSoleTrader  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[2]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Sole Trader' radio button
-OLCSinternalLicenceDetailsBusinessTypePartnership  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[3]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Partnership' radio button
-OLCSinternalLicenceDetailsBusinessTypeLimitedLiabilityPartnership  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[4]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Limited Liability Partnership' radio button
-OLCSinternalLicenceDetailsBusinessTypeOther  wait  //*[@id="application_your-business_business-type"]/fieldset[1]/fieldset/label[5]/input  xpath  NA  OLCS  0  Licence details - Business type -- Check is present 'Other (e.g. public authority, charity, trust, university)' radio button
+OLCSinternalLicenceDetailsBusinessTypeLimitedCompany  wait  org_t_rc  xpathValue  NA  OLCS  0  Licence details - Business type -- Check is present 'Limited company' radio button
+OLCSinternalLicenceDetailsBusinessTypeSoleTrader  wait  org_t_st  xpathValue  NA  OLCS  0  Licence details - Business type -- Check is present 'Sole Trader' radio button
+OLCSinternalLicenceDetailsBusinessTypePartnership  wait  org_t_p  xpathValue  NA  OLCS  0  Licence details - Business type -- Check is present 'Partnership' radio button
+OLCSinternalLicenceDetailsBusinessTypeLimitedLiabilityPartnership  wait  org_t_llp  xpathValue  NA  OLCS  0  Licence details - Business type -- Check is present 'Limited Liability Partnership' radio button
+OLCSinternalLicenceDetailsBusinessTypeOther  wait  org_t_pa  xpathValue  NA  OLCS  0  Licence details - Business type -- Check is present 'Other (e.g. public authority, charity, trust, university)' radio button
 .  .  .  .  .  .  0  . Licence details -> Business details
 OLCSinternalLicenceDetailsBusinessDetailsHeading  checkContent  body  tagName  Business details  OLCS  0  Licence details - Business details -- Check 'Business details' is displayed
 OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameText  checkContent  body  tagName  Organisation name  OLCS  0  Licence details - Business details -- Check 'Organisation name' is displayed
