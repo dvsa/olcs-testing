@@ -473,16 +473,16 @@ OLCSinternalLicenceDetailsCheck80a  wait  form-actions[cancel]  id  NA  OLCS  0 
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  OLCS SelfServe - Framework buttons, links, URL's and any duplicated buttons links
 .  .  .  .  .  .  0  .
-OLCSSelfservestartDebug180  checkContent  body  tagName  GOV.UK  OLCS  180000  DEBUG - WAIT 180 seconds
+OLCSSelfserveDebug180  checkContent  body  tagName  GOV.UK  OLCS  180000  DEBUG - WAIT 180 seconds
 OLCSSelfserveContinueButtonCHECK  wait  submit  id  NA  OLCS  0  Framework -- Check is present 'Continue' button or 'Save' button
 OLCSSelfserveBackButtonCHECK  wait  back  id  NA  OLCS  0  Framework -- Check is present 'Back' button
 OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Framework -- Click on 'Back' button
 OLCSSelfserveBackToHomeLinkCHECK  wait  Back to home  xpathLinkContains  NA  OLCS  0  Framework -- Check is present 'Back to home' link
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Back to home' link
 OLCSSelfserveEditButtonCHECK  wait  Edit  xpathLinkContains  NA  OLCS  0  Framework -- Check is present 'Edit' button
-OLCSSelfserveEditButtonCLICK  click  Edit  xpathLinkContains  NA  OLCS  10000  Framework -- Click 'Edit' button
+OLCSSelfserveEditButtonCLICK  click  Edit  xpathLinkContains  NA  OLCS  4000  Framework -- Click 'Edit' button
 OLCSSelfserveSaveAndAnotherButtonCHECK  wait  addAnother  id  NA  OLCS  0  Framework -- Check is present 'Save & add another' button
-OLCSSelfserveSaveAndAnotherButtonCLICK  click  addAnother  id  NA  OLCS  10000  Framework -- Click 'Save & add another' button
+OLCSSelfserveSaveAndAnotherButtonCLICK  click  addAnother  id  NA  OLCS  4000  Framework -- Click 'Save & add another' button
 OLCSSelfserveCancelButtonCHECK  wait  cancel  id  NA  OLCS  0  Framework -- Check is present 'Cancel' button
 OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  10000  Framework -- Click 'Cancel' button
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
@@ -490,24 +490,24 @@ OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  F
 OLCSSelfserveBreadCrumb_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Home' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Application overview  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserve_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Framework -- Check 'Continue' button is present
-OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  5000  Framework -- Click 'Continue' button
-OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  5000  Framework -- Check 'Continue2' button is present
-OLCSSelfserve_ContinueButton2CLICKNotWorking  specialKeys  form-actions[continue]  id  ENTER  OLCS  5000  Framework -- Send ENTER key event to 'Continue' button
-OLCSSelfserve_ContinueButton2CLICK  click  form-actions[continue]  id  NA  OLCS  5000  Framework -- Click 'Continue2' button
-OLCSSelfserve_ContinueButton2CLICKX  click  //*[@id="form-actions[continue]"]  xpath  NA  OLCS  5000  Framework -- Click 'Continue2 using xpath' button
+OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  4000  Framework -- Click 'Continue' button
+OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  4000  Framework -- Check 'Continue2' button is present
+OLCSSelfserve_ContinueButton2CLICKNotWorking  specialKeys  form-actions[continue]  id  ENTER  OLCS  4000  Framework -- Send ENTER key event to 'Continue' button
+OLCSSelfserve_ContinueButton2CLICK  click  form-actions[continue]  id  NA  OLCS  4000  Framework -- Click 'Continue2' button
+OLCSSelfserve_ContinueButton2CLICKX  click  //*[@id="form-actions[continue]"]  xpath  NA  OLCS  4000  Framework -- Click 'Continue2 using xpath' button
 OLCSSelfserve_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Framework -- Check 'Save & Return' button is present
-OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  10000  Framework -- Click 'Save & Return' button
+OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  4000  Framework -- Click 'Save & Return' button
 OLCSSelfserve_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Framework -- Check 'Cancel' hyperlink is present at the bottom of the screen
 OLCSSelfserve_AddButton  wait  add  id  NA  OLCS  0  Framework -- Check 'Add' button is present
-OLCSSelfserve_AddCLICK  click  add  id  NA  OLCS  15000  Framework -- Click 'Add' button
+OLCSSelfserve_AddCLICK  click  add  id  NA  OLCS  4000  Framework -- Click 'Add' button
 OLCSSelfserve_SaveButton  wait  form-actions[submit]  id  NA  OLCS  0  Framework -- Check 'Save' button is present
-OLCSSelfserve_SaveCLICK  click  form-actions[submit]  id  NA  OLCS  20000  Framework -- Click 'Save' button
+OLCSSelfserve_SaveCLICK  click  form-actions[submit]  id  NA  OLCS  4000  Framework -- Click 'Save' button
 OLCSSelfserve_SaveAddAnotherButton  wait  form-actions[addAnother]  id  NA  OLCS  0  Framework -- Check 'Save & add another' button is present
-OLCSSelfserve_SaveAddAnotherCLICK  click  form-actions[addAnother]  id  NA  OLCS  15000  Framework -- Click 'Save & add another' button
+OLCSSelfserve_SaveAddAnotherCLICK  click  form-actions[addAnother]  id  NA  OLCS  4000  Framework -- Click 'Save & add another' button
 OLCSSelfserve_CancelButton  wait  cancel  id  NA  OLCS  0  Framework -- Check 'Cancel' button is present
-OLCSSelfserve_CancelCLICK  click  cancel  id  NA  OLCS  15000  Framework -- Click 'Cancel' button
+OLCSSelfserve_CancelCLICK  click  cancel  id  NA  OLCS  4000  Framework -- Click 'Cancel' button
 OLCSSelfserve_FindAddressButton  wait  address[searchPostcode][search]  id  NA  OLCS  0  Framework -- Check 'Find address' button is present
-OLCSSelfserve_FindAddressCLICK  click  address[searchPostcode][search]  id  NA  OLCS  15000  Framework -- Click 'Find address' button
+OLCSSelfserve_FindAddressCLICK  click  address[searchPostcode][search]  id  NA  OLCS  4000  Framework -- Click 'Find address' button
 OLCSSelfserve_SelectAddressButton  wait  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Check 'Select' address button is present
 OLCSSelfserve_SelectAddressCLICK  click  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Click 'Select' address button
 OLCSSelfserve_UploadButton  wait  upload  id  NA  OLCS  0  Framework -- Check 'Upload' address button is present
@@ -587,7 +587,7 @@ OLCSSelfserveTypeOfLicenceContentCheck11  checkContent  body  tagName  Standard 
 OLCSSelfserveTypeOfLicenceContentCheck12  checkContent  body  tagName  Special Restricted  OLCS  0  Type of licence -- Check 'Special Restricted' Question text is displayed
 OLCSSelfserveTypeOfLicenceContentCheck13  checkContent  body  tagName  Step 1  OLCS  0  Type of licence -- Check 'Step 1' is display above the main heading "Type of licence"
 OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCHECK  wait  N  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Great Britain' radio button
-OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  N  xpathValue  NA  OLCS  2000  Type of licence -- Click on 'Great Britain' radio button
+OLCSSelfserveTypeOfLicenceOperatorLocationGreatBritainCLICK  click  N  xpathValue  NA  OLCS  0  Type of licence -- Click on 'Great Britain' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCHECK  wait  Y  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Northern Ireland' radio button
 OLCSSelfserveTypeOfLicenceOperatorLocationNorthernIrelandCLICK  click  Y  xpathValue  NA  OLCS  0  Type of licence -- Click 'Northern Ireland' radio button
 OLCSSelfserveOperatorTypeGoodsCHECK  wait  lcat_gv  xpathValue  NA  OLCS  0  Type of licence -- Check is present 'Goods' radio button
@@ -604,7 +604,8 @@ OLCSSelfserveOperatorTypeSpecialRestrictedCHECK  wait  ltyp_sr  xpathValue  NA  
 OLCSSelfserveOperatorTypeSpecialRestrictedCLICK  click  ltyp_sr  xpathValue  NA  OLCS  0  Type of licence -- Click 'Special Restricted' radio button
 OLCSSelfserveOperatorTypeContinueCHECK  wait  form-actions[save]  id  NA  OLCS  0  Type of licence -- Check 'Continue' button is present
 OLCSSelfserveOperatorTypeContinueCLICK  click  form-actions[save]  id  NA  OLCS  0  Type of licence -- Click 'Continue' button
-OLCSSelfserveOperatorTypeContinueCLICKWait_T10000  click  form-actions[save]  id  NA  OLCS  15000  Type of licence -- Click 'Continue' button
+OLCSSelfserveOperatorTypeContinueCLICKWait_T10000  click  form-actions[save]  id  NA  OLCS  10000  Type of licence -- Click 'Continue' button
+OLCSSelfserveOperatorTypeContinueCLICKWait_T5000  click  form-actions[save]  id  NA  OLCS  5000  Type of licence -- Click 'Continue' button
 OLCSSelfserveOperatorTypeCancelCHECK  wait  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Check 'Cancel' link is present
 OLCSSelfserveOperatorTypeCancelCLICK  click  Cancel  xpathLinkContains  NA  OLCS  0  Type of licence -- Click 'Cancel'
 .  .  .  .  .  .  0  .
