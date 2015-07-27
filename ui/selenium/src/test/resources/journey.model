@@ -480,40 +480,40 @@ OLCSSelfserveBackButtonCLICK  click  back  id  NA  OLCS  0  Framework -- Click o
 OLCSSelfserveBackToHomeLinkCHECK  wait  Back to home  xpathLinkContains  NA  OLCS  0  Framework -- Check is present 'Back to home' link
 OLCSSelfserveBackToHomeLinkCLICK  click  Back to home  xpathLinkContains  NA  OLCS  0  Framework -- Click 'Back to home' link
 OLCSSelfserveEditButtonCHECK  wait  Edit  xpathLinkContains  NA  OLCS  0  Framework -- Check is present 'Edit' button
-OLCSSelfserveEditButtonCLICK  click  Edit  xpathLinkContains  NA  OLCS  4000  Framework -- Click 'Edit' button
+OLCSSelfserveEditButtonCLICK  click  Edit  xpathLinkContains  NA  OLCS  6000  Framework -- Click 'Edit' button
 OLCSSelfserveSaveAndAnotherButtonCHECK  wait  addAnother  id  NA  OLCS  0  Framework -- Check is present 'Save & add another' button
-OLCSSelfserveSaveAndAnotherButtonCLICK  click  addAnother  id  NA  OLCS  4000  Framework -- Click 'Save & add another' button
+OLCSSelfserveSaveAndAnotherButtonCLICK  click  addAnother  id  NA  OLCS  6000  Framework -- Click 'Save & add another' button
 OLCSSelfserveCancelButtonCHECK  wait  cancel  id  NA  OLCS  0  Framework -- Check is present 'Cancel' button
-OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  10000  Framework -- Click 'Cancel' button
+OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  6000  Framework -- Click 'Cancel' button
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
 OLCSSelfserveBreadCrumb_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Home' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Application overview  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserve_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Framework -- Check 'Continue' button is present
-OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  4000  Framework -- Click 'Continue' button
-OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  4000  Framework -- Check 'Continue2' button is present
-OLCSSelfserve_ContinueButton2CLICKNotWorking  specialKeys  form-actions[continue]  id  ENTER  OLCS  4000  Framework -- Send ENTER key event to 'Continue' button
-OLCSSelfserve_ContinueButton2CLICK  click  form-actions[continue]  id  NA  OLCS  4000  Framework -- Click 'Continue2' button
-OLCSSelfserve_ContinueButton2CLICKX  click  //*[@id="form-actions[continue]"]  xpath  NA  OLCS  4000  Framework -- Click 'Continue2 using xpath' button
+OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  6000  Framework -- Click 'Continue' button
+OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  6000  Framework -- Check 'Continue2' button is present
+OLCSSelfserve_ContinueButton2CLICKNotWorking  specialKeys  form-actions[continue]  id  ENTER  OLCS  6000  Framework -- Send ENTER key event to 'Continue' button
+OLCSSelfserve_ContinueButton2CLICK  click  form-actions[continue]  id  NA  OLCS  6000  Framework -- Click 'Continue2' button
+OLCSSelfserve_ContinueButton2CLICKX  click  //*[@id="form-actions[continue]"]  xpath  NA  OLCS  6000  Framework -- Click 'Continue2 using xpath' button
 OLCSSelfserve_SaveReturnButton  wait  form-actions[save]  id  NA  OLCS  0  Framework -- Check 'Save & Return' button is present
-OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  4000  Framework -- Click 'Save & Return' button
+OLCSSelfserve_SaveReturnButtonCLICK  click  form-actions[save]  id  NA  OLCS  6000  Framework -- Click 'Save & Return' button
 OLCSSelfserve_CancelLink  wait  form-actions[cancel]  id  NA  OLCS  0  Framework -- Check 'Cancel' hyperlink is present at the bottom of the screen
 OLCSSelfserve_AddButton  wait  add  id  NA  OLCS  0  Framework -- Check 'Add' button is present
-OLCSSelfserve_AddCLICK  click  add  id  NA  OLCS  4000  Framework -- Click 'Add' button
+OLCSSelfserve_AddCLICK  click  add  id  NA  OLCS  6000  Framework -- Click 'Add' button
 OLCSSelfserve_SaveButton  wait  form-actions[submit]  id  NA  OLCS  0  Framework -- Check 'Save' button is present
-OLCSSelfserve_SaveCLICK  click  form-actions[submit]  id  NA  OLCS  4000  Framework -- Click 'Save' button
+OLCSSelfserve_SaveCLICK  click  form-actions[submit]  id  NA  OLCS  6000  Framework -- Click 'Save' button
 OLCSSelfserve_SaveAddAnotherButton  wait  form-actions[addAnother]  id  NA  OLCS  0  Framework -- Check 'Save & add another' button is present
-OLCSSelfserve_SaveAddAnotherCLICK  click  form-actions[addAnother]  id  NA  OLCS  4000  Framework -- Click 'Save & add another' button
+OLCSSelfserve_SaveAddAnotherCLICK  click  form-actions[addAnother]  id  NA  OLCS  6000  Framework -- Click 'Save & add another' button
 OLCSSelfserve_CancelButton  wait  cancel  id  NA  OLCS  0  Framework -- Check 'Cancel' button is present
-OLCSSelfserve_CancelCLICK  click  cancel  id  NA  OLCS  4000  Framework -- Click 'Cancel' button
+OLCSSelfserve_CancelCLICK  click  cancel  id  NA  OLCS  6000  Framework -- Click 'Cancel' button
 OLCSSelfserve_FindAddressButton  wait  address[searchPostcode][search]  id  NA  OLCS  0  Framework -- Check 'Find address' button is present
-OLCSSelfserve_FindAddressCLICK  click  address[searchPostcode][search]  id  NA  OLCS  4000  Framework -- Click 'Find address' button
+OLCSSelfserve_FindAddressCLICK  click  address[searchPostcode][search]  id  NA  OLCS  6000  Framework -- Click 'Find address' button
 OLCSSelfserve_SelectAddressButton  wait  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Check 'Select' address button is present
 OLCSSelfserve_SelectAddressCLICK  click  address[searchPostcode][select]  id  NA  OLCS  0  Framework -- Click 'Select' address button
 OLCSSelfserve_UploadButton  wait  upload  id  NA  OLCS  0  Framework -- Check 'Upload' address button is present
 OLCSSelfserve_UploadCLICK  click  upload  id  NA  OLCS  0  Framework -- Click 'Upload' address button
 OLCSSelfserve_SendFormButton  wait  form-actions[send]  id  NA  OLCS  0  Framework -- Check 'Send Form' button is present
-OLCSSelfserve_SendFormButtonCLICK  click  form-actions[send]  id  NA  OLCS  5000  Framework -- Click 'Send Form' button
+OLCSSelfserve_SendFormButtonCLICK  click  form-actions[send]  id  NA  OLCS  6000  Framework -- Click 'Send Form' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Sign In
 .  .  .  .  .  .  0  .
