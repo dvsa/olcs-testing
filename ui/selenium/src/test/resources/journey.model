@@ -78,6 +78,9 @@ OLCSinternalHomeSortOwner  wait  Owner  xpathLinkContains  NA  OLCS  0  Home Pag
 OLCSinternalHomeSortName  wait  Name  xpathLinkContains  NA  OLCS  0  Home Page -- Check is present 'Name' filter
 OLCSinternalHomeTextTasks  checkContent  body  tagName  Tasks  OLCS  0  Home Page -- Check 'Tasks' is displayed above the table results
 OLCSinternalHomeFilterTeam  wait  assignedToTeam  id  NA  OLCS  0  Home Page -- Check is present 'Team' drop down element
+OLCSinternalHomeFilterTeamALL  standardKeys  assignedToUser  id  all  OLCS  0  Home Page -- Change 'Owner' drop down to 'All'
+OLCSinternalHomeFilterTeamClick  click  assignedToUser  id  NA  OLCS  0  Home Page -- Click on 'Owner' dropdown
+OLCSinternalHomeFilterTeamALLEnter  specialKeys  assignedToUser  id  ENTER  OLCS  5000  Home Page -- Enter key event on 'Owner' dropdown
 OLCSinternalHomeFilterOwner  wait  assignedToUser  id  NA  OLCS  0  Home Page -- Check is present 'Owner' drop down element
 OLCSinternalHomeFilterCategory  wait  category  id  NA  OLCS  0  Home Page -- Check is present 'Category' drop down element
 OLCSinternalHomeFilterSubCategory  wait  taskSubCategory  id  NA  OLCS  0  Home Page -- Check is present 'Sub category' drop down element
