@@ -48,7 +48,7 @@ class seleniumObject {
         System.out.println("Hub requested " + hub)
         System.out.println("Browser " + capabilitiesMap.get(browser))
         val driverResult = new RemoteWebDriver(new URL(hub), capabilitiesMap.get(browser))
-        driverResult.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS)
+        //driverResult.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS)
         return driverResult
     }
 
@@ -155,8 +155,8 @@ class seleniumObject {
                 testRunIdentifierTimestamp, reportDirectory)
         switch action {
             case ( action == "click") : execute.click
-            case ( action == "standardKeysOneAtATime") : execute.sendKeys(input)
-            case ( action == "standardKeys") : sendFullValue(driver, input, execute)
+            case ( action == "standardKeys") : execute.sendKeys(input)
+            case ( action == "standardKeysOneAtATime") : sendFullValue(driver, input, execute)
             case ( action == "specialKeys") : execute.sendKeys(Keys.valueOf(input))
             case ( action == "clear") : execute.clear()
         }
