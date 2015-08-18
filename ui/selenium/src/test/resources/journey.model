@@ -989,7 +989,7 @@ olcsVehiclesAdd_ConfirmCheckboxCLICK  click  licence-vehicle[confirm-add]  id  N
 olcsVehiclesAdd_V1ABC  wait  VRM1  xpathValue  NA  OLCS  0  Vehicles - Add vehicle -- Check 'VRM1' hyperlink is displayed in the vehicles table
 olcsVehiclesAdd_VehicleRegistration_VRZ1  standardKeys  vrm  id  VRZ1  OLCS  0  Vehicles - Add vehicle -- Enter 'VRZ1' into the "Vehicle registration mark (VRM)" inout field
 .  .  .  .  .  .  0  Select vehicle
-olcsVehiclesSelectVRM1LicenceOB1234567  click  2  xpathValue  NA  OLCS  0  Vehicles -- Click 'VRM1' checkbox
+olcsVehiclesSelectVRM2LicenceOB1234567  click  2  xpathValue  NA  OLCS  0  Vehicles -- Click 'VRM2' checkbox
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Safety (Section 10 of the Application process)
 .  .  .  .  .  .  0  .
