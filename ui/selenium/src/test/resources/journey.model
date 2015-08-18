@@ -491,7 +491,7 @@ OLCSSelfserveCancelButtonCLICK  click  cancel  id  NA  OLCS  10000  Framework --
 OLCSSelfserveCheck1  checkContent  body  tagName  GOV.UK  OLCS  0  Framework -- Check 'GOV.UK' is displayed on the top left of the screen
 OLCSSelfserveCheck2  checkContent  body  tagName  Operator Licensing  OLCS  0  Framework -- Check 'Operator Licensing' is displayed on the top right of the screen
 OLCSSelfserveBreadCrumb_HomeLink  wait  Home  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Home' Breadcrumb hyperlink is present top left of the screen
-OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Application overview  xpathLinkContains  NA  OLCS  0  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
+OLCSSelfserveBreadCrumb_ApplicationOverview  wait  Applications  xpathLinkContains  NA  OLCS  3000  Breadcrumb -- Check 'Application overview' Breadcrumb hyperlink is present top left of the screen
 OLCSSelfserve_ContinueButton  wait  form-actions[saveAndContinue]  id  NA  OLCS  0  Framework -- Check 'Continue' button is present
 OLCSSelfserve_ContinueButtonCLICK  click  form-actions[saveAndContinue]  id  NA  OLCS  10000  Framework -- Click 'Continue' button
 OLCSSelfserve_ContinueButton2  wait  form-actions[continue]  id  NA  OLCS  10000  Framework -- Check 'Continue2' button is present
@@ -517,6 +517,7 @@ OLCSSelfserve_UploadButton  wait  upload  id  NA  OLCS  0  Framework -- Check 'U
 OLCSSelfserve_UploadCLICK  click  upload  id  NA  OLCS  0  Framework -- Click 'Upload' address button
 OLCSSelfserve_SendFormButton  wait  form-actions[send]  id  NA  OLCS  0  Framework -- Check 'Send Form' button is present
 OLCSSelfserve_SendFormButtonCLICK  click  form-actions[send]  id  NA  OLCS  10000  Framework -- Click 'Send Form' button
+OLCSSelfserve_RemoveButtonCLICK  click  delete  id  NA  OLCS  10000  Framework -- Click 'Remove' button
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Sign In
 .  .  .  .  .  .  0  .
@@ -573,6 +574,7 @@ OLCSSelfserveDashboardSubmitPayCLICK  click  submitPay  id  NA  OLCS  0  Dashboa
 OLCSSelfserveDashboardApplication19  click  19  linkText  NA  OLCS  0  Dashboard -- Click 'Application 19' link
 OLCSSelfserveDashboardTransportManagersCLICK  click  overview-item__transport_managers  id  NA  OLCS  0  Dashboard -- Click 'Transport managers' link
 OLCSSelfserveDashboardClickLicence7  click  7  linkText  NA  OLCS  0  Framework -- Click '7' hyperlink on the dashboard page to bring up licence
+OLCSSelfserveDashboardClickLicenceOB1234567  click  OB1234567  xpathLinkContains  NA  OLCS  0  Framework -- Click 'OB1234567' hyperlink to edit licence OB1234567
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Type of licence
 .  .  .  .  .  .  0  .
@@ -966,6 +968,8 @@ olcsVehicles_YesText  checkContent  body  tagName  Yes  OLCS  0  Vehicles -- Che
 olcsVehicles_NoText  checkContent  body  tagName  No  OLCS  0  Vehicles -- Check 'No' text is displayed
 olcsVehicles_AreYouSubmittingYes  wait  data[hasEnteredReg]  id  NA  OLCS  0  Vehicles -- Check is present "Are you submitting vehicle details" 'Yes' radio check box
 olcsVehicles_AreYouSubmittingNo  wait  N  xpathValue  NA  OLCS  0  Vehicles -- Check is present "Are you submitting vehicle details" 'No' radio check box
+olcsVehiclesUpdateVehiclesCLICK  click  overview-item__vehicles  id  NA  OLCS  0  Vehicles -- Click "Update vehicles"
+OLCSSelfserveVehiclesVRZ1CHECK  wait  VRZ1  xpathValue  NA  OLCS  0  Vehicles -- Check is present 'VRZ1' in the vehicles table
 .  .  .  .  .  .  0  Add vehicle
 olcsVehiclesAdd_AddVehicleText  checkContent  body  tagName  Add vehicle  OLCS  0  Vehicles - Add vehicle -- Check 'Add vehicle' text is displayed (main heading)
 olcsVehiclesAdd_VehicleRegistrationText  checkContent  body  tagName  Vehicle registration mark (VRM)  OLCS  0  Vehicles - Add vehicle -- Check 'Vehicle registration mark (VRM)' text is displayed
@@ -983,6 +987,9 @@ olcsVehiclesAdd_IConfirm  checkContent  body  tagName  I confirm that I would li
 olcsVehiclesAdd_ConfirmCheckbox  wait  licence-vehicle[confirm-add]  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "I confirm that I would like to continue adding this vehicle" check box
 olcsVehiclesAdd_ConfirmCheckboxCLICK  click  licence-vehicle[confirm-add]  id  NA  OLCS  0  Vehicles - Add vehicle -- Click "I confirm that I would like to continue adding this vehicle" check box
 olcsVehiclesAdd_V1ABC  wait  VRM1  xpathValue  NA  OLCS  0  Vehicles - Add vehicle -- Check 'VRM1' hyperlink is displayed in the vehicles table
+olcsVehiclesAdd_VehicleRegistration_VRZ1  standardKeys  vrm  id  VRZ1  OLCS  0  Vehicles - Add vehicle -- Enter 'VRZ1' into the "Vehicle registration mark (VRM)" inout field
+.  .  .  .  .  .  0  Select vehicle
+olcsVehiclesSelectVRM1LicenceOB1234567  click  1  xpathValue  NA  OLCS  0  Vehicles -- Click 'VRM1' checkbox
 .  .  .  .  .  .  0  .
 .  .  .  .  .  .  0  Safety (Section 10 of the Application process)
 .  .  .  .  .  .  0  .
