@@ -864,6 +864,9 @@ OLCSSelfserveOperatingCentres_NorthEastOfEngland  checkContent  body  tagName  N
 OLCSSelfserveOperatingCentres_YourTrafficArea  checkContent  body  tagName  Your traffic area is determined by the location of your operating centres.  OLCS  0  Operating centres & authorisation -- Check 'Your traffic area is determined by the location of your operating centres.' text is displayed
 OLCSSelfserveOperatingCentres_ForMoreInformation  checkContent  body  tagName  For more information and to find your traffic area please visit  OLCS  0  Operating centres & authorisation -- Check 'For more information and to find your traffic area please visit' text is displayed
 OLCSSelfserveOperatingCentres_ThisLink  wait  traffic areas  xpathLinkContains  NA  OLCS  0  Operating centres & authorisation -- Check 'traffic areas' hyperlink is displayed in the traffic area text
+OLCSSelfserveOperatingCentresSmallVehicles1  standardKeys  data[totAuthSmallVehicles]  inputName  1  OLCS  0  Enter 1 into the Small vehicles text field
+OLCSSelfserveOperatingCentres916Seats1  standardKeys  data[totAuthMediumVehicles]  inputName  1  OLCS  0  Enter 1 into the 9 - 16 passenger seats text field
+OLCSSelfserveOperatingCentres17OrMore2  standardKeys  data[totAuthLargeVehicles]  inputName  2  OLCS  0  Enter 2 into the 17 or more passenger seats text field
 .  .  .  .  .  .  0  Operating centres & authorisation - Add operating centre
 OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Add operating centre' text is displayed (Popup title)
 OLCSSelfserveOperatingCentresAdd_Heading  checkContent  body  tagName  Address  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Address' text is displayed (Main heading)
@@ -971,6 +974,14 @@ olcsVehicles_AreYouSubmittingYes  wait  data[hasEnteredReg]  id  NA  OLCS  0  Ve
 olcsVehicles_AreYouSubmittingNo  wait  N  xpathValue  NA  OLCS  0  Vehicles -- Check is present "Are you submitting vehicle details" 'No' radio check box
 olcsVehiclesUpdateVehiclesCLICK  click  overview-item__vehicles  id  NA  OLCS  0  Vehicles -- Click "Update vehicles"
 OLCSSelfserveVehiclesVRZ1CHECK  wait  VRZ1  xpathValue  NA  OLCS  0  Vehicles -- Check is present 'VRZ1' in the vehicles table
+olcsVehiclesSmallVechiclePsvYesCLICK  click  smallVehiclesIntention[psvOperateSmallVhl]  id  NA  OLCS  0  Vehicles -- Click Yes to "Small vehicle conditions and undertakings"
+olcsVehiclesSmallVechiclePsvYesGiveDetails  standardKeys  smallVehiclesIntention[psvSmallVhlNotes]  id  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'lorem ipsum text 200 characters long' into the 'Additional information' input field
+olcsVehiclesBusinessOrMainOccupationTick  click  mainOccupation[psvMediumVhlConfirmation]  id  NA  OLCS  0  Vehicles -- Check tick box to "Business or main occupation"
+olcsVehiclesBusinessOrMainOccupationDetails  standardKeys  mainOccupation[psvMediumVhlNotes]  id  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.  OLCS  0  Operating centres & authorisation - Add operating centre -- Enter 'lorem ipsum text 200 characters long' into the 'Additional information' input field
+olcsVehiclesLimousinesAndNoveltyTypeVehiclesTick  click  limousinesNoveltyVehicles[psvNoLimousineConfirmation]  id  NA  OLCS  0  Vehicles -- Tick check box "Limousines and novelty type vehicles are not to be operated under this operator's licence"
+olcsVehiclesLimousinesAndNoveltyTypeVehiclesTickX  click  //*[@id="lva-vehicles-declarations"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Vehicles -- Tick check box "Limousines and novelty type vehicles are not to be operated under this operator's licence"
+olcsVehiclesSmallVehiclesAddClick  click  small[action]  inputName  NA  OLCS  10000  Vehicles -- Click add button for small vehicles
+olcsVehiclesMediumVehiclesAddClick  click  medium[action]  inputName  NA  OLCS  10000  Vehicles -- Click add button for 9-16 passenger seat vehicles
 .  .  .  .  .  .  0  Add vehicle
 olcsVehiclesAdd_AddVehicleText  checkContent  body  tagName  Add vehicle  OLCS  0  Vehicles - Add vehicle -- Check 'Add vehicle' text is displayed (main heading)
 olcsVehiclesAdd_VehicleRegistrationText  checkContent  body  tagName  Vehicle registration mark (VRM)  OLCS  0  Vehicles - Add vehicle -- Check 'Vehicle registration mark (VRM)' text is displayed
@@ -982,6 +993,8 @@ olcsVehiclesAdd_VehicleRegistration  wait  vrm  id  NA  OLCS  0  Vehicles - Add 
 olcsVehiclesAdd_GrossPlated  wait  plated_weight  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Gross plated weight (Kg)" inout field
 olcsVehiclesAdd_GrossPlated  wait  plated_weight  id  NA  OLCS  0  Vehicles - Add vehicle -- Check is present "Gross plated weight (Kg)" inout field
 olcsVehiclesAdd_VehicleRegistration_v1abc  standardKeys  vrm  id  VRM1  OLCS  0  Vehicles - Add vehicle -- Enter 'VRM1' into the "Vehicle registration mark (VRM)" inout field
+olcsVehiclesAdd_VehicleRegistration_VRM1  standardKeys  vrm  id  VRM1  OLCS  0  Vehicles - Add vehicle -- Enter 'VRM1' into the "Vehicle registration mark (VRM)" inout field
+olcsVehiclesAdd_VehicleRegistration_VRM2  standardKeys  vrm  id  VRM2  OLCS  0  Vehicles - Add vehicle -- Enter 'VRM2' into the "Vehicle registration mark (VRM)" inout field
 olcsVehiclesAdd_GrossPlated_500  standardKeys  plated_weight  id  500  OLCS  0  Vehicles - Add vehicle -- Enter '500' into the "Gross plated weight (Kg)" inout field
 olcsVehiclesAdd_VehicleIsSpecified  checkContent  body  tagName  This vehicle is specified on another licence. Please confirm you would like to continue adding this vehicle  OLCS  0  Vehicles - Add vehicle -- Check 'This vehicle is specified on another licence. Please confirm you would like to continue adding this vehicle' text is displayed
 olcsVehiclesAdd_IConfirm  checkContent  body  tagName  I confirm that I would like to continue adding this vehicle  OLCS  0  Vehicles - Add vehicle -- Check 'I confirm that I would like to continue adding this vehicle' text is displayed
@@ -989,6 +1002,9 @@ olcsVehiclesAdd_ConfirmCheckbox  wait  licence-vehicle[confirm-add]  id  NA  OLC
 olcsVehiclesAdd_ConfirmCheckboxCLICK  click  licence-vehicle[confirm-add]  id  NA  OLCS  0  Vehicles - Add vehicle -- Click "I confirm that I would like to continue adding this vehicle" check box
 olcsVehiclesAdd_V1ABC  wait  VRM1  xpathValue  NA  OLCS  0  Vehicles - Add vehicle -- Check 'VRM1' hyperlink is displayed in the vehicles table
 olcsVehiclesAdd_VehicleRegistration_VRZ1  standardKeys  vrm  id  VRZ1  OLCS  0  Vehicles - Add vehicle -- Enter 'VRZ1' into the "Vehicle registration mark (VRM)" inout field
+olcsVehiclesAdd_VehicleMakeModelVolvo9700  standardKeys  data[makeModel]  id  Volvo 9700  OLCS  0  Vehicles - Add vehicle -- Enter 'Volvo 9700' into the "Make / model" inout field
+olcsVehiclesAdd_IsVehicleLimousineRadioClick  click  N  xpathValue  NA  OLCS  0  Vehicles - Add vehicle -- Click "No" Is this vehicle a limousine or novelty type vehicle?
+olcsVehiclesAdd_IsVehicleLimousineRadioClickX  click  //*[@id="lva-vehicles-declarations"]/fieldset[3]/fieldset/label[2]/input  xpath  NA  OLCS  0  Vehicles - Add vehicle -- Click "No" Is this vehicle a limousine or novelty type vehicle?
 .  .  .  .  .  .  0  Select vehicle
 olcsVehiclesSelectVRM2LicenceOB1234567  click  2  xpathValue  NA  OLCS  0  Vehicles -- Click 'VRM2' checkbox
 .  .  .  .  .  .  0  .
@@ -1114,10 +1130,6 @@ OLCSSelfserveYourBusinessAddressesRegisteredOfficeAddressDropDownSelectButtonCLI
 OLCSSelfserveOperatingCentresTotalVehicles  standardKeys  totAuthVehicles  id  5  OLCS  0  Enter the total amount of vehicles
 OLCSSelfserveOperatingCentresTotalTrailers  standardKeys  totAuthTrailers  id  5  OLCS  0  Enter the total amount of trailers
 OLCSSelfserveOperatingCentresSmallVehiclesWAIT  wait  totAuthSmallVehicles  id  1  OLCS  0  Wait for Small vehicles text field
-OLCSSelfserveOperatingCentresSmallVehicles1  standardKeys  data[totAuthSmallVehicles]  inputName  1  OLCS  0  Enter 1 into the Small vehicles text field
-OLCSSelfserveOperatingCentres916Seats2  standardKeys  data[totAuthMediumVehicles]  inputName  2  OLCS  0  Enter 2 into the 9 - 16 passenger seats text field
-OLCSSelfserveOperatingCentres17OrMore2  standardKeys  data[totAuthLargeVehicles]  inputName  2  OLCS  0  Enter 2 into the 17 or more passenger seats text field
-OLCSSelfserveOperatingCentresCommunity0  standardKeys  data[totCommunityLicences]  inputName  0  OLCS  0  Enter 0 into the How many community licences text field
 .  .  .  .  .  .  0  Operating Centres -> Add Operating Centre
 OLCSSelfserveOperatingCentresAddOperatingCentrePostCode  standardKeys  address[searchPostcode][postcode]  inputName  ls9 6nf  OLCS  0  Post Code Search text field
 OLCSSelfserveOperatingCentresAddOperatingCentreFindAddressCLICK  click  address[searchPostcode][search]  inputName  NA  OLCS  0  Find Address button
