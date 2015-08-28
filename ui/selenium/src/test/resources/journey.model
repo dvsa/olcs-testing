@@ -228,8 +228,8 @@ OLCSinternalLicenceDetailsBusinessDetailsHeading  checkContent  body  tagName  B
 OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameText  checkContent  body  tagName  Organisation name  OLCS  0  Licence details - Business details -- Check 'Organisation name' is displayed
 OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameClear  clear  data[name]  id  NA  OLCS  0  Business Details -- Clear 'Organisation name' field box
 OLCSinternalLicenceDetailsBusinessDetailsOrganisationNameinputLeedsCityCouncil  standardKeys  data[name]  id  Leeds city council  OLCS  0  Business Details -- Enter 'Leeds city council' into the Organisation name input field
-OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessClear  clear  data_natureOfBusinesses__chosen  id  NA  OLCS  0  Business Details -- Clear 'Nature of business' field box
-OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessOther  standardKeys  data_natureOfBusinesses__chosen  id  Other  OLCS  0  Business Details -- Select 'Operation of bus and coach passenger facilities at bus and coach stations' in the Nature of business multi select
+OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessClear  clear  data[natureOfBusiness]  id  NA  OLCS  0  Business Details -- Clear 'Nature of business' field box
+OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessOther  standardKeys  data[natureOfBusiness]  id  Other  OLCS  0  Business Details -- Select 'Operation of bus and coach passenger facilities at bus and coach stations' in the Nature of business multi select
 OLCSinternalLicenceDetailsBusinessDetailsNatureOfBusinessText  checkContent  body  tagName  Nature of business  OLCS  0  Licence details - Business details -- Check 'Nature of business' is displayed
 OLCSinternalLicenceDetailsBusinessDetailsPleaseEnterYourBusinessTypeText  checkContent  body  tagName  Please enter your business type. You can find a list of business types at Companies House  OLCS  0  Licence details - Business details -- Check 'Please enter your business type. You can find a list of business types at Companies House' is displayed
 OLCSinternalLicenceDetailsBusinessDetailsLinkHyperlink  wait  here  xpathLinkContains  NA  OLCS  0  Licence details - Business details -- Check is present 'link' hyperlink for 'Please enter your business type. You can find a list of business types at Companies House'
@@ -692,9 +692,9 @@ OLCSSelfserveBusinessDetails_IfYouHaveSubsidiaryCompaniesText  checkContent  bod
 OLCSSelfserveBusinessDetails_CompanyNumberFieldCLEAR  clear  data[companyNumber][company_number]  id  NA  OLCS  0  Business Details -- Clear 'Company number' field box
 OLCSSelfserveBusinessDetails_CompanyNameFieldCLEAR  clear  data[name]  id  NA  OLCS  0  Business Details -- Clear 'Company name' field box
 OLCSSelfserveBusinessDetails_CompanyTradingNameCLEAR  clear  data[tradingNames][trading_name][0]  id  NA  OLCS  0  Business Details -- Clear 'Trading names (optional)' field box
-OLCSSelfserveBusinessDetailsNatureOfBusinessClear  clear  //*[@id="data_natureOfBusinesses__chosen"]/ul/li/input  xpath  NA  OLCS  0  Business Details -- Clear 'Nature of business' field box
-OLCSSelfserveBusinessDetailsNatureOfBusinessOther  standardKeys  //*[@id="data_natureOfBusinesses__chosen"]/ul/li/input  xpath  Other  OLCS  0  Business Details -- Select 'Other' in the Nature of business multi select
-OLCSSelfserveBusinessDetailsNatureOfBusinessEnterKey  specialKeys  //*[@id="data_natureOfBusinesses__chosen"]/ul/li/input  xpath  ENTER  OLCS  0  Business Details -- Send ENTER key event to 'Nature of business' input field
+OLCSSelfserveBusinessDetailsNatureOfBusinessClear  clear  data[natureOfBusiness]  id  NA  OLCS  0  Business Details -- Clear 'Nature of business' field box
+OLCSSelfserveBusinessDetailsNatureOfBusinessHaulage  standardKeys  data[natureOfBusiness]  id  Haulage  OLCS  0  Business Details -- Select 'Other' in the Nature of business multi select
+OLCSSelfserveBusinessDetailsNatureOfBusinessEnterKey  specialKeys  data[natureOfBusiness]  id  ENTER  OLCS  0  Business Details -- Send ENTER key event to 'Nature of business' input field
 OLCSSelfserveBusinessDetails_AddressLine1CLEAR  clear  registeredAddress[addressLine1]  id  NA  OLCS  0  Business Details -- Clear 'Address Line 1' field box
 OLCSSelfserveBusinessDetails_AddressLine2CLEAR  clear  registeredAddress[addressLine2]  id  NA  OLCS  0  Business Details -- Clear 'Address Line 2' field box
 OLCSSelfserveBusinessDetails_AddressLine3CLEAR  clear  registeredAddress[addressLine3]  id  NA  OLCS  0  Business Details -- Clear 'Address Line 3' field box
@@ -867,6 +867,7 @@ OLCSSelfserveOperatingCentres_ThisLink  wait  traffic areas  xpathLinkContains  
 OLCSSelfserveOperatingCentresSmallVehicles1  standardKeys  data[totAuthSmallVehicles]  inputName  1  OLCS  0  Enter 1 into the Small vehicles text field
 OLCSSelfserveOperatingCentres916Seats1  standardKeys  data[totAuthMediumVehicles]  inputName  1  OLCS  0  Enter 1 into the 9 - 16 passenger seats text field
 OLCSSelfserveOperatingCentres17OrMore2  standardKeys  data[totAuthLargeVehicles]  inputName  2  OLCS  0  Enter 2 into the 17 or more passenger seats text field
+OLCSSelfserveOperatingCentres17OrMore0  standardKeys  data[totAuthLargeVehicles]  inputName  0  OLCS  0  Enter 0 into the 17 or more passenger seats text field
 .  .  .  .  .  .  0  Operating centres & authorisation - Add operating centre
 OLCSSelfserveOperatingCentresAddPopup_Heading  checkContent  body  tagName  Add operating centre  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Add operating centre' text is displayed (Popup title)
 OLCSSelfserveOperatingCentresAdd_Heading  checkContent  body  tagName  Address  OLCS  0  Operating centres & authorisation - Add operating centre -- Check 'Address' text is displayed (Main heading)
